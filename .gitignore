@@ -1,0 +1,29 @@
+# Backups + editor
+*.bak
+*.swp
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local server logs
+*.log
+
+# Local-only history archives — kept in SHRAM-verification-data instead
+reference_history/by_district/
+reference_history/open_meteo/
+reference_history/open_meteo_*/
+reference_history/nasa_power/
+reference_history/imd_heatwave/
+shram_map_history/
+shram_stations_history/by_station/
+forecast_history/
+forecast_error_history/
+
+# Keep these (they're small, dashboard depends on them):
+!reference_history/imd_heatwave_latest.json
+!reference_history/openmeteo_at_imd_stations.json
+!shram_stations_history/imd_stations.json

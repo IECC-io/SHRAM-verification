@@ -1,0 +1,7519 @@
+{
+  "label": "Open-Meteo (at IMD stations)",
+  "generated_at_utc": "2026-04-29T18:01:11.906821+00:00",
+  "n_total": 751,
+  "n_with_ta": 751,
+  "n_with_rh": 751,
+  "points": [
+    {
+      "lat": 30.86,
+      "lon": 78.0,
+      "Ta": 6.9,
+      "RH": 80.0,
+      "name": "OM @ PUROLA (UTTARKASHI)",
+      "station": "PUROLA",
+      "district": "UTTARKASHI",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 26.1,
+      "lon": 91.5667,
+      "Ta": 21.0,
+      "RH": 95.0,
+      "name": "OM @ GUWAHATI (KAMRUP_METROPOLITAN)",
+      "station": "GUWAHATI",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 20.473505,
+      "lon": 74.008202,
+      "Ta": 24.7,
+      "RH": 63.0,
+      "name": "OM @ KALWAN (NASHIK)",
+      "station": "KALWAN",
+      "district": "NASHIK",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.5167,
+      "lon": 73.85,
+      "Ta": 26.6,
+      "RH": 58.0,
+      "name": "OM @ PASHAN_AWS_LAB (PUNE)",
+      "station": "PASHAN_AWS_LAB",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 22.77,
+      "lon": 77.7667,
+      "Ta": 31.1,
+      "RH": 22.0,
+      "name": "OM @ HOSHANGABAD (HOSHANGABAD)",
+      "station": "HOSHANGABAD",
+      "district": "HOSHANGABAD",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 17.92478,
+      "lon": 73.66034,
+      "Ta": 18.7,
+      "RH": 75.0,
+      "name": "OM @ MAHABALESHWAR (SATARA)",
+      "station": "MAHABALESHWAR",
+      "district": "SATARA",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 27.2645,
+      "lon": 92.4159,
+      "Ta": 9.9,
+      "RH": 99.0,
+      "name": "OM @ BOMDILA (WEST_KAMENG)",
+      "station": "BOMDILA",
+      "district": "WEST_KAMENG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 19.067,
+      "lon": 72.8409,
+      "Ta": 28.8,
+      "RH": 81.0,
+      "name": "OM @ BANDRA (MUMBAI SUBURBAN)",
+      "station": "BANDRA",
+      "district": "MUMBAI SUBURBAN",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.9799,
+      "lon": 72.8231,
+      "Ta": 28.9,
+      "RH": 82.0,
+      "name": "OM @ MAHALAXMI (MUMBAI_CITY)",
+      "station": "MAHALAXMI",
+      "district": "MUMBAI_CITY",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.2495,
+      "lon": 72.8597,
+      "Ta": 28.3,
+      "RH": 86.0,
+      "name": "OM @ DAHISAR (MUMBAI SUBURBAN)",
+      "station": "DAHISAR",
+      "district": "MUMBAI SUBURBAN",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 21.04,
+      "lon": 83.54,
+      "Ta": 31.9,
+      "RH": 45.0,
+      "name": "OM @ DUNGRIPALLI (SUBARNAPUR)",
+      "station": "DUNGRIPALLI",
+      "district": "SUBARNAPUR",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 33.8,
+      "lon": 74.26,
+      "Ta": 12.9,
+      "RH": 66.0,
+      "name": "OM @ RAJPURA_MANDI (POONCH)",
+      "station": "RAJPURA_MANDI",
+      "district": "POONCH",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 22.3333,
+      "lon": 84.03,
+      "Ta": 27.0,
+      "RH": 52.0,
+      "name": "OM @ BALISHANKAR (SUNDERGARH)",
+      "station": "BALISHANKAR",
+      "district": "SUNDERGARH",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 28.64,
+      "lon": 95.0228,
+      "Ta": 21.1,
+      "RH": 89.0,
+      "name": "OM @ YINGKIONG (UPPER_SIANG)",
+      "station": "YINGKIONG",
+      "district": "UPPER_SIANG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 26.55,
+      "lon": 88.19,
+      "Ta": 20.1,
+      "RH": 97.0,
+      "name": "OM @ KHARIBARI (DARJEELING)",
+      "station": "KHARIBARI",
+      "district": "DARJEELING",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 27.19,
+      "lon": 88.16,
+      "Ta": 11.2,
+      "RH": 98.0,
+      "name": "OM @ SORENG (SORENG)",
+      "station": "SORENG",
+      "district": "SORENG",
+      "state": "SIKKIM"
+    },
+    {
+      "lat": 13.15,
+      "lon": 79.4167,
+      "Ta": 29.1,
+      "RH": 79.0,
+      "name": "OM @ R.K.PET (TIRUVALLUR)",
+      "station": "R.K.PET",
+      "district": "TIRUVALLUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.6667,
+      "lon": 79.5333,
+      "Ta": 29.9,
+      "RH": 72.0,
+      "name": "OM @ CHEYYAR (TIRUVANNAMALAI)",
+      "station": "CHEYYAR",
+      "district": "TIRUVANNAMALAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.05,
+      "lon": 80.0833,
+      "Ta": 29.7,
+      "RH": 79.0,
+      "name": "OM @ POONAMALLEE (TIRUVALLUR)",
+      "station": "POONAMALLEE",
+      "district": "TIRUVALLUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.29,
+      "lon": 78.07,
+      "Ta": 28.5,
+      "RH": 46.0,
+      "name": "OM @ PALACODE (DHARMAPURI)",
+      "station": "PALACODE",
+      "district": "DHARMAPURI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.52,
+      "lon": 77.79,
+      "Ta": 25.4,
+      "RH": 58.0,
+      "name": "OM @ DENKANIKOTTAI (KRISHNAGIRI)",
+      "station": "DENKANIKOTTAI",
+      "district": "KRISHNAGIRI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 8.1667,
+      "lon": 77.4167,
+      "Ta": 26.2,
+      "RH": 90.0,
+      "name": "OM @ NAGERCOIL (KANYAKUMARI)",
+      "station": "NAGERCOIL",
+      "district": "KANYAKUMARI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 8.4333,
+      "lon": 77.9,
+      "Ta": 26.9,
+      "RH": 84.0,
+      "name": "OM @ SATTANKULAM (THOOTHUKUDI)",
+      "station": "SATTANKULAM",
+      "district": "THOOTHUKUDI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.51,
+      "lon": 79.33,
+      "Ta": 29.0,
+      "RH": 79.0,
+      "name": "OM @ VRIDHA_CHALAM (CUDDALORE)",
+      "station": "VRIDHA_CHALAM",
+      "district": "CUDDALORE",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.7333,
+      "lon": 78.95,
+      "Ta": 29.9,
+      "RH": 71.0,
+      "name": "OM @ KALLAKURICHI (KALLAKURICHI)",
+      "station": "KALLAKURICHI",
+      "district": "KALLAKURICHI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.0,
+      "lon": 80.1333,
+      "Ta": 29.7,
+      "RH": 79.0,
+      "name": "OM @ LMOIS__KOLAPAKKAM (KANCHIPURAM)",
+      "station": "LMOIS__KOLAPAKKAM",
+      "district": "KANCHIPURAM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.0,
+      "lon": 80.0833,
+      "Ta": 29.7,
+      "RH": 79.0,
+      "name": "OM @ CHEMBARAMBAKKAM (KANCHIPURAM)",
+      "station": "CHEMBARAMBAKKAM",
+      "district": "KANCHIPURAM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.8013,
+      "lon": 80.2237,
+      "Ta": 29.5,
+      "RH": 85.0,
+      "name": "OM @ HINDUSTAN_UNIVERSITY (KANCHIPURAM)",
+      "station": "HINDUSTAN_UNIVERSITY",
+      "district": "KANCHIPURAM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.8667,
+      "lon": 80.2,
+      "Ta": 29.5,
+      "RH": 84.0,
+      "name": "OM @ SATHYABAMA__UNIVERSITY (KANCHIPURAM)",
+      "station": "SATHYABAMA__UNIVERSITY",
+      "district": "KANCHIPURAM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 23.84,
+      "lon": 92.62,
+      "Ta": 19.1,
+      "RH": 99.0,
+      "name": "OM @ LENGPUI (AIZAWL)",
+      "station": "LENGPUI",
+      "district": "AIZAWL",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 12.89,
+      "lon": 77.51,
+      "Ta": 27.0,
+      "RH": 52.0,
+      "name": "OM @ GOPAL_NAGAR (BANGALORE_URBAN)",
+      "station": "GOPAL_NAGAR",
+      "district": "BANGALORE_URBAN",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 12.8586,
+      "lon": 77.6572,
+      "Ta": 25.9,
+      "RH": 53.0,
+      "name": "OM @ ELECTRONIC_CITY(NICE) (BANGALORE_URBAN)",
+      "station": "ELECTRONIC_CITY(NICE)",
+      "district": "BANGALORE_URBAN",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 13.0428,
+      "lon": 77.4758,
+      "Ta": 26.0,
+      "RH": 57.0,
+      "name": "OM @ MADHAVARA(NICE) (BANGALORE_URBAN)",
+      "station": "MADHAVARA(NICE)",
+      "district": "BANGALORE_URBAN",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 8.2669,
+      "lon": 77.6689,
+      "Ta": 27.2,
+      "RH": 83.0,
+      "name": "OM @ RADHAPURAM (TIRUNELVELI)",
+      "station": "RADHAPURAM",
+      "district": "TIRUNELVELI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 15.43,
+      "lon": 74.91,
+      "Ta": 25.1,
+      "RH": 91.0,
+      "name": "OM @ MUGAD (DHARWAD)",
+      "station": "MUGAD",
+      "district": "DHARWAD",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 17.04,
+      "lon": 76.8,
+      "Ta": 33.3,
+      "RH": 31.0,
+      "name": "OM @ RADDEWADGI (GULBARGA)",
+      "station": "RADDEWADGI",
+      "district": "GULBARGA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 12.3828,
+      "lon": 77.0589,
+      "Ta": 27.2,
+      "RH": 69.0,
+      "name": "OM @ MALAVALLI (MANDYA)",
+      "station": "MALAVALLI",
+      "district": "MANDYA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 11.66,
+      "lon": 76.16,
+      "Ta": 21.8,
+      "RH": 99.0,
+      "name": "OM @ MEENANGADI (WAYANAD)",
+      "station": "MEENANGADI",
+      "district": "WAYANAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.9264,
+      "lon": 76.2621,
+      "Ta": 26.2,
+      "RH": 90.0,
+      "name": "OM @ PALLURUTHY (ERNAKULAM)",
+      "station": "PALLURUTHY",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.95,
+      "lon": 77.06,
+      "Ta": 25.4,
+      "RH": 95.0,
+      "name": "OM @ THENMALA (KOLLAM)",
+      "station": "THENMALA",
+      "district": "KOLLAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 19.2396,
+      "lon": 73.9155,
+      "Ta": 23.3,
+      "RH": 74.0,
+      "name": "OM @ BALLALWADI_JUNNAR (PUNE)",
+      "station": "BALLALWADI_JUNNAR",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 17.23,
+      "lon": 73.29,
+      "Ta": 26.6,
+      "RH": 93.0,
+      "name": "OM @ SAVARDE(GOLWANE) (RATNAGIRI)",
+      "station": "SAVARDE(GOLWANE)",
+      "district": "RATNAGIRI",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 15.51,
+      "lon": 74.02,
+      "Ta": 29.2,
+      "RH": 78.0,
+      "name": "OM @ VENGURLA (SINDHUDURG)",
+      "station": "VENGURLA",
+      "district": "SINDHUDURG",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.6595,
+      "lon": 73.7987,
+      "Ta": 25.8,
+      "RH": 61.0,
+      "name": "OM @ CHINCHWAD_PUNE (PUNE)",
+      "station": "CHINCHWAD_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.5482,
+      "lon": 73.9278,
+      "Ta": 27.2,
+      "RH": 55.0,
+      "name": "OM @ WADGAONSHERI_PUNE (PUNE)",
+      "station": "WADGAONSHERI_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 30.22,
+      "lon": 78.77,
+      "Ta": 20.6,
+      "RH": 70.0,
+      "name": "OM @ SRINAGAR_ARG (PAURI_GARHWAL)",
+      "station": "SRINAGAR_ARG",
+      "district": "PAURI_GARHWAL",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 18.5383,
+      "lon": 73.8045,
+      "Ta": 25.0,
+      "RH": 65.0,
+      "name": "OM @ MTI_PASHAN_PUNE (PUNE)",
+      "station": "MTI_PASHAN_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 20.86,
+      "lon": 71.3333,
+      "Ta": 27.4,
+      "RH": 93.0,
+      "name": "OM @ JAFRABAD (AMRELI)",
+      "station": "JAFRABAD",
+      "district": "AMRELI",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.044,
+      "lon": 71.4614,
+      "Ta": 27.0,
+      "RH": 92.0,
+      "name": "OM @ RAJULA (AMRELI)",
+      "station": "RAJULA",
+      "district": "AMRELI",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 26.42,
+      "lon": 92.33,
+      "Ta": 21.1,
+      "RH": 95.0,
+      "name": "OM @ LAHARIGHAT (MARIGAON)",
+      "station": "LAHARIGHAT",
+      "district": "MARIGAON",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 23.6022,
+      "lon": 83.6093,
+      "Ta": 26.1,
+      "RH": 50.0,
+      "name": "OM @ BALRAMPUR (BALRAMPUR)",
+      "station": "BALRAMPUR",
+      "district": "BALRAMPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.1592,
+      "lon": 81.803,
+      "Ta": 29.8,
+      "RH": 35.0,
+      "name": "OM @ NAYA_RAIPUR (RAIPUR)",
+      "station": "NAYA_RAIPUR",
+      "district": "RAIPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 18.05,
+      "lon": 78.27,
+      "Ta": 29.0,
+      "RH": 39.0,
+      "name": "OM @ MEDAK (MEDAK)",
+      "station": "MEDAK",
+      "district": "MEDAK",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 19.3544,
+      "lon": 79.2839,
+      "Ta": 31.3,
+      "RH": 38.0,
+      "name": "OM @ ASIFABAD (KUMURAM_BHEEM_ASIFABAD)",
+      "station": "ASIFABAD",
+      "district": "KUMURAM_BHEEM_ASIFABAD",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 33.39,
+      "lon": 74.34,
+      "Ta": 14.6,
+      "RH": 72.0,
+      "name": "OM @ RAJOURI_ARG (RAJOURI)",
+      "station": "RAJOURI_ARG",
+      "district": "RAJOURI",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.62,
+      "lon": 75.38,
+      "Ta": 8.6,
+      "RH": 92.0,
+      "name": "OM @ LARNOO (ANANTNAG)",
+      "station": "LARNOO",
+      "district": "ANANTNAG",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.72,
+      "lon": 75.09,
+      "Ta": 11.3,
+      "RH": 95.0,
+      "name": "OM @ KHUDWANI (ANANTNAG)",
+      "station": "KHUDWANI",
+      "district": "ANANTNAG",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.93,
+      "lon": 75.11,
+      "Ta": 10.8,
+      "RH": 85.0,
+      "name": "OM @ TRAL (PULWAMA)",
+      "station": "TRAL",
+      "district": "PULWAMA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 17.38,
+      "lon": 78.4,
+      "Ta": 29.9,
+      "RH": 41.0,
+      "name": "OM @ GOLKONDA (HYDERABAD)",
+      "station": "GOLKONDA",
+      "district": "HYDERABAD",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 22.5358,
+      "lon": 88.33,
+      "Ta": 25.2,
+      "RH": 91.0,
+      "name": "OM @ ALIPORE (SOUTH_TWENTY_FOUR_PARGANAS)",
+      "station": "ALIPORE",
+      "district": "SOUTH_TWENTY_FOUR_PARGANAS",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.2711,
+      "lon": 81.6869,
+      "Ta": 30.0,
+      "RH": 24.0,
+      "name": "OM @ LORMI (MUNGELI)",
+      "station": "LORMI",
+      "district": "MUNGELI",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 20.7158,
+      "lon": 81.2392,
+      "Ta": 31.6,
+      "RH": 33.0,
+      "name": "OM @ BALOD (BALOD)",
+      "station": "BALOD",
+      "district": "BALOD",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.0242,
+      "lon": 82.9583,
+      "Ta": 29.3,
+      "RH": 43.0,
+      "name": "OM @ SAKTI (JANJGIR_CHAMPA)",
+      "station": "SAKTI",
+      "district": "JANJGIR_CHAMPA",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.8339,
+      "lon": 82.6411,
+      "Ta": 32.2,
+      "RH": 31.0,
+      "name": "OM @ NAWAGARH (JANJGIR_CHAMPA)",
+      "station": "NAWAGARH",
+      "district": "JANJGIR_CHAMPA",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.55,
+      "lon": 83.48,
+      "Ta": 26.8,
+      "RH": 42.0,
+      "name": "OM @ PATHALGAON (JASHPUR)",
+      "station": "PATHALGAON",
+      "district": "JASHPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.9656,
+      "lon": 83.6425,
+      "Ta": 25.0,
+      "RH": 41.0,
+      "name": "OM @ BAGICHA (JASHPUR)",
+      "station": "BAGICHA",
+      "district": "JASHPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.2245,
+      "lon": 81.4047,
+      "Ta": 29.1,
+      "RH": 24.0,
+      "name": "OM @ PANDARIA (KABIRDHAM)",
+      "station": "PANDARIA",
+      "district": "KABIRDHAM",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.2193,
+      "lon": 82.5092,
+      "Ta": 31.0,
+      "RH": 37.0,
+      "name": "OM @ PITHORA (MAHASAMUND)",
+      "station": "PITHORA",
+      "district": "MAHASAMUND",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 20.6321,
+      "lon": 82.0606,
+      "Ta": 30.5,
+      "RH": 37.0,
+      "name": "OM @ GARIABAND (GARIABAND)",
+      "station": "GARIABAND",
+      "district": "GARIABAND",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 23.62,
+      "lon": 77.43,
+      "Ta": 29.5,
+      "RH": 24.0,
+      "name": "OM @ BERASIA (BHOPAL)",
+      "station": "BERASIA",
+      "district": "BHOPAL",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 26.7,
+      "lon": 89.61,
+      "Ta": 20.2,
+      "RH": 99.0,
+      "name": "OM @ JAYANTI (ALIPURDUAR)",
+      "station": "JAYANTI",
+      "district": "ALIPURDUAR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.68,
+      "lon": 77.27,
+      "Ta": 31.5,
+      "RH": 21.0,
+      "name": "OM @ BHAIRUNDA (SEHORE)",
+      "station": "BHAIRUNDA",
+      "district": "SEHORE",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.34,
+      "lon": 81.46,
+      "Ta": 29.6,
+      "RH": 34.0,
+      "name": "OM @ RAMPUR_NAIKIN (SIDHI)",
+      "station": "RAMPUR_NAIKIN",
+      "district": "SIDHI",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.04,
+      "lon": 78.33,
+      "Ta": 29.9,
+      "RH": 26.0,
+      "name": "OM @ KHURAI (SAGAR)",
+      "station": "KHURAI",
+      "district": "SAGAR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.32,
+      "lon": 82.27,
+      "Ta": 28.2,
+      "RH": 45.0,
+      "name": "OM @ PRITHVIPUR (NIWARI)",
+      "station": "PRITHVIPUR",
+      "district": "NIWARI",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.32,
+      "lon": 76.04,
+      "Ta": 29.9,
+      "RH": 24.0,
+      "name": "OM @ TARANA (UJJAIN)",
+      "station": "TARANA",
+      "district": "UJJAIN",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 25.79,
+      "lon": 82.99,
+      "Ta": 26.8,
+      "RH": 73.0,
+      "name": "OM @ LALGANJ_TEHSIL_OFFICE (AZAMGARH)",
+      "station": "LALGANJ_TEHSIL_OFFICE",
+      "district": "AZAMGARH",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 16.75,
+      "lon": 77.99,
+      "Ta": 29.5,
+      "RH": 40.0,
+      "name": "OM @ MAHBUBNAGAR (MAHBUBNAGAR)",
+      "station": "MAHBUBNAGAR",
+      "district": "MAHBUBNAGAR",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.25,
+      "lon": 80.13,
+      "Ta": 30.5,
+      "RH": 64.0,
+      "name": "OM @ KHAMMAM (KHAMMAM)",
+      "station": "KHAMMAM",
+      "district": "KHAMMAM",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.67,
+      "lon": 77.61,
+      "Ta": 31.1,
+      "RH": 34.0,
+      "name": "OM @ ZAHEERABAD (SANGAREDDY)",
+      "station": "ZAHEERABAD",
+      "district": "SANGAREDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 18.32,
+      "lon": 82.87,
+      "Ta": 23.1,
+      "RH": 69.0,
+      "name": "OM @ ARAKU_VALLEY (ALLURI_SITHARAMA_RAJU)",
+      "station": "ARAKU_VALLEY",
+      "district": "ALLURI_SITHARAMA_RAJU",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 17.2308,
+      "lon": 82.1878,
+      "Ta": 28.2,
+      "RH": 82.0,
+      "name": "OM @ PRATHIPADU (KAKINADA)",
+      "station": "PRATHIPADU",
+      "district": "KAKINADA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.6,
+      "lon": 81.94,
+      "Ta": 28.5,
+      "RH": 87.0,
+      "name": "OM @ AMBAJIPETA_ARG (KONASEEMA)",
+      "station": "AMBAJIPETA_ARG",
+      "district": "KONASEEMA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.63,
+      "lon": 81.04,
+      "Ta": 29.1,
+      "RH": 87.0,
+      "name": "OM @ VIJAYARAI (ELURU)",
+      "station": "VIJAYARAI",
+      "district": "ELURU",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.4667,
+      "lon": 79.4333,
+      "Ta": 30.8,
+      "RH": 67.0,
+      "name": "OM @ JANGAMESHWARAPURAM (PALNADU)",
+      "station": "JANGAMESHWARAPURAM",
+      "district": "PALNADU",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 18.54,
+      "lon": 79.54,
+      "Ta": 32.2,
+      "RH": 40.0,
+      "name": "OM @ KUNARAM (PEDDAPALLI)",
+      "station": "KUNARAM",
+      "district": "PEDDAPALLI",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 30.14,
+      "lon": 78.6,
+      "Ta": 20.2,
+      "RH": 71.0,
+      "name": "OM @ DEVPRAYAG (TEHRI_GARHWAL)",
+      "station": "DEVPRAYAG",
+      "district": "TEHRI_GARHWAL",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 25.26,
+      "lon": 91.73,
+      "Ta": 14.0,
+      "RH": 83.0,
+      "name": "OM @ SOHRA(CHERRAPUNJEE) (EAST_KHASI_HILLS)",
+      "station": "SOHRA(CHERRAPUNJEE)",
+      "district": "EAST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 26.08,
+      "lon": 91.88,
+      "Ta": 21.1,
+      "RH": 98.0,
+      "name": "OM @ BYRNIHAT (RI_BHOI)",
+      "station": "BYRNIHAT",
+      "district": "RI_BHOI",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 18.47,
+      "lon": 73.78,
+      "Ta": 25.6,
+      "RH": 65.0,
+      "name": "OM @ NDA_PUNE (PUNE)",
+      "station": "NDA_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.5115,
+      "lon": 73.9285,
+      "Ta": 27.2,
+      "RH": 55.0,
+      "name": "OM @ MAGARPATTA_PUNE (PUNE)",
+      "station": "MAGARPATTA_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 26.47,
+      "lon": 90.8,
+      "Ta": 20.9,
+      "RH": 96.0,
+      "name": "OM @ MANIKPUR (BONGAIGAON)",
+      "station": "MANIKPUR",
+      "district": "BONGAIGAON",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.5689,
+      "lon": 92.1958,
+      "Ta": 21.8,
+      "RH": 90.0,
+      "name": "OM @ DALGAON (DARRANG)",
+      "station": "DALGAON",
+      "district": "DARRANG",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.36,
+      "lon": 92.2439,
+      "Ta": 14.4,
+      "RH": 94.0,
+      "name": "OM @ DIRANG (WEST_KAMENG)",
+      "station": "DIRANG",
+      "district": "WEST_KAMENG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 23.36,
+      "lon": 77.42,
+      "Ta": 30.1,
+      "RH": 22.0,
+      "name": "OM @ ISLAMNAGAR (BHOPAL)",
+      "station": "ISLAMNAGAR",
+      "district": "BHOPAL",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.21,
+      "lon": 73.21,
+      "Ta": 29.9,
+      "RH": 59.0,
+      "name": "OM @ BAYAD (SABARKANTHA)",
+      "station": "BAYAD",
+      "district": "SABARKANTHA",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 18.5363,
+      "lon": 73.7325,
+      "Ta": 23.3,
+      "RH": 70.0,
+      "name": "OM @ LAVALE (PUNE)",
+      "station": "LAVALE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 22.4618,
+      "lon": 83.209,
+      "Ta": 27.9,
+      "RH": 37.0,
+      "name": "OM @ DHARAMJAIGARH (RAIGARH)",
+      "station": "DHARAMJAIGARH",
+      "district": "RAIGARH",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 26.4058,
+      "lon": 91.3337,
+      "Ta": 21.1,
+      "RH": 98.0,
+      "name": "OM @ CHAMATA (NALBARI)",
+      "station": "CHAMATA",
+      "district": "NALBARI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 16.26,
+      "lon": 77.84,
+      "Ta": 31.6,
+      "RH": 38.0,
+      "name": "OM @ JURALA_CWC (JOGULAMBA_GADWAL)",
+      "station": "JURALA_CWC",
+      "district": "JOGULAMBA_GADWAL",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.34,
+      "lon": 78.59,
+      "Ta": 30.6,
+      "RH": 39.0,
+      "name": "OM @ HAYATHNAGAR (RANGA_REDDY)",
+      "station": "HAYATHNAGAR",
+      "district": "RANGA_REDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 16.55,
+      "lon": 79.55,
+      "Ta": 30.7,
+      "RH": 68.0,
+      "name": "OM @ RENTACHINTALA (PALNADU)",
+      "station": "RENTACHINTALA",
+      "district": "PALNADU",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 17.75,
+      "lon": 83.19,
+      "Ta": 27.7,
+      "RH": 88.0,
+      "name": "OM @ MEHADRIGADDA_DAM (VISAKHAPATNAM)",
+      "station": "MEHADRIGADDA_DAM",
+      "district": "VISAKHAPATNAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 17.89,
+      "lon": 83.37,
+      "Ta": 28.0,
+      "RH": 86.0,
+      "name": "OM @ ANANDAPURAM_ARG (VISAKHAPATNAM)",
+      "station": "ANANDAPURAM_ARG",
+      "district": "VISAKHAPATNAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.96,
+      "lon": 82.23,
+      "Ta": 29.1,
+      "RH": 82.0,
+      "name": "OM @ KAKINADA (KAKINADA)",
+      "station": "KAKINADA",
+      "district": "KAKINADA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 26.8869,
+      "lon": 95.3219,
+      "Ta": 18.4,
+      "RH": 98.0,
+      "name": "OM @ LONGDING (TIRAP)",
+      "station": "LONGDING",
+      "district": "TIRAP",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 17.14,
+      "lon": 79.6219,
+      "Ta": 31.0,
+      "RH": 57.0,
+      "name": "OM @ SURYAPET_ARG (SURYAPET)",
+      "station": "SURYAPET_ARG",
+      "district": "SURYAPET",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 19.1031,
+      "lon": 77.9653,
+      "Ta": 31.0,
+      "RH": 24.0,
+      "name": "OM @ BHAINSA_ARG (NIRMAL)",
+      "station": "BHAINSA_ARG",
+      "district": "NIRMAL",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 18.57,
+      "lon": 83.35,
+      "Ta": 27.5,
+      "RH": 85.0,
+      "name": "OM @ BOBBILI (VIZIANAGARAM)",
+      "station": "BOBBILI",
+      "district": "VIZIANAGARAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 34.25611111,
+      "lon": 75.41694444,
+      "Ta": 5.8,
+      "RH": 94.0,
+      "name": "OM @ SONEMARG (GANDERBAL)",
+      "station": "SONEMARG",
+      "district": "GANDERBAL",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 12.8755,
+      "lon": 92.8922,
+      "Ta": 27.4,
+      "RH": 84.0,
+      "name": "OM @ MAYABUNDER (N_M_ANDAMAN)",
+      "station": "MAYABUNDER",
+      "district": "N_M_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 12.4883,
+      "lon": 92.9594,
+      "Ta": 26.8,
+      "RH": 83.0,
+      "name": "OM @ RANGAT_NIMBUTALA (N_M_ANDAMAN)",
+      "station": "RANGAT_NIMBUTALA",
+      "district": "N_M_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 11.6562,
+      "lon": 92.7432,
+      "Ta": 27.3,
+      "RH": 83.0,
+      "name": "OM @ SHAHEED_DWEEP (SOUTH_ANDAMAN)",
+      "station": "SHAHEED_DWEEP",
+      "district": "SOUTH_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 10.5962,
+      "lon": 92.5364,
+      "Ta": 27.5,
+      "RH": 77.0,
+      "name": "OM @ HUT_BAY (SOUTH_ANDAMAN)",
+      "station": "HUT_BAY",
+      "district": "SOUTH_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 7.0076,
+      "lon": 93.9048,
+      "Ta": 26.2,
+      "RH": 89.0,
+      "name": "OM @ CAMPBELL_BAY (NICOBAR)",
+      "station": "CAMPBELL_BAY",
+      "district": "NICOBAR",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 33.375627,
+      "lon": 74.290072,
+      "Ta": 14.6,
+      "RH": 72.0,
+      "name": "OM @ RAJOURI (RAJOURI)",
+      "station": "RAJOURI",
+      "district": "RAJOURI",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.129137,
+      "lon": 75.662562,
+      "Ta": 14.9,
+      "RH": 76.0,
+      "name": "OM @ BHELLA (DODA)",
+      "station": "BHELLA",
+      "district": "DODA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 18.5246,
+      "lon": 73.8786,
+      "Ta": 26.6,
+      "RH": 58.0,
+      "name": "OM @ PASHAN_TDMA_TEST (PUNE)",
+      "station": "PASHAN_TDMA_TEST",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 9.1573,
+      "lon": 92.7581,
+      "Ta": 28.4,
+      "RH": 74.0,
+      "name": "OM @ CAR_NICOBAR (NICOBAR)",
+      "station": "CAR_NICOBAR",
+      "district": "NICOBAR",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 30.3167,
+      "lon": 78.9667,
+      "Ta": 17.6,
+      "RH": 80.0,
+      "name": "OM @ RUDRA_PRAYAG (RUDRAPRAYAG)",
+      "station": "RUDRA_PRAYAG",
+      "district": "RUDRAPRAYAG",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 29.4667,
+      "lon": 79.65,
+      "Ta": 11.4,
+      "RH": 85.0,
+      "name": "OM @ MUKTESHWAR (NAINITAL)",
+      "station": "MUKTESHWAR",
+      "district": "NAINITAL",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 30.19,
+      "lon": 74.9333,
+      "Ta": 27.5,
+      "RH": 50.0,
+      "name": "OM @ BHATINDA_AMFU (BATHINDA)",
+      "station": "BHATINDA_AMFU",
+      "district": "BATHINDA",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 31.38,
+      "lon": 76.0239,
+      "Ta": 22.0,
+      "RH": 66.0,
+      "name": "OM @ HOSIYARPUR (HOSHIARPUR)",
+      "station": "HOSIYARPUR",
+      "district": "HOSHIARPUR",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 30.79,
+      "lon": 76.81,
+      "Ta": 20.8,
+      "RH": 69.0,
+      "name": "OM @ MOHALI (MOHALI)",
+      "station": "MOHALI",
+      "district": "MOHALI",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 28.08,
+      "lon": 76.59,
+      "Ta": 26.7,
+      "RH": 44.0,
+      "name": "OM @ BAWAL (REWARI)",
+      "station": "BAWAL",
+      "district": "REWARI",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.23,
+      "lon": 77.18,
+      "Ta": 27.4,
+      "RH": 43.0,
+      "name": "OM @ BOPANI (FARIDABAD)",
+      "station": "BOPANI",
+      "district": "FARIDABAD",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 27.4886,
+      "lon": 95.3558,
+      "Ta": 21.4,
+      "RH": 98.0,
+      "name": "OM @ TINSUKIA (TINSUKIA)",
+      "station": "TINSUKIA",
+      "district": "TINSUKIA",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 28.5833,
+      "lon": 76.65,
+      "Ta": 27.0,
+      "RH": 47.0,
+      "name": "OM @ JHAJJAR (JHAJJAR)",
+      "station": "JHAJJAR",
+      "district": "JHAJJAR",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 29.42,
+      "lon": 76.57,
+      "Ta": 26.2,
+      "RH": 50.0,
+      "name": "OM @ KARNAL (KARNAL)",
+      "station": "KARNAL",
+      "district": "KARNAL",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.1,
+      "lon": 76.1,
+      "Ta": 27.1,
+      "RH": 41.0,
+      "name": "OM @ MAHENDRAGARH_AWS (MAHENDRAGARH)",
+      "station": "MAHENDRAGARH_AWS",
+      "district": "MAHENDRAGARH",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.1,
+      "lon": 77.0,
+      "Ta": 26.9,
+      "RH": 45.0,
+      "name": "OM @ MANDKOLA (MEWAT)",
+      "station": "MANDKOLA",
+      "district": "MEWAT",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.84,
+      "lon": 76.9967,
+      "Ta": 27.1,
+      "RH": 45.0,
+      "name": "OM @ NUH (MEWAT)",
+      "station": "NUH",
+      "district": "MEWAT",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 20.78,
+      "lon": 78.59,
+      "Ta": 33.5,
+      "RH": 15.0,
+      "name": "OM @ WARDHA (WARDHA)",
+      "station": "WARDHA",
+      "district": "WARDHA",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 29.18,
+      "lon": 76.22,
+      "Ta": 26.1,
+      "RH": 52.0,
+      "name": "OM @ PANDU_PINDARA (JIND)",
+      "station": "PANDU_PINDARA",
+      "district": "JIND",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.88,
+      "lon": 76.62,
+      "Ta": 27.6,
+      "RH": 46.0,
+      "name": "OM @ ROHTAK (ROHTAK)",
+      "station": "ROHTAK",
+      "district": "ROHTAK",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 29.54,
+      "lon": 75.04,
+      "Ta": 28.2,
+      "RH": 43.0,
+      "name": "OM @ SIRSA (SIRSA)",
+      "station": "SIRSA",
+      "district": "SIRSA",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 30.48,
+      "lon": 77.1,
+      "Ta": 23.5,
+      "RH": 58.0,
+      "name": "OM @ JAGDISHPUR (SONIPAT)",
+      "station": "JAGDISHPUR",
+      "district": "SONIPAT",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 29.68,
+      "lon": 77.0,
+      "Ta": 26.5,
+      "RH": 51.0,
+      "name": "OM @ UCHANI (KARNAL)",
+      "station": "UCHANI",
+      "district": "KARNAL",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 29.38,
+      "lon": 77.0,
+      "Ta": 26.0,
+      "RH": 58.0,
+      "name": "OM @ UJHA (PANIPAT)",
+      "station": "UJHA",
+      "district": "PANIPAT",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 27.4705,
+      "lon": 94.9125,
+      "Ta": 21.5,
+      "RH": 96.0,
+      "name": "OM @ DIBRUGARH (DIBRUGARH)",
+      "station": "DIBRUGARH",
+      "district": "DIBRUGARH",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4689,
+      "lon": 90.9,
+      "Ta": 20.9,
+      "RH": 96.0,
+      "name": "OM @ BARPETA (BARPETA)",
+      "station": "BARPETA",
+      "district": "BARPETA",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4446,
+      "lon": 91.4411,
+      "Ta": 21.1,
+      "RH": 97.0,
+      "name": "OM @ NALBARI (NALBARI)",
+      "station": "NALBARI",
+      "district": "NALBARI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4328,
+      "lon": 92.0283,
+      "Ta": 21.9,
+      "RH": 94.0,
+      "name": "OM @ MANGALDAI (DARRANG)",
+      "station": "MANGALDAI",
+      "district": "DARRANG",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.2394,
+      "lon": 92.2939,
+      "Ta": 22.0,
+      "RH": 96.0,
+      "name": "OM @ MARIGAON (MARIGAON)",
+      "station": "MARIGAON",
+      "district": "MARIGAON",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.5094,
+      "lon": 90.5989,
+      "Ta": 19.1,
+      "RH": 99.0,
+      "name": "OM @ WILLIAMNAGAR (EAST_GARO_HILLS)",
+      "station": "WILLIAMNAGAR",
+      "district": "EAST_GARO_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.495,
+      "lon": 90.2094,
+      "Ta": 19.6,
+      "RH": 93.0,
+      "name": "OM @ TURA (WEST_GARO_HILLS)",
+      "station": "TURA",
+      "district": "WEST_GARO_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.5658,
+      "lon": 91.8597,
+      "Ta": 12.9,
+      "RH": 80.0,
+      "name": "OM @ SHILLONG (EAST_KHASI_HILLS)",
+      "station": "SHILLONG",
+      "district": "EAST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.5219,
+      "lon": 91.265,
+      "Ta": 14.9,
+      "RH": 84.0,
+      "name": "OM @ NONGSTOIN (WEST_KHASI_HILLS)",
+      "station": "NONGSTOIN",
+      "district": "WEST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 24.8067,
+      "lon": 93.9603,
+      "Ta": 16.5,
+      "RH": 99.0,
+      "name": "OM @ POROMPAT (IMPHAL_EAST)",
+      "station": "POROMPAT",
+      "district": "IMPHAL_EAST",
+      "state": "MANIPUR"
+    },
+    {
+      "lat": 26.7322,
+      "lon": 92.0939,
+      "Ta": 21.7,
+      "RH": 92.0,
+      "name": "OM @ UDALGURI (UDALGURI)",
+      "station": "UDALGURI",
+      "district": "UDALGURI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 28.7928,
+      "lon": 95.8956,
+      "Ta": 13.8,
+      "RH": 96.0,
+      "name": "OM @ ANINI (DIBANG_VALLEY)",
+      "station": "ANINI",
+      "district": "DIBANG_VALLEY",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 18.722,
+      "lon": 73.6632,
+      "Ta": 23.5,
+      "RH": 74.0,
+      "name": "OM @ TALEGAON (PUNE)",
+      "station": "TALEGAON",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.088255,
+      "lon": 74.746796,
+      "Ta": 27.6,
+      "RH": 47.0,
+      "name": "OM @ AHILYANAGAR (AHILYANAGAR)",
+      "station": "AHILYANAGAR",
+      "district": "AHILYANAGAR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 16.673605,
+      "lon": 74.237877,
+      "Ta": 25.0,
+      "RH": 74.0,
+      "name": "OM @ KOLHAPUR_AMFU (KOLHAPUR)",
+      "station": "KOLHAPUR_AMFU",
+      "district": "KOLHAPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 16.0128,
+      "lon": 73.7167,
+      "Ta": 28.2,
+      "RH": 83.0,
+      "name": "OM @ MULDE_AMFU (SINDHUDURG)",
+      "station": "MULDE_AMFU",
+      "district": "SINDHUDURG",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.915956,
+      "lon": 73.317216,
+      "Ta": 26.6,
+      "RH": 85.0,
+      "name": "OM @ KARJAT (RAIGAD)",
+      "station": "KARJAT",
+      "district": "RAIGAD",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 20.569239,
+      "lon": 74.513275,
+      "Ta": 28.0,
+      "RH": 46.0,
+      "name": "OM @ MALEGAON (NASHIK)",
+      "station": "MALEGAON",
+      "district": "NASHIK",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 17.2,
+      "lon": 75.9,
+      "Ta": 32.3,
+      "RH": 25.0,
+      "name": "OM @ SOLAPUR (SOLAPUR)",
+      "station": "SOLAPUR",
+      "district": "SOLAPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 20.7,
+      "lon": 83.47,
+      "Ta": 31.3,
+      "RH": 46.0,
+      "name": "OM @ BOLANGIR (BALANGIR)",
+      "station": "BOLANGIR",
+      "district": "BALANGIR",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 23.27,
+      "lon": 72.65,
+      "Ta": 30.5,
+      "RH": 63.0,
+      "name": "OM @ GANDHINAGAR (GANDHINAGAR)",
+      "station": "GANDHINAGAR",
+      "district": "GANDHINAGAR",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.86,
+      "lon": 72.13,
+      "Ta": 31.9,
+      "RH": 32.0,
+      "name": "OM @ PATAN (PATAN)",
+      "station": "PATAN",
+      "district": "PATAN",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.73,
+      "lon": 71.62,
+      "Ta": 30.5,
+      "RH": 54.0,
+      "name": "OM @ SURENDRANAGAR (SURENDRANAGAR)",
+      "station": "SURENDRANAGAR",
+      "district": "SURENDRANAGAR",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 20.4,
+      "lon": 72.8331,
+      "Ta": 27.9,
+      "RH": 87.0,
+      "name": "OM @ DAMAN_AWS (DAMAN)",
+      "station": "DAMAN_AWS",
+      "district": "DAMAN",
+      "state": "DAMAN_AND_DIU"
+    },
+    {
+      "lat": 21.89,
+      "lon": 84.03,
+      "Ta": 29.1,
+      "RH": 45.0,
+      "name": "OM @ JHARSUGUDA (JHARSUGUDA)",
+      "station": "JHARSUGUDA",
+      "district": "JHARSUGUDA",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 20.25,
+      "lon": 85.82,
+      "Ta": 27.6,
+      "RH": 88.0,
+      "name": "OM @ BHUBANESHWAR AIRPORT (KHURDHA)",
+      "station": "BHUBANESHWAR AIRPORT",
+      "district": "KHURDHA",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 12.7183,
+      "lon": 77.8267,
+      "Ta": 25.4,
+      "RH": 58.0,
+      "name": "OM @ HOSUR (KRISHNAGIRI)",
+      "station": "HOSUR",
+      "district": "KRISHNAGIRI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.36,
+      "lon": 76.805,
+      "Ta": 17.3,
+      "RH": 63.0,
+      "name": "OM @ COONOOR (THE_NILGIRIS)",
+      "station": "COONOOR",
+      "district": "THE_NILGIRIS",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.62,
+      "lon": 79.545,
+      "Ta": 28.8,
+      "RH": 82.0,
+      "name": "OM @ NEYVELI (CUDDALORE)",
+      "station": "NEYVELI",
+      "district": "CUDDALORE",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 8.745,
+      "lon": 77.7117,
+      "Ta": 28.5,
+      "RH": 76.0,
+      "name": "OM @ TIRUNELVELI (TIRUNELVELI)",
+      "station": "TIRUNELVELI",
+      "district": "TIRUNELVELI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.2417,
+      "lon": 78.8933,
+      "Ta": 29.9,
+      "RH": 68.0,
+      "name": "OM @ PERAMBALUR (PERAMBALUR)",
+      "station": "PERAMBALUR",
+      "district": "PERAMBALUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.136,
+      "lon": 79.076,
+      "Ta": 29.2,
+      "RH": 73.0,
+      "name": "OM @ ARIYALUR (ARIYALUR)",
+      "station": "ARIYALUR",
+      "district": "ARIYALUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.0133,
+      "lon": 76.9383,
+      "Ta": 25.4,
+      "RH": 86.0,
+      "name": "OM @ COIMBATORE_AMFU (COIMBATORE)",
+      "station": "COIMBATORE_AMFU",
+      "district": "COIMBATORE",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 26.43,
+      "lon": 82.57,
+      "Ta": 25.8,
+      "RH": 77.0,
+      "name": "OM @ COLLECTORATE_OFFICE_AKBARPUR (AMBEDKAR_NAGAR)",
+      "station": "COLLECTORATE_OFFICE_AKBARPUR",
+      "district": "AMBEDKAR_NAGAR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.9024,
+      "lon": 78.0968,
+      "Ta": 27.8,
+      "RH": 41.0,
+      "name": "OM @ QUARSI_FARMS_QUARSI (ALIGARH)",
+      "station": "QUARSI_FARMS_QUARSI",
+      "district": "ALIGARH",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 29.34,
+      "lon": 80.09,
+      "Ta": 16.4,
+      "RH": 84.0,
+      "name": "OM @ CHAMPAWAT (CHAMPAWAT)",
+      "station": "CHAMPAWAT",
+      "district": "CHAMPAWAT",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 30.19,
+      "lon": 78.18,
+      "Ta": 19.8,
+      "RH": 62.0,
+      "name": "OM @ JOLLYGRANT (DEHRADUN)",
+      "station": "JOLLYGRANT",
+      "district": "DEHRADUN",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 29.84,
+      "lon": 77.92,
+      "Ta": 22.9,
+      "RH": 66.0,
+      "name": "OM @ ROORKEE_AMFU (HARIDWAR)",
+      "station": "ROORKEE_AMFU",
+      "district": "HARIDWAR",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 26.42,
+      "lon": 74.62,
+      "Ta": 30.3,
+      "RH": 31.0,
+      "name": "OM @ AJMER (AJMER)",
+      "station": "AJMER",
+      "district": "AJMER",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 28.0839,
+      "lon": 73.3333,
+      "Ta": 30.0,
+      "RH": 28.0,
+      "name": "OM @ BIKANER_AMFU (BIKANER)",
+      "station": "BIKANER_AMFU",
+      "district": "BIKANER",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 28.28,
+      "lon": 75.12,
+      "Ta": 27.3,
+      "RH": 35.0,
+      "name": "OM @ CHURU (CHURU)",
+      "station": "CHURU",
+      "district": "CHURU",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 27.93,
+      "lon": 74.98,
+      "Ta": 27.2,
+      "RH": 33.0,
+      "name": "OM @ FATEHPUR_AMFU (SIKAR)",
+      "station": "FATEHPUR_AMFU",
+      "district": "SIKAR",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 24.5869,
+      "lon": 72.7036,
+      "Ta": 26.1,
+      "RH": 31.0,
+      "name": "OM @ MOUNT_ABU (SIROHI)",
+      "station": "MOUNT_ABU",
+      "district": "SIROHI",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 25.79,
+      "lon": 73.2833,
+      "Ta": 31.2,
+      "RH": 29.0,
+      "name": "OM @ PALI (PALI)",
+      "station": "PALI",
+      "district": "PALI",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 33.2219,
+      "lon": 75.2614,
+      "Ta": 18.3,
+      "RH": 82.0,
+      "name": "OM @ GOVINDPURA (RAMBAN)",
+      "station": "GOVINDPURA",
+      "district": "RAMBAN",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 32.6533,
+      "lon": 74.7992,
+      "Ta": 19.8,
+      "RH": 74.0,
+      "name": "OM @ CHATHA_AMFU (JAMMU)",
+      "station": "CHATHA_AMFU",
+      "district": "JAMMU",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.1497,
+      "lon": 74.8822,
+      "Ta": 10.8,
+      "RH": 96.0,
+      "name": "OM @ SRINAGAR_AMFU (SRINAGAR)",
+      "station": "SRINAGAR_AMFU",
+      "district": "SRINAGAR",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 22.106,
+      "lon": 82.1426,
+      "Ta": 31.0,
+      "RH": 25.0,
+      "name": "OM @ BILASPUR (BILASPUR)",
+      "station": "BILASPUR",
+      "district": "BILASPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.1667,
+      "lon": 81.2364,
+      "Ta": 29.0,
+      "RH": 29.0,
+      "name": "OM @ DURG (DURG)",
+      "station": "DURG",
+      "district": "DURG",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.8897,
+      "lon": 83.4052,
+      "Ta": 30.2,
+      "RH": 43.0,
+      "name": "OM @ RAIGARH (RAIGARH)",
+      "station": "RAIGARH",
+      "district": "RAIGARH",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.1007,
+      "lon": 81.0326,
+      "Ta": 29.3,
+      "RH": 28.0,
+      "name": "OM @ RAJNANDGAON (RAJNANDGAON)",
+      "station": "RAJNANDGAON",
+      "district": "RAJNANDGAON",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.3931,
+      "lon": 75.21,
+      "Ta": 30.9,
+      "RH": 30.0,
+      "name": "OM @ DHAR (DHAR)",
+      "station": "DHAR",
+      "district": "DHAR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 26.4772,
+      "lon": 77.9867,
+      "Ta": 31.5,
+      "RH": 26.0,
+      "name": "OM @ MORENA_AMFU (MORENA)",
+      "station": "MORENA_AMFU",
+      "district": "MORENA",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.06,
+      "lon": 75.1,
+      "Ta": 32.0,
+      "RH": 25.0,
+      "name": "OM @ MANDSOUR (MANDSAUR)",
+      "station": "MANDSOUR",
+      "district": "MANDSAUR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.83,
+      "lon": 78.69,
+      "Ta": 29.1,
+      "RH": 25.0,
+      "name": "OM @ SAGAR (SAGAR)",
+      "station": "SAGAR",
+      "district": "SAGAR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.57,
+      "lon": 80.82,
+      "Ta": 30.2,
+      "RH": 33.0,
+      "name": "OM @ SATNA (SATNA)",
+      "station": "SATNA",
+      "district": "SATNA",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.4317,
+      "lon": 76.2636,
+      "Ta": 31.1,
+      "RH": 23.0,
+      "name": "OM @ SHAJAPUR (SHAJAPUR)",
+      "station": "SHAJAPUR",
+      "district": "SHAJAPUR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 25.3917,
+      "lon": 77.6033,
+      "Ta": 30.9,
+      "RH": 25.0,
+      "name": "OM @ SHIVPURI (SHIVPURI)",
+      "station": "SHIVPURI",
+      "district": "SHIVPURI",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.41,
+      "lon": 81.86,
+      "Ta": 28.8,
+      "RH": 38.0,
+      "name": "OM @ SIDHI (SIDHI)",
+      "station": "SIDHI",
+      "district": "SIDHI",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.515,
+      "lon": 77.81,
+      "Ta": 30.2,
+      "RH": 24.0,
+      "name": "OM @ VIDISHA (VIDISHA)",
+      "station": "VIDISHA",
+      "district": "VIDISHA",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 32.9022,
+      "lon": 75.1667,
+      "Ta": 18.1,
+      "RH": 62.0,
+      "name": "OM @ KAWA (UDHAMPUR)",
+      "station": "KAWA",
+      "district": "UDHAMPUR",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.5872,
+      "lon": 74.8722,
+      "Ta": 6.3,
+      "RH": 74.0,
+      "name": "OM @ SHOPIAN (SHOPIAN)",
+      "station": "SHOPIAN",
+      "district": "SHOPIAN",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 32.5703,
+      "lon": 75.1203,
+      "Ta": 20.9,
+      "RH": 63.0,
+      "name": "OM @ SAMBA (SAMBA)",
+      "station": "SAMBA",
+      "district": "SAMBA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.8892,
+      "lon": 74.9808,
+      "Ta": 9.8,
+      "RH": 93.0,
+      "name": "OM @ MALANGPURA (PULWAMA)",
+      "station": "MALANGPURA",
+      "district": "PULWAMA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 25.7373,
+      "lon": 85.2498,
+      "Ta": 25.0,
+      "RH": 81.0,
+      "name": "OM @ VAISHALI (VAISHALI)",
+      "station": "VAISHALI",
+      "district": "VAISHALI",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.5587,
+      "lon": 83.96,
+      "Ta": 26.7,
+      "RH": 72.0,
+      "name": "OM @ BUXAR (BUXAR)",
+      "station": "BUXAR",
+      "district": "BUXAR",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.0481,
+      "lon": 83.6139,
+      "Ta": 27.2,
+      "RH": 71.0,
+      "name": "OM @ BHABUA (KAIMUR)",
+      "station": "BHABUA",
+      "district": "KAIMUR",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.5986,
+      "lon": 85.09,
+      "Ta": 25.1,
+      "RH": 82.0,
+      "name": "OM @ PATNA (PATNA)",
+      "station": "PATNA",
+      "district": "PATNA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 26.42,
+      "lon": 85.82,
+      "Ta": 23.4,
+      "RH": 83.0,
+      "name": "OM @ CHANPUR_BASAITHA (MADHUBANI)",
+      "station": "CHANPUR_BASAITHA",
+      "district": "MADHUBANI",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.35,
+      "lon": 85.63,
+      "Ta": 25.9,
+      "RH": 79.0,
+      "name": "OM @ HARNAUT (NALANDA)",
+      "station": "HARNAUT",
+      "district": "NALANDA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 29.02,
+      "lon": 77.75,
+      "Ta": 27.1,
+      "RH": 42.0,
+      "name": "OM @ CCSU_CAMPUS (MEERUT)",
+      "station": "CCSU_CAMPUS",
+      "district": "MEERUT",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.7883,
+      "lon": 78.9994,
+      "Ta": 28.2,
+      "RH": 49.0,
+      "name": "OM @ BBRAU_AGRICULTURE_COLLEGE (ETAWAH)",
+      "station": "BBRAU_AGRICULTURE_COLLEGE",
+      "district": "ETAWAH",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.2503,
+      "lon": 81.3769,
+      "Ta": 28.1,
+      "RH": 59.0,
+      "name": "OM @ AIRPORT_FURSATGANJ (RAEBARELI)",
+      "station": "AIRPORT_FURSATGANJ",
+      "district": "RAEBARELI",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.536051,
+      "lon": 82.419945,
+      "Ta": 25.2,
+      "RH": 71.0,
+      "name": "OM @ BCML_TULSIPUR_SUGAR_MILL (BALRAMPUR)",
+      "station": "BCML_TULSIPUR_SUGAR_MILL",
+      "district": "BALRAMPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.1642,
+      "lon": 88.3964,
+      "Ta": 12.7,
+      "RH": 100.0,
+      "name": "OM @ NAMCHI (NAMCHI)",
+      "station": "NAMCHI",
+      "district": "NAMCHI",
+      "state": "SIKKIM"
+    },
+    {
+      "lat": 10.77,
+      "lon": 76.6833,
+      "Ta": 26.9,
+      "RH": 84.0,
+      "name": "OM @ MANKARA (PALAKKAD)",
+      "station": "MANKARA",
+      "district": "PALAKKAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.865,
+      "lon": 76.9983,
+      "Ta": 24.0,
+      "RH": 94.0,
+      "name": "OM @ CHERUTHONI (IDUKKI)",
+      "station": "CHERUTHONI",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.2283,
+      "lon": 76.1894,
+      "Ta": 28.5,
+      "RH": 78.0,
+      "name": "OM @ NILAMBUR (MALAPPURAM)",
+      "station": "NILAMBUR",
+      "district": "MALAPPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.26,
+      "lon": 75.77,
+      "Ta": 27.4,
+      "RH": 84.0,
+      "name": "OM @ KOZHIKODE (KOZHIKODE)",
+      "station": "KOZHIKODE",
+      "district": "KOZHIKODE",
+      "state": "KERALA"
+    },
+    {
+      "lat": 13.6631,
+      "lon": 76.9161,
+      "Ta": 27.0,
+      "RH": 56.0,
+      "name": "OM @ CHIKKANAKALLI (TUMKUR)",
+      "station": "CHIKKANAKALLI",
+      "district": "TUMKUR",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 15.4175,
+      "lon": 75.6442,
+      "Ta": 25.5,
+      "RH": 88.0,
+      "name": "OM @ GADAG (GADAG)",
+      "station": "GADAG",
+      "district": "GADAG",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 20.7153,
+      "lon": 77.0503,
+      "Ta": 31.6,
+      "RH": 21.0,
+      "name": "OM @ AKOLA_AMFU (AKOLA)",
+      "station": "AKOLA_AMFU",
+      "district": "AKOLA",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 12.9333,
+      "lon": 78.25,
+      "Ta": 25.0,
+      "RH": 63.0,
+      "name": "OM @ KGF_(KOLAR) (KOLAR)",
+      "station": "KGF_(KOLAR)",
+      "district": "KOLAR",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 16.98,
+      "lon": 75.75,
+      "Ta": 30.8,
+      "RH": 40.0,
+      "name": "OM @ TIDAGUNDI_AMFU (BIJAPUR)",
+      "station": "TIDAGUNDI_AMFU",
+      "district": "BIJAPUR",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 23.3031,
+      "lon": 70.36,
+      "Ta": 27.6,
+      "RH": 80.0,
+      "name": "OM @ BACHAU_AMFU (KACHCHH)",
+      "station": "BACHAU_AMFU",
+      "district": "KACHCHH",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 18.0317,
+      "lon": 79.685,
+      "Ta": 31.3,
+      "RH": 45.0,
+      "name": "OM @ HANUMAKONDA (HANUMAKONDA)",
+      "station": "HANUMAKONDA",
+      "district": "HANUMAKONDA",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 16.6467,
+      "lon": 81.7633,
+      "Ta": 28.9,
+      "RH": 85.0,
+      "name": "OM @ MARUTERU (WEST_GODAVARI)",
+      "station": "MARUTERU",
+      "district": "WEST_GODAVARI",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 18.46,
+      "lon": 79.11,
+      "Ta": 30.5,
+      "RH": 43.0,
+      "name": "OM @ KARIMNAGAR (KARIMNAGAR)",
+      "station": "KARIMNAGAR",
+      "district": "KARIMNAGAR",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.895,
+      "lon": 82.3417,
+      "Ta": 23.2,
+      "RH": 75.0,
+      "name": "OM @ CHINTAPALLI_AMFU (ALLURI_SITHARAMA_RAJU)",
+      "station": "CHINTAPALLI_AMFU",
+      "district": "ALLURI_SITHARAMA_RAJU",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 28.7042,
+      "lon": 77.1504,
+      "Ta": 30.5,
+      "RH": 34.0,
+      "name": "OM @ PITAMPURA (NORTH_WEST_DELHI)",
+      "station": "PITAMPURA",
+      "district": "NORTH_WEST_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 30.48,
+      "lon": 78.05,
+      "Ta": 15.5,
+      "RH": 57.0,
+      "name": "OM @ MASSOURI (DEHRADUN)",
+      "station": "MASSOURI",
+      "district": "DEHRADUN",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 28.6357,
+      "lon": 77.0005,
+      "Ta": 29.6,
+      "RH": 36.0,
+      "name": "OM @ NAJAFGARH (SOUTH_WEST_DELHI)",
+      "station": "NAJAFGARH",
+      "district": "SOUTH_WEST_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.4837,
+      "lon": 77.1271,
+      "Ta": 30.0,
+      "RH": 34.0,
+      "name": "OM @ AYANAGAR (SOUTH_WEST_DELHI)",
+      "station": "AYANAGAR",
+      "district": "SOUTH_WEST_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.8084,
+      "lon": 76.9697,
+      "Ta": 28.0,
+      "RH": 41.0,
+      "name": "OM @ MUNGESHPUR (NORTH_WEST_DELHI)",
+      "station": "MUNGESHPUR",
+      "district": "NORTH_WEST_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 30.6833,
+      "lon": 76.8333,
+      "Ta": 22.6,
+      "RH": 73.0,
+      "name": "OM @ CHANDIGARH (CHANDIGARH)",
+      "station": "CHANDIGARH",
+      "district": "CHANDIGARH",
+      "state": "CHANDIGARH"
+    },
+    {
+      "lat": 28.5938,
+      "lon": 76.9093,
+      "Ta": 27.9,
+      "RH": 43.0,
+      "name": "OM @ JAFARPUR (SOUTH_WEST_DELHI)",
+      "station": "JAFARPUR",
+      "district": "SOUTH_WEST_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.6618,
+      "lon": 77.3092,
+      "Ta": 29.9,
+      "RH": 35.0,
+      "name": "OM @ SPORTS_COMPLEX (NEW_DELHI)",
+      "station": "SPORTS_COMPLEX",
+      "district": "NEW_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 31.5833,
+      "lon": 75.98,
+      "Ta": 22.5,
+      "RH": 63.0,
+      "name": "OM @ SALERN (HOSHIARPUR)",
+      "station": "SALERN",
+      "district": "HOSHIARPUR",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 28.6217,
+      "lon": 77.3533,
+      "Ta": 28.9,
+      "RH": 37.0,
+      "name": "OM @ NCMRWF (GAUTAM_BUDDHA_NAGAR)",
+      "station": "NCMRWF",
+      "district": "GAUTAM_BUDDHA_NAGAR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 8.2103,
+      "lon": 77.4524,
+      "Ta": 26.2,
+      "RH": 90.0,
+      "name": "OM @ THIRUPATHISARAM_AMFU (KANYAKUMARI)",
+      "station": "THIRUPATHISARAM_AMFU",
+      "district": "KANYAKUMARI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.2467,
+      "lon": 78.2233,
+      "Ta": 28.0,
+      "RH": 75.0,
+      "name": "OM @ NATHAM_ISRO (DINDIGUL)",
+      "station": "NATHAM_ISRO",
+      "district": "DINDIGUL",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.3383,
+      "lon": 77.7233,
+      "Ta": 29.4,
+      "RH": 69.0,
+      "name": "OM @ ERODE_ISRO (ERODE)",
+      "station": "ERODE_ISRO",
+      "district": "ERODE",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.99,
+      "lon": 80.1983,
+      "Ta": 29.6,
+      "RH": 83.0,
+      "name": "OM @ MEENAMBAKKAM_ISRO (CHENNAI)",
+      "station": "MEENAMBAKKAM_ISRO",
+      "district": "CHENNAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 9.955,
+      "lon": 78.205,
+      "Ta": 29.4,
+      "RH": 74.0,
+      "name": "OM @ MADURAI_ISRO (MADURAI)",
+      "station": "MADURAI_ISRO",
+      "district": "MADURAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.750757,
+      "lon": 78.827776,
+      "Ta": 29.1,
+      "RH": 73.0,
+      "name": "OM @ THUVAKUDI_ISRO (TIRUCHIRAPPALLI)",
+      "station": "THUVAKUDI_ISRO",
+      "district": "TIRUCHIRAPPALLI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.2667,
+      "lon": 79.0667,
+      "Ta": 29.0,
+      "RH": 73.0,
+      "name": "OM @ TIRUVANNAMALAI_ISRO (TIRUVANNAMALAI)",
+      "station": "TIRUVANNAMALAI_ISRO",
+      "district": "TIRUVANNAMALAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 22.4692,
+      "lon": 88.0944,
+      "Ta": 25.0,
+      "RH": 93.0,
+      "name": "OM @ ULUBERIA (HOWRAH)",
+      "station": "ULUBERIA",
+      "district": "HOWRAH",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 24.0919,
+      "lon": 88.2656,
+      "Ta": 25.0,
+      "RH": 86.0,
+      "name": "OM @ BERHAMPORE (MURSHIDABAD)",
+      "station": "BERHAMPORE",
+      "district": "MURSHIDABAD",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.8989,
+      "lon": 88.4358,
+      "Ta": 25.1,
+      "RH": 90.0,
+      "name": "OM @ CHINSURA (HOOGHLY)",
+      "station": "CHINSURA",
+      "district": "HOOGHLY",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.9686,
+      "lon": 88.4964,
+      "Ta": 24.9,
+      "RH": 92.0,
+      "name": "OM @ KALYANI_AMFU (NADIA)",
+      "station": "KALYANI_AMFU",
+      "district": "NADIA",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 25.3128,
+      "lon": 88.765,
+      "Ta": 21.3,
+      "RH": 91.0,
+      "name": "OM @ MAJHIAN_AMFU (SOUTH_DINAJPUR)",
+      "station": "MAJHIAN_AMFU",
+      "district": "SOUTH_DINAJPUR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 25.6236,
+      "lon": 88.1367,
+      "Ta": 21.0,
+      "RH": 94.0,
+      "name": "OM @ RAIGANJ (NORTH_DINAJPUR)",
+      "station": "RAIGANJ",
+      "district": "NORTH_DINAJPUR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 26.3167,
+      "lon": 89.3869,
+      "Ta": 21.2,
+      "RH": 98.0,
+      "name": "OM @ PUNDIBARI_AMFU (COOCH_BEHAR)",
+      "station": "PUNDIBARI_AMFU",
+      "district": "COOCH_BEHAR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 23.8089,
+      "lon": 91.2731,
+      "Ta": 21.6,
+      "RH": 91.0,
+      "name": "OM @ A_D_NAGAR_AMFU (WEST_TRIPURA)",
+      "station": "A_D_NAGAR_AMFU",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 24.0669,
+      "lon": 91.6142,
+      "Ta": 20.9,
+      "RH": 95.0,
+      "name": "OM @ KHOWAI (KHOWAI)",
+      "station": "KHOWAI",
+      "district": "KHOWAI",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 33.6692,
+      "lon": 75.1719,
+      "Ta": 12.2,
+      "RH": 80.0,
+      "name": "OM @ ANANTNAG (ANANTNAG)",
+      "station": "ANANTNAG",
+      "district": "ANANTNAG",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.3494,
+      "lon": 74.4017,
+      "Ta": 9.4,
+      "RH": 98.0,
+      "name": "OM @ BARAMULLA_AMFU (BARAMULLA)",
+      "station": "BARAMULLA_AMFU",
+      "district": "BARAMULLA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.0339,
+      "lon": 74.3658,
+      "Ta": -0.8,
+      "RH": 94.0,
+      "name": "OM @ GULMARG (BARAMULLA)",
+      "station": "GULMARG",
+      "district": "BARAMULLA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.0619,
+      "lon": 74.71,
+      "Ta": 10.8,
+      "RH": 90.0,
+      "name": "OM @ HARRAN (BADGAM)",
+      "station": "HARRAN",
+      "district": "BADGAM",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.6447,
+      "lon": 74.9433,
+      "Ta": 9.8,
+      "RH": 74.0,
+      "name": "OM @ KULGAM_AMFU (KULGAM)",
+      "station": "KULGAM_AMFU",
+      "district": "KULGAM",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.0508,
+      "lon": 74.8044,
+      "Ta": 10.9,
+      "RH": 95.0,
+      "name": "OM @ RAMBAGH (SRINAGAR)",
+      "station": "RAMBAGH",
+      "district": "SRINAGAR",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 25.1764,
+      "lon": 93.0133,
+      "Ta": 18.9,
+      "RH": 76.0,
+      "name": "OM @ HAFLONG (DIMA_HASAO)",
+      "station": "HAFLONG",
+      "district": "DIMA_HASAO",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 23.4444,
+      "lon": 85.3161,
+      "Ta": 23.3,
+      "RH": 78.0,
+      "name": "OM @ RANCHI_AMFU (RANCHI)",
+      "station": "RANCHI_AMFU",
+      "district": "RANCHI",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 34.02,
+      "lon": 75.32,
+      "Ta": 8.6,
+      "RH": 89.0,
+      "name": "OM @ PAHALGAM (ANANTNAG)",
+      "station": "PAHALGAM",
+      "district": "ANANTNAG",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 15.2,
+      "lon": 76.1,
+      "Ta": 28.4,
+      "RH": 63.0,
+      "name": "OM @ KOPPAL (KOPPAL)",
+      "station": "KOPPAL",
+      "district": "KOPPAL",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 28.6127,
+      "lon": 77.3075,
+      "Ta": 29.2,
+      "RH": 38.0,
+      "name": "OM @ SALWAN_PUBLIC_SCHOOL (EAST_DELHI)",
+      "station": "SALWAN_PUBLIC_SCHOOL",
+      "district": "EAST_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 34.5,
+      "lon": 74.68,
+      "Ta": 3.4,
+      "RH": 93.0,
+      "name": "OM @ BANDIPORA (BANDIPORA)",
+      "station": "BANDIPORA",
+      "district": "BANDIPORA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.3,
+      "lon": 75.76,
+      "Ta": 12.9,
+      "RH": 79.0,
+      "name": "OM @ KISHTWAR (KISHTWAR)",
+      "station": "KISHTWAR",
+      "district": "KISHTWAR",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.3667,
+      "lon": 75.8333,
+      "Ta": -0.8,
+      "RH": 99.0,
+      "name": "OM @ DRAS (KARGIL)",
+      "station": "DRAS",
+      "district": "KARGIL",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 17.0717,
+      "lon": 82.165,
+      "Ta": 29.1,
+      "RH": 82.0,
+      "name": "OM @ PEDDAPURAM (KAKINADA)",
+      "station": "PEDDAPURAM",
+      "district": "KAKINADA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 11.9517,
+      "lon": 79.8267,
+      "Ta": 29.4,
+      "RH": 78.0,
+      "name": "OM @ PUDUCHERRY (PUDUCHERRY)",
+      "station": "PUDUCHERRY",
+      "district": "PUDUCHERRY",
+      "state": "PUDUCHERRY"
+    },
+    {
+      "lat": 10.36,
+      "lon": 79.3883,
+      "Ta": 29.0,
+      "RH": 80.0,
+      "name": "OM @ ADIRAMAPATTINAM (THANJAVUR)",
+      "station": "ADIRAMAPATTINAM",
+      "district": "THANJAVUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.5367,
+      "lon": 77.965,
+      "Ta": 30.5,
+      "RH": 61.0,
+      "name": "OM @ VEDASANDUR (DINDIGUL)",
+      "station": "VEDASANDUR",
+      "district": "DINDIGUL",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 18.1417,
+      "lon": 83.415,
+      "Ta": 28.0,
+      "RH": 85.0,
+      "name": "OM @ VIZIANAGARAM (VIZIANAGARAM)",
+      "station": "VIZIANAGARAM",
+      "district": "VIZIANAGARAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 12.8117,
+      "lon": 79.4617,
+      "Ta": 29.7,
+      "RH": 74.0,
+      "name": "OM @ KALAVAI (RANIPET)",
+      "station": "KALAVAI",
+      "district": "RANIPET",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 8.1933,
+      "lon": 77.285,
+      "Ta": 26.8,
+      "RH": 89.0,
+      "name": "OM @ NEYYOOR (KANYAKUMARI)",
+      "station": "NEYYOOR",
+      "district": "KANYAKUMARI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 18.4101,
+      "lon": 83.903,
+      "Ta": 28.0,
+      "RH": 88.0,
+      "name": "OM @ RAGOLU (SRIKAKULAM)",
+      "station": "RAGOLU",
+      "district": "SRIKAKULAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 23.15,
+      "lon": 70.2167,
+      "Ta": 27.5,
+      "RH": 84.0,
+      "name": "OM @ KANDLA (KACHCHH)",
+      "station": "KANDLA",
+      "district": "KACHCHH",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 8.5083,
+      "lon": 78.1217,
+      "Ta": 27.9,
+      "RH": 82.0,
+      "name": "OM @ THIRUCHENDUR (THOOTHUKUDI)",
+      "station": "THIRUCHENDUR",
+      "district": "THOOTHUKUDI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 16.3789,
+      "lon": 73.3822,
+      "Ta": 28.8,
+      "RH": 82.0,
+      "name": "OM @ DEVGAD (SINDHUDURG)",
+      "station": "DEVGAD",
+      "district": "SINDHUDURG",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 9.1767,
+      "lon": 76.5167,
+      "Ta": 25.1,
+      "RH": 98.0,
+      "name": "OM @ KAYAMKULAM (ALAPPUZHA)",
+      "station": "KAYAMKULAM",
+      "district": "ALAPPUZHA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 17.754206,
+      "lon": 73.176743,
+      "Ta": 26.1,
+      "RH": 94.0,
+      "name": "OM @ DAPOLI (RATNAGIRI)",
+      "station": "DAPOLI",
+      "district": "RATNAGIRI",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 20.72,
+      "lon": 70.9167,
+      "Ta": 27.4,
+      "RH": 93.0,
+      "name": "OM @ DIU (DIU)",
+      "station": "DIU",
+      "district": "DIU",
+      "state": "DAMAN_AND_DIU"
+    },
+    {
+      "lat": 10.93,
+      "lon": 79.8417,
+      "Ta": 29.5,
+      "RH": 78.0,
+      "name": "OM @ KARAIKAL (KARAIKAL)",
+      "station": "KARAIKAL",
+      "district": "KARAIKAL",
+      "state": "PUDUCHERRY"
+    },
+    {
+      "lat": 11.7206,
+      "lon": 92.6542,
+      "Ta": 26.0,
+      "RH": 84.0,
+      "name": "OM @ FERRARGUNJ (SOUTH_ANDAMAN)",
+      "station": "FERRARGUNJ",
+      "district": "SOUTH_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 11.0,
+      "lon": 92.744,
+      "Ta": 30.1,
+      "RH": 67.0,
+      "name": "OM @ SRI_VIJAYA_PURAM_AWS400 (SOUTH_ANDAMAN)",
+      "station": "SRI_VIJAYA_PURAM_AWS400",
+      "district": "SOUTH_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 12.0124,
+      "lon": 92.9824,
+      "Ta": 28.0,
+      "RH": 78.0,
+      "name": "OM @ SWARAJ_DEEP (SOUTH_ANDAMAN)",
+      "station": "SWARAJ_DEEP",
+      "district": "SOUTH_ANDAMAN",
+      "state": "ANDAMAN_AND_NICOBAR"
+    },
+    {
+      "lat": 14.73,
+      "lon": 79.0358,
+      "Ta": 32.0,
+      "RH": 59.0,
+      "name": "OM @ AGRICULTURAL_COLLEGE_ BADVEL (YSR_KADAPA)",
+      "station": "AGRICULTURAL_COLLEGE_ BADVEL",
+      "district": "YSR_KADAPA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.5449,
+      "lon": 81.4932,
+      "Ta": 28.9,
+      "RH": 87.0,
+      "name": "OM @ BHIMAVARAM (WEST_GODAVARI)",
+      "station": "BHIMAVARAM",
+      "district": "WEST_GODAVARI",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 15.8295,
+      "lon": 80.3803,
+      "Ta": 29.3,
+      "RH": 92.0,
+      "name": "OM @ CHIRALA (BAPATLA)",
+      "station": "CHIRALA",
+      "district": "BAPATLA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 15.1627,
+      "lon": 79.2892,
+      "Ta": 31.5,
+      "RH": 64.0,
+      "name": "OM @ CS_PURAM (PRAKASAM)",
+      "station": "CS_PURAM",
+      "district": "PRAKASAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 17.6247,
+      "lon": 83.2283,
+      "Ta": 28.9,
+      "RH": 85.0,
+      "name": "OM @ GANGAVARAM_PORT (VISAKHAPATNAM)",
+      "station": "GANGAVARAM_PORT",
+      "district": "VISAKHAPATNAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.7687,
+      "lon": 81.1191,
+      "Ta": 29.1,
+      "RH": 84.0,
+      "name": "OM @ KV_GOPANNAPALEM_ELURU (WEST_GODAVARI)",
+      "station": "KV_GOPANNAPALEM_ELURU",
+      "district": "WEST_GODAVARI",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 14.4308,
+      "lon": 77.7065,
+      "Ta": 31.4,
+      "RH": 44.0,
+      "name": "OM @ KH_GOVTDEGCOLLEGE_DHARMAVARAM (ANANTAPUR)",
+      "station": "KH_GOVTDEGCOLLEGE_DHARMAVARAM",
+      "district": "ANANTAPUR",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 18.3334,
+      "lon": 84.1163,
+      "Ta": 28.3,
+      "RH": 88.0,
+      "name": "OM @ NAGARALAPETA_KALINGAPATNAM (SRIKAKULAM)",
+      "station": "NAGARALAPETA_KALINGAPATNAM",
+      "district": "SRIKAKULAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.1983,
+      "lon": 81.1258,
+      "Ta": 29.0,
+      "RH": 89.0,
+      "name": "OM @ KV_GOPALNAGAR_MACHILIPATNAM (KRISHNA)",
+      "station": "KV_GOPALNAGAR_MACHILIPATNAM",
+      "district": "KRISHNA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.751,
+      "lon": 80.6327,
+      "Ta": 29.1,
+      "RH": 75.0,
+      "name": "OM @ MYLAVARAM_COLLEGE_OF _ENGINEER (NTR)",
+      "station": "MYLAVARAM_COLLEGE_OF _ENGINEER",
+      "district": "NTR",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 16.4365,
+      "lon": 81.6944,
+      "Ta": 28.6,
+      "RH": 88.0,
+      "name": "OM @ NARSAPUR (WEST_GODAVARI)",
+      "station": "NARSAPUR",
+      "district": "WEST_GODAVARI",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 14.4046,
+      "lon": 79.9641,
+      "Ta": 29.7,
+      "RH": 79.0,
+      "name": "OM @ NELLORE_KVK (NELLORE)",
+      "station": "NELLORE_KVK",
+      "district": "NELLORE",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 15.8093,
+      "lon": 79.2579,
+      "Ta": 30.6,
+      "RH": 65.0,
+      "name": "OM @ PEDA_ARAVEEDU (PRAKASAM)",
+      "station": "PEDA_ARAVEEDU",
+      "district": "PRAKASAM",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 14.4383,
+      "lon": 78.806,
+      "Ta": 32.5,
+      "RH": 37.0,
+      "name": "OM @ UTKURU_KVK (YSR_KADAPA)",
+      "station": "UTKURU_KVK",
+      "district": "YSR_KADAPA",
+      "state": "ANDHRA_PRADESH"
+    },
+    {
+      "lat": 27.995,
+      "lon": 94.704,
+      "Ta": 17.7,
+      "RH": 98.0,
+      "name": "OM @ BASAR (LEPARADA)",
+      "station": "BASAR",
+      "district": "LEPARADA",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.5937,
+      "lon": 93.5671,
+      "Ta": 9.6,
+      "RH": 93.0,
+      "name": "OM @ DEED (LOWER_SUBANSIRI)",
+      "station": "DEED",
+      "district": "LOWER_SUBANSIRI",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.076,
+      "lon": 93.6043,
+      "Ta": 20.7,
+      "RH": 93.0,
+      "name": "OM @ ITANAGAR (PAPUMPARE)",
+      "station": "ITANAGAR",
+      "district": "PAPUMPARE",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.3813,
+      "lon": 92.2319,
+      "Ta": 14.2,
+      "RH": 94.0,
+      "name": "OM @ DIRANG (WEST_KAMENG)",
+      "station": "DIRANG",
+      "district": "WEST_KAMENG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.9883,
+      "lon": 94.22,
+      "Ta": 21.3,
+      "RH": 93.0,
+      "name": "OM @ DAPORIJO (UPPER_SUBHANSERI)",
+      "station": "DAPORIJO",
+      "district": "UPPER_SUBHANSERI",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.7987,
+      "lon": 95.9099,
+      "Ta": 21.4,
+      "RH": 99.0,
+      "name": "OM @ HAYULIANG_CIRCLE (ANJAW)",
+      "station": "HAYULIANG_CIRCLE",
+      "district": "ANJAW",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.0243,
+      "lon": 95.1844,
+      "Ta": 21.4,
+      "RH": 100.0,
+      "name": "OM @ LONGDING (LONGDING)",
+      "station": "LONGDING",
+      "district": "LONGDING",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.1042,
+      "lon": 92.1205,
+      "Ta": 15.1,
+      "RH": 97.0,
+      "name": "OM @ KALAKTANG (WEST_KAMENG)",
+      "station": "KALAKTANG",
+      "district": "WEST_KAMENG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.8989,
+      "lon": 93.352,
+      "Ta": 18.2,
+      "RH": 100.0,
+      "name": "OM @ KOLORAING (KURUNG_KUMEY)",
+      "station": "KOLORAING",
+      "district": "KURUNG_KUMEY",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.6386,
+      "lon": 95.81,
+      "Ta": 22.0,
+      "RH": 98.0,
+      "name": "OM @ LEKANG (NAMSAI)",
+      "station": "LEKANG",
+      "district": "NAMSAI",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 26.8863,
+      "lon": 95.3257,
+      "Ta": 18.4,
+      "RH": 99.0,
+      "name": "OM @ LONGDING_NEW (LONGDING)",
+      "station": "LONGDING_NEW",
+      "district": "LONGDING",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.7804,
+      "lon": 95.9747,
+      "Ta": 22.0,
+      "RH": 100.0,
+      "name": "OM @ NAMSAI_KVK (NAMSAI)",
+      "station": "NAMSAI_KVK",
+      "district": "NAMSAI",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.4821,
+      "lon": 96.1978,
+      "Ta": 21.4,
+      "RH": 98.0,
+      "name": "OM @ MIAO (CHANGLANG)",
+      "station": "MIAO",
+      "district": "CHANGLANG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.7505,
+      "lon": 93.3989,
+      "Ta": 17.9,
+      "RH": 99.0,
+      "name": "OM @ NYAPIN (KURUNG_KUMEY)",
+      "station": "NYAPIN",
+      "district": "KURUNG_KUMEY",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 28.0695,
+      "lon": 95.3323,
+      "Ta": 20.9,
+      "RH": 99.0,
+      "name": "OM @ PASHIGHAT (EAST_SIANG)",
+      "station": "PASHIGHAT",
+      "district": "EAST_SIANG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.7923,
+      "lon": 94.0753,
+      "Ta": 16.7,
+      "RH": 95.0,
+      "name": "OM @ RAGA (KAMLE)",
+      "station": "RAGA",
+      "district": "KAMLE",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.3178,
+      "lon": 93.0042,
+      "Ta": 20.3,
+      "RH": 96.0,
+      "name": "OM @ SEPPA_PAMPOLI (EAST_KAMENG)",
+      "station": "SEPPA_PAMPOLI",
+      "district": "EAST_KAMENG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 28.1297,
+      "lon": 94.5716,
+      "Ta": 18.7,
+      "RH": 96.0,
+      "name": "OM @ YOMCHA (WEST_SIANG)",
+      "station": "YOMCHA",
+      "district": "WEST_SIANG",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 27.5298,
+      "lon": 93.8385,
+      "Ta": 13.5,
+      "RH": 98.0,
+      "name": "OM @ ZIRO_MANIPOLYANG (LOWER_SUBANSIRI)",
+      "station": "ZIRO_MANIPOLYANG",
+      "district": "LOWER_SUBANSIRI",
+      "state": "ARUNACHAL_PRADESH"
+    },
+    {
+      "lat": 26.103,
+      "lon": 91.611,
+      "Ta": 21.0,
+      "RH": 95.0,
+      "name": "OM @ AAU_HRS (KAMRUP_METROPOLITAN)",
+      "station": "AAU_HRS",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.0962,
+      "lon": 90.5666,
+      "Ta": 21.6,
+      "RH": 91.0,
+      "name": "OM @ AGIA_AEGCL (GOALPARA)",
+      "station": "AGIA_AEGCL",
+      "district": "GOALPARA",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.0545,
+      "lon": 93.2009,
+      "Ta": 19.8,
+      "RH": 96.0,
+      "name": "OM @ BAKULIA (KARBI_ANGLONG(EAST))",
+      "station": "BAKULIA",
+      "district": "KARBI_ANGLONG(EAST)",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.0159,
+      "lon": 91.1833,
+      "Ta": 21.5,
+      "RH": 98.0,
+      "name": "OM @ BOKO_AEGCL (KAMRUP)",
+      "station": "BOKO_AEGCL",
+      "district": "KAMRUP",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.639,
+      "lon": 93.592,
+      "Ta": 19.8,
+      "RH": 94.0,
+      "name": "OM @ CNB_COLLAGE_BOKAKHAT (GOLAGHAT)",
+      "station": "CNB_COLLAGE_BOKAKHAT",
+      "district": "GOLAGHAT",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4421,
+      "lon": 90.9824,
+      "Ta": 20.8,
+      "RH": 96.0,
+      "name": "OM @ BARPETA_KVK (BARPETA)",
+      "station": "BARPETA_KVK",
+      "district": "BARPETA",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.2808,
+      "lon": 94.1103,
+      "Ta": 21.5,
+      "RH": 98.0,
+      "name": "OM @ LAKHIMPUR (LAKHIMPUR)",
+      "station": "LAKHIMPUR",
+      "district": "LAKHIMPUR",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.8733,
+      "lon": 91.4317,
+      "Ta": 20.5,
+      "RH": 98.0,
+      "name": "OM @ CHANDUBI (KAMRUP)",
+      "station": "CHANDUBI",
+      "district": "KAMRUP",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 24.8559,
+      "lon": 92.7407,
+      "Ta": 20.2,
+      "RH": 98.0,
+      "name": "OM @ CACHER_KVK (CACHAR)",
+      "station": "CACHER_KVK",
+      "district": "CACHAR",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.4667,
+      "lon": 94.9116,
+      "Ta": 21.5,
+      "RH": 96.0,
+      "name": "OM @ DC_OFC_DIBRUGARH (DIBRUGARH)",
+      "station": "DC_OFC_DIBRUGARH",
+      "district": "DIBRUGARH",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.1689,
+      "lon": 92.3569,
+      "Ta": 21.4,
+      "RH": 98.0,
+      "name": "OM @ DHARAMTUL (MARIGAON)",
+      "station": "DHARAMTUL",
+      "district": "MARIGAON",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.8363,
+      "lon": 93.4348,
+      "Ta": 19.8,
+      "RH": 97.0,
+      "name": "OM @ DIPHU (KARBI_ANGLONG(EAST))",
+      "station": "DIPHU",
+      "district": "KARBI_ANGLONG(EAST)",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.2036,
+      "lon": 91.8654,
+      "Ta": 21.3,
+      "RH": 98.0,
+      "name": "OM @ DOWN_TOWN_UNIVERSITY (KAMRUP_METROPOLITAN)",
+      "station": "DOWN_TOWN_UNIVERSITY",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.094,
+      "lon": 89.9854,
+      "Ta": 21.1,
+      "RH": 98.0,
+      "name": "OM @ GAURIPUR_AEGCL (DHUBRI)",
+      "station": "GAURIPUR_AEGCL",
+      "district": "DHUBRI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.7622,
+      "lon": 92.7604,
+      "Ta": 21.1,
+      "RH": 98.0,
+      "name": "OM @ GHORAMARA_AEGCL (SONITPUR)",
+      "station": "GHORAMARA_AEGCL",
+      "district": "SONITPUR",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.3184,
+      "lon": 91.8986,
+      "Ta": 21.6,
+      "RH": 96.0,
+      "name": "OM @ GARUKHUTI (DARRANG)",
+      "station": "GARUKHUTI",
+      "district": "DARRANG",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.1642,
+      "lon": 91.7566,
+      "Ta": 21.3,
+      "RH": 99.0,
+      "name": "OM @ GUWAHATI_CITY (KAMRUP_METROPOLITAN)",
+      "station": "GUWAHATI_CITY",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.1521,
+      "lon": 91.6566,
+      "Ta": 21.2,
+      "RH": 99.0,
+      "name": "OM @ GAUHATI_UNIVERSITY (KAMRUP_METROPOLITAN)",
+      "station": "GAUHATI_UNIVERSITY",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.7152,
+      "lon": 92.2087,
+      "Ta": 16.0,
+      "RH": 85.0,
+      "name": "OM @ HABANG_CIRCLE (KARBI_ANGLONG(WEST))",
+      "station": "HABANG_CIRCLE",
+      "district": "KARBI_ANGLONG(WEST)",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.8495,
+      "lon": 92.8816,
+      "Ta": 21.0,
+      "RH": 95.0,
+      "name": "OM @ KHERONIGHAT (KARBI_ANGLONG(WEST))",
+      "station": "KHERONIGHAT",
+      "district": "KARBI_ANGLONG(WEST)",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.1313,
+      "lon": 91.8237,
+      "Ta": 21.1,
+      "RH": 98.0,
+      "name": "OM @ KALAKSHETRA (KAMRUP_METROPOLITAN)",
+      "station": "KALAKSHETRA",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.1625,
+      "lon": 92.6646,
+      "Ta": 21.5,
+      "RH": 99.0,
+      "name": "OM @ KAMPUR (NAGAON)",
+      "station": "KAMPUR",
+      "district": "NAGAON",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.1036,
+      "lon": 91.5896,
+      "Ta": 21.0,
+      "RH": 95.0,
+      "name": "OM @ KAMAKHYA (KAMRUP_METROPOLITAN)",
+      "station": "KAMAKHYA",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.6657,
+      "lon": 92.7825,
+      "Ta": 19.8,
+      "RH": 81.0,
+      "name": "OM @ LKHEP (DIMA_HASAO)",
+      "station": "LKHEP",
+      "district": "DIMA_HASAO",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.75,
+      "lon": 93.1779,
+      "Ta": 20.5,
+      "RH": 94.0,
+      "name": "OM @ LUMDING (HAJOI)",
+      "station": "LUMDING",
+      "district": "HAJOI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.2954,
+      "lon": 95.6564,
+      "Ta": 20.9,
+      "RH": 99.0,
+      "name": "OM @ MARGHERITA (TINSUKIA)",
+      "station": "MARGHERITA",
+      "district": "TINSUKIA",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4707,
+      "lon": 91.4285,
+      "Ta": 21.0,
+      "RH": 98.0,
+      "name": "OM @ NALBARI_KVK (NALBARI)",
+      "station": "NALBARI_KVK",
+      "district": "NALBARI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.6405,
+      "lon": 92.817,
+      "Ta": 21.5,
+      "RH": 96.0,
+      "name": "OM @ NERIWALAM (SONITPUR)",
+      "station": "NERIWALAM",
+      "district": "SONITPUR",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 24.8663,
+      "lon": 92.5938,
+      "Ta": 20.2,
+      "RH": 97.0,
+      "name": "OM @ PANCHGRAM_AEGCL (HAILAKANDI)",
+      "station": "PANCHGRAM_AEGCL",
+      "district": "HAILAKANDI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.7224,
+      "lon": 92.1909,
+      "Ta": 21.4,
+      "RH": 94.0,
+      "name": "OM @ ROWTA_AEGCL (UDALGURI)",
+      "station": "ROWTA_AEGCL",
+      "district": "UDALGURI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4055,
+      "lon": 92.843,
+      "Ta": 21.0,
+      "RH": 100.0,
+      "name": "OM @ SAMAGURI_AEGCL (NAGAON)",
+      "station": "SAMAGURI_AEGCL",
+      "district": "NAGAON",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.0212,
+      "lon": 94.6722,
+      "Ta": 21.2,
+      "RH": 100.0,
+      "name": "OM @ SIVSAGAR_AEGCL (SIVASAGAR)",
+      "station": "SIVSAGAR_AEGCL",
+      "district": "SIVASAGAR",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.4407,
+      "lon": 90.368,
+      "Ta": 20.7,
+      "RH": 98.0,
+      "name": "OM @ SALAKATI_AEGCL (KOKRAJHAR)",
+      "station": "SALAKATI_AEGCL",
+      "district": "KOKRAJHAR",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.6071,
+      "lon": 94.7327,
+      "Ta": 21.6,
+      "RH": 99.0,
+      "name": "OM @ SILAPATHAR_SCIENCE_COLLEGE (DHEMAJI)",
+      "station": "SILAPATHAR_SCIENCE_COLLEGE",
+      "district": "DHEMAJI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 27.0309,
+      "lon": 95.0531,
+      "Ta": 21.3,
+      "RH": 98.0,
+      "name": "OM @ SONARI_AEGCL (CHARAIDEO)",
+      "station": "SONARI_AEGCL",
+      "district": "CHARAIDEO",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.6531,
+      "lon": 92.1803,
+      "Ta": 21.1,
+      "RH": 91.0,
+      "name": "OM @ UDI_KVK (UDALGURI)",
+      "station": "UDI_KVK",
+      "district": "UDALGURI",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.796,
+      "lon": 92.2356,
+      "Ta": 16.5,
+      "RH": 98.0,
+      "name": "OM @ UMLAPHER (KARBI_ANGLONG(WEST))",
+      "station": "UMLAPHER",
+      "district": "KARBI_ANGLONG(WEST)",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 25.9407,
+      "lon": 92.2993,
+      "Ta": 19.1,
+      "RH": 98.0,
+      "name": "OM @ UMPANAI_APDCL (KARBI_ANGLONG(WEST))",
+      "station": "UMPANAI_APDCL",
+      "district": "KARBI_ANGLONG(WEST)",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 26.00194,
+      "lon": 91.547729,
+      "Ta": 20.8,
+      "RH": 98.0,
+      "name": "OM @ VCBC_RANI (KAMRUP_METROPOLITAN)",
+      "station": "VCBC_RANI",
+      "district": "KAMRUP_METROPOLITAN",
+      "state": "ASSAM"
+    },
+    {
+      "lat": 18.5386,
+      "lon": 73.842,
+      "Ta": 26.6,
+      "RH": 58.0,
+      "name": "OM @ CAGMO_SHIVAJINAGAR (PUNE)",
+      "station": "CAGMO_SHIVAJINAGAR",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 28.5885,
+      "lon": 77.2224,
+      "Ta": 30.0,
+      "RH": 35.0,
+      "name": "OM @ LODI ROAD (SOUTH_DELHI)",
+      "station": "LODI ROAD",
+      "district": "SOUTH_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 23.07,
+      "lon": 72.6167,
+      "Ta": 31.1,
+      "RH": 63.0,
+      "name": "OM @ AHMEDABAD (AHMEDABAD)",
+      "station": "AHMEDABAD",
+      "district": "AHMEDABAD",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 19.100662,
+      "lon": 72.858223,
+      "Ta": 28.8,
+      "RH": 81.0,
+      "name": "OM @ MUMBAI_SANTA_CRUZ (MUMBAI_CITY)",
+      "station": "MUMBAI_SANTA_CRUZ",
+      "district": "MUMBAI_CITY",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 13.075,
+      "lon": 80.2633,
+      "Ta": 29.8,
+      "RH": 84.0,
+      "name": "OM @ CHENNAI (CHENNAI)",
+      "station": "CHENNAI",
+      "district": "CHENNAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 22.6667,
+      "lon": 88.45,
+      "Ta": 25.3,
+      "RH": 90.0,
+      "name": "OM @ KOLKATA AIRPORT (KOLKATA)",
+      "station": "KOLKATA AIRPORT",
+      "district": "KOLKATA",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 8.4667,
+      "lon": 76.95,
+      "Ta": 26.2,
+      "RH": 91.0,
+      "name": "OM @ THIRUVANANTHAPURAM (THIRUVANANTHAPURAM)",
+      "station": "THIRUVANANTHAPURAM",
+      "district": "THIRUVANANTHAPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 21.1,
+      "lon": 79.05,
+      "Ta": 32.0,
+      "RH": 21.0,
+      "name": "OM @ NAGPUR (NAGPUR)",
+      "station": "NAGPUR",
+      "district": "NAGPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 21.2115,
+      "lon": 81.6596,
+      "Ta": 31.5,
+      "RH": 29.0,
+      "name": "OM @ RAIPUR (RAIPUR)",
+      "station": "RAIPUR",
+      "district": "RAIPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 26.3,
+      "lon": 73.0167,
+      "Ta": 32.7,
+      "RH": 28.0,
+      "name": "OM @ JODHPUR (JODHPUR)",
+      "station": "JODHPUR",
+      "district": "JODHPUR",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 12.97,
+      "lon": 77.5667,
+      "Ta": 27.3,
+      "RH": 51.0,
+      "name": "OM @ BANGALORE (BANGALORE_URBAN)",
+      "station": "BANGALORE",
+      "district": "BANGALORE_URBAN",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 23.28,
+      "lon": 77.35,
+      "Ta": 30.3,
+      "RH": 22.0,
+      "name": "OM @ BHOPAL (BHOPAL)",
+      "station": "BHOPAL",
+      "district": "BHOPAL",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 17.4633,
+      "lon": 78.495,
+      "Ta": 31.8,
+      "RH": 34.0,
+      "name": "OM @ HYDERABAD (HYDERABAD)",
+      "station": "HYDERABAD",
+      "district": "HYDERABAD",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 26.9,
+      "lon": 70.9167,
+      "Ta": 31.6,
+      "RH": 35.0,
+      "name": "OM @ JAISALMER (JAISALMER)",
+      "station": "JAISALMER",
+      "district": "JAISALMER",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 28.42,
+      "lon": 77.0,
+      "Ta": 29.2,
+      "RH": 36.0,
+      "name": "OM @ GURGAON (GURGAON)",
+      "station": "GURGAON",
+      "district": "GURGAON",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 26.8667,
+      "lon": 80.9167,
+      "Ta": 27.9,
+      "RH": 61.0,
+      "name": "OM @ METEOROLOGICAL_CENTRE_AMAUSI (LUCKNOW)",
+      "station": "METEOROLOGICAL_CENTRE_AMAUSI",
+      "district": "LUCKNOW",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.17123,
+      "lon": 78.03123,
+      "Ta": 30.0,
+      "RH": 38.0,
+      "name": "OM @ HYDROGEN_FACTORY_BINDUKATRA (AGRA)",
+      "station": "HYDROGEN_FACTORY_BINDUKATRA",
+      "district": "AGRA",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.5,
+      "lon": 77.6667,
+      "Ta": 29.5,
+      "RH": 38.0,
+      "name": "OM @ COLLECTORATE_OFFICE (MATHURA)",
+      "station": "COLLECTORATE_OFFICE",
+      "district": "MATHURA",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 18.841,
+      "lon": 73.884,
+      "Ta": 24.0,
+      "RH": 69.0,
+      "name": "OM @ RAJGURUNAGAR (PUNE)",
+      "station": "RAJGURUNAGAR",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 25.9288,
+      "lon": 86.5597,
+      "Ta": 22.6,
+      "RH": 86.0,
+      "name": "OM @ AGWANPUR_AWS400 (SAHARSA)",
+      "station": "AGWANPUR_AWS400",
+      "district": "SAHARSA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.1495,
+      "lon": 84.5135,
+      "Ta": 27.0,
+      "RH": 71.0,
+      "name": "OM @ ARWAL_AWS400 (ARWAL)",
+      "station": "ARWAL_AWS400",
+      "district": "ARWAL",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.4542,
+      "lon": 85.7213,
+      "Ta": 25.0,
+      "RH": 82.0,
+      "name": "OM @ KVK_BARH (PATNA)",
+      "station": "KVK_BARH",
+      "district": "PATNA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.2225,
+      "lon": 84.24,
+      "Ta": 26.9,
+      "RH": 71.0,
+      "name": "OM @ BIKRAMGANJ (ROHTAS)",
+      "station": "BIKRAMGANJ",
+      "district": "ROHTAS",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.5634,
+      "lon": 85.2214,
+      "Ta": 25.5,
+      "RH": 79.0,
+      "name": "OM @ BALDWIN ACADEMY (PATNA)",
+      "station": "BALDWIN ACADEMY",
+      "district": "PATNA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 24.6837,
+      "lon": 84.9635,
+      "Ta": 26.9,
+      "RH": 73.0,
+      "name": "OM @ BODHGAYA (GAYA)",
+      "station": "BODHGAYA",
+      "district": "GAYA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 24.8703,
+      "lon": 84.8886,
+      "Ta": 27.2,
+      "RH": 72.0,
+      "name": "OM @ GAYA_CUSB (GAYA)",
+      "station": "GAYA_CUSB",
+      "district": "GAYA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 24.8895,
+      "lon": 84.1715,
+      "Ta": 26.8,
+      "RH": 73.0,
+      "name": "OM @ DEHRI (ROHTAS)",
+      "station": "DEHRI",
+      "district": "ROHTAS",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.5333,
+      "lon": 84.1592,
+      "Ta": 26.8,
+      "RH": 70.0,
+      "name": "OM @ DUMARAON (BUXAR)",
+      "station": "DUMARAON",
+      "district": "BUXAR",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.6294,
+      "lon": 85.0172,
+      "Ta": 25.4,
+      "RH": 80.0,
+      "name": "OM @ DANAPUR_DPS (PATNA)",
+      "station": "DANAPUR_DPS",
+      "district": "PATNA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 26.1642,
+      "lon": 85.9004,
+      "Ta": 23.7,
+      "RH": 84.0,
+      "name": "OM @ DARBHANGA_AWS400 (DARBHANGA)",
+      "station": "DARBHANGA_AWS400",
+      "district": "DARBHANGA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.538424,
+      "lon": 84.845999,
+      "Ta": 26.0,
+      "RH": 75.0,
+      "name": "OM @ IIT_PATNA (PATNA)",
+      "station": "IIT_PATNA",
+      "district": "PATNA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.18143,
+      "lon": 85.13712,
+      "Ta": 27.3,
+      "RH": 71.0,
+      "name": "OM @ JEHANABAD (JEHANABAD)",
+      "station": "JEHANABAD",
+      "district": "JEHANABAD",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.9184,
+      "lon": 86.8043,
+      "Ta": 22.4,
+      "RH": 87.0,
+      "name": "OM @ MADHEPURA (MADHEPURA)",
+      "station": "MADHEPURA",
+      "district": "MADHEPURA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.3706,
+      "lon": 86.4997,
+      "Ta": 24.6,
+      "RH": 83.0,
+      "name": "OM @ KVK_MUNGER (MUNGER)",
+      "station": "KVK_MUNGER",
+      "district": "MUNGER",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.9793,
+      "lon": 85.6771,
+      "Ta": 24.2,
+      "RH": 84.0,
+      "name": "OM @ PUSA_AWS400 (SAMASTIPUR)",
+      "station": "PUSA_AWS400",
+      "district": "SAMASTIPUR",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.7762,
+      "lon": 87.4745,
+      "Ta": 22.2,
+      "RH": 89.0,
+      "name": "OM @ PURNEA_IMD (PURNEA)",
+      "station": "PURNEA_IMD",
+      "district": "PURNEA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.0119,
+      "lon": 85.3755,
+      "Ta": 27.2,
+      "RH": 76.0,
+      "name": "OM @ RAJGIR (NALANDA)",
+      "station": "RAJGIR",
+      "district": "NALANDA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 25.0739,
+      "lon": 85.851,
+      "Ta": 27.2,
+      "RH": 74.0,
+      "name": "OM @ SHEIKPURA_KVK (SHEIKPURA)",
+      "station": "SHEIKPURA_KVK",
+      "district": "SHEIKPURA",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 26.3047,
+      "lon": 86.8382,
+      "Ta": 22.0,
+      "RH": 90.0,
+      "name": "OM @ SUPAUL_AWS400 (SUPAUL)",
+      "station": "SUPAUL_AWS400",
+      "district": "SUPAUL",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 26.2644,
+      "lon": 86.3199,
+      "Ta": 22.8,
+      "RH": 86.0,
+      "name": "OM @ SUKHET (MADHUBANI)",
+      "station": "SUKHET",
+      "district": "MADHUBANI",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 26.1484,
+      "lon": 84.2689,
+      "Ta": 25.5,
+      "RH": 77.0,
+      "name": "OM @ ZIRADEI (SIWAN)",
+      "station": "ZIRADEI",
+      "district": "SIWAN",
+      "state": "BIHAR"
+    },
+    {
+      "lat": 20.7057,
+      "lon": 81.23,
+      "Ta": 31.6,
+      "RH": 33.0,
+      "name": "OM @ BALOD_AWS400 (BALOD)",
+      "station": "BALOD_AWS400",
+      "district": "BALOD",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 21.7014,
+      "lon": 81.5474,
+      "Ta": 30.0,
+      "RH": 27.0,
+      "name": "OM @ BEMETARA (BEMETARA)",
+      "station": "BEMETARA",
+      "district": "BEMETARA",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 23.6026,
+      "lon": 83.6098,
+      "Ta": 26.1,
+      "RH": 50.0,
+      "name": "OM @ BALRAMPUR_AWS400 (BALRAMPUR)",
+      "station": "BALRAMPUR_AWS400",
+      "district": "BALRAMPUR",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 30.7347,
+      "lon": 76.806,
+      "Ta": 22.0,
+      "RH": 69.0,
+      "name": "OM @ DAV_SCHOOL (CHANDIGARH)",
+      "station": "DAV_SCHOOL",
+      "district": "CHANDIGARH",
+      "state": "CHANDIGARH"
+    },
+    {
+      "lat": 22.472,
+      "lon": 82.5232,
+      "Ta": 28.7,
+      "RH": 29.0,
+      "name": "OM @ LAKHANPUR_KVK (KORBA)",
+      "station": "LAKHANPUR_KVK",
+      "district": "KORBA",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.0839,
+      "lon": 81.7266,
+      "Ta": 32.1,
+      "RH": 18.0,
+      "name": "OM @ MUNGELI_AWS400 (MUNGELI)",
+      "station": "MUNGELI_AWS400",
+      "district": "MUNGELI",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 22.7595,
+      "lon": 81.8993,
+      "Ta": 29.4,
+      "RH": 22.0,
+      "name": "OM @ PENDRA_ROAD (PENDRA_ROAD)",
+      "station": "PENDRA_ROAD",
+      "district": "PENDRA_ROAD",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 23.2558,
+      "lon": 82.5174,
+      "Ta": 28.0,
+      "RH": 34.0,
+      "name": "OM @ KORIYA_KVK (KORIYA)",
+      "station": "KORIYA_KVK",
+      "district": "KORIYA",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 18.3909,
+      "lon": 81.6569,
+      "Ta": 27.1,
+      "RH": 73.0,
+      "name": "OM @ SUKMA (SUKMA)",
+      "station": "SUKMA",
+      "district": "SUKMA",
+      "state": "CHHATTISGARH"
+    },
+    {
+      "lat": 28.6284,
+      "lon": 77.2431,
+      "Ta": 29.9,
+      "RH": 35.0,
+      "name": "OM @ PRAGATI_MAIDAN (CENTRAL_DELHI)",
+      "station": "PRAGATI_MAIDAN",
+      "district": "CENTRAL_DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.6322,
+      "lon": 76.9547,
+      "Ta": 29.6,
+      "RH": 36.0,
+      "name": "OM @ KVK_CRPF_CAMPUS (DELHI)",
+      "station": "KVK_CRPF_CAMPUS",
+      "district": "DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.6178,
+      "lon": 77.0858,
+      "Ta": 31.2,
+      "RH": 33.0,
+      "name": "OM @ KV_JANAKPURI (DELHI)",
+      "station": "KV_JANAKPURI",
+      "district": "DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.6789,
+      "lon": 77.4648,
+      "Ta": 27.0,
+      "RH": 43.0,
+      "name": "OM @ KV_KAMALA_NEHRU_NAGAR (GHAZIABAD)",
+      "station": "KV_KAMALA_NEHRU_NAGAR",
+      "district": "GHAZIABAD",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.6155,
+      "lon": 77.1367,
+      "Ta": 30.0,
+      "RH": 37.0,
+      "name": "OM @ KV_NARAYNA (DELHI)",
+      "station": "KV_NARAYNA",
+      "district": "DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 28.6936,
+      "lon": 77.3643,
+      "Ta": 27.5,
+      "RH": 41.0,
+      "name": "OM @ KV2_AIRFORCE_HINDON (GHAZIABAD)",
+      "station": "KV2_AIRFORCE_HINDON",
+      "district": "GHAZIABAD",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.5029,
+      "lon": 77.0511,
+      "Ta": 30.0,
+      "RH": 34.0,
+      "name": "OM @ NORTHCAP_UNIVERSITY (GURGAON)",
+      "station": "NORTHCAP_UNIVERSITY",
+      "district": "GURGAON",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.5168,
+      "lon": 77.2234,
+      "Ta": 29.8,
+      "RH": 35.0,
+      "name": "OM @ PHARMA_SCIENCE_AND_RESEARCH_UN (DELHI)",
+      "station": "PHARMA_SCIENCE_AND_RESEARCH_UN",
+      "district": "DELHI",
+      "state": "DELHI"
+    },
+    {
+      "lat": 20.2703,
+      "lon": 73.0049,
+      "Ta": 27.2,
+      "RH": 90.0,
+      "name": "OM @ SILVASSA (DADAR_NAGAR)",
+      "station": "SILVASSA",
+      "district": "DADAR_NAGAR",
+      "state": "DADRA_AND_NAGAR_HAVELI"
+    },
+    {
+      "lat": 15.7342,
+      "lon": 73.8602,
+      "Ta": 27.9,
+      "RH": 81.0,
+      "name": "OM @ MOPA_AIRPORT (NORTH_GOA)",
+      "station": "MOPA_AIRPORT",
+      "district": "NORTH_GOA",
+      "state": "GOA"
+    },
+    {
+      "lat": 24.331,
+      "lon": 72.8517,
+      "Ta": 31.0,
+      "RH": 27.0,
+      "name": "OM @ AMBAJI_TEMPLE (BANASKANTHA)",
+      "station": "AMBAJI_TEMPLE",
+      "district": "BANASKANTHA",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.3646,
+      "lon": 72.0261,
+      "Ta": 27.2,
+      "RH": 86.0,
+      "name": "OM @ TALAJA_AWS400 (BHAVNAGAR)",
+      "station": "TALAJA_AWS400",
+      "district": "BHAVNAGAR",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.1677,
+      "lon": 72.8032,
+      "Ta": 28.3,
+      "RH": 87.0,
+      "name": "OM @ SURAT_KVK (SURAT)",
+      "station": "SURAT_KVK",
+      "district": "SURAT",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.1894,
+      "lon": 71.686,
+      "Ta": 30.5,
+      "RH": 56.0,
+      "name": "OM @ BOTAD (BOTAD)",
+      "station": "BOTAD",
+      "district": "BOTAD",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.7851,
+      "lon": 72.0793,
+      "Ta": 31.0,
+      "RH": 49.0,
+      "name": "OM @ BHAVNAGAR (BHAVNAGAR)",
+      "station": "BHAVNAGAR",
+      "district": "BHAVNAGAR",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.8252,
+      "lon": 74.2378,
+      "Ta": 29.5,
+      "RH": 40.0,
+      "name": "OM @ DAHOD_KVK (DAHOD)",
+      "station": "DAHOD_KVK",
+      "district": "DAHOD",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.2586,
+      "lon": 72.185,
+      "Ta": 32.2,
+      "RH": 42.0,
+      "name": "OM @ DHORELA (AHMEDABAD)",
+      "station": "DHORELA",
+      "district": "AHMEDABAD",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.5865,
+      "lon": 72.949,
+      "Ta": 30.1,
+      "RH": 57.0,
+      "name": "OM @ HIMATNAGAR (SABARKANTHA)",
+      "station": "HIMATNAGAR",
+      "district": "SABARKANTHA",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.0096,
+      "lon": 71.1891,
+      "Ta": 28.6,
+      "RH": 62.0,
+      "name": "OM @ HALWAD (MORBI)",
+      "station": "HALWAD",
+      "district": "MORBI",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.344,
+      "lon": 71.0193,
+      "Ta": 26.2,
+      "RH": 87.0,
+      "name": "OM @ DHARI_AWS400 (AMRELI)",
+      "station": "DHARI_AWS400",
+      "district": "AMRELI",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.8237,
+      "lon": 69.7225,
+      "Ta": 27.1,
+      "RH": 92.0,
+      "name": "OM @ MUNDRA (KACHCHH)",
+      "station": "MUNDRA",
+      "district": "KACHCHH",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.3404,
+      "lon": 72.6401,
+      "Ta": 30.5,
+      "RH": 64.0,
+      "name": "OM @ KHAMBHAT_AWS400 (ANAND)",
+      "station": "KHAMBHAT_AWS400",
+      "district": "ANAND",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.1267,
+      "lon": 73.603,
+      "Ta": 30.5,
+      "RH": 48.0,
+      "name": "OM @ LUNAVADA (MAHISAGAR)",
+      "station": "LUNAVADA",
+      "district": "MAHISAGAR",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.5119,
+      "lon": 72.4023,
+      "Ta": 31.4,
+      "RH": 29.0,
+      "name": "OM @ JAGUDAN (MAHESANA)",
+      "station": "JAGUDAN",
+      "district": "MAHESANA",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.6423,
+      "lon": 69.6626,
+      "Ta": 27.7,
+      "RH": 91.0,
+      "name": "OM @ PORBANDAR (PORBANDAR)",
+      "station": "PORBANDAR",
+      "district": "PORBANDAR",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.5507,
+      "lon": 70.6429,
+      "Ta": 28.9,
+      "RH": 64.0,
+      "name": "OM @ RAPAR (KACHCHH)",
+      "station": "RAPAR",
+      "district": "KACHCHH",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 23.0808,
+      "lon": 72.4943,
+      "Ta": 30.6,
+      "RH": 60.0,
+      "name": "OM @ SCIENCE_CITY (AHMEDABAD)",
+      "station": "SCIENCE_CITY",
+      "district": "AHMEDABAD",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 21.5822,
+      "lon": 72.8164,
+      "Ta": 28.5,
+      "RH": 84.0,
+      "name": "OM @ HANSOT_AWS400 (BHARUCH)",
+      "station": "HANSOT_AWS400",
+      "district": "BHARUCH",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 24.4033,
+      "lon": 71.5849,
+      "Ta": 33.5,
+      "RH": 33.0,
+      "name": "OM @ THARAD_AWS400 (BANASKANTHA)",
+      "station": "THARAD_AWS400",
+      "district": "BANASKANTHA",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 22.3114,
+      "lon": 73.1826,
+      "Ta": 29.7,
+      "RH": 72.0,
+      "name": "OM @ VADODARA_AWS400 (VADODARA)",
+      "station": "VADODARA_AWS400",
+      "district": "VADODARA",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 20.776,
+      "lon": 73.5063,
+      "Ta": 27.0,
+      "RH": 78.0,
+      "name": "OM @ DANG_KVK (DANG)",
+      "station": "DANG_KVK",
+      "district": "DANG",
+      "state": "GUJARAT"
+    },
+    {
+      "lat": 29.4932,
+      "lon": 74.8925,
+      "Ta": 28.1,
+      "RH": 43.0,
+      "name": "OM @ CANAL_COLONY_VILLAGE_OTTU (SIRSA)",
+      "station": "CANAL_COLONY_VILLAGE_OTTU",
+      "district": "SIRSA",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.7785,
+      "lon": 76.7758,
+      "Ta": 26.6,
+      "RH": 48.0,
+      "name": "OM @ CANAL_REST_HOUSE (ROHTAK)",
+      "station": "CANAL_REST_HOUSE",
+      "district": "ROHTAK",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 29.1209,
+      "lon": 76.8287,
+      "Ta": 25.9,
+      "RH": 53.0,
+      "name": "OM @ CANAL_RESTHOUSE_SARAGTHAL (SONIPAT)",
+      "station": "CANAL_RESTHOUSE_SARAGTHAL",
+      "district": "SONIPAT",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 30.3159,
+      "lon": 77.5824,
+      "Ta": 22.5,
+      "RH": 62.0,
+      "name": "OM @ HATHINKUNDBERAJ (YAMUNANAGAR)",
+      "station": "HATHINKUNDBERAJ",
+      "district": "YAMUNANAGAR",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 29.8829,
+      "lon": 77.0504,
+      "Ta": 26.2,
+      "RH": 49.0,
+      "name": "OM @ INDRI_REST_HOUSE (KARNAL)",
+      "station": "INDRI_REST_HOUSE",
+      "district": "KARNAL",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.1082,
+      "lon": 77.3312,
+      "Ta": 28.2,
+      "RH": 41.0,
+      "name": "OM @ PALWAL_WATER_SERVICE_DIVISION (PALWAL)",
+      "station": "PALWAL_WATER_SERVICE_DIVISION",
+      "district": "PALWAL",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.5921,
+      "lon": 76.2653,
+      "Ta": 27.6,
+      "RH": 42.0,
+      "name": "OM @ REVENUE_OFFICE_AWS400 (CHARKHI_DADRI)",
+      "station": "REVENUE_OFFICE_AWS400",
+      "district": "CHARKHI_DADRI",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 28.372,
+      "lon": 76.9881,
+      "Ta": 26.9,
+      "RH": 43.0,
+      "name": "OM @ GURGAON_KVK (GURGAON)",
+      "station": "GURGAON_KVK",
+      "district": "GURGAON",
+      "state": "HARYANA"
+    },
+    {
+      "lat": 31.414,
+      "lon": 76.649,
+      "Ta": 18.2,
+      "RH": 79.0,
+      "name": "OM @ BILASPUR_KVK (BILASPUR)",
+      "station": "BILASPUR_KVK",
+      "district": "BILASPUR",
+      "state": "HIMACHAL_PRADESH"
+    },
+    {
+      "lat": 32.56,
+      "lon": 76.12,
+      "Ta": 16.7,
+      "RH": 87.0,
+      "name": "OM @ SUNDERNAGAR_KVK (MANDI)",
+      "station": "SUNDERNAGAR_KVK",
+      "district": "MANDI",
+      "state": "HIMACHAL_PRADESH"
+    },
+    {
+      "lat": 32.0915,
+      "lon": 78.3851,
+      "Ta": 3.5,
+      "RH": 83.0,
+      "name": "OM @ TABO (LAHAUL_AND_SPITI)",
+      "station": "TABO",
+      "district": "LAHAUL_AND_SPITI",
+      "state": "HIMACHAL_PRADESH"
+    },
+    {
+      "lat": 22.6358,
+      "lon": 84.9077,
+      "Ta": 25.8,
+      "RH": 63.0,
+      "name": "OM @ BANO-SIMDEGA_KVK (SIMDEGA)",
+      "station": "BANO-SIMDEGA_KVK",
+      "district": "SIMDEGA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 23.4363,
+      "lon": 84.3216,
+      "Ta": 24.2,
+      "RH": 61.0,
+      "name": "OM @ GUMLA-BISHNUPUR_KVK (GUMLA)",
+      "station": "GUMLA-BISHNUPUR_KVK",
+      "district": "GUMLA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 24.2812,
+      "lon": 85.3497,
+      "Ta": 25.2,
+      "RH": 76.0,
+      "name": "OM @ BARHI (HAZARIBAGH)",
+      "station": "BARHI",
+      "district": "HAZARIBAGH",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 22.2757,
+      "lon": 86.7119,
+      "Ta": 25.8,
+      "RH": 92.0,
+      "name": "OM @ BAHRAGORA (EAST_SINGHBHUM)",
+      "station": "BAHRAGORA",
+      "district": "EAST_SINGHBHUM",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 24.4925,
+      "lon": 86.6611,
+      "Ta": 24.5,
+      "RH": 85.0,
+      "name": "OM @ DEOGHAR_AWS400 (DEOGHAR)",
+      "station": "DEOGHAR_AWS400",
+      "district": "DEOGHAR",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 22.9558,
+      "lon": 85.1182,
+      "Ta": 24.1,
+      "RH": 75.0,
+      "name": "OM @ DIYAKEL-KHUNTI_KVK (KHUNTI)",
+      "station": "DIYAKEL-KHUNTI_KVK",
+      "district": "KHUNTI",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 24.8486,
+      "lon": 87.2047,
+      "Ta": 23.1,
+      "RH": 89.0,
+      "name": "OM @ GODDA_KVK (GODDA)",
+      "station": "GODDA_KVK",
+      "district": "GODDA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 22.2185,
+      "lon": 85.6394,
+      "Ta": 25.5,
+      "RH": 73.0,
+      "name": "OM @ JAGANNATHPUR-BAU_KVK (WEST_SINGHBHUM)",
+      "station": "JAGANNATHPUR-BAU_KVK",
+      "district": "WEST_SINGHBHUM",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 24.4757,
+      "lon": 85.5938,
+      "Ta": 24.9,
+      "RH": 86.0,
+      "name": "OM @ KODARMA (KODARMA)",
+      "station": "KODARMA",
+      "district": "KODARMA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 23.6688,
+      "lon": 86.1536,
+      "Ta": 25.6,
+      "RH": 80.0,
+      "name": "OM @ KV_BOKARO (BOKARO)",
+      "station": "KV_BOKARO",
+      "district": "BOKARO",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 23.5123,
+      "lon": 84.6686,
+      "Ta": 22.6,
+      "RH": 68.0,
+      "name": "OM @ LOHARDAGA_KVK (LOHARDAGA)",
+      "station": "LOHARDAGA_KVK",
+      "district": "LOHARDAGA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 23.4742,
+      "lon": 84.2609,
+      "Ta": 20.6,
+      "RH": 59.0,
+      "name": "OM @ NETARHAT (LATEHAR)",
+      "station": "NETARHAT",
+      "district": "LATEHAR",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 24.4717,
+      "lon": 87.7629,
+      "Ta": 24.6,
+      "RH": 80.0,
+      "name": "OM @ PAKUR_KVK (PAKUR)",
+      "station": "PAKUR_KVK",
+      "district": "PAKUR",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 23.3217,
+      "lon": 85.3197,
+      "Ta": 22.6,
+      "RH": 81.0,
+      "name": "OM @ MC_RANCHI (RANCHI)",
+      "station": "MC_RANCHI",
+      "district": "RANCHI",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 22.7158,
+      "lon": 85.954,
+      "Ta": 26.3,
+      "RH": 80.0,
+      "name": "OM @ SARAIKELA (SARAIKELA)",
+      "station": "SARAIKELA",
+      "district": "SARAIKELA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 22.5899,
+      "lon": 84.5173,
+      "Ta": 26.5,
+      "RH": 53.0,
+      "name": "OM @ SIMDEGA (SIMDEGA)",
+      "station": "SIMDEGA",
+      "district": "SIMDEGA",
+      "state": "JHARKHAND"
+    },
+    {
+      "lat": 34.096,
+      "lon": 74.525,
+      "Ta": 10.4,
+      "RH": 83.0,
+      "name": "OM @ BARAMULLA_KVK (BARAMULLA)",
+      "station": "BARAMULLA_KVK",
+      "district": "BARAMULLA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.2667,
+      "lon": 76.172,
+      "Ta": 10.3,
+      "RH": 99.0,
+      "name": "OM @ GULABGARH (KISHTWAR)",
+      "station": "GULABGARH",
+      "district": "KISHTWAR",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 32.7266,
+      "lon": 74.857,
+      "Ta": 19.4,
+      "RH": 71.0,
+      "name": "OM @ JAMMU (JAMMU)",
+      "station": "JAMMU",
+      "district": "JAMMU",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 32.368,
+      "lon": 75.544,
+      "Ta": 22.3,
+      "RH": 53.0,
+      "name": "OM @ KATHUA_KVK (KATHUA)",
+      "station": "KATHUA_KVK",
+      "district": "KATHUA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 34.516,
+      "lon": 74.256,
+      "Ta": 9.7,
+      "RH": 83.0,
+      "name": "OM @ KUPW_KVK (KUPWARA)",
+      "station": "KUPW_KVK",
+      "district": "KUPWARA",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 33.7665,
+      "lon": 74.111,
+      "Ta": 15.1,
+      "RH": 66.0,
+      "name": "OM @ POONCH (POONCH)",
+      "station": "POONCH",
+      "district": "POONCH",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 32.994,
+      "lon": 74.832,
+      "Ta": 18.7,
+      "RH": 71.0,
+      "name": "OM @ REASI_KVK (REASI)",
+      "station": "REASI_KVK",
+      "district": "REASI",
+      "state": "JAMMU_AND_KASHMIR"
+    },
+    {
+      "lat": 13.5062,
+      "lon": 75.0384,
+      "Ta": 27.9,
+      "RH": 88.0,
+      "name": "OM @ AGUMBE (SHIVAMOGGA)",
+      "station": "AGUMBE",
+      "district": "SHIVAMOGGA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 16.2861,
+      "lon": 76.1672,
+      "Ta": 30.2,
+      "RH": 49.0,
+      "name": "OM @ BAGALKOT_KVK (BAGALKOT)",
+      "station": "BAGALKOT_KVK",
+      "district": "BAGALKOT",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 12.9788,
+      "lon": 77.1925,
+      "Ta": 24.7,
+      "RH": 61.0,
+      "name": "OM @ CHANDURAYANGHALLI_KVK (RAMANAGARA)",
+      "station": "CHANDURAYANGHALLI_KVK",
+      "district": "RAMANAGARA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 13.3727,
+      "lon": 77.5498,
+      "Ta": 24.9,
+      "RH": 64.0,
+      "name": "OM @ DODDABALLAPURA (BANGALORE_RURAL)",
+      "station": "DODDABALLAPURA",
+      "district": "BANGALORE_RURAL",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 15.1385,
+      "lon": 77.0612,
+      "Ta": 31.8,
+      "RH": 41.0,
+      "name": "OM @ HAGARI_KVK (BELLARY)",
+      "station": "HAGARI_KVK",
+      "district": "BELLARY",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 13.9596,
+      "lon": 76.6456,
+      "Ta": 28.0,
+      "RH": 55.0,
+      "name": "OM @ HIRIYUR (CHITRADURGA)",
+      "station": "HIRIYUR",
+      "district": "CHITRADURGA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 12.9795,
+      "lon": 76.0427,
+      "Ta": 22.9,
+      "RH": 92.0,
+      "name": "OM @ HASSAN (HASSAN)",
+      "station": "HASSAN",
+      "district": "HASSAN",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 12.5685,
+      "lon": 76.8322,
+      "Ta": 25.4,
+      "RH": 77.0,
+      "name": "OM @ MANDYA_KVK (MANDYA)",
+      "station": "MANDYA_KVK",
+      "district": "MANDYA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 12.893,
+      "lon": 74.8684,
+      "Ta": 30.1,
+      "RH": 70.0,
+      "name": "OM @ MANGALURU (DAKSHINA_KANNADA)",
+      "station": "MANGALURU",
+      "district": "DAKSHINA_KANNADA",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 13.1156,
+      "lon": 75.6392,
+      "Ta": 21.3,
+      "RH": 99.0,
+      "name": "OM @ MUDIGERE_KVK (CHIKMAGALUR)",
+      "station": "MUDIGERE_KVK",
+      "district": "CHIKMAGALUR",
+      "state": "KARNATAKA"
+    },
+    {
+      "lat": 10.1053,
+      "lon": 76.3567,
+      "Ta": 25.1,
+      "RH": 97.0,
+      "name": "OM @ ALUVA (ERNAKULAM)",
+      "station": "ALUVA",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.71,
+      "lon": 77.01,
+      "Ta": 22.3,
+      "RH": 97.0,
+      "name": "OM @ AYYAPPANKOVIL (IDUKKI)",
+      "station": "AYYAPPANKOVIL",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.9944,
+      "lon": 76.5331,
+      "Ta": 25.3,
+      "RH": 99.0,
+      "name": "OM @ CHAVARA (KOLLAM)",
+      "station": "CHAVARA",
+      "district": "KOLLAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.96692,
+      "lon": 76.4409,
+      "Ta": 25.4,
+      "RH": 96.0,
+      "name": "OM @ CHOONDI (ERNAKULAM)",
+      "station": "CHOONDI",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 12.0964,
+      "lon": 75.5614,
+      "Ta": 27.7,
+      "RH": 82.0,
+      "name": "OM @ CHEMBERI (KANNUR)",
+      "station": "CHEMBERI",
+      "district": "KANNUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.82,
+      "lon": 75.66,
+      "Ta": 27.0,
+      "RH": 87.0,
+      "name": "OM @ CHERUVANCHERY (KANNUR)",
+      "station": "CHERUVANCHERY",
+      "district": "KANNUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.308,
+      "lon": 76.333,
+      "Ta": 25.2,
+      "RH": 96.0,
+      "name": "OM @ CHALAKKUDY (THRISSUR)",
+      "station": "CHALAKKUDY",
+      "district": "THRISSUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.9684,
+      "lon": 76.284,
+      "Ta": 26.2,
+      "RH": 90.0,
+      "name": "OM @ DHGROUND_KGOV (ERNAKULAM)",
+      "station": "DHGROUND_KGOV",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.6264,
+      "lon": 76.0886,
+      "Ta": 21.8,
+      "RH": 99.0,
+      "name": "OM @ KALPETA (WAYANAD)",
+      "station": "KALPETA",
+      "district": "WAYANAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.2879,
+      "lon": 76.5558,
+      "Ta": 25.4,
+      "RH": 99.0,
+      "name": "OM @ ATHIRAPPILLY (THRISSUR)",
+      "station": "ATHIRAPPILLY",
+      "district": "THRISSUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.6436,
+      "lon": 76.6867,
+      "Ta": 27.9,
+      "RH": 83.0,
+      "name": "OM @ KOLLENGODE (PALAKKAD)",
+      "station": "KOLLENGODE",
+      "district": "PALAKKAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.8616,
+      "lon": 76.5957,
+      "Ta": 24.9,
+      "RH": 97.0,
+      "name": "OM @ KOOTHATTUKULAM (ERNAKULAM)",
+      "station": "KOOTHATTUKULAM",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.2597,
+      "lon": 77.1688,
+      "Ta": 23.5,
+      "RH": 66.0,
+      "name": "OM @ KOVILKADAVU (IDUKKI)",
+      "station": "KOVILKADAVU",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.5916,
+      "lon": 76.5222,
+      "Ta": 25.1,
+      "RH": 96.0,
+      "name": "OM @ KOTTAYAM (KOTTAYAM)",
+      "station": "KOTTAYAM",
+      "district": "KOTTAYAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.99472,
+      "lon": 76.6953,
+      "Ta": 25.8,
+      "RH": 95.0,
+      "name": "OM @ KARUVELIL_TKMIT (KOLLAM)",
+      "station": "KARUVELIL_TKMIT",
+      "district": "KOLLAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.0557,
+      "lon": 76.3317,
+      "Ta": 25.1,
+      "RH": 97.0,
+      "name": "OM @ KALAMASSERY (ERNAKULAM)",
+      "station": "KALAMASSERY",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.382,
+      "lon": 76.3898,
+      "Ta": 25.5,
+      "RH": 97.0,
+      "name": "OM @ KARUMADI (ALAPPUZHA)",
+      "station": "KARUMADI",
+      "district": "ALAPPUZHA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.28,
+      "lon": 75.87,
+      "Ta": 27.0,
+      "RH": 84.0,
+      "name": "OM @ KUNNAMANGALAM (KOZHIKODE)",
+      "station": "KUNNAMANGALAM",
+      "district": "KOZHIKODE",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.1461,
+      "lon": 77.2019,
+      "Ta": 15.8,
+      "RH": 94.0,
+      "name": "OM @ KUNDALA DAM (IDUKKI)",
+      "station": "KUNDALA DAM",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.36222,
+      "lon": 76.8406,
+      "Ta": 24.5,
+      "RH": 98.0,
+      "name": "OM @ LAHA (PATHANAMTHITTA)",
+      "station": "LAHA",
+      "district": "PATHANAMTHITTA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.3187,
+      "lon": 76.734,
+      "Ta": 21.8,
+      "RH": 99.0,
+      "name": "OM @ LOWER_SHOLAYAR (THRISSUR)",
+      "station": "LOWER_SHOLAYAR",
+      "district": "THRISSUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.9724,
+      "lon": 76.2789,
+      "Ta": 26.2,
+      "RH": 90.0,
+      "name": "OM @ BOAT_JETTY_KGOV (ERNAKULAM)",
+      "station": "BOAT_JETTY_KGOV",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.8403,
+      "lon": 76.6892,
+      "Ta": 27.2,
+      "RH": 84.0,
+      "name": "OM @ MALAMPUZHA DAM (PALAKKAD)",
+      "station": "MALAMPUZHA DAM",
+      "district": "PALAKKAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.517,
+      "lon": 76.5356,
+      "Ta": 27.1,
+      "RH": 90.0,
+      "name": "OM @ MANGALAM_DAM (PALAKKAD)",
+      "station": "MANGALAM_DAM",
+      "district": "PALAKKAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.852,
+      "lon": 75.9855,
+      "Ta": 26.0,
+      "RH": 96.0,
+      "name": "OM @ THAVANUR_KVK (MALAPPURAM)",
+      "station": "THAVANUR_KVK",
+      "district": "MALAPPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.91,
+      "lon": 76.26,
+      "Ta": 26.1,
+      "RH": 90.0,
+      "name": "OM @ MATTANCHERRY (ERNAKULAM)",
+      "station": "MATTANCHERRY",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.1808,
+      "lon": 76.1628,
+      "Ta": 26.2,
+      "RH": 94.0,
+      "name": "OM @ MUNAKKAL (THRISSUR)",
+      "station": "MUNAKKAL",
+      "district": "THRISSUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 12.5061,
+      "lon": 75.0908,
+      "Ta": 28.4,
+      "RH": 81.0,
+      "name": "OM @ MULIYAR (KASARAGOD)",
+      "station": "MULIYAR",
+      "district": "KASARAGOD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.17,
+      "lon": 76.62,
+      "Ta": 24.8,
+      "RH": 97.0,
+      "name": "OM @ NOORANAD (ALAPPUZHA)",
+      "station": "NOORANAD",
+      "district": "ALAPPUZHA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.093,
+      "lon": 76.559,
+      "Ta": 25.6,
+      "RH": 95.0,
+      "name": "OM @ ODAKKALI (ERNAKULAM)",
+      "station": "ODAKKALI",
+      "district": "ERNAKULAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.75333,
+      "lon": 77.0264,
+      "Ta": 25.0,
+      "RH": 97.0,
+      "name": "OM @ PALODE (THIRUVANANTHAPURAM)",
+      "station": "PALODE",
+      "district": "THIRUVANANTHAPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 12.456,
+      "lon": 75.3671,
+      "Ta": 27.4,
+      "RH": 92.0,
+      "name": "OM @ PANATHUR (KASARAGOD)",
+      "station": "PANATHUR",
+      "district": "KASARAGOD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.7986,
+      "lon": 77.1614,
+      "Ta": 20.8,
+      "RH": 99.0,
+      "name": "OM @ PAMPADUMPARA (IDUKKI)",
+      "station": "PAMPADUMPARA",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 12.1875,
+      "lon": 75.1783,
+      "Ta": 29.4,
+      "RH": 72.0,
+      "name": "OM @ PADANNAKKAD (KASARAGOD)",
+      "station": "PADANNAKKAD",
+      "district": "KASARAGOD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.9933,
+      "lon": 75.9442,
+      "Ta": 25.9,
+      "RH": 95.0,
+      "name": "OM @ THENNALA (MALAPPURAM)",
+      "station": "THENNALA",
+      "district": "MALAPPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.5303,
+      "lon": 76.3997,
+      "Ta": 25.0,
+      "RH": 96.0,
+      "name": "OM @ PEECHI (THRISSUR)",
+      "station": "PEECHI",
+      "district": "THRISSUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 12.2216,
+      "lon": 75.3073,
+      "Ta": 26.9,
+      "RH": 83.0,
+      "name": "OM @ PERINGOME (KANNUR)",
+      "station": "PERINGOME",
+      "district": "KANNUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.65944,
+      "lon": 76.9114,
+      "Ta": 24.9,
+      "RH": 98.0,
+      "name": "OM @ PIRAPPANCODE (THIRUVANANTHAPURAM)",
+      "station": "PIRAPPANCODE",
+      "district": "THIRUVANANTHAPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.8107,
+      "lon": 75.4918,
+      "Ta": 28.1,
+      "RH": 82.0,
+      "name": "OM @ PINARAYI (KANNUR)",
+      "station": "PINARAYI",
+      "district": "KANNUR",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.381,
+      "lon": 76.3061,
+      "Ta": 27.0,
+      "RH": 79.0,
+      "name": "OM @ PALEMAD (MALAPPURAM)",
+      "station": "PALEMAD",
+      "district": "MALAPPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.3778,
+      "lon": 76.7642,
+      "Ta": 23.9,
+      "RH": 99.0,
+      "name": "OM @ PARAMBIKULAM (PALAKKAD)",
+      "station": "PARAMBIKULAM",
+      "district": "PALAKKAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 23.8643,
+      "lon": 91.2916,
+      "Ta": 21.6,
+      "RH": 90.0,
+      "name": "OM @ SECRETARIAT (WEST_TRIPURA)",
+      "station": "SECRETARIAT",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 10.0124,
+      "lon": 77.0318,
+      "Ta": 21.9,
+      "RH": 98.0,
+      "name": "OM @ SENGULAM DAM (IDUKKI)",
+      "station": "SENGULAM DAM",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.74,
+      "lon": 76.36,
+      "Ta": 25.9,
+      "RH": 97.0,
+      "name": "OM @ THYCATTUSSERY (ALAPPUZHA)",
+      "station": "THYCATTUSSERY",
+      "district": "ALAPPUZHA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.35778,
+      "lon": 76.5553,
+      "Ta": 25.0,
+      "RH": 97.0,
+      "name": "OM @ THIRUVALLA_KALLUNKAL (PATHANAMTHITTA)",
+      "station": "THIRUVALLA_KALLUNKAL",
+      "district": "PATHANAMTHITTA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.79972,
+      "lon": 76.8803,
+      "Ta": 24.8,
+      "RH": 98.0,
+      "name": "OM @ THATTATHUMALA (THIRUVANANTHAPURAM)",
+      "station": "THATTATHUMALA",
+      "district": "THIRUVANANTHAPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.8667,
+      "lon": 76.8586,
+      "Ta": 25.4,
+      "RH": 93.0,
+      "name": "OM @ UDUMBANNOOR (IDUKKI)",
+      "station": "UDUMBANNOOR",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.2377,
+      "lon": 76.6886,
+      "Ta": 25.5,
+      "RH": 96.0,
+      "name": "OM @ ULANADU (PATHANAMTHITTA)",
+      "station": "ULANADU",
+      "district": "PATHANAMTHITTA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.34,
+      "lon": 76.01,
+      "Ta": 26.6,
+      "RH": 87.0,
+      "name": "OM @ URUMI (KOZHIKODE)",
+      "station": "URUMI",
+      "district": "KOZHIKODE",
+      "state": "KERALA"
+    },
+    {
+      "lat": 8.73222,
+      "lon": 76.7317,
+      "Ta": 25.8,
+      "RH": 95.0,
+      "name": "OM @ VARKALA (THIRUVANANTHAPURAM)",
+      "station": "VARKALA",
+      "district": "THIRUVANANTHAPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.05,
+      "lon": 76.084,
+      "Ta": 26.6,
+      "RH": 91.0,
+      "name": "OM @ VAKKAD (MALAPPURAM)",
+      "station": "VAKKAD",
+      "district": "MALAPPURAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.702,
+      "lon": 76.852,
+      "Ta": 26.5,
+      "RH": 87.0,
+      "name": "OM @ VANNAMADA (PALAKKAD)",
+      "station": "VANNAMADA",
+      "district": "PALAKKAD",
+      "state": "KERALA"
+    },
+    {
+      "lat": 10.1777,
+      "lon": 77.2538,
+      "Ta": 15.6,
+      "RH": 98.0,
+      "name": "OM @ VATTAVADA (IDUKKI)",
+      "station": "VATTAVADA",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.59,
+      "lon": 75.62,
+      "Ta": 28.1,
+      "RH": 83.0,
+      "name": "OM @ VADAKARA (KOZHIKODE)",
+      "station": "VADAKARA",
+      "district": "KOZHIKODE",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.585,
+      "lon": 76.5708,
+      "Ta": 25.1,
+      "RH": 94.0,
+      "name": "OM @ VADAVATHOOR (KOTTAYAM)",
+      "station": "VADAVATHOOR",
+      "district": "KOTTAYAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 11.7803,
+      "lon": 75.7639,
+      "Ta": 25.1,
+      "RH": 91.0,
+      "name": "OM @ VILANGAD (KOZHIKODE)",
+      "station": "VILANGAD",
+      "district": "KOZHIKODE",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.72388,
+      "lon": 76.3925,
+      "Ta": 25.5,
+      "RH": 97.0,
+      "name": "OM @ VAIKKOM (KOTTAYAM)",
+      "station": "VAIKKOM",
+      "district": "KOTTAYAM",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.98,
+      "lon": 77.01,
+      "Ta": 23.8,
+      "RH": 97.0,
+      "name": "OM @ VELLATHOOVAL (IDUKKI)",
+      "station": "VELLATHOOVAL",
+      "district": "IDUKKI",
+      "state": "KERALA"
+    },
+    {
+      "lat": 9.45222,
+      "lon": 76.8578,
+      "Ta": 24.8,
+      "RH": 97.0,
+      "name": "OM @ VENKURINJI (PATHANAMTHITTA)",
+      "station": "VENKURINJI",
+      "district": "PATHANAMTHITTA",
+      "state": "KERALA"
+    },
+    {
+      "lat": 34.09,
+      "lon": 77.589,
+      "Ta": 3.1,
+      "RH": 81.0,
+      "name": "OM @ CHUCHOT_YOKMA (LEH)",
+      "station": "CHUCHOT_YOKMA",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 34.56,
+      "lon": 76.482,
+      "Ta": 1.6,
+      "RH": 86.0,
+      "name": "OM @ GARKON (KARGIL)",
+      "station": "GARKON",
+      "district": "KARGIL",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 34.556,
+      "lon": 77.01,
+      "Ta": -4.1,
+      "RH": 91.0,
+      "name": "OM @ KHALTSE (LEH)",
+      "station": "KHALTSE",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 34.17,
+      "lon": 77.5767,
+      "Ta": 2.2,
+      "RH": 73.0,
+      "name": "OM @ MC LEH (LEH)",
+      "station": "MC LEH",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 34.783,
+      "lon": 77.566,
+      "Ta": -3.2,
+      "RH": 85.0,
+      "name": "OM @ NUBRA_HUNDER (LEH)",
+      "station": "NUBRA_HUNDER",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 33.209,
+      "lon": 78.646,
+      "Ta": 1.2,
+      "RH": 54.0,
+      "name": "OM @ NYOMA_KVK (LEH)",
+      "station": "NYOMA_KVK",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 33.479,
+      "lon": 76.869,
+      "Ta": 4.1,
+      "RH": 71.0,
+      "name": "OM @ PADUM_KVK (KARGIL)",
+      "station": "PADUM_KVK",
+      "district": "KARGIL",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 33.98,
+      "lon": 78.23,
+      "Ta": -6.7,
+      "RH": 83.0,
+      "name": "OM @ TANGTSE_DURBUK (LEH)",
+      "station": "TANGTSE_DURBUK",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 33.83,
+      "lon": 77.81,
+      "Ta": 2.1,
+      "RH": 79.0,
+      "name": "OM @ UPSHI (LEH)",
+      "station": "UPSHI",
+      "district": "LEH",
+      "state": "LADAKH"
+    },
+    {
+      "lat": 18.153,
+      "lon": 74.5003,
+      "Ta": 28.6,
+      "RH": 51.0,
+      "name": "OM @ NIASM_BARAMATI (PUNE)",
+      "station": "NIASM_BARAMATI",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.990814,
+      "lon": 75.748339,
+      "Ta": 31.8,
+      "RH": 32.0,
+      "name": "OM @ BEED_PTO (BEED)",
+      "station": "BEED_PTO",
+      "district": "BEED",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.54,
+      "lon": 73.8886,
+      "Ta": 26.6,
+      "RH": 58.0,
+      "name": "OM @ BLINDSCHOOL_KP_PUNE (PUNE)",
+      "station": "BLINDSCHOOL_KP_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.9836,
+      "lon": 72.8345,
+      "Ta": 28.9,
+      "RH": 82.0,
+      "name": "OM @ BYCULLA_MUMBAI (MUMBAI_CITY)",
+      "station": "BYCULLA_MUMBAI",
+      "district": "MUMBAI_CITY",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.6032,
+      "lon": 73.8541,
+      "Ta": 26.3,
+      "RH": 60.0,
+      "name": "OM @ CME_DAPODI (PUNE)",
+      "station": "CME_DAPODI",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.4659,
+      "lon": 73.9244,
+      "Ta": 27.1,
+      "RH": 55.0,
+      "name": "OM @ DPS_HADAPSAR_PUNE (PUNE)",
+      "station": "DPS_HADAPSAR_PUNE",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.6751,
+      "lon": 73.8772,
+      "Ta": 25.8,
+      "RH": 61.0,
+      "name": "OM @ RJSPMCOP_DUDULGAON (PUNE)",
+      "station": "RJSPMCOP_DUDULGAON",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.5607,
+      "lon": 73.5211,
+      "Ta": 22.2,
+      "RH": 84.0,
+      "name": "OM @ GIRIVAN (PUNE)",
+      "station": "GIRIVAN",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.0088,
+      "lon": 73.106,
+      "Ta": 28.7,
+      "RH": 82.0,
+      "name": "OM @ IIGHQ_NEWPANVEL (RAIGAD)",
+      "station": "IIGHQ_NEWPANVEL",
+      "district": "RAIGAD",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.9052,
+      "lon": 74.0938,
+      "Ta": 25.5,
+      "RH": 58.0,
+      "name": "OM @ KHADAKWADI_AMBEGAON (PUNE)",
+      "station": "KHADAKWADI_AMBEGAON",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.5056,
+      "lon": 74.3304,
+      "Ta": 28.0,
+      "RH": 51.0,
+      "name": "OM @ KHUTBAV_DAUND (PUNE)",
+      "station": "KHUTBAV_DAUND",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.4697,
+      "lon": 74.0013,
+      "Ta": 27.5,
+      "RH": 53.0,
+      "name": "OM @ LONIKALBHOR_HAVELI (PUNE)",
+      "station": "LONIKALBHOR_HAVELI",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.9722,
+      "lon": 76.5323,
+      "Ta": 31.6,
+      "RH": 22.0,
+      "name": "OM @ LONAR (BULDHANA)",
+      "station": "LONAR",
+      "district": "BULDHANA",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 17.4208,
+      "lon": 75.1947,
+      "Ta": 30.6,
+      "RH": 32.0,
+      "name": "OM @ SANGOLA_MAHAVIDYALAYA (SOLAPUR)",
+      "station": "SANGOLA_MAHAVIDYALAYA",
+      "district": "SOLAPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.99012,
+      "lon": 73.266534,
+      "Ta": 22.3,
+      "RH": 91.0,
+      "name": "OM @ MATHERAN (RAIGAD)",
+      "station": "MATHERAN",
+      "district": "RAIGAD",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 21.0383,
+      "lon": 79.0572,
+      "Ta": 31.8,
+      "RH": 20.0,
+      "name": "OM @ NAGPUR_KVK (NAGPUR)",
+      "station": "NAGPUR_KVK",
+      "district": "NAGPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.2092,
+      "lon": 73.8725,
+      "Ta": 23.3,
+      "RH": 74.0,
+      "name": "OM @ NIMGIRI_JUNNAR (PUNE)",
+      "station": "NIMGIRI_JUNNAR",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.1003,
+      "lon": 73.9655,
+      "Ta": 24.5,
+      "RH": 64.0,
+      "name": "OM @ NARAYANGOAN_KRISHI_KENDRA (PUNE)",
+      "station": "NARAYANGOAN_KRISHI_KENDRA",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.8344,
+      "lon": 74.0536,
+      "Ta": 25.8,
+      "RH": 57.0,
+      "name": "OM @ PABAL_SHIRUR (PUNE)",
+      "station": "PABAL_SHIRUR",
+      "district": "PUNE",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.7319,
+      "lon": 72.7609,
+      "Ta": 26.9,
+      "RH": 93.0,
+      "name": "OM @ PALGHAR_AWS400 (PALGHAR)",
+      "station": "PALGHAR_AWS400",
+      "district": "PALGHAR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 16.41029,
+      "lon": 73.994119,
+      "Ta": 23.7,
+      "RH": 97.0,
+      "name": "OM @ RADHANAGRI_ARS (KOLHAPUR)",
+      "station": "RADHANAGRI_ARS",
+      "district": "KOLHAPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 21.3937,
+      "lon": 79.3235,
+      "Ta": 30.0,
+      "RH": 22.0,
+      "name": "OM @ RAMTEK_AWS400 (NAGPUR)",
+      "station": "RAMTEK_AWS400",
+      "district": "NAGPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 16.9859,
+      "lon": 73.3285,
+      "Ta": 27.0,
+      "RH": 92.0,
+      "name": "OM @ RATNAGIRI_AWS400 (RATNAGIRI)",
+      "station": "RATNAGIRI_AWS400",
+      "district": "RATNAGIRI",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 21.53515,
+      "lon": 74.485958,
+      "Ta": 29.6,
+      "RH": 54.0,
+      "name": "OM @ SHAHADA_AWS400 (NANDURBAR)",
+      "station": "SHAHADA_AWS400",
+      "district": "NANDURBAR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 17.4833,
+      "lon": 75.3815,
+      "Ta": 31.0,
+      "RH": 31.0,
+      "name": "OM @ MOHOL_KVK (SOLAPUR)",
+      "station": "MOHOL_KVK",
+      "district": "SOLAPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.97,
+      "lon": 79.2984,
+      "Ta": 33.8,
+      "RH": 21.0,
+      "name": "OM @ CHANDRAPUR_AWS400 (CHANDRAPUR)",
+      "station": "CHANDRAPUR_AWS400",
+      "district": "CHANDRAPUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.422844,
+      "lon": 77.401916,
+      "Ta": 30.7,
+      "RH": 24.0,
+      "name": "OM @ TONDAPUR_AWS400 (HINGOLI)",
+      "station": "TONDAPUR_AWS400",
+      "district": "HINGOLI",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 18.387928,
+      "lon": 77.118043,
+      "Ta": 31.8,
+      "RH": 21.0,
+      "name": "OM @ UDGIR_AWS400 (LATUR)",
+      "station": "UDGIR_AWS400",
+      "district": "LATUR",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.1096,
+      "lon": 72.9282,
+      "Ta": 29.0,
+      "RH": 80.0,
+      "name": "OM @ VIKHROLI (MUMBAI SUBURBAN)",
+      "station": "VIKHROLI",
+      "district": "MUMBAI SUBURBAN",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.937324,
+      "lon": 73.721246,
+      "Ta": 24.5,
+      "RH": 72.0,
+      "name": "OM @ VILHOLI (NASHIK)",
+      "station": "VILHOLI",
+      "district": "NASHIK",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.0784,
+      "lon": 72.8967,
+      "Ta": 28.8,
+      "RH": 81.0,
+      "name": "OM @ VIDYAVIHAR (MUMBAI SUBURBAN)",
+      "station": "VIDYAVIHAR",
+      "district": "MUMBAI SUBURBAN",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 19.9547,
+      "lon": 77.579,
+      "Ta": 32.3,
+      "RH": 19.0,
+      "name": "OM @ PUSHAD_AWS400 (YAVATMAL)",
+      "station": "PUSHAD_AWS400",
+      "district": "YAVATMAL",
+      "state": "MAHARASHTRA"
+    },
+    {
+      "lat": 25.4616,
+      "lon": 89.9258,
+      "Ta": 20.5,
+      "RH": 95.0,
+      "name": "OM @ AMPATI (SOUTH_WEST_GARO_HILLS)",
+      "station": "AMPATI",
+      "district": "SOUTH_WEST_GARO_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.5631,
+      "lon": 91.8742,
+      "Ta": 12.9,
+      "RH": 80.0,
+      "name": "OM @ LABAN (EAST_KHASI_HILLS)",
+      "station": "LABAN",
+      "district": "EAST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.3706,
+      "lon": 91.4765,
+      "Ta": 12.5,
+      "RH": 88.0,
+      "name": "OM @ MAWKYRWAT (SOUTH_WEST_KHASI_HILLS)",
+      "station": "MAWKYRWAT",
+      "district": "SOUTH_WEST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.5514,
+      "lon": 92.0501,
+      "Ta": 13.4,
+      "RH": 83.0,
+      "name": "OM @ MAWRYNGKNENG (EAST_KHASI_HILLS)",
+      "station": "MAWRYNGKNENG",
+      "district": "EAST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.6083,
+      "lon": 91.8919,
+      "Ta": 14.9,
+      "RH": 79.0,
+      "name": "OM @ NEHU (EAST_KHASI_HILLS)",
+      "station": "NEHU",
+      "district": "EAST_KHASI_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 25.8907,
+      "lon": 90.6135,
+      "Ta": 20.4,
+      "RH": 89.0,
+      "name": "OM @ RESUBELPARA (NORTH_GARO_HILLS)",
+      "station": "RESUBELPARA",
+      "district": "NORTH_GARO_HILLS",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 26.0072,
+      "lon": 91.8118,
+      "Ta": 21.3,
+      "RH": 98.0,
+      "name": "OM @ UMTREWDAM (RI_BHOI)",
+      "station": "UMTREWDAM",
+      "district": "RI_BHOI",
+      "state": "MEGHALAYA"
+    },
+    {
+      "lat": 22.9522,
+      "lon": 92.9328,
+      "Ta": 16.2,
+      "RH": 99.0,
+      "name": "OM @ HNATHIAL (HNATHIAL)",
+      "station": "HNATHIAL",
+      "district": "HNATHIAL",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 23.5266,
+      "lon": 93.1789,
+      "Ta": 15.9,
+      "RH": 84.0,
+      "name": "OM @ KHAWZAWL (KHAWZAWL)",
+      "station": "KHAWZAWL",
+      "district": "KHAWZAWL",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 24.208,
+      "lon": 92.6757,
+      "Ta": 17.4,
+      "RH": 100.0,
+      "name": "OM @ KOLASIB (KOLASIB)",
+      "station": "KOLASIB",
+      "district": "KOLASIB",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 23.7371,
+      "lon": 92.6518,
+      "Ta": 16.9,
+      "RH": 98.0,
+      "name": "OM @ MIZORAM_UNIVERSITY (AIZAWL)",
+      "station": "MIZORAM_UNIVERSITY",
+      "district": "AIZAWL",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 23.8381,
+      "lon": 92.6357,
+      "Ta": 19.1,
+      "RH": 99.0,
+      "name": "OM @ LENGPUI_KVK (MAMIT)",
+      "station": "LENGPUI_KVK",
+      "district": "MAMIT",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 22.4949,
+      "lon": 92.9988,
+      "Ta": 14.7,
+      "RH": 100.0,
+      "name": "OM @ SAIHA (SAIHA)",
+      "station": "SAIHA",
+      "district": "SAIHA",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 24.3425,
+      "lon": 92.8463,
+      "Ta": 18.6,
+      "RH": 99.0,
+      "name": "OM @ SERCHHIP (SERCHHIP)",
+      "station": "SERCHHIP",
+      "district": "SERCHHIP",
+      "state": "MIZORAM"
+    },
+    {
+      "lat": 23.6806,
+      "lon": 75.9941,
+      "Ta": 31.0,
+      "RH": 25.0,
+      "name": "OM @ AGAR_MALWA (AGAR)",
+      "station": "AGAR_MALWA",
+      "district": "AGAR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 22.6765,
+      "lon": 81.7607,
+      "Ta": 24.6,
+      "RH": 24.0,
+      "name": "OM @ AMARKANTAK_CRCH (ANUPPUR)",
+      "station": "AMARKANTAK_CRCH",
+      "district": "ANUPPUR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.6002,
+      "lon": 77.7557,
+      "Ta": 30.5,
+      "RH": 25.0,
+      "name": "OM @ AONWARI_KVK (ASHOKNAGAR)",
+      "station": "AONWARI_KVK",
+      "district": "ASHOKNAGAR",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 22.0328,
+      "lon": 74.9744,
+      "Ta": 31.1,
+      "RH": 30.0,
+      "name": "OM @ TALUN_KVK (BARWANI)",
+      "station": "TALUN_KVK",
+      "district": "BARWANI",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.6005,
+      "lon": 80.8322,
+      "Ta": 30.0,
+      "RH": 34.0,
+      "name": "OM @ GRAMODAY_VV_CHITRAKOOT (SATNA)",
+      "station": "GRAMODAY_VV_CHITRAKOOT",
+      "district": "SATNA",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.1578,
+      "lon": 75.806,
+      "Ta": 30.2,
+      "RH": 25.0,
+      "name": "OM @ VIKRAM_VV_UJJAIN (UJJAIN)",
+      "station": "VIKRAM_VV_UJJAIN",
+      "district": "UJJAIN",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.4738,
+      "lon": 74.8969,
+      "Ta": 29.4,
+      "RH": 29.0,
+      "name": "OM @ MARUKHEDA_KVK (NEEMUCH)",
+      "station": "MARUKHEDA_KVK",
+      "district": "NEEMUCH",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 22.4695,
+      "lon": 78.4318,
+      "Ta": 26.3,
+      "RH": 26.0,
+      "name": "OM @ PACHMARHI_AEC (HOSHANGABAD)",
+      "station": "PACHMARHI_AEC",
+      "district": "HOSHANGABAD",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.0084,
+      "lon": 76.7392,
+      "Ta": 32.4,
+      "RH": 23.0,
+      "name": "OM @ RAJGARH_KVK (RAJGARH)",
+      "station": "RAJGARH_KVK",
+      "district": "RAJGARH",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.5342,
+      "lon": 81.2775,
+      "Ta": 29.9,
+      "RH": 33.0,
+      "name": "OM @ REWA_KVK (REWA)",
+      "station": "REWA_KVK",
+      "district": "REWA",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 23.29,
+      "lon": 81.3483,
+      "Ta": 28.7,
+      "RH": 27.0,
+      "name": "OM @ KALYANPUR_KVK (SHAHDOL)",
+      "station": "KALYANPUR_KVK",
+      "district": "SHAHDOL",
+      "state": "MADHYA_PRADESH"
+    },
+    {
+      "lat": 24.3265,
+      "lon": 94.0224,
+      "Ta": 16.6,
+      "RH": 96.0,
+      "name": "OM @ CHANDEL_KVK (CHANDEL)",
+      "station": "CHANDEL_KVK",
+      "district": "CHANDEL",
+      "state": "MANIPUR"
+    },
+    {
+      "lat": 24.855,
+      "lon": 94.5097,
+      "Ta": 11.4,
+      "RH": 89.0,
+      "name": "OM @ KAMJONG (KAMJONG)",
+      "station": "KAMJONG",
+      "district": "KAMJONG",
+      "state": "MANIPUR"
+    },
+    {
+      "lat": 24.8547,
+      "lon": 93.6167,
+      "Ta": 17.2,
+      "RH": 97.0,
+      "name": "OM @ KHOUPUM (NONEY)",
+      "station": "KHOUPUM",
+      "district": "NONEY",
+      "state": "MANIPUR"
+    },
+    {
+      "lat": 25.5088,
+      "lon": 94.1497,
+      "Ta": 12.2,
+      "RH": 95.0,
+      "name": "OM @ MAO (SENAPATI)",
+      "station": "MAO",
+      "district": "SENAPATI",
+      "state": "MANIPUR"
+    },
+    {
+      "lat": 25.2294,
+      "lon": 93.8488,
+      "Ta": 17.3,
+      "RH": 97.0,
+      "name": "OM @ TUJANGVAICHONG (KANGPOKPI)",
+      "station": "TUJANGVAICHONG",
+      "district": "KANGPOKPI",
+      "state": "MANIPUR"
+    },
+    {
+      "lat": 25.6534,
+      "lon": 93.6669,
+      "Ta": 19.3,
+      "RH": 94.0,
+      "name": "OM @ JALUKIE (PEREN)",
+      "station": "JALUKIE",
+      "district": "PEREN",
+      "state": "NAGALAND"
+    },
+    {
+      "lat": 25.8833,
+      "lon": 94.7833,
+      "Ta": 17.6,
+      "RH": 86.0,
+      "name": "OM @ KIPHIRE_AWS400 (KIPHIRE)",
+      "station": "KIPHIRE_AWS400",
+      "district": "KIPHIRE",
+      "state": "NAGALAND"
+    },
+    {
+      "lat": 25.7929,
+      "lon": 94.1312,
+      "Ta": 15.1,
+      "RH": 89.0,
+      "name": "OM @ CHIEPHOBOZOU_NERHEMA (KOHIMA)",
+      "station": "CHIEPHOBOZOU_NERHEMA",
+      "district": "KOHIMA",
+      "state": "NAGALAND"
+    },
+    {
+      "lat": 26.4153,
+      "lon": 94.8794,
+      "Ta": 17.5,
+      "RH": 97.0,
+      "name": "OM @ SAKSHI (LONGLENG)",
+      "station": "SAKSHI",
+      "district": "LONGLENG",
+      "state": "NAGALAND"
+    },
+    {
+      "lat": 25.9888,
+      "lon": 94.9058,
+      "Ta": 14.6,
+      "RH": 96.0,
+      "name": "OM @ THONOKNYU (TUENSANG)",
+      "station": "THONOKNYU",
+      "district": "TUENSANG",
+      "state": "NAGALAND"
+    },
+    {
+      "lat": 26.0852,
+      "lon": 94.255,
+      "Ta": 14.8,
+      "RH": 98.0,
+      "name": "OM @ WOKHA (WOKHA)",
+      "station": "WOKHA",
+      "district": "WOKHA",
+      "state": "NAGALAND"
+    },
+    {
+      "lat": 19.9508,
+      "lon": 84.5929,
+      "Ta": 27.0,
+      "RH": 90.0,
+      "name": "OM @ BENAKUDA_KVK (GANJAM)",
+      "station": "BENAKUDA_KVK",
+      "district": "GANJAM",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 21.9228,
+      "lon": 86.7405,
+      "Ta": 28.1,
+      "RH": 84.0,
+      "name": "OM @ BARIPADA (MAYURBHANJ)",
+      "station": "BARIPADA",
+      "district": "MAYURBHANJ",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 20.5958,
+      "lon": 86.0239,
+      "Ta": 27.5,
+      "RH": 88.0,
+      "name": "OM @ CUTTACK_KVK (CUTTACK)",
+      "station": "CUTTACK_KVK",
+      "district": "CUTTACK",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 21.4691,
+      "lon": 84.0018,
+      "Ta": 29.9,
+      "RH": 48.0,
+      "name": "OM @ DHANKAUDA (SAMBALPUR)",
+      "station": "DHANKAUDA",
+      "district": "SAMBALPUR",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 19.0871,
+      "lon": 83.8144,
+      "Ta": 27.4,
+      "RH": 88.0,
+      "name": "OM @ GUNUPUR_KVK (RAYAGADA)",
+      "station": "GUNUPUR_KVK",
+      "district": "RAYAGADA",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 20.201,
+      "lon": 85.6671,
+      "Ta": 27.4,
+      "RH": 89.0,
+      "name": "OM @ PITAPALLI (KHURDHA)",
+      "station": "PITAPALLI",
+      "district": "KHURDHA",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 20.4786,
+      "lon": 84.2913,
+      "Ta": 27.2,
+      "RH": 54.0,
+      "name": "OM @ PHULBANI (KANDHAMAL)",
+      "station": "PHULBANI",
+      "district": "KANDHAMAL",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 21.553,
+      "lon": 86.8147,
+      "Ta": 27.2,
+      "RH": 87.0,
+      "name": "OM @ FM_UNIVERSITY (BALASORE)",
+      "station": "FM_UNIVERSITY",
+      "district": "BALASORE",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 19.9335,
+      "lon": 85.8181,
+      "Ta": 27.9,
+      "RH": 88.0,
+      "name": "OM @ PURI_KVK (PURI)",
+      "station": "PURI_KVK",
+      "district": "PURI",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 19.646,
+      "lon": 85.4058,
+      "Ta": 28.0,
+      "RH": 89.0,
+      "name": "OM @ JANHUKUDA(NEAR_SATAPADA) (PURI)",
+      "station": "JANHUKUDA(NEAR_SATAPADA)",
+      "district": "PURI",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 20.837,
+      "lon": 83.9015,
+      "Ta": 30.6,
+      "RH": 45.0,
+      "name": "OM @ SONEPUR (SONEPUR)",
+      "station": "SONEPUR",
+      "district": "SONEPUR",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 22.1176,
+      "lon": 84.0436,
+      "Ta": 27.3,
+      "RH": 53.0,
+      "name": "OM @ SUNDERGARH (SUNDERGARH)",
+      "station": "SUNDERGARH",
+      "district": "SUNDERGARH",
+      "state": "ODISHA"
+    },
+    {
+      "lat": 30.1469,
+      "lon": 74.2073,
+      "Ta": 27.6,
+      "RH": 46.0,
+      "name": "OM @ FASC_ABOHAR (FAZILKA)",
+      "station": "FASC_ABOHAR",
+      "district": "FAZILKA",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 31.387,
+      "lon": 76.3783,
+      "Ta": 19.9,
+      "RH": 86.0,
+      "name": "OM @ BHAKRA_DAM_IMDNAGAL (RUPNAGAR)",
+      "station": "BHAKRA_DAM_IMDNAGAL",
+      "district": "RUPNAGAR",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 30.933,
+      "lon": 74.622,
+      "Ta": 25.4,
+      "RH": 61.0,
+      "name": "OM @ FIROZPUR_KVK (FIROZPUR)",
+      "station": "FIROZPUR_KVK",
+      "district": "FIROZPUR",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 32.3217,
+      "lon": 75.6622,
+      "Ta": 21.4,
+      "RH": 61.0,
+      "name": "OM @ KVK_PATHANKOT (PATHANKOT)",
+      "station": "KVK_PATHANKOT",
+      "district": "PATHANKOT",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 31.289,
+      "lon": 76.4159,
+      "Ta": 21.0,
+      "RH": 74.0,
+      "name": "OM @ SRI_ANADPUR_SAHIB_IMDJINDWADI (RUPNAGAR)",
+      "station": "SRI_ANADPUR_SAHIB_IMDJINDWADI",
+      "district": "RUPNAGAR",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 32.4409,
+      "lon": 75.7575,
+      "Ta": 19.8,
+      "RH": 65.0,
+      "name": "OM @ THEIN_DAM (PATHANKOT)",
+      "station": "THEIN_DAM",
+      "district": "PATHANKOT",
+      "state": "PUNJAB"
+    },
+    {
+      "lat": 11.7514,
+      "lon": 75.5439,
+      "Ta": 27.5,
+      "RH": 85.0,
+      "name": "OM @ MAHE_JNV (MAHE)",
+      "station": "MAHE_JNV",
+      "district": "MAHE",
+      "state": "PUDUCHERRY"
+    },
+    {
+      "lat": 11.936,
+      "lon": 79.7687,
+      "Ta": 29.0,
+      "RH": 80.0,
+      "name": "OM @ PUDUCHERRY_KVK (PUDUCHERRY)",
+      "station": "PUDUCHERRY_KVK",
+      "district": "PUDUCHERRY",
+      "state": "PUDUCHERRY"
+    },
+    {
+      "lat": 26.8207,
+      "lon": 75.8175,
+      "Ta": 31.2,
+      "RH": 23.0,
+      "name": "OM @ AMITY_UNIVERSITY (JAIPUR)",
+      "station": "AMITY_UNIVERSITY",
+      "district": "JAIPUR",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 24.8462,
+      "lon": 74.5828,
+      "Ta": 28.5,
+      "RH": 33.0,
+      "name": "OM @ CHITTORGARH_KVK (CHITTAURGARH)",
+      "station": "CHITTORGARH_KVK",
+      "district": "CHITTAURGARH",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 26.6237,
+      "lon": 75.0219,
+      "Ta": 32.3,
+      "RH": 25.0,
+      "name": "OM @ CENTRAL_UNIVERSITY_KISHANGARH (AJMER)",
+      "station": "CENTRAL_UNIVERSITY_KISHANGARH",
+      "district": "AJMER",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 23.865,
+      "lon": 73.8604,
+      "Ta": 30.6,
+      "RH": 42.0,
+      "name": "OM @ DUNGARPUR_KVK (DUNGARPUR)",
+      "station": "DUNGARPUR_KVK",
+      "district": "DUNGARPUR",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 28.2,
+      "lon": 75.23,
+      "Ta": 26.9,
+      "RH": 37.0,
+      "name": "OM @ JHUNJHUNU(AWS) (JHUNJHUNU)",
+      "station": "JHUNJHUNU(AWS)",
+      "district": "JHUNJHUNU",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 25.3843,
+      "lon": 72.5091,
+      "Ta": 31.6,
+      "RH": 31.0,
+      "name": "OM @ JALORE_KVK (JALORE)",
+      "station": "JALORE_KVK",
+      "district": "JALORE",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 26.9096,
+      "lon": 76.4,
+      "Ta": 27.2,
+      "RH": 34.0,
+      "name": "OM @ KHEDALI (DAUSA)",
+      "station": "KHEDALI",
+      "district": "DAUSA",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 26.777,
+      "lon": 77.0691,
+      "Ta": 28.9,
+      "RH": 36.0,
+      "name": "OM @ KARAULI_KVK (KARAULI)",
+      "station": "KARAULI_KVK",
+      "district": "KARAULI",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 28.4832,
+      "lon": 73.7507,
+      "Ta": 27.1,
+      "RH": 34.0,
+      "name": "OM @ LUNKARNSAR (BIKANER)",
+      "station": "LUNKARNSAR",
+      "district": "BIKANER",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 24.0379,
+      "lon": 74.7635,
+      "Ta": 30.0,
+      "RH": 29.0,
+      "name": "OM @ PRATAPGARH (PRATAPGARH)",
+      "station": "PRATAPGARH",
+      "district": "PRATAPGARH",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 27.2315,
+      "lon": 73.689,
+      "Ta": 30.6,
+      "RH": 27.0,
+      "name": "OM @ KRISHI_VISHWAVIDHYALAYA (NAGAUR)",
+      "station": "KRISHI_VISHWAVIDHYALAYA",
+      "district": "NAGAUR",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 24.9519,
+      "lon": 72.8815,
+      "Ta": 32.3,
+      "RH": 25.0,
+      "name": "OM @ SIROHI_KVK (SIROHI)",
+      "station": "SIROHI_KVK",
+      "district": "SIROHI",
+      "state": "RAJASTHAN"
+    },
+    {
+      "lat": 19.6473,
+      "lon": 78.519,
+      "Ta": 32.8,
+      "RH": 22.0,
+      "name": "OM @ ADILABAD_KVK (ADILABAD)",
+      "station": "ADILABAD_KVK",
+      "district": "ADILABAD",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.7955,
+      "lon": 77.5472,
+      "Ta": 30.5,
+      "RH": 35.0,
+      "name": "OM @ ARS_BASANTHPUR (MEDAK)",
+      "station": "ARS_BASANTHPUR",
+      "district": "MEDAK",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 18.5454,
+      "lon": 79.5417,
+      "Ta": 32.2,
+      "RH": 40.0,
+      "name": "OM @ ARS_PEDDAPALLY (PEDDAPALLI)",
+      "station": "ARS_PEDDAPALLY",
+      "district": "PEDDAPALLI",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.6974,
+      "lon": 78.3189,
+      "Ta": 30.2,
+      "RH": 38.0,
+      "name": "OM @ ARS_NARSAPUR (MEDAK)",
+      "station": "ARS_NARSAPUR",
+      "district": "MEDAK",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.392817,
+      "lon": 78.318424,
+      "Ta": 27.2,
+      "RH": 50.0,
+      "name": "OM @ CBIT_GANDIPET (RANGA_REDDY)",
+      "station": "CBIT_GANDIPET",
+      "district": "RANGA_REDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.4286,
+      "lon": 78.368,
+      "Ta": 29.8,
+      "RH": 41.0,
+      "name": "OM @ ESCI_GACHIBOWLI (RANGA_REDDY)",
+      "station": "ESCI_GACHIBOWLI",
+      "district": "RANGA_REDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.4711,
+      "lon": 78.7377,
+      "Ta": 29.6,
+      "RH": 42.0,
+      "name": "OM @ GHATKESAR (RANGA_REDDY)",
+      "station": "GHATKESAR",
+      "district": "RANGA_REDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 16.4484,
+      "lon": 77.9407,
+      "Ta": 32.0,
+      "RH": 34.0,
+      "name": "OM @ HORTICULTURAL_UNIVERSITY_MOJER (WANAPARTHY)",
+      "station": "HORTICULTURAL_UNIVERSITY_MOJER",
+      "district": "WANAPARTHY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.587,
+      "lon": 78.1271,
+      "Ta": 29.4,
+      "RH": 42.0,
+      "name": "OM @ KANDI (SANGAREDDY)",
+      "station": "KANDI",
+      "district": "SANGAREDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.768,
+      "lon": 78.6723,
+      "Ta": 29.0,
+      "RH": 44.0,
+      "name": "OM @ KAVERI_SIDDIPET (SIDDIPET)",
+      "station": "KAVERI_SIDDIPET",
+      "district": "SIDDIPET",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 18.1149,
+      "lon": 78.1373,
+      "Ta": 28.2,
+      "RH": 41.0,
+      "name": "OM @ NAGIREDDYPET (KAMAREDDY)",
+      "station": "NAGIREDDYPET",
+      "district": "KAMAREDDY",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 18.0927,
+      "lon": 79.5952,
+      "Ta": 32.0,
+      "RH": 42.0,
+      "name": "OM @ SIDDHAPUR (WARANGAL_RURAL)",
+      "station": "SIDDHAPUR",
+      "district": "WARANGAL_RURAL",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 17.1817,
+      "lon": 80.3722,
+      "Ta": 30.3,
+      "RH": 64.0,
+      "name": "OM @ WYRA_KVK (KHAMMAM)",
+      "station": "WYRA_KVK",
+      "district": "KHAMMAM",
+      "state": "TELANGANA"
+    },
+    {
+      "lat": 9.5561,
+      "lon": 78.0895,
+      "Ta": 29.0,
+      "RH": 73.0,
+      "name": "OM @ ARUPPUKOTTAI_KVK (VIRUDHUNAGAR)",
+      "station": "ARUPPUKOTTAI_KVK",
+      "district": "VIRUDHUNAGAR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.0162,
+      "lon": 79.7763,
+      "Ta": 29.6,
+      "RH": 80.0,
+      "name": "OM @ RANIPET (RANIPET)",
+      "station": "RANIPET",
+      "district": "RANIPET",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.6336,
+      "lon": 80.1976,
+      "Ta": 29.5,
+      "RH": 85.0,
+      "name": "OM @ MAHABALIPURAM (CHENGALPATTU)",
+      "station": "MAHABALIPURAM",
+      "district": "CHENGALPATTU",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.1339,
+      "lon": 80.0452,
+      "Ta": 29.8,
+      "RH": 78.0,
+      "name": "OM @ JAYA_ENGINEERING_CLG (THIRUNINRAVUR)",
+      "station": "JAYA_ENGINEERING_CLG",
+      "district": "THIRUNINRAVUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.7409,
+      "lon": 78.9651,
+      "Ta": 29.8,
+      "RH": 71.0,
+      "name": "OM @ KALLAKURICHI(TALUK_OFFICE) (KALLAKURICHI)",
+      "station": "KALLAKURICHI(TALUK_OFFICE)",
+      "district": "KALLAKURICHI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.7569,
+      "lon": 79.8465,
+      "Ta": 29.1,
+      "RH": 79.0,
+      "name": "OM @ MO_NAGAPATTINAM_CAMPUS (NAGAPATTINAM)",
+      "station": "MO_NAGAPATTINAM_CAMPUS",
+      "district": "NAGAPATTINAM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.3808,
+      "lon": 80.0578,
+      "Ta": 29.9,
+      "RH": 82.0,
+      "name": "OM @ New Chennai Township Private L (NCTPL MARG ECR)",
+      "station": "New Chennai Township Private L",
+      "district": "NCTPL MARG ECR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.953,
+      "lon": 80.035,
+      "Ta": 29.6,
+      "RH": 78.0,
+      "name": "OM @ NIOT_PALLIKARANAI (CHENNAI)",
+      "station": "NIOT_PALLIKARANAI",
+      "district": "CHENNAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.4556,
+      "lon": 77.523,
+      "Ta": 28.8,
+      "RH": 65.0,
+      "name": "OM @ PALANI (DINDIGUL)",
+      "station": "PALANI",
+      "district": "DINDIGUL",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.3626,
+      "lon": 78.9016,
+      "Ta": 28.5,
+      "RH": 78.0,
+      "name": "OM @ VAMBAN_KVK (PUDUKKOTTAI)",
+      "station": "VAMBAN_KVK",
+      "district": "PUDUKKOTTAI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 9.3462,
+      "lon": 78.8981,
+      "Ta": 29.1,
+      "RH": 77.0,
+      "name": "OM @ RAMNADU_KVK (RAMANATHAPURAM)",
+      "station": "RAMNADU_KVK",
+      "district": "RAMANATHAPURAM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 9.96012,
+      "lon": 78.7439,
+      "Ta": 28.8,
+      "RH": 79.0,
+      "name": "OM @ SETHU_BHASKAR_AGRI_COLLEGE_KAR (SIVAGANGA)",
+      "station": "SETHU_BHASKAR_AGRI_COLLEGE_KAR",
+      "district": "SIVAGANGA",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.5679,
+      "lon": 78.1403,
+      "Ta": 30.4,
+      "RH": 60.0,
+      "name": "OM @ SANDHIYUR_KVK (SALEM)",
+      "station": "SANDHIYUR_KVK",
+      "district": "SALEM",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 11.0818,
+      "lon": 77.34,
+      "Ta": 26.4,
+      "RH": 85.0,
+      "name": "OM @ TIRUPPUR_Collector_Office (TIRUPPUR)",
+      "station": "TIRUPPUR_Collector_Office",
+      "district": "TIRUPPUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.5002,
+      "lon": 78.5662,
+      "Ta": 29.0,
+      "RH": 59.0,
+      "name": "OM @ TIRUPATTUR_COLLECTOROFFICE (TIRUPATTUR)",
+      "station": "TIRUPATTUR_COLLECTOROFFICE",
+      "district": "TIRUPATTUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.1198,
+      "lon": 79.9567,
+      "Ta": 29.6,
+      "RH": 78.0,
+      "name": "OM @ TIRUR_KVK (TIRUVALLUR)",
+      "station": "TIRUR_KVK",
+      "district": "TIRUVALLUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 8.80736,
+      "lon": 78.1534,
+      "Ta": 27.8,
+      "RH": 80.0,
+      "name": "OM @ TUTICORIN_RAILWAY_STATION (THOOTHUKUDI)",
+      "station": "TUTICORIN_RAILWAY_STATION",
+      "district": "THOOTHUKUDI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 8.72593,
+      "lon": 78.0279,
+      "Ta": 27.5,
+      "RH": 81.0,
+      "name": "OM @ TUTICORIN_AIRPORT (THOOTHUKUDI)",
+      "station": "TUTICORIN_AIRPORT",
+      "district": "THOOTHUKUDI",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 10.2682,
+      "lon": 76.9682,
+      "Ta": 21.2,
+      "RH": 99.0,
+      "name": "OM @ UPASI_TEA_RESEARCH_FOUNDATION (COIMBATORE)",
+      "station": "UPASI_TEA_RESEARCH_FOUNDATION",
+      "district": "COIMBATORE",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.8406,
+      "lon": 80.1534,
+      "Ta": 29.5,
+      "RH": 83.0,
+      "name": "OM @ VIT_CHENNAI (CHENGALPATTU)",
+      "station": "VIT_CHENNAI",
+      "district": "CHENGALPATTU",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 12.9345,
+      "lon": 79.0209,
+      "Ta": 29.9,
+      "RH": 70.0,
+      "name": "OM @ VIRINJIPURAM_KVK (VELLORE)",
+      "station": "VIRINJIPURAM_KVK",
+      "district": "VELLORE",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 13.1144,
+      "lon": 80.2025,
+      "Ta": 29.8,
+      "RH": 82.0,
+      "name": "OM @ GOOD WILL SCHOOL VILLIVAKKAM (TIRUVALLUR)",
+      "station": "GOOD WILL SCHOOL VILLIVAKKAM",
+      "district": "TIRUVALLUR",
+      "state": "TAMIL_NADU"
+    },
+    {
+      "lat": 23.8904,
+      "lon": 91.2441,
+      "Ta": 21.7,
+      "RH": 90.0,
+      "name": "OM @ AGARTALA_AIRPORT (WEST_TRIPURA)",
+      "station": "AGARTALA_AIRPORT",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.8902,
+      "lon": 91.244,
+      "Ta": 21.7,
+      "RH": 90.0,
+      "name": "OM @ MET_AGARTALA (WEST_TRIPURA)",
+      "station": "MET_AGARTALA",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.8627,
+      "lon": 92.207,
+      "Ta": 20.8,
+      "RH": 100.0,
+      "name": "OM @ ASHAPARA (NORTH_TRIPURA)",
+      "station": "ASHAPARA",
+      "district": "NORTH_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.95,
+      "lon": 91.2588,
+      "Ta": 21.8,
+      "RH": 89.0,
+      "name": "OM @ DM_OFFICE_WEST_AGARTALA (WEST_TRIPURA)",
+      "station": "DM_OFFICE_WEST_AGARTALA",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.5945,
+      "lon": 91.8243,
+      "Ta": 20.2,
+      "RH": 96.0,
+      "name": "OM @ GANDACHARA (DHALAI)",
+      "station": "GANDACHARA",
+      "district": "DHALAI",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.8139,
+      "lon": 91.3274,
+      "Ta": 21.7,
+      "RH": 90.0,
+      "name": "OM @ HRC_NAGICHERRA (WEST_TRIPURA)",
+      "station": "HRC_NAGICHERRA",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 24.3096,
+      "lon": 92.0069,
+      "Ta": 20.4,
+      "RH": 96.0,
+      "name": "OM @ KAILASHAHAR (UNAKOTI)",
+      "station": "KAILASHAHAR",
+      "district": "UNAKOTI",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.7978,
+      "lon": 91.4338,
+      "Ta": 21.5,
+      "RH": 91.0,
+      "name": "OM @ KHUMLUWANG (WEST_TRIPURA)",
+      "station": "KHUMLUWANG",
+      "district": "WEST_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.0114,
+      "lon": 91.7208,
+      "Ta": 21.9,
+      "RH": 96.0,
+      "name": "OM @ SABROOM (SOUTH_TRIPURA)",
+      "station": "SABROOM",
+      "district": "SOUTH_TRIPURA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 23.6077,
+      "lon": 91.3456,
+      "Ta": 21.6,
+      "RH": 94.0,
+      "name": "OM @ SIPAHIJALA (SIPAHIJALA)",
+      "station": "SIPAHIJALA",
+      "district": "SIPAHIJALA",
+      "state": "TRIPURA"
+    },
+    {
+      "lat": 28.8523,
+      "lon": 78.2358,
+      "Ta": 25.9,
+      "RH": 47.0,
+      "name": "OM @ AMROHA_400AWS (AMROHA)",
+      "station": "AMROHA_400AWS",
+      "district": "AMROHA",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.7518,
+      "lon": 82.1464,
+      "Ta": 25.2,
+      "RH": 79.0,
+      "name": "OM @ AYODHYA_400AWS (AYODHYA)",
+      "station": "AYODHYA_400AWS",
+      "district": "AYODHYA",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 25.2896,
+      "lon": 80.5619,
+      "Ta": 30.9,
+      "RH": 37.0,
+      "name": "OM @ BANDA_400AWS (BANDA)",
+      "station": "BANDA_400AWS",
+      "district": "BANDA",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.4446,
+      "lon": 79.4327,
+      "Ta": 26.5,
+      "RH": 55.0,
+      "name": "OM @ BAREILLY_BILWA_400AWS (BAREILLY)",
+      "station": "BAREILLY_BILWA_400AWS",
+      "district": "BAREILLY",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.9286,
+      "lon": 81.215,
+      "Ta": 25.8,
+      "RH": 73.0,
+      "name": "OM @ BARABANKI_400AWS (BARABANKI)",
+      "station": "BARABANKI_400AWS",
+      "district": "BARABANKI",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.4198,
+      "lon": 77.8403,
+      "Ta": 26.5,
+      "RH": 43.0,
+      "name": "OM @ BULANDSHAHAR_KVK (BULANDSHAHAR)",
+      "station": "BULANDSHAHAR_KVK",
+      "district": "BULANDSHAHAR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 25.0999,
+      "lon": 82.7985,
+      "Ta": 27.8,
+      "RH": 67.0,
+      "name": "OM @ DAGMAPUR_400AWS (MIRZAPUR)",
+      "station": "DAGMAPUR_400AWS",
+      "district": "MIRZAPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.2064,
+      "lon": 78.3092,
+      "Ta": 28.8,
+      "RH": 41.0,
+      "name": "OM @ FIROZABAD_400AWS (FIROZABAD)",
+      "station": "FIROZABAD_400AWS",
+      "district": "FIROZABAD",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.5314,
+      "lon": 77.6445,
+      "Ta": 26.2,
+      "RH": 44.0,
+      "name": "OM @ KVK_CHHOLAS_400AWS (GAUTAM_BUDDHA_NAGAR)",
+      "station": "KVK_CHHOLAS_400AWS",
+      "district": "GAUTAM_BUDDHA_NAGAR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 25.5814,
+      "lon": 79.555,
+      "Ta": 29.2,
+      "RH": 43.0,
+      "name": "OM @ HAMIRPUR_400AWS (HAMIRPUR)",
+      "station": "HAMIRPUR_400AWS",
+      "district": "HAMIRPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.3813,
+      "lon": 80.124,
+      "Ta": 27.2,
+      "RH": 51.0,
+      "name": "OM @ HARDOI_400AWS (HARDOI)",
+      "station": "HARDOI_400AWS",
+      "district": "HARDOI",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.739,
+      "lon": 77.8716,
+      "Ta": 26.6,
+      "RH": 41.0,
+      "name": "OM @ HAPUR_400AWS (HAPUR)",
+      "station": "HAPUR_400AWS",
+      "district": "HAPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.9608,
+      "lon": 81.0044,
+      "Ta": 26.5,
+      "RH": 68.0,
+      "name": "OM @ INTEGRAL_UNIVERSITY (LUCKNOW)",
+      "station": "INTEGRAL_UNIVERSITY",
+      "district": "LUCKNOW",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 25.7816,
+      "lon": 82.5729,
+      "Ta": 26.5,
+      "RH": 72.0,
+      "name": "OM @ JAUNPUR_KVK (JAUNPUR)",
+      "station": "JAUNPUR_KVK",
+      "district": "JAUNPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.022,
+      "lon": 81.215,
+      "Ta": 28.2,
+      "RH": 59.0,
+      "name": "OM @ JALAUN_400AWS (JALAUN)",
+      "station": "JALAUN_400AWS",
+      "district": "JALAUN",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.75,
+      "lon": 78.5166,
+      "Ta": 28.0,
+      "RH": 41.0,
+      "name": "OM @ KASHGANJ_400AWS (KASHGANJ)",
+      "station": "KASHGANJ_400AWS",
+      "district": "KASHGANJ",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.7735,
+      "lon": 80.8832,
+      "Ta": 28.0,
+      "RH": 60.0,
+      "name": "OM @ LUCKNOW_LAB (LUCKNOW)",
+      "station": "LUCKNOW_LAB",
+      "district": "LUCKNOW",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.4705,
+      "lon": 77.6928,
+      "Ta": 29.4,
+      "RH": 39.0,
+      "name": "OM @ MATHURA_400AWS (MATHURA)",
+      "station": "MATHURA_400AWS",
+      "district": "MATHURA",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 29.3781,
+      "lon": 77.638,
+      "Ta": 25.0,
+      "RH": 50.0,
+      "name": "OM @ SOHANJANI_TAJAN_400AWS (MUZAFFARNAGAR)",
+      "station": "SOHANJANI_TAJAN_400AWS",
+      "district": "MUZAFFARNAGAR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.3846,
+      "lon": 79.0938,
+      "Ta": 28.4,
+      "RH": 46.0,
+      "name": "OM @ MAINPURI_KVK (MAINPURI)",
+      "station": "MAINPURI_KVK",
+      "district": "MAINPURI",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 29.3175,
+      "lon": 78.1158,
+      "Ta": 24.5,
+      "RH": 58.0,
+      "name": "OM @ PRITHVIPUR_400AWS (BIJNOR)",
+      "station": "PRITHVIPUR_400AWS",
+      "district": "BIJNOR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 25.283,
+      "lon": 81.9866,
+      "Ta": 28.4,
+      "RH": 61.0,
+      "name": "OM @ PRATAPGARH_400AWS (PRATAPGARH)",
+      "station": "PRATAPGARH_400AWS",
+      "district": "PRATAPGARH",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.5217,
+      "lon": 80.5854,
+      "Ta": 26.0,
+      "RH": 72.0,
+      "name": "OM @ RAMKOT_400AWS (SITAPUR)",
+      "station": "RAMKOT_400AWS",
+      "district": "SITAPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 26.7343,
+      "lon": 84.1848,
+      "Ta": 24.3,
+      "RH": 86.0,
+      "name": "OM @ KUSHINAGAR_KVK (KUSHINAGAR)",
+      "station": "KUSHINAGAR_KVK",
+      "district": "KUSHINAGAR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 29.5443,
+      "lon": 77.1864,
+      "Ta": 25.4,
+      "RH": 59.0,
+      "name": "OM @ SHAMLI_400AWS (SHAMLI)",
+      "station": "SHAMLI_400AWS",
+      "district": "SHAMLI",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 27.875,
+      "lon": 79.9385,
+      "Ta": 26.7,
+      "RH": 54.0,
+      "name": "OM @ SHAHJAHANPUR_400AWS (SHAHJAHANPUR)",
+      "station": "SHAHJAHANPUR_400AWS",
+      "district": "SHAHJAHANPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 28.4833,
+      "lon": 78.8491,
+      "Ta": 26.4,
+      "RH": 52.0,
+      "name": "OM @ SAMBHAL_PALTHA_400AWS (SAMBHAL)",
+      "station": "SAMBHAL_PALTHA_400AWS",
+      "district": "SAMBHAL",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 29.9703,
+      "lon": 77.5573,
+      "Ta": 24.9,
+      "RH": 59.0,
+      "name": "OM @ SAHARANPUR_400AWS (SAHARANPUR)",
+      "station": "SAHARANPUR_400AWS",
+      "district": "SAHARANPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 25.8448,
+      "lon": 80.9918,
+      "Ta": 29.6,
+      "RH": 52.0,
+      "name": "OM @ FATEHPUR_KVK (FATEHPUR)",
+      "station": "FATEHPUR_KVK",
+      "district": "FATEHPUR",
+      "state": "UTTAR_PRADESH"
+    },
+    {
+      "lat": 29.6264,
+      "lon": 79.6309,
+      "Ta": 17.2,
+      "RH": 69.0,
+      "name": "OM @ MATELA_KVK (ALMORA)",
+      "station": "MATELA_KVK",
+      "district": "ALMORA",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 29.6213,
+      "lon": 79.4591,
+      "Ta": 12.2,
+      "RH": 76.0,
+      "name": "OM @ CHAUBATIA_RANIKHET (ALMORA)",
+      "station": "CHAUBATIA_RANIKHET",
+      "district": "ALMORA",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 30.3431,
+      "lon": 78.056,
+      "Ta": 24.4,
+      "RH": 42.0,
+      "name": "OM @ HATIBHARKALA (DEHRADUN)",
+      "station": "HATIBHARKALA",
+      "district": "DEHRADUN",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 29.188,
+      "lon": 79.0109,
+      "Ta": 23.6,
+      "RH": 75.0,
+      "name": "OM @ KASHIPUR_AWS400 (UDHAM_SINGH_NAGAR)",
+      "station": "KASHIPUR_AWS400",
+      "district": "UDHAM_SINGH_NAGAR",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 30.2782,
+      "lon": 78.0744,
+      "Ta": 22.1,
+      "RH": 52.0,
+      "name": "OM @ MOHAKAMPUR (DEHRADUN)",
+      "station": "MOHAKAMPUR",
+      "district": "DEHRADUN",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 29.3455,
+      "lon": 79.4844,
+      "Ta": 18.4,
+      "RH": 78.0,
+      "name": "OM @ NAINITAL(JEOLIKOT)_KVK (NAINITAL)",
+      "station": "NAINITAL(JEOLIKOT)_KVK",
+      "district": "NAINITAL",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 29.49,
+      "lon": 79.47,
+      "Ta": 17.2,
+      "RH": 91.0,
+      "name": "OM @ TH_KOSIYAKUTOLI (NAINITAL)",
+      "station": "TH_KOSIYAKUTOLI",
+      "district": "NAINITAL",
+      "state": "UTTARAKHAND"
+    },
+    {
+      "lat": 22.5748,
+      "lon": 88.0019,
+      "Ta": 25.0,
+      "RH": 92.0,
+      "name": "OM @ RAMSADAY_COLLEGE_AMTA (HOWRAH)",
+      "station": "RAMSADAY_COLLEGE_AMTA",
+      "district": "HOWRAH",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 23.705,
+      "lon": 86.9789,
+      "Ta": 24.8,
+      "RH": 90.0,
+      "name": "OM @ IMD_MO_ASSANSOL (ASANSOL)",
+      "station": "IMD_MO_ASSANSOL",
+      "district": "ASANSOL",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.8382,
+      "lon": 88.6347,
+      "Ta": 24.9,
+      "RH": 92.0,
+      "name": "OM @ ASHOKNAGAR_KVK (NORTH_TWENTY_FOUR_PARGANAS)",
+      "station": "ASHOKNAGAR_KVK",
+      "district": "NORTH_TWENTY_FOUR_PARGANAS",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 25.234,
+      "lon": 88.7942,
+      "Ta": 21.1,
+      "RH": 93.0,
+      "name": "OM @ BALURGHAT (SOUTH_DINAJPUR)",
+      "station": "BALURGHAT",
+      "district": "SOUTH_DINAJPUR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.937116,
+      "lon": 88.510508,
+      "Ta": 24.9,
+      "RH": 92.0,
+      "name": "OM @ BIJPUR (NADIA)",
+      "station": "BIJPUR",
+      "district": "NADIA",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.7809,
+      "lon": 88.3357,
+      "Ta": 25.1,
+      "RH": 90.0,
+      "name": "OM @ BARRACKPORE_AWS400 (NORTH_TWENTY_FOUR_PARGANAS)",
+      "station": "BARRACKPORE_AWS400",
+      "district": "NORTH_TWENTY_FOUR_PARGANAS",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 26.7924,
+      "lon": 89.0265,
+      "Ta": 21.1,
+      "RH": 96.0,
+      "name": "OM @ BANARHAT (JALPAIGURI)",
+      "station": "BANARHAT",
+      "district": "JALPAIGURI",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 21.6237,
+      "lon": 87.5063,
+      "Ta": 25.0,
+      "RH": 93.0,
+      "name": "OM @ IMD_MO_DIGHA (PURBA_MEDNIPUR)",
+      "station": "IMD_MO_DIGHA",
+      "district": "PURBA_MEDNIPUR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 26.1464,
+      "lon": 89.4649,
+      "Ta": 21.5,
+      "RH": 96.0,
+      "name": "OM @ DINHATA_AWS400 (COOCH_BEHAR)",
+      "station": "DINHATA_AWS400",
+      "district": "COOCH_BEHAR",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 26.5632,
+      "lon": 89.0409,
+      "Ta": 21.0,
+      "RH": 97.0,
+      "name": "OM @ DHUPGURI (JALPAIGURI)",
+      "station": "DHUPGURI",
+      "district": "JALPAIGURI",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 21.74483,
+      "lon": 88.099278,
+      "Ta": 26.6,
+      "RH": 92.0,
+      "name": "OM @ GANGASAGAR (SOUTH_TWENTY_FOUR_PARGANAS)",
+      "station": "GANGASAGAR",
+      "district": "SOUTH_TWENTY_FOUR_PARGANAS",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.6726,
+      "lon": 88.3791,
+      "Ta": 25.4,
+      "RH": 90.0,
+      "name": "OM @ JISU_AGARPARA (NORTH_TWENTY_FOUR_PARGANAS)",
+      "station": "JISU_AGARPARA",
+      "district": "NORTH_TWENTY_FOUR_PARGANAS",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 23.4001,
+      "lon": 87.546,
+      "Ta": 25.2,
+      "RH": 89.0,
+      "name": "OM @ KVK_BURDWAN_BUDBUD (EAST_BURDWAN)",
+      "station": "KVK_BURDWAN_BUDBUD",
+      "district": "EAST_BURDWAN",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 24.9787,
+      "lon": 88.1446,
+      "Ta": 22.6,
+      "RH": 93.0,
+      "name": "OM @ MALDA (MALDA)",
+      "station": "MALDA",
+      "district": "MALDA",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.4417,
+      "lon": 88.3982,
+      "Ta": 25.1,
+      "RH": 92.0,
+      "name": "OM @ RAMKRISHNA_MISSION_COLLEGE (SOUTH_TWENTY_FOUR_PARGANAS)",
+      "station": "RAMKRISHNA_MISSION_COLLEGE",
+      "district": "SOUTH_TWENTY_FOUR_PARGANAS",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 24.2686,
+      "lon": 88.2879,
+      "Ta": 24.7,
+      "RH": 82.0,
+      "name": "OM @ MURSHIDABAD_KVK (MURSHIDABAD)",
+      "station": "MURSHIDABAD_KVK",
+      "district": "MURSHIDABAD",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 22.6174,
+      "lon": 88.478,
+      "Ta": 25.2,
+      "RH": 91.0,
+      "name": "OM @ OHR_15 (KOLKATA)",
+      "station": "OHR_15",
+      "district": "KOLKATA",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 23.4007,
+      "lon": 86.4184,
+      "Ta": 25.1,
+      "RH": 86.0,
+      "name": "OM @ PURULIA_KVK (PURULIA)",
+      "station": "PURULIA_KVK",
+      "district": "PURULIA",
+      "state": "WEST_BENGAL"
+    },
+    {
+      "lat": 26.7035,
+      "lon": 88.8467,
+      "Ta": 20.1,
+      "RH": 98.0,
+      "name": "OM @ RAMSHAI_KVK (JALPAIGURI)",
+      "station": "RAMSHAI_KVK",
+      "district": "JALPAIGURI",
+      "state": "WEST_BENGAL"
+    }
+  ]
+}

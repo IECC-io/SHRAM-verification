@@ -1,0 +1,6014 @@
+{
+  "generated_at_utc": "2026-04-28T19:03:43+00:00",
+  "n": 751,
+  "stations": [
+    {
+      "lat": 30.86,
+      "lon": 78.0,
+      "state": "UTTARAKHAND",
+      "district": "UTTARKASHI",
+      "station": "PUROLA",
+      "temp_c": 15.5
+    },
+    {
+      "lat": 26.1,
+      "lon": 91.5667,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "GUWAHATI",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 20.473505,
+      "lon": 74.008202,
+      "state": "MAHARASHTRA",
+      "district": "NASHIK",
+      "station": "KALWAN",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.5167,
+      "lon": 73.85,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "PASHAN_AWS_LAB",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 22.77,
+      "lon": 77.7667,
+      "state": "MADHYA_PRADESH",
+      "district": "HOSHANGABAD",
+      "station": "HOSHANGABAD",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 17.92478,
+      "lon": 73.66034,
+      "state": "MAHARASHTRA",
+      "district": "SATARA",
+      "station": "MAHABALESHWAR",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 27.2645,
+      "lon": 92.4159,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "WEST_KAMENG",
+      "station": "BOMDILA",
+      "temp_c": 14.3
+    },
+    {
+      "lat": 19.067,
+      "lon": 72.8409,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI SUBURBAN",
+      "station": "BANDRA",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 18.9799,
+      "lon": 72.8231,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI_CITY",
+      "station": "MAHALAXMI",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 19.2495,
+      "lon": 72.8597,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI SUBURBAN",
+      "station": "DAHISAR",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 21.04,
+      "lon": 83.54,
+      "state": "ODISHA",
+      "district": "SUBARNAPUR",
+      "station": "DUNGRIPALLI",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 33.8,
+      "lon": 74.26,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "POONCH",
+      "station": "RAJPURA_MANDI",
+      "temp_c": 14.6
+    },
+    {
+      "lat": 22.3333,
+      "lon": 84.03,
+      "state": "ODISHA",
+      "district": "SUNDERGARH",
+      "station": "BALISHANKAR",
+      "temp_c": 31.0
+    },
+    {
+      "lat": 28.64,
+      "lon": 95.0228,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "UPPER_SIANG",
+      "station": "YINGKIONG",
+      "temp_c": 22.4
+    },
+    {
+      "lat": 26.55,
+      "lon": 88.19,
+      "state": "WEST_BENGAL",
+      "district": "DARJEELING",
+      "station": "KHARIBARI",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 27.19,
+      "lon": 88.16,
+      "state": "SIKKIM",
+      "district": "SORENG",
+      "station": "SORENG",
+      "temp_c": 15.1
+    },
+    {
+      "lat": 13.15,
+      "lon": 79.4167,
+      "state": "TAMIL_NADU",
+      "district": "TIRUVALLUR",
+      "station": "R.K.PET",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 12.6667,
+      "lon": 79.5333,
+      "state": "TAMIL_NADU",
+      "district": "TIRUVANNAMALAI",
+      "station": "CHEYYAR",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 13.05,
+      "lon": 80.0833,
+      "state": "TAMIL_NADU",
+      "district": "TIRUVALLUR",
+      "station": "POONAMALLEE",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 12.29,
+      "lon": 78.07,
+      "state": "TAMIL_NADU",
+      "district": "DHARMAPURI",
+      "station": "PALACODE",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 12.52,
+      "lon": 77.79,
+      "state": "TAMIL_NADU",
+      "district": "KRISHNAGIRI",
+      "station": "DENKANIKOTTAI",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 8.1667,
+      "lon": 77.4167,
+      "state": "TAMIL_NADU",
+      "district": "KANYAKUMARI",
+      "station": "NAGERCOIL",
+      "temp_c": 22.1
+    },
+    {
+      "lat": 8.4333,
+      "lon": 77.9,
+      "state": "TAMIL_NADU",
+      "district": "THOOTHUKUDI",
+      "station": "SATTANKULAM",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 11.51,
+      "lon": 79.33,
+      "state": "TAMIL_NADU",
+      "district": "CUDDALORE",
+      "station": "VRIDHA_CHALAM",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 11.7333,
+      "lon": 78.95,
+      "state": "TAMIL_NADU",
+      "district": "KALLAKURICHI",
+      "station": "KALLAKURICHI",
+      "temp_c": 33.2
+    },
+    {
+      "lat": 13.0,
+      "lon": 80.1333,
+      "state": "TAMIL_NADU",
+      "district": "KANCHIPURAM",
+      "station": "LMOIS__KOLAPAKKAM",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 13.0,
+      "lon": 80.0833,
+      "state": "TAMIL_NADU",
+      "district": "KANCHIPURAM",
+      "station": "CHEMBARAMBAKKAM",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 12.8013,
+      "lon": 80.2237,
+      "state": "TAMIL_NADU",
+      "district": "KANCHIPURAM",
+      "station": "HINDUSTAN_UNIVERSITY",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 12.8667,
+      "lon": 80.2,
+      "state": "TAMIL_NADU",
+      "district": "KANCHIPURAM",
+      "station": "SATHYABAMA__UNIVERSITY",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 23.84,
+      "lon": 92.62,
+      "state": "MIZORAM",
+      "district": "AIZAWL",
+      "station": "LENGPUI",
+      "temp_c": 21.9
+    },
+    {
+      "lat": 12.89,
+      "lon": 77.51,
+      "state": "KARNATAKA",
+      "district": "BANGALORE_URBAN",
+      "station": "GOPAL_NAGAR",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 12.8586,
+      "lon": 77.6572,
+      "state": "KARNATAKA",
+      "district": "BANGALORE_URBAN",
+      "station": "ELECTRONIC_CITY(NICE)",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 13.0428,
+      "lon": 77.4758,
+      "state": "KARNATAKA",
+      "district": "BANGALORE_URBAN",
+      "station": "MADHAVARA(NICE)",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 8.2669,
+      "lon": 77.6689,
+      "state": "TAMIL_NADU",
+      "district": "TIRUNELVELI",
+      "station": "RADHAPURAM",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 15.43,
+      "lon": 74.91,
+      "state": "KARNATAKA",
+      "district": "DHARWAD",
+      "station": "MUGAD",
+      "temp_c": 25.2
+    },
+    {
+      "lat": 17.04,
+      "lon": 76.8,
+      "state": "KARNATAKA",
+      "district": "GULBARGA",
+      "station": "RADDEWADGI",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 12.3828,
+      "lon": 77.0589,
+      "state": "KARNATAKA",
+      "district": "MANDYA",
+      "station": "MALAVALLI",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 11.66,
+      "lon": 76.16,
+      "state": "KERALA",
+      "district": "WAYANAD",
+      "station": "MEENANGADI",
+      "temp_c": 23.5
+    },
+    {
+      "lat": 9.9264,
+      "lon": 76.2621,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "PALLURUTHY",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 8.95,
+      "lon": 77.06,
+      "state": "KERALA",
+      "district": "KOLLAM",
+      "station": "THENMALA",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 19.2396,
+      "lon": 73.9155,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "BALLALWADI_JUNNAR",
+      "temp_c": 25.1
+    },
+    {
+      "lat": 17.23,
+      "lon": 73.29,
+      "state": "MAHARASHTRA",
+      "district": "RATNAGIRI",
+      "station": "SAVARDE(GOLWANE)",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 15.51,
+      "lon": 74.02,
+      "state": "MAHARASHTRA",
+      "district": "SINDHUDURG",
+      "station": "VENGURLA",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 18.6595,
+      "lon": 73.7987,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "CHINCHWAD_PUNE",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.5482,
+      "lon": 73.9278,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "WADGAONSHERI_PUNE",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 30.22,
+      "lon": 78.77,
+      "state": "UTTARAKHAND",
+      "district": "PAURI_GARHWAL",
+      "station": "SRINAGAR_ARG",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 18.5383,
+      "lon": 73.8045,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "MTI_PASHAN_PUNE",
+      "temp_c": 24.6
+    },
+    {
+      "lat": 20.86,
+      "lon": 71.3333,
+      "state": "GUJARAT",
+      "district": "AMRELI",
+      "station": "JAFRABAD",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 21.044,
+      "lon": 71.4614,
+      "state": "GUJARAT",
+      "district": "AMRELI",
+      "station": "RAJULA",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 26.42,
+      "lon": 92.33,
+      "state": "ASSAM",
+      "district": "MARIGAON",
+      "station": "LAHARIGHAT",
+      "temp_c": 25.1
+    },
+    {
+      "lat": 23.6022,
+      "lon": 83.6093,
+      "state": "CHHATTISGARH",
+      "district": "BALRAMPUR",
+      "station": "BALRAMPUR",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 21.1592,
+      "lon": 81.803,
+      "state": "CHHATTISGARH",
+      "district": "RAIPUR",
+      "station": "NAYA_RAIPUR",
+      "temp_c": 33.8
+    },
+    {
+      "lat": 18.05,
+      "lon": 78.27,
+      "state": "TELANGANA",
+      "district": "MEDAK",
+      "station": "MEDAK",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 19.3544,
+      "lon": 79.2839,
+      "state": "TELANGANA",
+      "district": "KUMURAM_BHEEM_ASIFABAD",
+      "station": "ASIFABAD",
+      "temp_c": 33.5
+    },
+    {
+      "lat": 33.39,
+      "lon": 74.34,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "RAJOURI",
+      "station": "RAJOURI_ARG",
+      "temp_c": 19.5
+    },
+    {
+      "lat": 33.62,
+      "lon": 75.38,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "ANANTNAG",
+      "station": "LARNOO",
+      "temp_c": 8.3
+    },
+    {
+      "lat": 33.72,
+      "lon": 75.09,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "ANANTNAG",
+      "station": "KHUDWANI",
+      "temp_c": 14.3
+    },
+    {
+      "lat": 33.93,
+      "lon": 75.11,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "PULWAMA",
+      "station": "TRAL",
+      "temp_c": 13.9
+    },
+    {
+      "lat": 17.38,
+      "lon": 78.4,
+      "state": "TELANGANA",
+      "district": "HYDERABAD",
+      "station": "GOLKONDA",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 22.5358,
+      "lon": 88.33,
+      "state": "WEST_BENGAL",
+      "district": "SOUTH_TWENTY_FOUR_PARGANAS",
+      "station": "ALIPORE",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 22.2711,
+      "lon": 81.6869,
+      "state": "CHHATTISGARH",
+      "district": "MUNGELI",
+      "station": "LORMI",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 20.7158,
+      "lon": 81.2392,
+      "state": "CHHATTISGARH",
+      "district": "BALOD",
+      "station": "BALOD",
+      "temp_c": 33.3
+    },
+    {
+      "lat": 22.0242,
+      "lon": 82.9583,
+      "state": "CHHATTISGARH",
+      "district": "JANJGIR_CHAMPA",
+      "station": "SAKTI",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 21.8339,
+      "lon": 82.6411,
+      "state": "CHHATTISGARH",
+      "district": "JANJGIR_CHAMPA",
+      "station": "NAWAGARH",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 22.55,
+      "lon": 83.48,
+      "state": "CHHATTISGARH",
+      "district": "JASHPUR",
+      "station": "PATHALGAON",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 22.9656,
+      "lon": 83.6425,
+      "state": "CHHATTISGARH",
+      "district": "JASHPUR",
+      "station": "BAGICHA",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 22.2245,
+      "lon": 81.4047,
+      "state": "CHHATTISGARH",
+      "district": "KABIRDHAM",
+      "station": "PANDARIA",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 21.2193,
+      "lon": 82.5092,
+      "state": "CHHATTISGARH",
+      "district": "MAHASAMUND",
+      "station": "PITHORA",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 20.6321,
+      "lon": 82.0606,
+      "state": "CHHATTISGARH",
+      "district": "GARIABAND",
+      "station": "GARIABAND",
+      "temp_c": 32.6
+    },
+    {
+      "lat": 23.62,
+      "lon": 77.43,
+      "state": "MADHYA_PRADESH",
+      "district": "BHOPAL",
+      "station": "BERASIA",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 26.7,
+      "lon": 89.61,
+      "state": "WEST_BENGAL",
+      "district": "ALIPURDUAR",
+      "station": "JAYANTI",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 22.68,
+      "lon": 77.27,
+      "state": "MADHYA_PRADESH",
+      "district": "SEHORE",
+      "station": "BHAIRUNDA",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 24.34,
+      "lon": 81.46,
+      "state": "MADHYA_PRADESH",
+      "district": "SIDHI",
+      "station": "RAMPUR_NAIKIN",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 24.04,
+      "lon": 78.33,
+      "state": "MADHYA_PRADESH",
+      "district": "SAGAR",
+      "station": "KHURAI",
+      "temp_c": 29.4
+    },
+    {
+      "lat": 24.32,
+      "lon": 82.27,
+      "state": "MADHYA_PRADESH",
+      "district": "NIWARI",
+      "station": "PRITHVIPUR",
+      "temp_c": 30.0
+    },
+    {
+      "lat": 23.32,
+      "lon": 76.04,
+      "state": "MADHYA_PRADESH",
+      "district": "UJJAIN",
+      "station": "TARANA",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 25.79,
+      "lon": 82.99,
+      "state": "UTTAR_PRADESH",
+      "district": "AZAMGARH",
+      "station": "LALGANJ_TEHSIL_OFFICE",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 16.75,
+      "lon": 77.99,
+      "state": "TELANGANA",
+      "district": "MAHBUBNAGAR",
+      "station": "MAHBUBNAGAR",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 17.25,
+      "lon": 80.13,
+      "state": "TELANGANA",
+      "district": "KHAMMAM",
+      "station": "KHAMMAM",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 17.67,
+      "lon": 77.61,
+      "state": "TELANGANA",
+      "district": "SANGAREDDY",
+      "station": "ZAHEERABAD",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.32,
+      "lon": 82.87,
+      "state": "ANDHRA_PRADESH",
+      "district": "ALLURI_SITHARAMA_RAJU",
+      "station": "ARAKU_VALLEY",
+      "temp_c": 25.2
+    },
+    {
+      "lat": 17.2308,
+      "lon": 82.1878,
+      "state": "ANDHRA_PRADESH",
+      "district": "KAKINADA",
+      "station": "PRATHIPADU",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 16.6,
+      "lon": 81.94,
+      "state": "ANDHRA_PRADESH",
+      "district": "KONASEEMA",
+      "station": "AMBAJIPETA_ARG",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 16.63,
+      "lon": 81.04,
+      "state": "ANDHRA_PRADESH",
+      "district": "ELURU",
+      "station": "VIJAYARAI",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 16.4667,
+      "lon": 79.4333,
+      "state": "ANDHRA_PRADESH",
+      "district": "PALNADU",
+      "station": "JANGAMESHWARAPURAM",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 18.54,
+      "lon": 79.54,
+      "state": "TELANGANA",
+      "district": "PEDDAPALLI",
+      "station": "KUNARAM",
+      "temp_c": 30.8
+    },
+    {
+      "lat": 30.14,
+      "lon": 78.6,
+      "state": "UTTARAKHAND",
+      "district": "TEHRI_GARHWAL",
+      "station": "DEVPRAYAG",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 25.26,
+      "lon": 91.73,
+      "state": "MEGHALAYA",
+      "district": "EAST_KHASI_HILLS",
+      "station": "SOHRA(CHERRAPUNJEE)",
+      "temp_c": 18.1
+    },
+    {
+      "lat": 26.08,
+      "lon": 91.88,
+      "state": "MEGHALAYA",
+      "district": "RI_BHOI",
+      "station": "BYRNIHAT",
+      "temp_c": 24.4
+    },
+    {
+      "lat": 18.47,
+      "lon": 73.78,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "NDA_PUNE",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 18.5115,
+      "lon": 73.9285,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "MAGARPATTA_PUNE",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 26.47,
+      "lon": 90.8,
+      "state": "ASSAM",
+      "district": "BONGAIGAON",
+      "station": "MANIKPUR",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 26.5689,
+      "lon": 92.1958,
+      "state": "ASSAM",
+      "district": "DARRANG",
+      "station": "DALGAON",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 27.36,
+      "lon": 92.2439,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "WEST_KAMENG",
+      "station": "DIRANG",
+      "temp_c": 17.4
+    },
+    {
+      "lat": 23.36,
+      "lon": 77.42,
+      "state": "MADHYA_PRADESH",
+      "district": "BHOPAL",
+      "station": "ISLAMNAGAR",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 23.21,
+      "lon": 73.21,
+      "state": "GUJARAT",
+      "district": "SABARKANTHA",
+      "station": "BAYAD",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 18.5363,
+      "lon": 73.7325,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "LAVALE",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 22.4618,
+      "lon": 83.209,
+      "state": "CHHATTISGARH",
+      "district": "RAIGARH",
+      "station": "DHARAMJAIGARH",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 26.4058,
+      "lon": 91.3337,
+      "state": "ASSAM",
+      "district": "NALBARI",
+      "station": "CHAMATA",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 16.26,
+      "lon": 77.84,
+      "state": "TELANGANA",
+      "district": "JOGULAMBA_GADWAL",
+      "station": "JURALA_CWC",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 17.34,
+      "lon": 78.59,
+      "state": "TELANGANA",
+      "district": "RANGA_REDDY",
+      "station": "HAYATHNAGAR",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 16.55,
+      "lon": 79.55,
+      "state": "ANDHRA_PRADESH",
+      "district": "PALNADU",
+      "station": "RENTACHINTALA",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 17.75,
+      "lon": 83.19,
+      "state": "ANDHRA_PRADESH",
+      "district": "VISAKHAPATNAM",
+      "station": "MEHADRIGADDA_DAM",
+      "temp_c": 40.4
+    },
+    {
+      "lat": 17.89,
+      "lon": 83.37,
+      "state": "ANDHRA_PRADESH",
+      "district": "VISAKHAPATNAM",
+      "station": "ANANDAPURAM_ARG",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 16.96,
+      "lon": 82.23,
+      "state": "ANDHRA_PRADESH",
+      "district": "KAKINADA",
+      "station": "KAKINADA",
+      "temp_c": 29.4
+    },
+    {
+      "lat": 26.8869,
+      "lon": 95.3219,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "TIRAP",
+      "station": "LONGDING",
+      "temp_c": 20.1
+    },
+    {
+      "lat": 17.14,
+      "lon": 79.6219,
+      "state": "TELANGANA",
+      "district": "SURYAPET",
+      "station": "SURYAPET_ARG",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 19.1031,
+      "lon": 77.9653,
+      "state": "TELANGANA",
+      "district": "NIRMAL",
+      "station": "BHAINSA_ARG",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 18.57,
+      "lon": 83.35,
+      "state": "ANDHRA_PRADESH",
+      "district": "VIZIANAGARAM",
+      "station": "BOBBILI",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 34.25611111,
+      "lon": 75.41694444,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "GANDERBAL",
+      "station": "SONEMARG",
+      "temp_c": 8.0
+    },
+    {
+      "lat": 12.8755,
+      "lon": 92.8922,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "N_M_ANDAMAN",
+      "station": "MAYABUNDER",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 12.4883,
+      "lon": 92.9594,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "N_M_ANDAMAN",
+      "station": "RANGAT_NIMBUTALA",
+      "temp_c": 26.7
+    },
+    {
+      "lat": 11.6562,
+      "lon": 92.7432,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "SOUTH_ANDAMAN",
+      "station": "SHAHEED_DWEEP",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 10.5962,
+      "lon": 92.5364,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "SOUTH_ANDAMAN",
+      "station": "HUT_BAY",
+      "temp_c": 25.0
+    },
+    {
+      "lat": 7.0076,
+      "lon": 93.9048,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "NICOBAR",
+      "station": "CAMPBELL_BAY",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 33.375627,
+      "lon": 74.290072,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "RAJOURI",
+      "station": "RAJOURI",
+      "temp_c": 20.9
+    },
+    {
+      "lat": 33.129137,
+      "lon": 75.662562,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "DODA",
+      "station": "BHELLA",
+      "temp_c": 16.5
+    },
+    {
+      "lat": 18.5246,
+      "lon": 73.8786,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "PASHAN_TDMA_TEST",
+      "temp_c": 30.5
+    },
+    {
+      "lat": 9.1573,
+      "lon": 92.7581,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "NICOBAR",
+      "station": "CAR_NICOBAR",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 30.3167,
+      "lon": 78.9667,
+      "state": "UTTARAKHAND",
+      "district": "RUDRAPRAYAG",
+      "station": "RUDRA_PRAYAG",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 29.4667,
+      "lon": 79.65,
+      "state": "UTTARAKHAND",
+      "district": "NAINITAL",
+      "station": "MUKTESHWAR",
+      "temp_c": 22.8
+    },
+    {
+      "lat": 30.19,
+      "lon": 74.9333,
+      "state": "PUNJAB",
+      "district": "BATHINDA",
+      "station": "BHATINDA_AMFU",
+      "temp_c": 31.6
+    },
+    {
+      "lat": 31.38,
+      "lon": 76.0239,
+      "state": "PUNJAB",
+      "district": "HOSHIARPUR",
+      "station": "HOSIYARPUR",
+      "temp_c": 26.3
+    },
+    {
+      "lat": 30.79,
+      "lon": 76.81,
+      "state": "PUNJAB",
+      "district": "MOHALI",
+      "station": "MOHALI",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 28.08,
+      "lon": 76.59,
+      "state": "HARYANA",
+      "district": "REWARI",
+      "station": "BAWAL",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 28.23,
+      "lon": 77.18,
+      "state": "HARYANA",
+      "district": "FARIDABAD",
+      "station": "BOPANI",
+      "temp_c": 30.4
+    },
+    {
+      "lat": 27.4886,
+      "lon": 95.3558,
+      "state": "ASSAM",
+      "district": "TINSUKIA",
+      "station": "TINSUKIA",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 28.5833,
+      "lon": 76.65,
+      "state": "HARYANA",
+      "district": "JHAJJAR",
+      "station": "JHAJJAR",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 29.42,
+      "lon": 76.57,
+      "state": "HARYANA",
+      "district": "KARNAL",
+      "station": "KARNAL",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 28.1,
+      "lon": 76.1,
+      "state": "HARYANA",
+      "district": "MAHENDRAGARH",
+      "station": "MAHENDRAGARH_AWS",
+      "temp_c": 27.4
+    },
+    {
+      "lat": 28.1,
+      "lon": 77.0,
+      "state": "HARYANA",
+      "district": "MEWAT",
+      "station": "MANDKOLA",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 28.84,
+      "lon": 76.9967,
+      "state": "HARYANA",
+      "district": "MEWAT",
+      "station": "NUH",
+      "temp_c": 31.2
+    },
+    {
+      "lat": 20.78,
+      "lon": 78.59,
+      "state": "MAHARASHTRA",
+      "district": "WARDHA",
+      "station": "WARDHA",
+      "temp_c": 31.8
+    },
+    {
+      "lat": 29.18,
+      "lon": 76.22,
+      "state": "HARYANA",
+      "district": "JIND",
+      "station": "PANDU_PINDARA",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 28.88,
+      "lon": 76.62,
+      "state": "HARYANA",
+      "district": "ROHTAK",
+      "station": "ROHTAK",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 29.54,
+      "lon": 75.04,
+      "state": "HARYANA",
+      "district": "SIRSA",
+      "station": "SIRSA",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 30.48,
+      "lon": 77.1,
+      "state": "HARYANA",
+      "district": "SONIPAT",
+      "station": "JAGDISHPUR",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 29.68,
+      "lon": 77.0,
+      "state": "HARYANA",
+      "district": "KARNAL",
+      "station": "UCHANI",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 29.38,
+      "lon": 77.0,
+      "state": "HARYANA",
+      "district": "PANIPAT",
+      "station": "UJHA",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 27.4705,
+      "lon": 94.9125,
+      "state": "ASSAM",
+      "district": "DIBRUGARH",
+      "station": "DIBRUGARH",
+      "temp_c": 22.9
+    },
+    {
+      "lat": 26.4689,
+      "lon": 90.9,
+      "state": "ASSAM",
+      "district": "BARPETA",
+      "station": "BARPETA",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 26.4446,
+      "lon": 91.4411,
+      "state": "ASSAM",
+      "district": "NALBARI",
+      "station": "NALBARI",
+      "temp_c": 33.8
+    },
+    {
+      "lat": 26.4328,
+      "lon": 92.0283,
+      "state": "ASSAM",
+      "district": "DARRANG",
+      "station": "MANGALDAI",
+      "temp_c": 22.9
+    },
+    {
+      "lat": 26.2394,
+      "lon": 92.2939,
+      "state": "ASSAM",
+      "district": "MARIGAON",
+      "station": "MARIGAON",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 25.5094,
+      "lon": 90.5989,
+      "state": "MEGHALAYA",
+      "district": "EAST_GARO_HILLS",
+      "station": "WILLIAMNAGAR",
+      "temp_c": 21.7
+    },
+    {
+      "lat": 25.495,
+      "lon": 90.2094,
+      "state": "MEGHALAYA",
+      "district": "WEST_GARO_HILLS",
+      "station": "TURA",
+      "temp_c": 21.5
+    },
+    {
+      "lat": 25.5658,
+      "lon": 91.8597,
+      "state": "MEGHALAYA",
+      "district": "EAST_KHASI_HILLS",
+      "station": "SHILLONG",
+      "temp_c": 16.5
+    },
+    {
+      "lat": 25.5219,
+      "lon": 91.265,
+      "state": "MEGHALAYA",
+      "district": "WEST_KHASI_HILLS",
+      "station": "NONGSTOIN",
+      "temp_c": 16.8
+    },
+    {
+      "lat": 24.8067,
+      "lon": 93.9603,
+      "state": "MANIPUR",
+      "district": "IMPHAL_EAST",
+      "station": "POROMPAT",
+      "temp_c": 18.9
+    },
+    {
+      "lat": 26.7322,
+      "lon": 92.0939,
+      "state": "ASSAM",
+      "district": "UDALGURI",
+      "station": "UDALGURI",
+      "temp_c": 21.9
+    },
+    {
+      "lat": 28.7928,
+      "lon": 95.8956,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "DIBANG_VALLEY",
+      "station": "ANINI",
+      "temp_c": 14.6
+    },
+    {
+      "lat": 18.722,
+      "lon": 73.6632,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "TALEGAON",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 19.088255,
+      "lon": 74.746796,
+      "state": "MAHARASHTRA",
+      "district": "AHILYANAGAR",
+      "station": "AHILYANAGAR",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 16.673605,
+      "lon": 74.237877,
+      "state": "MAHARASHTRA",
+      "district": "KOLHAPUR",
+      "station": "KOLHAPUR_AMFU",
+      "temp_c": 25.6
+    },
+    {
+      "lat": 16.0128,
+      "lon": 73.7167,
+      "state": "MAHARASHTRA",
+      "district": "SINDHUDURG",
+      "station": "MULDE_AMFU",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 18.915956,
+      "lon": 73.317216,
+      "state": "MAHARASHTRA",
+      "district": "RAIGAD",
+      "station": "KARJAT",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 20.569239,
+      "lon": 74.513275,
+      "state": "MAHARASHTRA",
+      "district": "NASHIK",
+      "station": "MALEGAON",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 17.2,
+      "lon": 75.9,
+      "state": "MAHARASHTRA",
+      "district": "SOLAPUR",
+      "station": "SOLAPUR",
+      "temp_c": 32.9
+    },
+    {
+      "lat": 20.7,
+      "lon": 83.47,
+      "state": "ODISHA",
+      "district": "BALANGIR",
+      "station": "BOLANGIR",
+      "temp_c": 31.2
+    },
+    {
+      "lat": 23.27,
+      "lon": 72.65,
+      "state": "GUJARAT",
+      "district": "GANDHINAGAR",
+      "station": "GANDHINAGAR",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 23.86,
+      "lon": 72.13,
+      "state": "GUJARAT",
+      "district": "PATAN",
+      "station": "PATAN",
+      "temp_c": 31.0
+    },
+    {
+      "lat": 22.73,
+      "lon": 71.62,
+      "state": "GUJARAT",
+      "district": "SURENDRANAGAR",
+      "station": "SURENDRANAGAR",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 20.4,
+      "lon": 72.8331,
+      "state": "DAMAN_AND_DIU",
+      "district": "DAMAN",
+      "station": "DAMAN_AWS",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 21.89,
+      "lon": 84.03,
+      "state": "ODISHA",
+      "district": "JHARSUGUDA",
+      "station": "JHARSUGUDA",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 20.25,
+      "lon": 85.82,
+      "state": "ODISHA",
+      "district": "KHURDHA",
+      "station": "BHUBANESHWAR AIRPORT",
+      "temp_c": 26.2
+    },
+    {
+      "lat": 12.7183,
+      "lon": 77.8267,
+      "state": "TAMIL_NADU",
+      "district": "KRISHNAGIRI",
+      "station": "HOSUR",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 11.36,
+      "lon": 76.805,
+      "state": "TAMIL_NADU",
+      "district": "THE_NILGIRIS",
+      "station": "COONOOR",
+      "temp_c": 18.5
+    },
+    {
+      "lat": 11.62,
+      "lon": 79.545,
+      "state": "TAMIL_NADU",
+      "district": "CUDDALORE",
+      "station": "NEYVELI",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 8.745,
+      "lon": 77.7117,
+      "state": "TAMIL_NADU",
+      "district": "TIRUNELVELI",
+      "station": "TIRUNELVELI",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 11.2417,
+      "lon": 78.8933,
+      "state": "TAMIL_NADU",
+      "district": "PERAMBALUR",
+      "station": "PERAMBALUR",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 11.136,
+      "lon": 79.076,
+      "state": "TAMIL_NADU",
+      "district": "ARIYALUR",
+      "station": "ARIYALUR",
+      "temp_c": 27.9
+    },
+    {
+      "lat": 11.0133,
+      "lon": 76.9383,
+      "state": "TAMIL_NADU",
+      "district": "COIMBATORE",
+      "station": "COIMBATORE_AMFU",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 26.43,
+      "lon": 82.57,
+      "state": "UTTAR_PRADESH",
+      "district": "AMBEDKAR_NAGAR",
+      "station": "COLLECTORATE_OFFICE_AKBARPUR",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 27.9024,
+      "lon": 78.0968,
+      "state": "UTTAR_PRADESH",
+      "district": "ALIGARH",
+      "station": "QUARSI_FARMS_QUARSI",
+      "temp_c": 34.3
+    },
+    {
+      "lat": 29.34,
+      "lon": 80.09,
+      "state": "UTTARAKHAND",
+      "district": "CHAMPAWAT",
+      "station": "CHAMPAWAT",
+      "temp_c": 16.9
+    },
+    {
+      "lat": 30.19,
+      "lon": 78.18,
+      "state": "UTTARAKHAND",
+      "district": "DEHRADUN",
+      "station": "JOLLYGRANT",
+      "temp_c": 23.6
+    },
+    {
+      "lat": 29.84,
+      "lon": 77.92,
+      "state": "UTTARAKHAND",
+      "district": "HARIDWAR",
+      "station": "ROORKEE_AMFU",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 26.42,
+      "lon": 74.62,
+      "state": "RAJASTHAN",
+      "district": "AJMER",
+      "station": "AJMER",
+      "temp_c": 32.9
+    },
+    {
+      "lat": 28.0839,
+      "lon": 73.3333,
+      "state": "RAJASTHAN",
+      "district": "BIKANER",
+      "station": "BIKANER_AMFU",
+      "temp_c": 26.9
+    },
+    {
+      "lat": 28.28,
+      "lon": 75.12,
+      "state": "RAJASTHAN",
+      "district": "CHURU",
+      "station": "CHURU",
+      "temp_c": 31.7
+    },
+    {
+      "lat": 27.93,
+      "lon": 74.98,
+      "state": "RAJASTHAN",
+      "district": "SIKAR",
+      "station": "FATEHPUR_AMFU",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 24.5869,
+      "lon": 72.7036,
+      "state": "RAJASTHAN",
+      "district": "SIROHI",
+      "station": "MOUNT_ABU",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 25.79,
+      "lon": 73.2833,
+      "state": "RAJASTHAN",
+      "district": "PALI",
+      "station": "PALI",
+      "temp_c": 31.8
+    },
+    {
+      "lat": 33.2219,
+      "lon": 75.2614,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "RAMBAN",
+      "station": "GOVINDPURA",
+      "temp_c": 20.4
+    },
+    {
+      "lat": 32.6533,
+      "lon": 74.7992,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "JAMMU",
+      "station": "CHATHA_AMFU",
+      "temp_c": 24.5
+    },
+    {
+      "lat": 34.1497,
+      "lon": 74.8822,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "SRINAGAR",
+      "station": "SRINAGAR_AMFU",
+      "temp_c": 13.5
+    },
+    {
+      "lat": 22.106,
+      "lon": 82.1426,
+      "state": "CHHATTISGARH",
+      "district": "BILASPUR",
+      "station": "BILASPUR",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 21.1667,
+      "lon": 81.2364,
+      "state": "CHHATTISGARH",
+      "district": "DURG",
+      "station": "DURG",
+      "temp_c": 32.1
+    },
+    {
+      "lat": 21.8897,
+      "lon": 83.4052,
+      "state": "CHHATTISGARH",
+      "district": "RAIGARH",
+      "station": "RAIGARH",
+      "temp_c": 24.4
+    },
+    {
+      "lat": 21.1007,
+      "lon": 81.0326,
+      "state": "CHHATTISGARH",
+      "district": "RAJNANDGAON",
+      "station": "RAJNANDGAON",
+      "temp_c": 32.8
+    },
+    {
+      "lat": 22.3931,
+      "lon": 75.21,
+      "state": "MADHYA_PRADESH",
+      "district": "DHAR",
+      "station": "DHAR",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 26.4772,
+      "lon": 77.9867,
+      "state": "MADHYA_PRADESH",
+      "district": "MORENA",
+      "station": "MORENA_AMFU",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 24.06,
+      "lon": 75.1,
+      "state": "MADHYA_PRADESH",
+      "district": "MANDSAUR",
+      "station": "MANDSOUR",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 23.83,
+      "lon": 78.69,
+      "state": "MADHYA_PRADESH",
+      "district": "SAGAR",
+      "station": "SAGAR",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 24.57,
+      "lon": 80.82,
+      "state": "MADHYA_PRADESH",
+      "district": "SATNA",
+      "station": "SATNA",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 23.4317,
+      "lon": 76.2636,
+      "state": "MADHYA_PRADESH",
+      "district": "SHAJAPUR",
+      "station": "SHAJAPUR",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 25.3917,
+      "lon": 77.6033,
+      "state": "MADHYA_PRADESH",
+      "district": "SHIVPURI",
+      "station": "SHIVPURI",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 24.41,
+      "lon": 81.86,
+      "state": "MADHYA_PRADESH",
+      "district": "SIDHI",
+      "station": "SIDHI",
+      "temp_c": 29.5
+    },
+    {
+      "lat": 23.515,
+      "lon": 77.81,
+      "state": "MADHYA_PRADESH",
+      "district": "VIDISHA",
+      "station": "VIDISHA",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 32.9022,
+      "lon": 75.1667,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "UDHAMPUR",
+      "station": "KAWA",
+      "temp_c": 20.8
+    },
+    {
+      "lat": 33.5872,
+      "lon": 74.8722,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "SHOPIAN",
+      "station": "SHOPIAN",
+      "temp_c": 9.0
+    },
+    {
+      "lat": 32.5703,
+      "lon": 75.1203,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "SAMBA",
+      "station": "SAMBA",
+      "temp_c": 21.0
+    },
+    {
+      "lat": 33.8892,
+      "lon": 74.9808,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "PULWAMA",
+      "station": "MALANGPURA",
+      "temp_c": 11.8
+    },
+    {
+      "lat": 25.7373,
+      "lon": 85.2498,
+      "state": "BIHAR",
+      "district": "VAISHALI",
+      "station": "VAISHALI",
+      "temp_c": 25.6
+    },
+    {
+      "lat": 25.5587,
+      "lon": 83.96,
+      "state": "BIHAR",
+      "district": "BUXAR",
+      "station": "BUXAR",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 25.0481,
+      "lon": 83.6139,
+      "state": "BIHAR",
+      "district": "KAIMUR",
+      "station": "BHABUA",
+      "temp_c": 32.1
+    },
+    {
+      "lat": 25.5986,
+      "lon": 85.09,
+      "state": "BIHAR",
+      "district": "PATNA",
+      "station": "PATNA",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 26.42,
+      "lon": 85.82,
+      "state": "BIHAR",
+      "district": "MADHUBANI",
+      "station": "CHANPUR_BASAITHA",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 25.35,
+      "lon": 85.63,
+      "state": "BIHAR",
+      "district": "NALANDA",
+      "station": "HARNAUT",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 29.02,
+      "lon": 77.75,
+      "state": "UTTAR_PRADESH",
+      "district": "MEERUT",
+      "station": "CCSU_CAMPUS",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 26.7883,
+      "lon": 78.9994,
+      "state": "UTTAR_PRADESH",
+      "district": "ETAWAH",
+      "station": "BBRAU_AGRICULTURE_COLLEGE",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 26.2503,
+      "lon": 81.3769,
+      "state": "UTTAR_PRADESH",
+      "district": "RAEBARELI",
+      "station": "AIRPORT_FURSATGANJ",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 27.536051,
+      "lon": 82.419945,
+      "state": "UTTAR_PRADESH",
+      "district": "BALRAMPUR",
+      "station": "BCML_TULSIPUR_SUGAR_MILL",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 27.1642,
+      "lon": 88.3964,
+      "state": "SIKKIM",
+      "district": "NAMCHI",
+      "station": "NAMCHI",
+      "temp_c": 16.5
+    },
+    {
+      "lat": 10.77,
+      "lon": 76.6833,
+      "state": "KERALA",
+      "district": "PALAKKAD",
+      "station": "MANKARA",
+      "temp_c": 30.5
+    },
+    {
+      "lat": 9.865,
+      "lon": 76.9983,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "CHERUTHONI",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 11.2283,
+      "lon": 76.1894,
+      "state": "KERALA",
+      "district": "MALAPPURAM",
+      "station": "NILAMBUR",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 11.26,
+      "lon": 75.77,
+      "state": "KERALA",
+      "district": "KOZHIKODE",
+      "station": "KOZHIKODE",
+      "temp_c": 31.2
+    },
+    {
+      "lat": 13.6631,
+      "lon": 76.9161,
+      "state": "KARNATAKA",
+      "district": "TUMKUR",
+      "station": "CHIKKANAKALLI",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 15.4175,
+      "lon": 75.6442,
+      "state": "KARNATAKA",
+      "district": "GADAG",
+      "station": "GADAG",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 20.7153,
+      "lon": 77.0503,
+      "state": "MAHARASHTRA",
+      "district": "AKOLA",
+      "station": "AKOLA_AMFU",
+      "temp_c": 32.7
+    },
+    {
+      "lat": 12.9333,
+      "lon": 78.25,
+      "state": "KARNATAKA",
+      "district": "KOLAR",
+      "station": "KGF_(KOLAR)",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 16.98,
+      "lon": 75.75,
+      "state": "KARNATAKA",
+      "district": "BIJAPUR",
+      "station": "TIDAGUNDI_AMFU",
+      "temp_c": 30.7
+    },
+    {
+      "lat": 23.3031,
+      "lon": 70.36,
+      "state": "GUJARAT",
+      "district": "KACHCHH",
+      "station": "BACHAU_AMFU",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 18.0317,
+      "lon": 79.685,
+      "state": "TELANGANA",
+      "district": "HANUMAKONDA",
+      "station": "HANUMAKONDA",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 16.6467,
+      "lon": 81.7633,
+      "state": "ANDHRA_PRADESH",
+      "district": "WEST_GODAVARI",
+      "station": "MARUTERU",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 18.46,
+      "lon": 79.11,
+      "state": "TELANGANA",
+      "district": "KARIMNAGAR",
+      "station": "KARIMNAGAR",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 17.895,
+      "lon": 82.3417,
+      "state": "ANDHRA_PRADESH",
+      "district": "ALLURI_SITHARAMA_RAJU",
+      "station": "CHINTAPALLI_AMFU",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 28.7042,
+      "lon": 77.1504,
+      "state": "DELHI",
+      "district": "NORTH_WEST_DELHI",
+      "station": "PITAMPURA",
+      "temp_c": 31.8
+    },
+    {
+      "lat": 30.48,
+      "lon": 78.05,
+      "state": "UTTARAKHAND",
+      "district": "DEHRADUN",
+      "station": "MASSOURI",
+      "temp_c": 17.4
+    },
+    {
+      "lat": 28.6357,
+      "lon": 77.0005,
+      "state": "DELHI",
+      "district": "SOUTH_WEST_DELHI",
+      "station": "NAJAFGARH",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 28.4837,
+      "lon": 77.1271,
+      "state": "DELHI",
+      "district": "SOUTH_WEST_DELHI",
+      "station": "AYANAGAR",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 28.8084,
+      "lon": 76.9697,
+      "state": "DELHI",
+      "district": "NORTH_WEST_DELHI",
+      "station": "MUNGESHPUR",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 30.6833,
+      "lon": 76.8333,
+      "state": "CHANDIGARH",
+      "district": "CHANDIGARH",
+      "station": "CHANDIGARH",
+      "temp_c": 24.7
+    },
+    {
+      "lat": 28.5938,
+      "lon": 76.9093,
+      "state": "DELHI",
+      "district": "SOUTH_WEST_DELHI",
+      "station": "JAFARPUR",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 28.6618,
+      "lon": 77.3092,
+      "state": "DELHI",
+      "district": "NEW_DELHI",
+      "station": "SPORTS_COMPLEX",
+      "temp_c": 32.3
+    },
+    {
+      "lat": 31.5833,
+      "lon": 75.98,
+      "state": "PUNJAB",
+      "district": "HOSHIARPUR",
+      "station": "SALERN",
+      "temp_c": 24.7
+    },
+    {
+      "lat": 28.6217,
+      "lon": 77.3533,
+      "state": "UTTAR_PRADESH",
+      "district": "GAUTAM_BUDDHA_NAGAR",
+      "station": "NCMRWF",
+      "temp_c": 30.6
+    },
+    {
+      "lat": 8.2103,
+      "lon": 77.4524,
+      "state": "TAMIL_NADU",
+      "district": "KANYAKUMARI",
+      "station": "THIRUPATHISARAM_AMFU",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 10.2467,
+      "lon": 78.2233,
+      "state": "TAMIL_NADU",
+      "district": "DINDIGUL",
+      "station": "NATHAM_ISRO",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 11.3383,
+      "lon": 77.7233,
+      "state": "TAMIL_NADU",
+      "district": "ERODE",
+      "station": "ERODE_ISRO",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 12.99,
+      "lon": 80.1983,
+      "state": "TAMIL_NADU",
+      "district": "CHENNAI",
+      "station": "MEENAMBAKKAM_ISRO",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 9.955,
+      "lon": 78.205,
+      "state": "TAMIL_NADU",
+      "district": "MADURAI",
+      "station": "MADURAI_ISRO",
+      "temp_c": 27.9
+    },
+    {
+      "lat": 10.750757,
+      "lon": 78.827776,
+      "state": "TAMIL_NADU",
+      "district": "TIRUCHIRAPPALLI",
+      "station": "THUVAKUDI_ISRO",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 12.2667,
+      "lon": 79.0667,
+      "state": "TAMIL_NADU",
+      "district": "TIRUVANNAMALAI",
+      "station": "TIRUVANNAMALAI_ISRO",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 22.4692,
+      "lon": 88.0944,
+      "state": "WEST_BENGAL",
+      "district": "HOWRAH",
+      "station": "ULUBERIA",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 24.0919,
+      "lon": 88.2656,
+      "state": "WEST_BENGAL",
+      "district": "MURSHIDABAD",
+      "station": "BERHAMPORE",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 22.8989,
+      "lon": 88.4358,
+      "state": "WEST_BENGAL",
+      "district": "HOOGHLY",
+      "station": "CHINSURA",
+      "temp_c": 31.1
+    },
+    {
+      "lat": 22.9686,
+      "lon": 88.4964,
+      "state": "WEST_BENGAL",
+      "district": "NADIA",
+      "station": "KALYANI_AMFU",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 25.3128,
+      "lon": 88.765,
+      "state": "WEST_BENGAL",
+      "district": "SOUTH_DINAJPUR",
+      "station": "MAJHIAN_AMFU",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 25.6236,
+      "lon": 88.1367,
+      "state": "WEST_BENGAL",
+      "district": "NORTH_DINAJPUR",
+      "station": "RAIGANJ",
+      "temp_c": 23.1
+    },
+    {
+      "lat": 26.3167,
+      "lon": 89.3869,
+      "state": "WEST_BENGAL",
+      "district": "COOCH_BEHAR",
+      "station": "PUNDIBARI_AMFU",
+      "temp_c": 25.3
+    },
+    {
+      "lat": 23.8089,
+      "lon": 91.2731,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "A_D_NAGAR_AMFU",
+      "temp_c": 23.4
+    },
+    {
+      "lat": 24.0669,
+      "lon": 91.6142,
+      "state": "TRIPURA",
+      "district": "KHOWAI",
+      "station": "KHOWAI",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 33.6692,
+      "lon": 75.1719,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "ANANTNAG",
+      "station": "ANANTNAG",
+      "temp_c": 11.6
+    },
+    {
+      "lat": 34.3494,
+      "lon": 74.4017,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "BARAMULLA",
+      "station": "BARAMULLA_AMFU",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 34.0339,
+      "lon": 74.3658,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "BARAMULLA",
+      "station": "GULMARG",
+      "temp_c": 5.0
+    },
+    {
+      "lat": 34.0619,
+      "lon": 74.71,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "BADGAM",
+      "station": "HARRAN",
+      "temp_c": 13.1
+    },
+    {
+      "lat": 33.6447,
+      "lon": 74.9433,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "KULGAM",
+      "station": "KULGAM_AMFU",
+      "temp_c": 13.9
+    },
+    {
+      "lat": 34.0508,
+      "lon": 74.8044,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "SRINAGAR",
+      "station": "RAMBAGH",
+      "temp_c": 14.2
+    },
+    {
+      "lat": 25.1764,
+      "lon": 93.0133,
+      "state": "ASSAM",
+      "district": "DIMA_HASAO",
+      "station": "HAFLONG",
+      "temp_c": 20.4
+    },
+    {
+      "lat": 23.4444,
+      "lon": 85.3161,
+      "state": "JHARKHAND",
+      "district": "RANCHI",
+      "station": "RANCHI_AMFU",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 34.02,
+      "lon": 75.32,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "ANANTNAG",
+      "station": "PAHALGAM",
+      "temp_c": 9.3
+    },
+    {
+      "lat": 15.2,
+      "lon": 76.1,
+      "state": "KARNATAKA",
+      "district": "KOPPAL",
+      "station": "KOPPAL",
+      "temp_c": 35.5
+    },
+    {
+      "lat": 28.6127,
+      "lon": 77.3075,
+      "state": "DELHI",
+      "district": "EAST_DELHI",
+      "station": "SALWAN_PUBLIC_SCHOOL",
+      "temp_c": 31.8
+    },
+    {
+      "lat": 34.5,
+      "lon": 74.68,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "BANDIPORA",
+      "station": "BANDIPORA",
+      "temp_c": 13.1
+    },
+    {
+      "lat": 33.3,
+      "lon": 75.76,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "KISHTWAR",
+      "station": "KISHTWAR",
+      "temp_c": 14.2
+    },
+    {
+      "lat": 34.3667,
+      "lon": 75.8333,
+      "state": "LADAKH",
+      "district": "KARGIL",
+      "station": "DRAS",
+      "temp_c": 4.9
+    },
+    {
+      "lat": 17.0717,
+      "lon": 82.165,
+      "state": "ANDHRA_PRADESH",
+      "district": "KAKINADA",
+      "station": "PEDDAPURAM",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 11.9517,
+      "lon": 79.8267,
+      "state": "PUDUCHERRY",
+      "district": "PUDUCHERRY",
+      "station": "PUDUCHERRY",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 10.36,
+      "lon": 79.3883,
+      "state": "TAMIL_NADU",
+      "district": "THANJAVUR",
+      "station": "ADIRAMAPATTINAM",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 10.5367,
+      "lon": 77.965,
+      "state": "TAMIL_NADU",
+      "district": "DINDIGUL",
+      "station": "VEDASANDUR",
+      "temp_c": 30.8
+    },
+    {
+      "lat": 18.1417,
+      "lon": 83.415,
+      "state": "ANDHRA_PRADESH",
+      "district": "VIZIANAGARAM",
+      "station": "VIZIANAGARAM",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 12.8117,
+      "lon": 79.4617,
+      "state": "TAMIL_NADU",
+      "district": "RANIPET",
+      "station": "KALAVAI",
+      "temp_c": 27.9
+    },
+    {
+      "lat": 8.1933,
+      "lon": 77.285,
+      "state": "TAMIL_NADU",
+      "district": "KANYAKUMARI",
+      "station": "NEYYOOR",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 18.4101,
+      "lon": 83.903,
+      "state": "ANDHRA_PRADESH",
+      "district": "SRIKAKULAM",
+      "station": "RAGOLU",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 23.15,
+      "lon": 70.2167,
+      "state": "GUJARAT",
+      "district": "KACHCHH",
+      "station": "KANDLA",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 8.5083,
+      "lon": 78.1217,
+      "state": "TAMIL_NADU",
+      "district": "THOOTHUKUDI",
+      "station": "THIRUCHENDUR",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 16.3789,
+      "lon": 73.3822,
+      "state": "MAHARASHTRA",
+      "district": "SINDHUDURG",
+      "station": "DEVGAD",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 9.1767,
+      "lon": 76.5167,
+      "state": "KERALA",
+      "district": "ALAPPUZHA",
+      "station": "KAYAMKULAM",
+      "temp_c": 26.3
+    },
+    {
+      "lat": 17.754206,
+      "lon": 73.176743,
+      "state": "MAHARASHTRA",
+      "district": "RATNAGIRI",
+      "station": "DAPOLI",
+      "temp_c": 25.3
+    },
+    {
+      "lat": 20.72,
+      "lon": 70.9167,
+      "state": "DAMAN_AND_DIU",
+      "district": "DIU",
+      "station": "DIU",
+      "temp_c": 26.9
+    },
+    {
+      "lat": 10.93,
+      "lon": 79.8417,
+      "state": "PUDUCHERRY",
+      "district": "KARAIKAL",
+      "station": "KARAIKAL",
+      "temp_c": 29.4
+    },
+    {
+      "lat": 11.7206,
+      "lon": 92.6542,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "SOUTH_ANDAMAN",
+      "station": "FERRARGUNJ",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 11.0,
+      "lon": 92.744,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "SOUTH_ANDAMAN",
+      "station": "SRI_VIJAYA_PURAM_AWS400",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 12.0124,
+      "lon": 92.9824,
+      "state": "ANDAMAN_AND_NICOBAR",
+      "district": "SOUTH_ANDAMAN",
+      "station": "SWARAJ_DEEP",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 14.73,
+      "lon": 79.0358,
+      "state": "ANDHRA_PRADESH",
+      "district": "YSR_KADAPA",
+      "station": "AGRICULTURAL_COLLEGE_ BADVEL",
+      "temp_c": 29.5
+    },
+    {
+      "lat": 16.5449,
+      "lon": 81.4932,
+      "state": "ANDHRA_PRADESH",
+      "district": "WEST_GODAVARI",
+      "station": "BHIMAVARAM",
+      "temp_c": 29.4
+    },
+    {
+      "lat": 15.8295,
+      "lon": 80.3803,
+      "state": "ANDHRA_PRADESH",
+      "district": "BAPATLA",
+      "station": "CHIRALA",
+      "temp_c": 30.4
+    },
+    {
+      "lat": 15.1627,
+      "lon": 79.2892,
+      "state": "ANDHRA_PRADESH",
+      "district": "PRAKASAM",
+      "station": "CS_PURAM",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 17.6247,
+      "lon": 83.2283,
+      "state": "ANDHRA_PRADESH",
+      "district": "VISAKHAPATNAM",
+      "station": "GANGAVARAM_PORT",
+      "temp_c": 27.9
+    },
+    {
+      "lat": 16.7687,
+      "lon": 81.1191,
+      "state": "ANDHRA_PRADESH",
+      "district": "WEST_GODAVARI",
+      "station": "KV_GOPANNAPALEM_ELURU",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 14.4308,
+      "lon": 77.7065,
+      "state": "ANDHRA_PRADESH",
+      "district": "ANANTAPUR",
+      "station": "KH_GOVTDEGCOLLEGE_DHARMAVARAM",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 18.3334,
+      "lon": 84.1163,
+      "state": "ANDHRA_PRADESH",
+      "district": "SRIKAKULAM",
+      "station": "NAGARALAPETA_KALINGAPATNAM",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 16.1983,
+      "lon": 81.1258,
+      "state": "ANDHRA_PRADESH",
+      "district": "KRISHNA",
+      "station": "KV_GOPALNAGAR_MACHILIPATNAM",
+      "temp_c": 25.6
+    },
+    {
+      "lat": 16.751,
+      "lon": 80.6327,
+      "state": "ANDHRA_PRADESH",
+      "district": "NTR",
+      "station": "MYLAVARAM_COLLEGE_OF _ENGINEER",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 16.4365,
+      "lon": 81.6944,
+      "state": "ANDHRA_PRADESH",
+      "district": "WEST_GODAVARI",
+      "station": "NARSAPUR",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 14.4046,
+      "lon": 79.9641,
+      "state": "ANDHRA_PRADESH",
+      "district": "NELLORE",
+      "station": "NELLORE_KVK",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 15.8093,
+      "lon": 79.2579,
+      "state": "ANDHRA_PRADESH",
+      "district": "PRAKASAM",
+      "station": "PEDA_ARAVEEDU",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 14.4383,
+      "lon": 78.806,
+      "state": "ANDHRA_PRADESH",
+      "district": "YSR_KADAPA",
+      "station": "UTKURU_KVK",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 27.995,
+      "lon": 94.704,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "LEPARADA",
+      "station": "BASAR",
+      "temp_c": 18.1
+    },
+    {
+      "lat": 27.5937,
+      "lon": 93.5671,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "LOWER_SUBANSIRI",
+      "station": "DEED",
+      "temp_c": 16.8
+    },
+    {
+      "lat": 27.076,
+      "lon": 93.6043,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "PAPUMPARE",
+      "station": "ITANAGAR",
+      "temp_c": 22.5
+    },
+    {
+      "lat": 27.3813,
+      "lon": 92.2319,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "WEST_KAMENG",
+      "station": "DIRANG",
+      "temp_c": 14.2
+    },
+    {
+      "lat": 27.9883,
+      "lon": 94.22,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "UPPER_SUBHANSERI",
+      "station": "DAPORIJO",
+      "temp_c": 23.9
+    },
+    {
+      "lat": 27.7987,
+      "lon": 95.9099,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "ANJAW",
+      "station": "HAYULIANG_CIRCLE",
+      "temp_c": 19.0
+    },
+    {
+      "lat": 27.0243,
+      "lon": 95.1844,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "LONGDING",
+      "station": "LONGDING",
+      "temp_c": 23.1
+    },
+    {
+      "lat": 27.1042,
+      "lon": 92.1205,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "WEST_KAMENG",
+      "station": "KALAKTANG",
+      "temp_c": 17.5
+    },
+    {
+      "lat": 27.8989,
+      "lon": 93.352,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "KURUNG_KUMEY",
+      "station": "KOLORAING",
+      "temp_c": 18.6
+    },
+    {
+      "lat": 27.6386,
+      "lon": 95.81,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "NAMSAI",
+      "station": "LEKANG",
+      "temp_c": 21.0
+    },
+    {
+      "lat": 26.8863,
+      "lon": 95.3257,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "LONGDING",
+      "station": "LONGDING_NEW",
+      "temp_c": 21.0
+    },
+    {
+      "lat": 27.7804,
+      "lon": 95.9747,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "NAMSAI",
+      "station": "NAMSAI_KVK",
+      "temp_c": 21.1
+    },
+    {
+      "lat": 27.4821,
+      "lon": 96.1978,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "CHANGLANG",
+      "station": "MIAO",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 27.7505,
+      "lon": 93.3989,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "KURUNG_KUMEY",
+      "station": "NYAPIN",
+      "temp_c": 19.1
+    },
+    {
+      "lat": 28.0695,
+      "lon": 95.3323,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "EAST_SIANG",
+      "station": "PASHIGHAT",
+      "temp_c": 22.5
+    },
+    {
+      "lat": 27.7923,
+      "lon": 94.0753,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "KAMLE",
+      "station": "RAGA",
+      "temp_c": 20.1
+    },
+    {
+      "lat": 27.3178,
+      "lon": 93.0042,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "EAST_KAMENG",
+      "station": "SEPPA_PAMPOLI",
+      "temp_c": 21.7
+    },
+    {
+      "lat": 28.1297,
+      "lon": 94.5716,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "WEST_SIANG",
+      "station": "YOMCHA",
+      "temp_c": 19.8
+    },
+    {
+      "lat": 27.5298,
+      "lon": 93.8385,
+      "state": "ARUNACHAL_PRADESH",
+      "district": "LOWER_SUBANSIRI",
+      "station": "ZIRO_MANIPOLYANG",
+      "temp_c": 14.8
+    },
+    {
+      "lat": 26.103,
+      "lon": 91.611,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "AAU_HRS",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 26.0962,
+      "lon": 90.5666,
+      "state": "ASSAM",
+      "district": "GOALPARA",
+      "station": "AGIA_AEGCL",
+      "temp_c": 22.9
+    },
+    {
+      "lat": 26.0545,
+      "lon": 93.2009,
+      "state": "ASSAM",
+      "district": "KARBI_ANGLONG(EAST)",
+      "station": "BAKULIA",
+      "temp_c": 24.6
+    },
+    {
+      "lat": 26.0159,
+      "lon": 91.1833,
+      "state": "ASSAM",
+      "district": "KAMRUP",
+      "station": "BOKO_AEGCL",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 26.639,
+      "lon": 93.592,
+      "state": "ASSAM",
+      "district": "GOLAGHAT",
+      "station": "CNB_COLLAGE_BOKAKHAT",
+      "temp_c": 24.5
+    },
+    {
+      "lat": 26.4421,
+      "lon": 90.9824,
+      "state": "ASSAM",
+      "district": "BARPETA",
+      "station": "BARPETA_KVK",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 27.2808,
+      "lon": 94.1103,
+      "state": "ASSAM",
+      "district": "LAKHIMPUR",
+      "station": "LAKHIMPUR",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 25.8733,
+      "lon": 91.4317,
+      "state": "ASSAM",
+      "district": "KAMRUP",
+      "station": "CHANDUBI",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 24.8559,
+      "lon": 92.7407,
+      "state": "ASSAM",
+      "district": "CACHAR",
+      "station": "CACHER_KVK",
+      "temp_c": 21.6
+    },
+    {
+      "lat": 27.4667,
+      "lon": 94.9116,
+      "state": "ASSAM",
+      "district": "DIBRUGARH",
+      "station": "DC_OFC_DIBRUGARH",
+      "temp_c": 23.0
+    },
+    {
+      "lat": 26.1689,
+      "lon": 92.3569,
+      "state": "ASSAM",
+      "district": "MARIGAON",
+      "station": "DHARAMTUL",
+      "temp_c": 25.0
+    },
+    {
+      "lat": 25.8363,
+      "lon": 93.4348,
+      "state": "ASSAM",
+      "district": "KARBI_ANGLONG(EAST)",
+      "station": "DIPHU",
+      "temp_c": 23.1
+    },
+    {
+      "lat": 26.2036,
+      "lon": 91.8654,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "DOWN_TOWN_UNIVERSITY",
+      "temp_c": 24.4
+    },
+    {
+      "lat": 26.094,
+      "lon": 89.9854,
+      "state": "ASSAM",
+      "district": "DHUBRI",
+      "station": "GAURIPUR_AEGCL",
+      "temp_c": 22.8
+    },
+    {
+      "lat": 26.7622,
+      "lon": 92.7604,
+      "state": "ASSAM",
+      "district": "SONITPUR",
+      "station": "GHORAMARA_AEGCL",
+      "temp_c": 24.6
+    },
+    {
+      "lat": 26.3184,
+      "lon": 91.8986,
+      "state": "ASSAM",
+      "district": "DARRANG",
+      "station": "GARUKHUTI",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 26.1642,
+      "lon": 91.7566,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "GUWAHATI_CITY",
+      "temp_c": 24.6
+    },
+    {
+      "lat": 26.1521,
+      "lon": 91.6566,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "GAUHATI_UNIVERSITY",
+      "temp_c": 24.1
+    },
+    {
+      "lat": 25.7152,
+      "lon": 92.2087,
+      "state": "ASSAM",
+      "district": "KARBI_ANGLONG(WEST)",
+      "station": "HABANG_CIRCLE",
+      "temp_c": 20.8
+    },
+    {
+      "lat": 25.8495,
+      "lon": 92.8816,
+      "state": "ASSAM",
+      "district": "KARBI_ANGLONG(WEST)",
+      "station": "KHERONIGHAT",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 26.1313,
+      "lon": 91.8237,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "KALAKSHETRA",
+      "temp_c": 26.1
+    },
+    {
+      "lat": 26.1625,
+      "lon": 92.6646,
+      "state": "ASSAM",
+      "district": "NAGAON",
+      "station": "KAMPUR",
+      "temp_c": 22.1
+    },
+    {
+      "lat": 26.1036,
+      "lon": 91.5896,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "KAMAKHYA",
+      "temp_c": 24.1
+    },
+    {
+      "lat": 25.6657,
+      "lon": 92.7825,
+      "state": "ASSAM",
+      "district": "DIMA_HASAO",
+      "station": "LKHEP",
+      "temp_c": 25.1
+    },
+    {
+      "lat": 25.75,
+      "lon": 93.1779,
+      "state": "ASSAM",
+      "district": "HAJOI",
+      "station": "LUMDING",
+      "temp_c": 24.1
+    },
+    {
+      "lat": 27.2954,
+      "lon": 95.6564,
+      "state": "ASSAM",
+      "district": "TINSUKIA",
+      "station": "MARGHERITA",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 26.4707,
+      "lon": 91.4285,
+      "state": "ASSAM",
+      "district": "NALBARI",
+      "station": "NALBARI_KVK",
+      "temp_c": 24.1
+    },
+    {
+      "lat": 26.6405,
+      "lon": 92.817,
+      "state": "ASSAM",
+      "district": "SONITPUR",
+      "station": "NERIWALAM",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 24.8663,
+      "lon": 92.5938,
+      "state": "ASSAM",
+      "district": "HAILAKANDI",
+      "station": "PANCHGRAM_AEGCL",
+      "temp_c": 21.7
+    },
+    {
+      "lat": 26.7224,
+      "lon": 92.1909,
+      "state": "ASSAM",
+      "district": "UDALGURI",
+      "station": "ROWTA_AEGCL",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 26.4055,
+      "lon": 92.843,
+      "state": "ASSAM",
+      "district": "NAGAON",
+      "station": "SAMAGURI_AEGCL",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 27.0212,
+      "lon": 94.6722,
+      "state": "ASSAM",
+      "district": "SIVASAGAR",
+      "station": "SIVSAGAR_AEGCL",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 26.4407,
+      "lon": 90.368,
+      "state": "ASSAM",
+      "district": "KOKRAJHAR",
+      "station": "SALAKATI_AEGCL",
+      "temp_c": 24.1
+    },
+    {
+      "lat": 27.6071,
+      "lon": 94.7327,
+      "state": "ASSAM",
+      "district": "DHEMAJI",
+      "station": "SILAPATHAR_SCIENCE_COLLEGE",
+      "temp_c": 23.5
+    },
+    {
+      "lat": 27.0309,
+      "lon": 95.0531,
+      "state": "ASSAM",
+      "district": "CHARAIDEO",
+      "station": "SONARI_AEGCL",
+      "temp_c": 6.1
+    },
+    {
+      "lat": 26.6531,
+      "lon": 92.1803,
+      "state": "ASSAM",
+      "district": "UDALGURI",
+      "station": "UDI_KVK",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 25.796,
+      "lon": 92.2356,
+      "state": "ASSAM",
+      "district": "KARBI_ANGLONG(WEST)",
+      "station": "UMLAPHER",
+      "temp_c": 19.4
+    },
+    {
+      "lat": 25.9407,
+      "lon": 92.2993,
+      "state": "ASSAM",
+      "district": "KARBI_ANGLONG(WEST)",
+      "station": "UMPANAI_APDCL",
+      "temp_c": 22.0
+    },
+    {
+      "lat": 26.00194,
+      "lon": 91.547729,
+      "state": "ASSAM",
+      "district": "KAMRUP_METROPOLITAN",
+      "station": "VCBC_RANI",
+      "temp_c": 23.6
+    },
+    {
+      "lat": 18.5386,
+      "lon": 73.842,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "CAGMO_SHIVAJINAGAR",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 28.5885,
+      "lon": 77.2224,
+      "state": "DELHI",
+      "district": "SOUTH_DELHI",
+      "station": "LODI ROAD",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 23.07,
+      "lon": 72.6167,
+      "state": "GUJARAT",
+      "district": "AHMEDABAD",
+      "station": "AHMEDABAD",
+      "temp_c": 31.7
+    },
+    {
+      "lat": 19.100662,
+      "lon": 72.858223,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI_CITY",
+      "station": "MUMBAI_SANTA_CRUZ",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 13.075,
+      "lon": 80.2633,
+      "state": "TAMIL_NADU",
+      "district": "CHENNAI",
+      "station": "CHENNAI",
+      "temp_c": 29.5
+    },
+    {
+      "lat": 22.6667,
+      "lon": 88.45,
+      "state": "WEST_BENGAL",
+      "district": "KOLKATA",
+      "station": "KOLKATA AIRPORT",
+      "temp_c": 28.9
+    },
+    {
+      "lat": 8.4667,
+      "lon": 76.95,
+      "state": "KERALA",
+      "district": "THIRUVANANTHAPURAM",
+      "station": "THIRUVANANTHAPURAM",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 21.1,
+      "lon": 79.05,
+      "state": "MAHARASHTRA",
+      "district": "NAGPUR",
+      "station": "NAGPUR",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 21.2115,
+      "lon": 81.6596,
+      "state": "CHHATTISGARH",
+      "district": "RAIPUR",
+      "station": "RAIPUR",
+      "temp_c": 31.7
+    },
+    {
+      "lat": 26.3,
+      "lon": 73.0167,
+      "state": "RAJASTHAN",
+      "district": "JODHPUR",
+      "station": "JODHPUR",
+      "temp_c": 34.6
+    },
+    {
+      "lat": 12.97,
+      "lon": 77.5667,
+      "state": "KARNATAKA",
+      "district": "BANGALORE_URBAN",
+      "station": "BANGALORE",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 23.28,
+      "lon": 77.35,
+      "state": "MADHYA_PRADESH",
+      "district": "BHOPAL",
+      "station": "BHOPAL",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 17.4633,
+      "lon": 78.495,
+      "state": "TELANGANA",
+      "district": "HYDERABAD",
+      "station": "HYDERABAD",
+      "temp_c": 29.5
+    },
+    {
+      "lat": 26.9,
+      "lon": 70.9167,
+      "state": "RAJASTHAN",
+      "district": "JAISALMER",
+      "station": "JAISALMER",
+      "temp_c": 31.1
+    },
+    {
+      "lat": 28.42,
+      "lon": 77.0,
+      "state": "HARYANA",
+      "district": "GURGAON",
+      "station": "GURGAON",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 26.8667,
+      "lon": 80.9167,
+      "state": "UTTAR_PRADESH",
+      "district": "LUCKNOW",
+      "station": "METEOROLOGICAL_CENTRE_AMAUSI",
+      "temp_c": 32.6
+    },
+    {
+      "lat": 27.17123,
+      "lon": 78.03123,
+      "state": "UTTAR_PRADESH",
+      "district": "AGRA",
+      "station": "HYDROGEN_FACTORY_BINDUKATRA",
+      "temp_c": 30.4
+    },
+    {
+      "lat": 27.5,
+      "lon": 77.6667,
+      "state": "UTTAR_PRADESH",
+      "district": "MATHURA",
+      "station": "COLLECTORATE_OFFICE",
+      "temp_c": 32.1
+    },
+    {
+      "lat": 18.841,
+      "lon": 73.884,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "RAJGURUNAGAR",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 25.9288,
+      "lon": 86.5597,
+      "state": "BIHAR",
+      "district": "SAHARSA",
+      "station": "AGWANPUR_AWS400",
+      "temp_c": 25.2
+    },
+    {
+      "lat": 25.1495,
+      "lon": 84.5135,
+      "state": "BIHAR",
+      "district": "ARWAL",
+      "station": "ARWAL_AWS400",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 25.4542,
+      "lon": 85.7213,
+      "state": "BIHAR",
+      "district": "PATNA",
+      "station": "KVK_BARH",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 25.2225,
+      "lon": 84.24,
+      "state": "BIHAR",
+      "district": "ROHTAS",
+      "station": "BIKRAMGANJ",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 25.5634,
+      "lon": 85.2214,
+      "state": "BIHAR",
+      "district": "PATNA",
+      "station": "BALDWIN ACADEMY",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 24.6837,
+      "lon": 84.9635,
+      "state": "BIHAR",
+      "district": "GAYA",
+      "station": "BODHGAYA",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 24.8703,
+      "lon": 84.8886,
+      "state": "BIHAR",
+      "district": "GAYA",
+      "station": "GAYA_CUSB",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 24.8895,
+      "lon": 84.1715,
+      "state": "BIHAR",
+      "district": "ROHTAS",
+      "station": "DEHRI",
+      "temp_c": 35.9
+    },
+    {
+      "lat": 25.5333,
+      "lon": 84.1592,
+      "state": "BIHAR",
+      "district": "BUXAR",
+      "station": "DUMARAON",
+      "temp_c": 26.9
+    },
+    {
+      "lat": 25.6294,
+      "lon": 85.0172,
+      "state": "BIHAR",
+      "district": "PATNA",
+      "station": "DANAPUR_DPS",
+      "temp_c": 26.1
+    },
+    {
+      "lat": 26.1642,
+      "lon": 85.9004,
+      "state": "BIHAR",
+      "district": "DARBHANGA",
+      "station": "DARBHANGA_AWS400",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 25.538424,
+      "lon": 84.845999,
+      "state": "BIHAR",
+      "district": "PATNA",
+      "station": "IIT_PATNA",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 25.18143,
+      "lon": 85.13712,
+      "state": "BIHAR",
+      "district": "JEHANABAD",
+      "station": "JEHANABAD",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 25.9184,
+      "lon": 86.8043,
+      "state": "BIHAR",
+      "district": "MADHEPURA",
+      "station": "MADHEPURA",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 25.3706,
+      "lon": 86.4997,
+      "state": "BIHAR",
+      "district": "MUNGER",
+      "station": "KVK_MUNGER",
+      "temp_c": 24.9
+    },
+    {
+      "lat": 25.9793,
+      "lon": 85.6771,
+      "state": "BIHAR",
+      "district": "SAMASTIPUR",
+      "station": "PUSA_AWS400",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 25.7762,
+      "lon": 87.4745,
+      "state": "BIHAR",
+      "district": "PURNEA",
+      "station": "PURNEA_IMD",
+      "temp_c": 34.5
+    },
+    {
+      "lat": 25.0119,
+      "lon": 85.3755,
+      "state": "BIHAR",
+      "district": "NALANDA",
+      "station": "RAJGIR",
+      "temp_c": 26.2
+    },
+    {
+      "lat": 25.0739,
+      "lon": 85.851,
+      "state": "BIHAR",
+      "district": "SHEIKPURA",
+      "station": "SHEIKPURA_KVK",
+      "temp_c": 26.7
+    },
+    {
+      "lat": 26.3047,
+      "lon": 86.8382,
+      "state": "BIHAR",
+      "district": "SUPAUL",
+      "station": "SUPAUL_AWS400",
+      "temp_c": 25.0
+    },
+    {
+      "lat": 26.2644,
+      "lon": 86.3199,
+      "state": "BIHAR",
+      "district": "MADHUBANI",
+      "station": "SUKHET",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 26.1484,
+      "lon": 84.2689,
+      "state": "BIHAR",
+      "district": "SIWAN",
+      "station": "ZIRADEI",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 20.7057,
+      "lon": 81.23,
+      "state": "CHHATTISGARH",
+      "district": "BALOD",
+      "station": "BALOD_AWS400",
+      "temp_c": 33.6
+    },
+    {
+      "lat": 21.7014,
+      "lon": 81.5474,
+      "state": "CHHATTISGARH",
+      "district": "BEMETARA",
+      "station": "BEMETARA",
+      "temp_c": 31.0
+    },
+    {
+      "lat": 23.6026,
+      "lon": 83.6098,
+      "state": "CHHATTISGARH",
+      "district": "BALRAMPUR",
+      "station": "BALRAMPUR_AWS400",
+      "temp_c": 25.8
+    },
+    {
+      "lat": 30.7347,
+      "lon": 76.806,
+      "state": "CHANDIGARH",
+      "district": "CHANDIGARH",
+      "station": "DAV_SCHOOL",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 22.472,
+      "lon": 82.5232,
+      "state": "CHHATTISGARH",
+      "district": "KORBA",
+      "station": "LAKHANPUR_KVK",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 22.0839,
+      "lon": 81.7266,
+      "state": "CHHATTISGARH",
+      "district": "MUNGELI",
+      "station": "MUNGELI_AWS400",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 22.7595,
+      "lon": 81.8993,
+      "state": "CHHATTISGARH",
+      "district": "PENDRA_ROAD",
+      "station": "PENDRA_ROAD",
+      "temp_c": 31.6
+    },
+    {
+      "lat": 23.2558,
+      "lon": 82.5174,
+      "state": "CHHATTISGARH",
+      "district": "KORIYA",
+      "station": "KORIYA_KVK",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.3909,
+      "lon": 81.6569,
+      "state": "CHHATTISGARH",
+      "district": "SUKMA",
+      "station": "SUKMA",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 28.6284,
+      "lon": 77.2431,
+      "state": "DELHI",
+      "district": "CENTRAL_DELHI",
+      "station": "PRAGATI_MAIDAN",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 28.6322,
+      "lon": 76.9547,
+      "state": "DELHI",
+      "district": "DELHI",
+      "station": "KVK_CRPF_CAMPUS",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 28.6178,
+      "lon": 77.0858,
+      "state": "DELHI",
+      "district": "DELHI",
+      "station": "KV_JANAKPURI",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 28.6789,
+      "lon": 77.4648,
+      "state": "UTTAR_PRADESH",
+      "district": "GHAZIABAD",
+      "station": "KV_KAMALA_NEHRU_NAGAR",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 28.6155,
+      "lon": 77.1367,
+      "state": "DELHI",
+      "district": "DELHI",
+      "station": "KV_NARAYNA",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 28.6936,
+      "lon": 77.3643,
+      "state": "UTTAR_PRADESH",
+      "district": "GHAZIABAD",
+      "station": "KV2_AIRFORCE_HINDON",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 28.5029,
+      "lon": 77.0511,
+      "state": "HARYANA",
+      "district": "GURGAON",
+      "station": "NORTHCAP_UNIVERSITY",
+      "temp_c": 30.8
+    },
+    {
+      "lat": 28.5168,
+      "lon": 77.2234,
+      "state": "DELHI",
+      "district": "DELHI",
+      "station": "PHARMA_SCIENCE_AND_RESEARCH_UN",
+      "temp_c": 30.6
+    },
+    {
+      "lat": 20.2703,
+      "lon": 73.0049,
+      "state": "DADRA_AND_NAGAR_HAVELI",
+      "district": "DADAR_NAGAR",
+      "station": "SILVASSA",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 15.7342,
+      "lon": 73.8602,
+      "state": "GOA",
+      "district": "NORTH_GOA",
+      "station": "MOPA_AIRPORT",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 24.331,
+      "lon": 72.8517,
+      "state": "GUJARAT",
+      "district": "BANASKANTHA",
+      "station": "AMBAJI_TEMPLE",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 21.3646,
+      "lon": 72.0261,
+      "state": "GUJARAT",
+      "district": "BHAVNAGAR",
+      "station": "TALAJA_AWS400",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 21.1677,
+      "lon": 72.8032,
+      "state": "GUJARAT",
+      "district": "SURAT",
+      "station": "SURAT_KVK",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 22.1894,
+      "lon": 71.686,
+      "state": "GUJARAT",
+      "district": "BOTAD",
+      "station": "BOTAD",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 21.7851,
+      "lon": 72.0793,
+      "state": "GUJARAT",
+      "district": "BHAVNAGAR",
+      "station": "BHAVNAGAR",
+      "temp_c": 30.1
+    },
+    {
+      "lat": 22.8252,
+      "lon": 74.2378,
+      "state": "GUJARAT",
+      "district": "DAHOD",
+      "station": "DAHOD_KVK",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 22.2586,
+      "lon": 72.185,
+      "state": "GUJARAT",
+      "district": "AHMEDABAD",
+      "station": "DHORELA",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 23.5865,
+      "lon": 72.949,
+      "state": "GUJARAT",
+      "district": "SABARKANTHA",
+      "station": "HIMATNAGAR",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 23.0096,
+      "lon": 71.1891,
+      "state": "GUJARAT",
+      "district": "MORBI",
+      "station": "HALWAD",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 21.344,
+      "lon": 71.0193,
+      "state": "GUJARAT",
+      "district": "AMRELI",
+      "station": "DHARI_AWS400",
+      "temp_c": 27.4
+    },
+    {
+      "lat": 22.8237,
+      "lon": 69.7225,
+      "state": "GUJARAT",
+      "district": "KACHCHH",
+      "station": "MUNDRA",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 22.3404,
+      "lon": 72.6401,
+      "state": "GUJARAT",
+      "district": "ANAND",
+      "station": "KHAMBHAT_AWS400",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 23.1267,
+      "lon": 73.603,
+      "state": "GUJARAT",
+      "district": "MAHISAGAR",
+      "station": "LUNAVADA",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 23.5119,
+      "lon": 72.4023,
+      "state": "GUJARAT",
+      "district": "MAHESANA",
+      "station": "JAGUDAN",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 21.6423,
+      "lon": 69.6626,
+      "state": "GUJARAT",
+      "district": "PORBANDAR",
+      "station": "PORBANDAR",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 23.5507,
+      "lon": 70.6429,
+      "state": "GUJARAT",
+      "district": "KACHCHH",
+      "station": "RAPAR",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 23.0808,
+      "lon": 72.4943,
+      "state": "GUJARAT",
+      "district": "AHMEDABAD",
+      "station": "SCIENCE_CITY",
+      "temp_c": 30.0
+    },
+    {
+      "lat": 21.5822,
+      "lon": 72.8164,
+      "state": "GUJARAT",
+      "district": "BHARUCH",
+      "station": "HANSOT_AWS400",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 24.4033,
+      "lon": 71.5849,
+      "state": "GUJARAT",
+      "district": "BANASKANTHA",
+      "station": "THARAD_AWS400",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 22.3114,
+      "lon": 73.1826,
+      "state": "GUJARAT",
+      "district": "VADODARA",
+      "station": "VADODARA_AWS400",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 20.776,
+      "lon": 73.5063,
+      "state": "GUJARAT",
+      "district": "DANG",
+      "station": "DANG_KVK",
+      "temp_c": 25.6
+    },
+    {
+      "lat": 29.4932,
+      "lon": 74.8925,
+      "state": "HARYANA",
+      "district": "SIRSA",
+      "station": "CANAL_COLONY_VILLAGE_OTTU",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 28.7785,
+      "lon": 76.7758,
+      "state": "HARYANA",
+      "district": "ROHTAK",
+      "station": "CANAL_REST_HOUSE",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 29.1209,
+      "lon": 76.8287,
+      "state": "HARYANA",
+      "district": "SONIPAT",
+      "station": "CANAL_RESTHOUSE_SARAGTHAL",
+      "temp_c": 25.8
+    },
+    {
+      "lat": 30.3159,
+      "lon": 77.5824,
+      "state": "HARYANA",
+      "district": "YAMUNANAGAR",
+      "station": "HATHINKUNDBERAJ",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 29.8829,
+      "lon": 77.0504,
+      "state": "HARYANA",
+      "district": "KARNAL",
+      "station": "INDRI_REST_HOUSE",
+      "temp_c": 26.1
+    },
+    {
+      "lat": 28.1082,
+      "lon": 77.3312,
+      "state": "HARYANA",
+      "district": "PALWAL",
+      "station": "PALWAL_WATER_SERVICE_DIVISION",
+      "temp_c": 30.0
+    },
+    {
+      "lat": 28.5921,
+      "lon": 76.2653,
+      "state": "HARYANA",
+      "district": "CHARKHI_DADRI",
+      "station": "REVENUE_OFFICE_AWS400",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 28.372,
+      "lon": 76.9881,
+      "state": "HARYANA",
+      "district": "GURGAON",
+      "station": "GURGAON_KVK",
+      "temp_c": 30.4
+    },
+    {
+      "lat": 31.414,
+      "lon": 76.649,
+      "state": "HIMACHAL_PRADESH",
+      "district": "BILASPUR",
+      "station": "BILASPUR_KVK",
+      "temp_c": 17.7
+    },
+    {
+      "lat": 32.56,
+      "lon": 76.12,
+      "state": "HIMACHAL_PRADESH",
+      "district": "MANDI",
+      "station": "SUNDERNAGAR_KVK",
+      "temp_c": 16.7
+    },
+    {
+      "lat": 32.0915,
+      "lon": 78.3851,
+      "state": "HIMACHAL_PRADESH",
+      "district": "LAHAUL_AND_SPITI",
+      "station": "TABO",
+      "temp_c": 9.0
+    },
+    {
+      "lat": 22.6358,
+      "lon": 84.9077,
+      "state": "JHARKHAND",
+      "district": "SIMDEGA",
+      "station": "BANO-SIMDEGA_KVK",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 23.4363,
+      "lon": 84.3216,
+      "state": "JHARKHAND",
+      "district": "GUMLA",
+      "station": "GUMLA-BISHNUPUR_KVK",
+      "temp_c": 23.9
+    },
+    {
+      "lat": 24.2812,
+      "lon": 85.3497,
+      "state": "JHARKHAND",
+      "district": "HAZARIBAGH",
+      "station": "BARHI",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 22.2757,
+      "lon": 86.7119,
+      "state": "JHARKHAND",
+      "district": "EAST_SINGHBHUM",
+      "station": "BAHRAGORA",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 24.4925,
+      "lon": 86.6611,
+      "state": "JHARKHAND",
+      "district": "DEOGHAR",
+      "station": "DEOGHAR_AWS400",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 22.9558,
+      "lon": 85.1182,
+      "state": "JHARKHAND",
+      "district": "KHUNTI",
+      "station": "DIYAKEL-KHUNTI_KVK",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 24.8486,
+      "lon": 87.2047,
+      "state": "JHARKHAND",
+      "district": "GODDA",
+      "station": "GODDA_KVK",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 22.2185,
+      "lon": 85.6394,
+      "state": "JHARKHAND",
+      "district": "WEST_SINGHBHUM",
+      "station": "JAGANNATHPUR-BAU_KVK",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 24.4757,
+      "lon": 85.5938,
+      "state": "JHARKHAND",
+      "district": "KODARMA",
+      "station": "KODARMA",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 23.6688,
+      "lon": 86.1536,
+      "state": "JHARKHAND",
+      "district": "BOKARO",
+      "station": "KV_BOKARO",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 23.5123,
+      "lon": 84.6686,
+      "state": "JHARKHAND",
+      "district": "LOHARDAGA",
+      "station": "LOHARDAGA_KVK",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 23.4742,
+      "lon": 84.2609,
+      "state": "JHARKHAND",
+      "district": "LATEHAR",
+      "station": "NETARHAT",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 24.4717,
+      "lon": 87.7629,
+      "state": "JHARKHAND",
+      "district": "PAKUR",
+      "station": "PAKUR_KVK",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 23.3217,
+      "lon": 85.3197,
+      "state": "JHARKHAND",
+      "district": "RANCHI",
+      "station": "MC_RANCHI",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 22.7158,
+      "lon": 85.954,
+      "state": "JHARKHAND",
+      "district": "SARAIKELA",
+      "station": "SARAIKELA",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 22.5899,
+      "lon": 84.5173,
+      "state": "JHARKHAND",
+      "district": "SIMDEGA",
+      "station": "SIMDEGA",
+      "temp_c": 29.7
+    },
+    {
+      "lat": 34.096,
+      "lon": 74.525,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "BARAMULLA",
+      "station": "BARAMULLA_KVK",
+      "temp_c": 13.6
+    },
+    {
+      "lat": 33.2667,
+      "lon": 76.172,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "KISHTWAR",
+      "station": "GULABGARH",
+      "temp_c": 6.8
+    },
+    {
+      "lat": 32.7266,
+      "lon": 74.857,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "JAMMU",
+      "station": "JAMMU",
+      "temp_c": 21.8
+    },
+    {
+      "lat": 32.368,
+      "lon": 75.544,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "KATHUA",
+      "station": "KATHUA_KVK",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 34.516,
+      "lon": 74.256,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "KUPWARA",
+      "station": "KUPW_KVK",
+      "temp_c": 13.0
+    },
+    {
+      "lat": 33.7665,
+      "lon": 74.111,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "POONCH",
+      "station": "POONCH",
+      "temp_c": 20.2
+    },
+    {
+      "lat": 32.994,
+      "lon": 74.832,
+      "state": "JAMMU_AND_KASHMIR",
+      "district": "REASI",
+      "station": "REASI_KVK",
+      "temp_c": 21.7
+    },
+    {
+      "lat": 13.5062,
+      "lon": 75.0384,
+      "state": "KARNATAKA",
+      "district": "SHIVAMOGGA",
+      "station": "AGUMBE",
+      "temp_c": 24.4
+    },
+    {
+      "lat": 16.2861,
+      "lon": 76.1672,
+      "state": "KARNATAKA",
+      "district": "BAGALKOT",
+      "station": "BAGALKOT_KVK",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 12.9788,
+      "lon": 77.1925,
+      "state": "KARNATAKA",
+      "district": "RAMANAGARA",
+      "station": "CHANDURAYANGHALLI_KVK",
+      "temp_c": 22.6
+    },
+    {
+      "lat": 13.3727,
+      "lon": 77.5498,
+      "state": "KARNATAKA",
+      "district": "BANGALORE_RURAL",
+      "station": "DODDABALLAPURA",
+      "temp_c": 22.8
+    },
+    {
+      "lat": 15.1385,
+      "lon": 77.0612,
+      "state": "KARNATAKA",
+      "district": "BELLARY",
+      "station": "HAGARI_KVK",
+      "temp_c": 29.5
+    },
+    {
+      "lat": 13.9596,
+      "lon": 76.6456,
+      "state": "KARNATAKA",
+      "district": "CHITRADURGA",
+      "station": "HIRIYUR",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 12.9795,
+      "lon": 76.0427,
+      "state": "KARNATAKA",
+      "district": "HASSAN",
+      "station": "HASSAN",
+      "temp_c": 21.2
+    },
+    {
+      "lat": 12.5685,
+      "lon": 76.8322,
+      "state": "KARNATAKA",
+      "district": "MANDYA",
+      "station": "MANDYA_KVK",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 12.893,
+      "lon": 74.8684,
+      "state": "KARNATAKA",
+      "district": "DAKSHINA_KANNADA",
+      "station": "MANGALURU",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 13.1156,
+      "lon": 75.6392,
+      "state": "KARNATAKA",
+      "district": "CHIKMAGALUR",
+      "station": "MUDIGERE_KVK",
+      "temp_c": 20.0
+    },
+    {
+      "lat": 10.1053,
+      "lon": 76.3567,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "ALUVA",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 9.71,
+      "lon": 77.01,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "AYYAPPANKOVIL",
+      "temp_c": 22.1
+    },
+    {
+      "lat": 8.9944,
+      "lon": 76.5331,
+      "state": "KERALA",
+      "district": "KOLLAM",
+      "station": "CHAVARA",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 9.96692,
+      "lon": 76.4409,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "CHOONDI",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 12.0964,
+      "lon": 75.5614,
+      "state": "KERALA",
+      "district": "KANNUR",
+      "station": "CHEMBERI",
+      "temp_c": 27.4
+    },
+    {
+      "lat": 11.82,
+      "lon": 75.66,
+      "state": "KERALA",
+      "district": "KANNUR",
+      "station": "CHERUVANCHERY",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 10.308,
+      "lon": 76.333,
+      "state": "KERALA",
+      "district": "THRISSUR",
+      "station": "CHALAKKUDY",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 9.9684,
+      "lon": 76.284,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "DHGROUND_KGOV",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 11.6264,
+      "lon": 76.0886,
+      "state": "KERALA",
+      "district": "WAYANAD",
+      "station": "KALPETA",
+      "temp_c": 23.4
+    },
+    {
+      "lat": 10.2879,
+      "lon": 76.5558,
+      "state": "KERALA",
+      "district": "THRISSUR",
+      "station": "ATHIRAPPILLY",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 10.6436,
+      "lon": 76.6867,
+      "state": "KERALA",
+      "district": "PALAKKAD",
+      "station": "KOLLENGODE",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 9.8616,
+      "lon": 76.5957,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "KOOTHATTUKULAM",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 10.2597,
+      "lon": 77.1688,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "KOVILKADAVU",
+      "temp_c": 22.1
+    },
+    {
+      "lat": 9.5916,
+      "lon": 76.5222,
+      "state": "KERALA",
+      "district": "KOTTAYAM",
+      "station": "KOTTAYAM",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 8.99472,
+      "lon": 76.6953,
+      "state": "KERALA",
+      "district": "KOLLAM",
+      "station": "KARUVELIL_TKMIT",
+      "temp_c": 25.6
+    },
+    {
+      "lat": 10.0557,
+      "lon": 76.3317,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "KALAMASSERY",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 9.382,
+      "lon": 76.3898,
+      "state": "KERALA",
+      "district": "ALAPPUZHA",
+      "station": "KARUMADI",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 11.28,
+      "lon": 75.87,
+      "state": "KERALA",
+      "district": "KOZHIKODE",
+      "station": "KUNNAMANGALAM",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 10.1461,
+      "lon": 77.2019,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "KUNDALA DAM",
+      "temp_c": 14.9
+    },
+    {
+      "lat": 9.36222,
+      "lon": 76.8406,
+      "state": "KERALA",
+      "district": "PATHANAMTHITTA",
+      "station": "LAHA",
+      "temp_c": 24.6
+    },
+    {
+      "lat": 10.3187,
+      "lon": 76.734,
+      "state": "KERALA",
+      "district": "THRISSUR",
+      "station": "LOWER_SHOLAYAR",
+      "temp_c": 23.6
+    },
+    {
+      "lat": 9.9724,
+      "lon": 76.2789,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "BOAT_JETTY_KGOV",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 10.8403,
+      "lon": 76.6892,
+      "state": "KERALA",
+      "district": "PALAKKAD",
+      "station": "MALAMPUZHA DAM",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 10.517,
+      "lon": 76.5356,
+      "state": "KERALA",
+      "district": "PALAKKAD",
+      "station": "MANGALAM_DAM",
+      "temp_c": 27.9
+    },
+    {
+      "lat": 10.852,
+      "lon": 75.9855,
+      "state": "KERALA",
+      "district": "MALAPPURAM",
+      "station": "THAVANUR_KVK",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 9.91,
+      "lon": 76.26,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "MATTANCHERRY",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 10.1808,
+      "lon": 76.1628,
+      "state": "KERALA",
+      "district": "THRISSUR",
+      "station": "MUNAKKAL",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 12.5061,
+      "lon": 75.0908,
+      "state": "KERALA",
+      "district": "KASARAGOD",
+      "station": "MULIYAR",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 9.17,
+      "lon": 76.62,
+      "state": "KERALA",
+      "district": "ALAPPUZHA",
+      "station": "NOORANAD",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 10.093,
+      "lon": 76.559,
+      "state": "KERALA",
+      "district": "ERNAKULAM",
+      "station": "ODAKKALI",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 8.75333,
+      "lon": 77.0264,
+      "state": "KERALA",
+      "district": "THIRUVANANTHAPURAM",
+      "station": "PALODE",
+      "temp_c": 25.2
+    },
+    {
+      "lat": 12.456,
+      "lon": 75.3671,
+      "state": "KERALA",
+      "district": "KASARAGOD",
+      "station": "PANATHUR",
+      "temp_c": 26.3
+    },
+    {
+      "lat": 9.7986,
+      "lon": 77.1614,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "PAMPADUMPARA",
+      "temp_c": 21.8
+    },
+    {
+      "lat": 12.1875,
+      "lon": 75.1783,
+      "state": "KERALA",
+      "district": "KASARAGOD",
+      "station": "PADANNAKKAD",
+      "temp_c": 27.9
+    },
+    {
+      "lat": 10.9933,
+      "lon": 75.9442,
+      "state": "KERALA",
+      "district": "MALAPPURAM",
+      "station": "THENNALA",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 10.5303,
+      "lon": 76.3997,
+      "state": "KERALA",
+      "district": "THRISSUR",
+      "station": "PEECHI",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 12.2216,
+      "lon": 75.3073,
+      "state": "KERALA",
+      "district": "KANNUR",
+      "station": "PERINGOME",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 8.65944,
+      "lon": 76.9114,
+      "state": "KERALA",
+      "district": "THIRUVANANTHAPURAM",
+      "station": "PIRAPPANCODE",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 11.8107,
+      "lon": 75.4918,
+      "state": "KERALA",
+      "district": "KANNUR",
+      "station": "PINARAYI",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 11.381,
+      "lon": 76.3061,
+      "state": "KERALA",
+      "district": "MALAPPURAM",
+      "station": "PALEMAD",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 10.3778,
+      "lon": 76.7642,
+      "state": "KERALA",
+      "district": "PALAKKAD",
+      "station": "PARAMBIKULAM",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 23.8643,
+      "lon": 91.2916,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "SECRETARIAT",
+      "temp_c": 24.9
+    },
+    {
+      "lat": 10.0124,
+      "lon": 77.0318,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "SENGULAM DAM",
+      "temp_c": 21.7
+    },
+    {
+      "lat": 9.74,
+      "lon": 76.36,
+      "state": "KERALA",
+      "district": "ALAPPUZHA",
+      "station": "THYCATTUSSERY",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 9.35778,
+      "lon": 76.5553,
+      "state": "KERALA",
+      "district": "PATHANAMTHITTA",
+      "station": "THIRUVALLA_KALLUNKAL",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 8.79972,
+      "lon": 76.8803,
+      "state": "KERALA",
+      "district": "THIRUVANANTHAPURAM",
+      "station": "THATTATHUMALA",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 9.8667,
+      "lon": 76.8586,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "UDUMBANNOOR",
+      "temp_c": 26.9
+    },
+    {
+      "lat": 9.2377,
+      "lon": 76.6886,
+      "state": "KERALA",
+      "district": "PATHANAMTHITTA",
+      "station": "ULANADU",
+      "temp_c": 25.1
+    },
+    {
+      "lat": 11.34,
+      "lon": 76.01,
+      "state": "KERALA",
+      "district": "KOZHIKODE",
+      "station": "URUMI",
+      "temp_c": 25.8
+    },
+    {
+      "lat": 8.73222,
+      "lon": 76.7317,
+      "state": "KERALA",
+      "district": "THIRUVANANTHAPURAM",
+      "station": "VARKALA",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 11.05,
+      "lon": 76.084,
+      "state": "KERALA",
+      "district": "MALAPPURAM",
+      "station": "VAKKAD",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 10.702,
+      "lon": 76.852,
+      "state": "KERALA",
+      "district": "PALAKKAD",
+      "station": "VANNAMADA",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 10.1777,
+      "lon": 77.2538,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "VATTAVADA",
+      "temp_c": 17.1
+    },
+    {
+      "lat": 11.59,
+      "lon": 75.62,
+      "state": "KERALA",
+      "district": "KOZHIKODE",
+      "station": "VADAKARA",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 9.585,
+      "lon": 76.5708,
+      "state": "KERALA",
+      "district": "KOTTAYAM",
+      "station": "VADAVATHOOR",
+      "temp_c": 25.5
+    },
+    {
+      "lat": 11.7803,
+      "lon": 75.7639,
+      "state": "KERALA",
+      "district": "KOZHIKODE",
+      "station": "VILANGAD",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 9.72388,
+      "lon": 76.3925,
+      "state": "KERALA",
+      "district": "KOTTAYAM",
+      "station": "VAIKKOM",
+      "temp_c": 26.7
+    },
+    {
+      "lat": 9.98,
+      "lon": 77.01,
+      "state": "KERALA",
+      "district": "IDUKKI",
+      "station": "VELLATHOOVAL",
+      "temp_c": 24.3
+    },
+    {
+      "lat": 9.45222,
+      "lon": 76.8578,
+      "state": "KERALA",
+      "district": "PATHANAMTHITTA",
+      "station": "VENKURINJI",
+      "temp_c": 24.7
+    },
+    {
+      "lat": 34.09,
+      "lon": 77.589,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "CHUCHOT_YOKMA",
+      "temp_c": 12.4
+    },
+    {
+      "lat": 34.56,
+      "lon": 76.482,
+      "state": "LADAKH",
+      "district": "KARGIL",
+      "station": "GARKON",
+      "temp_c": 14.5
+    },
+    {
+      "lat": 34.556,
+      "lon": 77.01,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "KHALTSE",
+      "temp_c": 13.3
+    },
+    {
+      "lat": 34.17,
+      "lon": 77.5767,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "MC LEH",
+      "temp_c": 9.0
+    },
+    {
+      "lat": 34.783,
+      "lon": 77.566,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "NUBRA_HUNDER",
+      "temp_c": 14.7
+    },
+    {
+      "lat": 33.209,
+      "lon": 78.646,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "NYOMA_KVK",
+      "temp_c": 7.1
+    },
+    {
+      "lat": 33.479,
+      "lon": 76.869,
+      "state": "LADAKH",
+      "district": "KARGIL",
+      "station": "PADUM_KVK",
+      "temp_c": 6.4
+    },
+    {
+      "lat": 33.98,
+      "lon": 78.23,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "TANGTSE_DURBUK",
+      "temp_c": 7.8
+    },
+    {
+      "lat": 33.83,
+      "lon": 77.81,
+      "state": "LADAKH",
+      "district": "LEH",
+      "station": "UPSHI",
+      "temp_c": 12.0
+    },
+    {
+      "lat": 18.153,
+      "lon": 74.5003,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "NIASM_BARAMATI",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 18.990814,
+      "lon": 75.748339,
+      "state": "MAHARASHTRA",
+      "district": "BEED",
+      "station": "BEED_PTO",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 18.54,
+      "lon": 73.8886,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "BLINDSCHOOL_KP_PUNE",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 18.9836,
+      "lon": 72.8345,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI_CITY",
+      "station": "BYCULLA_MUMBAI",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 18.6032,
+      "lon": 73.8541,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "CME_DAPODI",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.4659,
+      "lon": 73.9244,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "DPS_HADAPSAR_PUNE",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 18.6751,
+      "lon": 73.8772,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "RJSPMCOP_DUDULGAON",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 18.5607,
+      "lon": 73.5211,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "GIRIVAN",
+      "temp_c": 24.7
+    },
+    {
+      "lat": 19.0088,
+      "lon": 73.106,
+      "state": "MAHARASHTRA",
+      "district": "RAIGAD",
+      "station": "IIGHQ_NEWPANVEL",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 18.9052,
+      "lon": 74.0938,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "KHADAKWADI_AMBEGAON",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.5056,
+      "lon": 74.3304,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "KHUTBAV_DAUND",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 18.4697,
+      "lon": 74.0013,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "LONIKALBHOR_HAVELI",
+      "temp_c": 25.6
+    },
+    {
+      "lat": 19.9722,
+      "lon": 76.5323,
+      "state": "MAHARASHTRA",
+      "district": "BULDHANA",
+      "station": "LONAR",
+      "temp_c": 32.1
+    },
+    {
+      "lat": 17.4208,
+      "lon": 75.1947,
+      "state": "MAHARASHTRA",
+      "district": "SOLAPUR",
+      "station": "SANGOLA_MAHAVIDYALAYA",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 18.99012,
+      "lon": 73.266534,
+      "state": "MAHARASHTRA",
+      "district": "RAIGAD",
+      "station": "MATHERAN",
+      "temp_c": 24.5
+    },
+    {
+      "lat": 21.0383,
+      "lon": 79.0572,
+      "state": "MAHARASHTRA",
+      "district": "NAGPUR",
+      "station": "NAGPUR_KVK",
+      "temp_c": 29.4
+    },
+    {
+      "lat": 19.2092,
+      "lon": 73.8725,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "NIMGIRI_JUNNAR",
+      "temp_c": 23.9
+    },
+    {
+      "lat": 19.1003,
+      "lon": 73.9655,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "NARAYANGOAN_KRISHI_KENDRA",
+      "temp_c": 26.0
+    },
+    {
+      "lat": 18.8344,
+      "lon": 74.0536,
+      "state": "MAHARASHTRA",
+      "district": "PUNE",
+      "station": "PABAL_SHIRUR",
+      "temp_c": 23.1
+    },
+    {
+      "lat": 19.7319,
+      "lon": 72.7609,
+      "state": "MAHARASHTRA",
+      "district": "PALGHAR",
+      "station": "PALGHAR_AWS400",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 16.41029,
+      "lon": 73.994119,
+      "state": "MAHARASHTRA",
+      "district": "KOLHAPUR",
+      "station": "RADHANAGRI_ARS",
+      "temp_c": 25.8
+    },
+    {
+      "lat": 21.3937,
+      "lon": 79.3235,
+      "state": "MAHARASHTRA",
+      "district": "NAGPUR",
+      "station": "RAMTEK_AWS400",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 16.9859,
+      "lon": 73.3285,
+      "state": "MAHARASHTRA",
+      "district": "RATNAGIRI",
+      "station": "RATNAGIRI_AWS400",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 21.53515,
+      "lon": 74.485958,
+      "state": "MAHARASHTRA",
+      "district": "NANDURBAR",
+      "station": "SHAHADA_AWS400",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 17.4833,
+      "lon": 75.3815,
+      "state": "MAHARASHTRA",
+      "district": "SOLAPUR",
+      "station": "MOHOL_KVK",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 19.97,
+      "lon": 79.2984,
+      "state": "MAHARASHTRA",
+      "district": "CHANDRAPUR",
+      "station": "CHANDRAPUR_AWS400",
+      "temp_c": 34.3
+    },
+    {
+      "lat": 19.422844,
+      "lon": 77.401916,
+      "state": "MAHARASHTRA",
+      "district": "HINGOLI",
+      "station": "TONDAPUR_AWS400",
+      "temp_c": 30.7
+    },
+    {
+      "lat": 18.387928,
+      "lon": 77.118043,
+      "state": "MAHARASHTRA",
+      "district": "LATUR",
+      "station": "UDGIR_AWS400",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 19.1096,
+      "lon": 72.9282,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI SUBURBAN",
+      "station": "VIKHROLI",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 19.937324,
+      "lon": 73.721246,
+      "state": "MAHARASHTRA",
+      "district": "NASHIK",
+      "station": "VILHOLI",
+      "temp_c": 26.3
+    },
+    {
+      "lat": 19.0784,
+      "lon": 72.8967,
+      "state": "MAHARASHTRA",
+      "district": "MUMBAI SUBURBAN",
+      "station": "VIDYAVIHAR",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 19.9547,
+      "lon": 77.579,
+      "state": "MAHARASHTRA",
+      "district": "YAVATMAL",
+      "station": "PUSHAD_AWS400",
+      "temp_c": 31.0
+    },
+    {
+      "lat": 25.4616,
+      "lon": 89.9258,
+      "state": "MEGHALAYA",
+      "district": "SOUTH_WEST_GARO_HILLS",
+      "station": "AMPATI",
+      "temp_c": 22.5
+    },
+    {
+      "lat": 25.5631,
+      "lon": 91.8742,
+      "state": "MEGHALAYA",
+      "district": "EAST_KHASI_HILLS",
+      "station": "LABAN",
+      "temp_c": 16.8
+    },
+    {
+      "lat": 25.3706,
+      "lon": 91.4765,
+      "state": "MEGHALAYA",
+      "district": "SOUTH_WEST_KHASI_HILLS",
+      "station": "MAWKYRWAT",
+      "temp_c": 14.6
+    },
+    {
+      "lat": 25.5514,
+      "lon": 92.0501,
+      "state": "MEGHALAYA",
+      "district": "EAST_KHASI_HILLS",
+      "station": "MAWRYNGKNENG",
+      "temp_c": 19.0
+    },
+    {
+      "lat": 25.6083,
+      "lon": 91.8919,
+      "state": "MEGHALAYA",
+      "district": "EAST_KHASI_HILLS",
+      "station": "NEHU",
+      "temp_c": 16.5
+    },
+    {
+      "lat": 25.8907,
+      "lon": 90.6135,
+      "state": "MEGHALAYA",
+      "district": "NORTH_GARO_HILLS",
+      "station": "RESUBELPARA",
+      "temp_c": 22.9
+    },
+    {
+      "lat": 26.0072,
+      "lon": 91.8118,
+      "state": "MEGHALAYA",
+      "district": "RI_BHOI",
+      "station": "UMTREWDAM",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 22.9522,
+      "lon": 92.9328,
+      "state": "MIZORAM",
+      "district": "HNATHIAL",
+      "station": "HNATHIAL",
+      "temp_c": 16.7
+    },
+    {
+      "lat": 23.5266,
+      "lon": 93.1789,
+      "state": "MIZORAM",
+      "district": "KHAWZAWL",
+      "station": "KHAWZAWL",
+      "temp_c": 14.2
+    },
+    {
+      "lat": 24.208,
+      "lon": 92.6757,
+      "state": "MIZORAM",
+      "district": "KOLASIB",
+      "station": "KOLASIB",
+      "temp_c": 19.8
+    },
+    {
+      "lat": 23.7371,
+      "lon": 92.6518,
+      "state": "MIZORAM",
+      "district": "AIZAWL",
+      "station": "MIZORAM_UNIVERSITY",
+      "temp_c": 21.1
+    },
+    {
+      "lat": 23.8381,
+      "lon": 92.6357,
+      "state": "MIZORAM",
+      "district": "MAMIT",
+      "station": "LENGPUI_KVK",
+      "temp_c": 18.6
+    },
+    {
+      "lat": 22.4949,
+      "lon": 92.9988,
+      "state": "MIZORAM",
+      "district": "SAIHA",
+      "station": "SAIHA",
+      "temp_c": 19.0
+    },
+    {
+      "lat": 24.3425,
+      "lon": 92.8463,
+      "state": "MIZORAM",
+      "district": "SERCHHIP",
+      "station": "SERCHHIP",
+      "temp_c": 17.7
+    },
+    {
+      "lat": 23.6806,
+      "lon": 75.9941,
+      "state": "MADHYA_PRADESH",
+      "district": "AGAR",
+      "station": "AGAR_MALWA",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 22.6765,
+      "lon": 81.7607,
+      "state": "MADHYA_PRADESH",
+      "district": "ANUPPUR",
+      "station": "AMARKANTAK_CRCH",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 24.6002,
+      "lon": 77.7557,
+      "state": "MADHYA_PRADESH",
+      "district": "ASHOKNAGAR",
+      "station": "AONWARI_KVK",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 22.0328,
+      "lon": 74.9744,
+      "state": "MADHYA_PRADESH",
+      "district": "BARWANI",
+      "station": "TALUN_KVK",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 24.6005,
+      "lon": 80.8322,
+      "state": "MADHYA_PRADESH",
+      "district": "SATNA",
+      "station": "GRAMODAY_VV_CHITRAKOOT",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 23.1578,
+      "lon": 75.806,
+      "state": "MADHYA_PRADESH",
+      "district": "UJJAIN",
+      "station": "VIKRAM_VV_UJJAIN",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 24.4738,
+      "lon": 74.8969,
+      "state": "MADHYA_PRADESH",
+      "district": "NEEMUCH",
+      "station": "MARUKHEDA_KVK",
+      "temp_c": 30.7
+    },
+    {
+      "lat": 22.4695,
+      "lon": 78.4318,
+      "state": "MADHYA_PRADESH",
+      "district": "HOSHANGABAD",
+      "station": "PACHMARHI_AEC",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 24.0084,
+      "lon": 76.7392,
+      "state": "MADHYA_PRADESH",
+      "district": "RAJGARH",
+      "station": "RAJGARH_KVK",
+      "temp_c": 31.9
+    },
+    {
+      "lat": 24.5342,
+      "lon": 81.2775,
+      "state": "MADHYA_PRADESH",
+      "district": "REWA",
+      "station": "REWA_KVK",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 23.29,
+      "lon": 81.3483,
+      "state": "MADHYA_PRADESH",
+      "district": "SHAHDOL",
+      "station": "KALYANPUR_KVK",
+      "temp_c": 26.3
+    },
+    {
+      "lat": 24.3265,
+      "lon": 94.0224,
+      "state": "MANIPUR",
+      "district": "CHANDEL",
+      "station": "CHANDEL_KVK",
+      "temp_c": 16.8
+    },
+    {
+      "lat": 24.855,
+      "lon": 94.5097,
+      "state": "MANIPUR",
+      "district": "KAMJONG",
+      "station": "KAMJONG",
+      "temp_c": 13.9
+    },
+    {
+      "lat": 24.8547,
+      "lon": 93.6167,
+      "state": "MANIPUR",
+      "district": "NONEY",
+      "station": "KHOUPUM",
+      "temp_c": 18.6
+    },
+    {
+      "lat": 25.5088,
+      "lon": 94.1497,
+      "state": "MANIPUR",
+      "district": "SENAPATI",
+      "station": "MAO",
+      "temp_c": 15.0
+    },
+    {
+      "lat": 25.2294,
+      "lon": 93.8488,
+      "state": "MANIPUR",
+      "district": "KANGPOKPI",
+      "station": "TUJANGVAICHONG",
+      "temp_c": 18.8
+    },
+    {
+      "lat": 25.6534,
+      "lon": 93.6669,
+      "state": "NAGALAND",
+      "district": "PEREN",
+      "station": "JALUKIE",
+      "temp_c": 22.4
+    },
+    {
+      "lat": 25.8833,
+      "lon": 94.7833,
+      "state": "NAGALAND",
+      "district": "KIPHIRE",
+      "station": "KIPHIRE_AWS400",
+      "temp_c": 18.3
+    },
+    {
+      "lat": 25.7929,
+      "lon": 94.1312,
+      "state": "NAGALAND",
+      "district": "KOHIMA",
+      "station": "CHIEPHOBOZOU_NERHEMA",
+      "temp_c": 18.1
+    },
+    {
+      "lat": 26.4153,
+      "lon": 94.8794,
+      "state": "NAGALAND",
+      "district": "LONGLENG",
+      "station": "SAKSHI",
+      "temp_c": 20.1
+    },
+    {
+      "lat": 25.9888,
+      "lon": 94.9058,
+      "state": "NAGALAND",
+      "district": "TUENSANG",
+      "station": "THONOKNYU",
+      "temp_c": 15.9
+    },
+    {
+      "lat": 26.0852,
+      "lon": 94.255,
+      "state": "NAGALAND",
+      "district": "WOKHA",
+      "station": "WOKHA",
+      "temp_c": 18.8
+    },
+    {
+      "lat": 19.9508,
+      "lon": 84.5929,
+      "state": "ODISHA",
+      "district": "GANJAM",
+      "station": "BENAKUDA_KVK",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 21.9228,
+      "lon": 86.7405,
+      "state": "ODISHA",
+      "district": "MAYURBHANJ",
+      "station": "BARIPADA",
+      "temp_c": 29.4
+    },
+    {
+      "lat": 20.5958,
+      "lon": 86.0239,
+      "state": "ODISHA",
+      "district": "CUTTACK",
+      "station": "CUTTACK_KVK",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 21.4691,
+      "lon": 84.0018,
+      "state": "ODISHA",
+      "district": "SAMBALPUR",
+      "station": "DHANKAUDA",
+      "temp_c": 22.0
+    },
+    {
+      "lat": 19.0871,
+      "lon": 83.8144,
+      "state": "ODISHA",
+      "district": "RAYAGADA",
+      "station": "GUNUPUR_KVK",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 20.201,
+      "lon": 85.6671,
+      "state": "ODISHA",
+      "district": "KHURDHA",
+      "station": "PITAPALLI",
+      "temp_c": 26.7
+    },
+    {
+      "lat": 20.4786,
+      "lon": 84.2913,
+      "state": "ODISHA",
+      "district": "KANDHAMAL",
+      "station": "PHULBANI",
+      "temp_c": 21.5
+    },
+    {
+      "lat": 21.553,
+      "lon": 86.8147,
+      "state": "ODISHA",
+      "district": "BALASORE",
+      "station": "FM_UNIVERSITY",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 19.9335,
+      "lon": 85.8181,
+      "state": "ODISHA",
+      "district": "PURI",
+      "station": "PURI_KVK",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 19.646,
+      "lon": 85.4058,
+      "state": "ODISHA",
+      "district": "PURI",
+      "station": "JANHUKUDA(NEAR_SATAPADA)",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 20.837,
+      "lon": 83.9015,
+      "state": "ODISHA",
+      "district": "SONEPUR",
+      "station": "SONEPUR",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 22.1176,
+      "lon": 84.0436,
+      "state": "ODISHA",
+      "district": "SUNDERGARH",
+      "station": "SUNDERGARH",
+      "temp_c": 30.8
+    },
+    {
+      "lat": 30.1469,
+      "lon": 74.2073,
+      "state": "PUNJAB",
+      "district": "FAZILKA",
+      "station": "FASC_ABOHAR",
+      "temp_c": 24.8
+    },
+    {
+      "lat": 31.387,
+      "lon": 76.3783,
+      "state": "PUNJAB",
+      "district": "RUPNAGAR",
+      "station": "BHAKRA_DAM_IMDNAGAL",
+      "temp_c": 26.8
+    },
+    {
+      "lat": 30.933,
+      "lon": 74.622,
+      "state": "PUNJAB",
+      "district": "FIROZPUR",
+      "station": "FIROZPUR_KVK",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 32.3217,
+      "lon": 75.6622,
+      "state": "PUNJAB",
+      "district": "PATHANKOT",
+      "station": "KVK_PATHANKOT",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 31.289,
+      "lon": 76.4159,
+      "state": "PUNJAB",
+      "district": "RUPNAGAR",
+      "station": "SRI_ANADPUR_SAHIB_IMDJINDWADI",
+      "temp_c": 23.2
+    },
+    {
+      "lat": 32.4409,
+      "lon": 75.7575,
+      "state": "PUNJAB",
+      "district": "PATHANKOT",
+      "station": "THEIN_DAM",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 11.7514,
+      "lon": 75.5439,
+      "state": "PUDUCHERRY",
+      "district": "MAHE",
+      "station": "MAHE_JNV",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 11.936,
+      "lon": 79.7687,
+      "state": "PUDUCHERRY",
+      "district": "PUDUCHERRY",
+      "station": "PUDUCHERRY_KVK",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 26.8207,
+      "lon": 75.8175,
+      "state": "RAJASTHAN",
+      "district": "JAIPUR",
+      "station": "AMITY_UNIVERSITY",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 24.8462,
+      "lon": 74.5828,
+      "state": "RAJASTHAN",
+      "district": "CHITTAURGARH",
+      "station": "CHITTORGARH_KVK",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 26.6237,
+      "lon": 75.0219,
+      "state": "RAJASTHAN",
+      "district": "AJMER",
+      "station": "CENTRAL_UNIVERSITY_KISHANGARH",
+      "temp_c": 29.6
+    },
+    {
+      "lat": 23.865,
+      "lon": 73.8604,
+      "state": "RAJASTHAN",
+      "district": "DUNGARPUR",
+      "station": "DUNGARPUR_KVK",
+      "temp_c": 31.2
+    },
+    {
+      "lat": 28.2,
+      "lon": 75.23,
+      "state": "RAJASTHAN",
+      "district": "JHUNJHUNU",
+      "station": "JHUNJHUNU(AWS)",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 25.3843,
+      "lon": 72.5091,
+      "state": "RAJASTHAN",
+      "district": "JALORE",
+      "station": "JALORE_KVK",
+      "temp_c": 32.6
+    },
+    {
+      "lat": 26.9096,
+      "lon": 76.4,
+      "state": "RAJASTHAN",
+      "district": "DAUSA",
+      "station": "KHEDALI",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 26.777,
+      "lon": 77.0691,
+      "state": "RAJASTHAN",
+      "district": "KARAULI",
+      "station": "KARAULI_KVK",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 28.4832,
+      "lon": 73.7507,
+      "state": "RAJASTHAN",
+      "district": "BIKANER",
+      "station": "LUNKARNSAR",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 24.0379,
+      "lon": 74.7635,
+      "state": "RAJASTHAN",
+      "district": "PRATAPGARH",
+      "station": "PRATAPGARH",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 27.2315,
+      "lon": 73.689,
+      "state": "RAJASTHAN",
+      "district": "NAGAUR",
+      "station": "KRISHI_VISHWAVIDHYALAYA",
+      "temp_c": 33.2
+    },
+    {
+      "lat": 24.9519,
+      "lon": 72.8815,
+      "state": "RAJASTHAN",
+      "district": "SIROHI",
+      "station": "SIROHI_KVK",
+      "temp_c": 26.3
+    },
+    {
+      "lat": 19.6473,
+      "lon": 78.519,
+      "state": "TELANGANA",
+      "district": "ADILABAD",
+      "station": "ADILABAD_KVK",
+      "temp_c": 34.5
+    },
+    {
+      "lat": 17.7955,
+      "lon": 77.5472,
+      "state": "TELANGANA",
+      "district": "MEDAK",
+      "station": "ARS_BASANTHPUR",
+      "temp_c": 26.8
+    },
+    {
+      "lat": 18.5454,
+      "lon": 79.5417,
+      "state": "TELANGANA",
+      "district": "PEDDAPALLI",
+      "station": "ARS_PEDDAPALLY",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 17.6974,
+      "lon": 78.3189,
+      "state": "TELANGANA",
+      "district": "MEDAK",
+      "station": "ARS_NARSAPUR",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 17.392817,
+      "lon": 78.318424,
+      "state": "TELANGANA",
+      "district": "RANGA_REDDY",
+      "station": "CBIT_GANDIPET",
+      "temp_c": 27.4
+    },
+    {
+      "lat": 17.4286,
+      "lon": 78.368,
+      "state": "TELANGANA",
+      "district": "RANGA_REDDY",
+      "station": "ESCI_GACHIBOWLI",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 17.4711,
+      "lon": 78.7377,
+      "state": "TELANGANA",
+      "district": "RANGA_REDDY",
+      "station": "GHATKESAR",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 16.4484,
+      "lon": 77.9407,
+      "state": "TELANGANA",
+      "district": "WANAPARTHY",
+      "station": "HORTICULTURAL_UNIVERSITY_MOJER",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 17.587,
+      "lon": 78.1271,
+      "state": "TELANGANA",
+      "district": "SANGAREDDY",
+      "station": "KANDI",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 17.768,
+      "lon": 78.6723,
+      "state": "TELANGANA",
+      "district": "SIDDIPET",
+      "station": "KAVERI_SIDDIPET",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 18.1149,
+      "lon": 78.1373,
+      "state": "TELANGANA",
+      "district": "KAMAREDDY",
+      "station": "NAGIREDDYPET",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 18.0927,
+      "lon": 79.5952,
+      "state": "TELANGANA",
+      "district": "WARANGAL_RURAL",
+      "station": "SIDDHAPUR",
+      "temp_c": 27.3
+    },
+    {
+      "lat": 17.1817,
+      "lon": 80.3722,
+      "state": "TELANGANA",
+      "district": "KHAMMAM",
+      "station": "WYRA_KVK",
+      "temp_c": 28.0
+    },
+    {
+      "lat": 9.5561,
+      "lon": 78.0895,
+      "state": "TAMIL_NADU",
+      "district": "VIRUDHUNAGAR",
+      "station": "ARUPPUKOTTAI_KVK",
+      "temp_c": 28.4
+    },
+    {
+      "lat": 13.0162,
+      "lon": 79.7763,
+      "state": "TAMIL_NADU",
+      "district": "RANIPET",
+      "station": "RANIPET",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 12.6336,
+      "lon": 80.1976,
+      "state": "TAMIL_NADU",
+      "district": "CHENGALPATTU",
+      "station": "MAHABALIPURAM",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 13.1339,
+      "lon": 80.0452,
+      "state": "TAMIL_NADU",
+      "district": "THIRUNINRAVUR",
+      "station": "JAYA_ENGINEERING_CLG",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 11.7409,
+      "lon": 78.9651,
+      "state": "TAMIL_NADU",
+      "district": "KALLAKURICHI",
+      "station": "KALLAKURICHI(TALUK_OFFICE)",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 10.7569,
+      "lon": 79.8465,
+      "state": "TAMIL_NADU",
+      "district": "NAGAPATTINAM",
+      "station": "MO_NAGAPATTINAM_CAMPUS",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 12.3808,
+      "lon": 80.0578,
+      "state": "TAMIL_NADU",
+      "district": "NCTPL MARG ECR",
+      "station": "New Chennai Township Private L",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 12.953,
+      "lon": 80.035,
+      "state": "TAMIL_NADU",
+      "district": "CHENNAI",
+      "station": "NIOT_PALLIKARANAI",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 10.4556,
+      "lon": 77.523,
+      "state": "TAMIL_NADU",
+      "district": "DINDIGUL",
+      "station": "PALANI",
+      "temp_c": 27.0
+    },
+    {
+      "lat": 10.3626,
+      "lon": 78.9016,
+      "state": "TAMIL_NADU",
+      "district": "PUDUKKOTTAI",
+      "station": "VAMBAN_KVK",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 9.3462,
+      "lon": 78.8981,
+      "state": "TAMIL_NADU",
+      "district": "RAMANATHAPURAM",
+      "station": "RAMNADU_KVK",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 9.96012,
+      "lon": 78.7439,
+      "state": "TAMIL_NADU",
+      "district": "SIVAGANGA",
+      "station": "SETHU_BHASKAR_AGRI_COLLEGE_KAR",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 11.5679,
+      "lon": 78.1403,
+      "state": "TAMIL_NADU",
+      "district": "SALEM",
+      "station": "SANDHIYUR_KVK",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 11.0818,
+      "lon": 77.34,
+      "state": "TAMIL_NADU",
+      "district": "TIRUPPUR",
+      "station": "TIRUPPUR_Collector_Office",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 12.5002,
+      "lon": 78.5662,
+      "state": "TAMIL_NADU",
+      "district": "TIRUPATTUR",
+      "station": "TIRUPATTUR_COLLECTOROFFICE",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 13.1198,
+      "lon": 79.9567,
+      "state": "TAMIL_NADU",
+      "district": "TIRUVALLUR",
+      "station": "TIRUR_KVK",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 8.80736,
+      "lon": 78.1534,
+      "state": "TAMIL_NADU",
+      "district": "THOOTHUKUDI",
+      "station": "TUTICORIN_RAILWAY_STATION",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 8.72593,
+      "lon": 78.0279,
+      "state": "TAMIL_NADU",
+      "district": "THOOTHUKUDI",
+      "station": "TUTICORIN_AIRPORT",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 10.2682,
+      "lon": 76.9682,
+      "state": "TAMIL_NADU",
+      "district": "COIMBATORE",
+      "station": "UPASI_TEA_RESEARCH_FOUNDATION",
+      "temp_c": 18.9
+    },
+    {
+      "lat": 12.8406,
+      "lon": 80.1534,
+      "state": "TAMIL_NADU",
+      "district": "CHENGALPATTU",
+      "station": "VIT_CHENNAI",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 12.9345,
+      "lon": 79.0209,
+      "state": "TAMIL_NADU",
+      "district": "VELLORE",
+      "station": "VIRINJIPURAM_KVK",
+      "temp_c": 28.6
+    },
+    {
+      "lat": 13.1144,
+      "lon": 80.2025,
+      "state": "TAMIL_NADU",
+      "district": "TIRUVALLUR",
+      "station": "GOOD WILL SCHOOL VILLIVAKKAM",
+      "temp_c": 29.3
+    },
+    {
+      "lat": 23.8904,
+      "lon": 91.2441,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "AGARTALA_AIRPORT",
+      "temp_c": 22.6
+    },
+    {
+      "lat": 23.8902,
+      "lon": 91.244,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "MET_AGARTALA",
+      "temp_c": 22.1
+    },
+    {
+      "lat": 23.8627,
+      "lon": 92.207,
+      "state": "TRIPURA",
+      "district": "NORTH_TRIPURA",
+      "station": "ASHAPARA",
+      "temp_c": 20.7
+    },
+    {
+      "lat": 23.95,
+      "lon": 91.2588,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "DM_OFFICE_WEST_AGARTALA",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 23.5945,
+      "lon": 91.8243,
+      "state": "TRIPURA",
+      "district": "DHALAI",
+      "station": "GANDACHARA",
+      "temp_c": 22.5
+    },
+    {
+      "lat": 23.8139,
+      "lon": 91.3274,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "HRC_NAGICHERRA",
+      "temp_c": 22.6
+    },
+    {
+      "lat": 24.3096,
+      "lon": 92.0069,
+      "state": "TRIPURA",
+      "district": "UNAKOTI",
+      "station": "KAILASHAHAR",
+      "temp_c": 22.1
+    },
+    {
+      "lat": 23.7978,
+      "lon": 91.4338,
+      "state": "TRIPURA",
+      "district": "WEST_TRIPURA",
+      "station": "KHUMLUWANG",
+      "temp_c": 23.1
+    },
+    {
+      "lat": 23.0114,
+      "lon": 91.7208,
+      "state": "TRIPURA",
+      "district": "SOUTH_TRIPURA",
+      "station": "SABROOM",
+      "temp_c": 22.8
+    },
+    {
+      "lat": 23.6077,
+      "lon": 91.3456,
+      "state": "TRIPURA",
+      "district": "SIPAHIJALA",
+      "station": "SIPAHIJALA",
+      "temp_c": 22.6
+    },
+    {
+      "lat": 28.8523,
+      "lon": 78.2358,
+      "state": "UTTAR_PRADESH",
+      "district": "AMROHA",
+      "station": "AMROHA_400AWS",
+      "temp_c": 27.1
+    },
+    {
+      "lat": 26.7518,
+      "lon": 82.1464,
+      "state": "UTTAR_PRADESH",
+      "district": "AYODHYA",
+      "station": "AYODHYA_400AWS",
+      "temp_c": 30.2
+    },
+    {
+      "lat": 25.2896,
+      "lon": 80.5619,
+      "state": "UTTAR_PRADESH",
+      "district": "BANDA",
+      "station": "BANDA_400AWS",
+      "temp_c": 31.8
+    },
+    {
+      "lat": 28.4446,
+      "lon": 79.4327,
+      "state": "UTTAR_PRADESH",
+      "district": "BAREILLY",
+      "station": "BAREILLY_BILWA_400AWS",
+      "temp_c": 26.5
+    },
+    {
+      "lat": 26.9286,
+      "lon": 81.215,
+      "state": "UTTAR_PRADESH",
+      "district": "BARABANKI",
+      "station": "BARABANKI_400AWS",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 28.4198,
+      "lon": 77.8403,
+      "state": "UTTAR_PRADESH",
+      "district": "BULANDSHAHAR",
+      "station": "BULANDSHAHAR_KVK",
+      "temp_c": 29.8
+    },
+    {
+      "lat": 25.0999,
+      "lon": 82.7985,
+      "state": "UTTAR_PRADESH",
+      "district": "MIRZAPUR",
+      "station": "DAGMAPUR_400AWS",
+      "temp_c": 30.3
+    },
+    {
+      "lat": 27.2064,
+      "lon": 78.3092,
+      "state": "UTTAR_PRADESH",
+      "district": "FIROZABAD",
+      "station": "FIROZABAD_400AWS",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 28.5314,
+      "lon": 77.6445,
+      "state": "UTTAR_PRADESH",
+      "district": "GAUTAM_BUDDHA_NAGAR",
+      "station": "KVK_CHHOLAS_400AWS",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 25.5814,
+      "lon": 79.555,
+      "state": "UTTAR_PRADESH",
+      "district": "HAMIRPUR",
+      "station": "HAMIRPUR_400AWS",
+      "temp_c": 28.1
+    },
+    {
+      "lat": 27.3813,
+      "lon": 80.124,
+      "state": "UTTAR_PRADESH",
+      "district": "HARDOI",
+      "station": "HARDOI_400AWS",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 28.739,
+      "lon": 77.8716,
+      "state": "UTTAR_PRADESH",
+      "district": "HAPUR",
+      "station": "HAPUR_400AWS",
+      "temp_c": 26.6
+    },
+    {
+      "lat": 26.9608,
+      "lon": 81.0044,
+      "state": "UTTAR_PRADESH",
+      "district": "LUCKNOW",
+      "station": "INTEGRAL_UNIVERSITY",
+      "temp_c": 31.4
+    },
+    {
+      "lat": 25.7816,
+      "lon": 82.5729,
+      "state": "UTTAR_PRADESH",
+      "district": "JAUNPUR",
+      "station": "JAUNPUR_KVK",
+      "temp_c": 29.9
+    },
+    {
+      "lat": 26.022,
+      "lon": 81.215,
+      "state": "UTTAR_PRADESH",
+      "district": "JALAUN",
+      "station": "JALAUN_400AWS",
+      "temp_c": 27.7
+    },
+    {
+      "lat": 27.75,
+      "lon": 78.5166,
+      "state": "UTTAR_PRADESH",
+      "district": "KASHGANJ",
+      "station": "KASHGANJ_400AWS",
+      "temp_c": 27.8
+    },
+    {
+      "lat": 26.7735,
+      "lon": 80.8832,
+      "state": "UTTAR_PRADESH",
+      "district": "LUCKNOW",
+      "station": "LUCKNOW_LAB",
+      "temp_c": 31.5
+    },
+    {
+      "lat": 27.4705,
+      "lon": 77.6928,
+      "state": "UTTAR_PRADESH",
+      "district": "MATHURA",
+      "station": "MATHURA_400AWS",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 29.3781,
+      "lon": 77.638,
+      "state": "UTTAR_PRADESH",
+      "district": "MUZAFFARNAGAR",
+      "station": "SOHANJANI_TAJAN_400AWS",
+      "temp_c": 23.9
+    },
+    {
+      "lat": 27.3846,
+      "lon": 79.0938,
+      "state": "UTTAR_PRADESH",
+      "district": "MAINPURI",
+      "station": "MAINPURI_KVK",
+      "temp_c": 30.9
+    },
+    {
+      "lat": 29.3175,
+      "lon": 78.1158,
+      "state": "UTTAR_PRADESH",
+      "district": "BIJNOR",
+      "station": "PRITHVIPUR_400AWS",
+      "temp_c": 24.0
+    },
+    {
+      "lat": 25.283,
+      "lon": 81.9866,
+      "state": "UTTAR_PRADESH",
+      "district": "PRATAPGARH",
+      "station": "PRATAPGARH_400AWS",
+      "temp_c": 31.6
+    },
+    {
+      "lat": 27.5217,
+      "lon": 80.5854,
+      "state": "UTTAR_PRADESH",
+      "district": "SITAPUR",
+      "station": "RAMKOT_400AWS",
+      "temp_c": 27.2
+    },
+    {
+      "lat": 26.7343,
+      "lon": 84.1848,
+      "state": "UTTAR_PRADESH",
+      "district": "KUSHINAGAR",
+      "station": "KUSHINAGAR_KVK",
+      "temp_c": 26.9
+    },
+    {
+      "lat": 29.5443,
+      "lon": 77.1864,
+      "state": "UTTAR_PRADESH",
+      "district": "SHAMLI",
+      "station": "SHAMLI_400AWS",
+      "temp_c": 25.4
+    },
+    {
+      "lat": 27.875,
+      "lon": 79.9385,
+      "state": "UTTAR_PRADESH",
+      "district": "SHAHJAHANPUR",
+      "station": "SHAHJAHANPUR_400AWS",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 28.4833,
+      "lon": 78.8491,
+      "state": "UTTAR_PRADESH",
+      "district": "SAMBHAL",
+      "station": "SAMBHAL_PALTHA_400AWS",
+      "temp_c": 25.7
+    },
+    {
+      "lat": 29.9703,
+      "lon": 77.5573,
+      "state": "UTTAR_PRADESH",
+      "district": "SAHARANPUR",
+      "station": "SAHARANPUR_400AWS",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 25.8448,
+      "lon": 80.9918,
+      "state": "UTTAR_PRADESH",
+      "district": "FATEHPUR",
+      "station": "FATEHPUR_KVK",
+      "temp_c": 28.3
+    },
+    {
+      "lat": 29.6264,
+      "lon": 79.6309,
+      "state": "UTTARAKHAND",
+      "district": "ALMORA",
+      "station": "MATELA_KVK",
+      "temp_c": 15.1
+    },
+    {
+      "lat": 29.6213,
+      "lon": 79.4591,
+      "state": "UTTARAKHAND",
+      "district": "ALMORA",
+      "station": "CHAUBATIA_RANIKHET",
+      "temp_c": 16.3
+    },
+    {
+      "lat": 30.3431,
+      "lon": 78.056,
+      "state": "UTTARAKHAND",
+      "district": "DEHRADUN",
+      "station": "HATIBHARKALA",
+      "temp_c": 22.6
+    },
+    {
+      "lat": 29.188,
+      "lon": 79.0109,
+      "state": "UTTARAKHAND",
+      "district": "UDHAM_SINGH_NAGAR",
+      "station": "KASHIPUR_AWS400",
+      "temp_c": 26.4
+    },
+    {
+      "lat": 30.2782,
+      "lon": 78.0744,
+      "state": "UTTARAKHAND",
+      "district": "DEHRADUN",
+      "station": "MOHAKAMPUR",
+      "temp_c": 23.4
+    },
+    {
+      "lat": 29.3455,
+      "lon": 79.4844,
+      "state": "UTTARAKHAND",
+      "district": "NAINITAL",
+      "station": "NAINITAL(JEOLIKOT)_KVK",
+      "temp_c": 21.3
+    },
+    {
+      "lat": 29.49,
+      "lon": 79.47,
+      "state": "UTTARAKHAND",
+      "district": "NAINITAL",
+      "station": "TH_KOSIYAKUTOLI",
+      "temp_c": 20.9
+    },
+    {
+      "lat": 22.5748,
+      "lon": 88.0019,
+      "state": "WEST_BENGAL",
+      "district": "HOWRAH",
+      "station": "RAMSADAY_COLLEGE_AMTA",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 23.705,
+      "lon": 86.9789,
+      "state": "WEST_BENGAL",
+      "district": "ASANSOL",
+      "station": "IMD_MO_ASSANSOL",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 22.8382,
+      "lon": 88.6347,
+      "state": "WEST_BENGAL",
+      "district": "NORTH_TWENTY_FOUR_PARGANAS",
+      "station": "ASHOKNAGAR_KVK",
+      "temp_c": 28.8
+    },
+    {
+      "lat": 25.234,
+      "lon": 88.7942,
+      "state": "WEST_BENGAL",
+      "district": "SOUTH_DINAJPUR",
+      "station": "BALURGHAT",
+      "temp_c": 23.7
+    },
+    {
+      "lat": 22.937116,
+      "lon": 88.510508,
+      "state": "WEST_BENGAL",
+      "district": "NADIA",
+      "station": "BIJPUR",
+      "temp_c": 28.7
+    },
+    {
+      "lat": 22.7809,
+      "lon": 88.3357,
+      "state": "WEST_BENGAL",
+      "district": "NORTH_TWENTY_FOUR_PARGANAS",
+      "station": "BARRACKPORE_AWS400",
+      "temp_c": 29.1
+    },
+    {
+      "lat": 26.7924,
+      "lon": 89.0265,
+      "state": "WEST_BENGAL",
+      "district": "JALPAIGURI",
+      "station": "BANARHAT",
+      "temp_c": 23.3
+    },
+    {
+      "lat": 21.6237,
+      "lon": 87.5063,
+      "state": "WEST_BENGAL",
+      "district": "PURBA_MEDNIPUR",
+      "station": "IMD_MO_DIGHA",
+      "temp_c": 28.5
+    },
+    {
+      "lat": 26.1464,
+      "lon": 89.4649,
+      "state": "WEST_BENGAL",
+      "district": "COOCH_BEHAR",
+      "station": "DINHATA_AWS400",
+      "temp_c": 23.8
+    },
+    {
+      "lat": 26.5632,
+      "lon": 89.0409,
+      "state": "WEST_BENGAL",
+      "district": "JALPAIGURI",
+      "station": "DHUPGURI",
+      "temp_c": 24.0
+    },
+    {
+      "lat": 21.74483,
+      "lon": 88.099278,
+      "state": "WEST_BENGAL",
+      "district": "SOUTH_TWENTY_FOUR_PARGANAS",
+      "station": "GANGASAGAR",
+      "temp_c": 29.0
+    },
+    {
+      "lat": 22.6726,
+      "lon": 88.3791,
+      "state": "WEST_BENGAL",
+      "district": "NORTH_TWENTY_FOUR_PARGANAS",
+      "station": "JISU_AGARPARA",
+      "temp_c": 29.2
+    },
+    {
+      "lat": 23.4001,
+      "lon": 87.546,
+      "state": "WEST_BENGAL",
+      "district": "EAST_BURDWAN",
+      "station": "KVK_BURDWAN_BUDBUD",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 24.9787,
+      "lon": 88.1446,
+      "state": "WEST_BENGAL",
+      "district": "MALDA",
+      "station": "MALDA",
+      "temp_c": 24.2
+    },
+    {
+      "lat": 22.4417,
+      "lon": 88.3982,
+      "state": "WEST_BENGAL",
+      "district": "SOUTH_TWENTY_FOUR_PARGANAS",
+      "station": "RAMKRISHNA_MISSION_COLLEGE",
+      "temp_c": 28.2
+    },
+    {
+      "lat": 24.2686,
+      "lon": 88.2879,
+      "state": "WEST_BENGAL",
+      "district": "MURSHIDABAD",
+      "station": "MURSHIDABAD_KVK",
+      "temp_c": 25.9
+    },
+    {
+      "lat": 22.6174,
+      "lon": 88.478,
+      "state": "WEST_BENGAL",
+      "district": "KOLKATA",
+      "station": "OHR_15",
+      "temp_c": 27.6
+    },
+    {
+      "lat": 23.4007,
+      "lon": 86.4184,
+      "state": "WEST_BENGAL",
+      "district": "PURULIA",
+      "station": "PURULIA_KVK",
+      "temp_c": 27.5
+    },
+    {
+      "lat": 26.7035,
+      "lon": 88.8467,
+      "state": "WEST_BENGAL",
+      "district": "JALPAIGURI",
+      "station": "RAMSHAI_KVK",
+      "temp_c": 23.7
+    }
+  ]
+}
