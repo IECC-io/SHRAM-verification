@@ -38,24 +38,22 @@ jobs:
       - name: Fetch IMD heatwave forecast
         run: python scripts/fetch_imd_heatwave.py
 
-      # Compute SHRAM daily peak only if the data archive is reachable.
-      # The repo doesn't ship station history (kept in SHRAM-verification-data),
-      # so this step pulls the sibling repo as a sparse checkout.
-      - name: Pull SHRAM station history (sparse)
+      # Clone the data repo with write access. Needs SHRAM_DATA_TOKEN secret:
+      # a fine-grained PAT with contents:write scoped to SHRAM-verification-data.
+      - name: Clone SHRAM-verification-data (full, writable)
         run: |
+          git clone https://x-access-token:${{ secrets.SHRAM_DATA_TOKEN }}@github.com/IECC-io/SHRAM-verification-data.git data
+          # Mirror station history into the dashboard's expected path
           mkdir -p shram_stations_history
-          git clone --depth 1 --filter=blob:none --sparse \
-            https://github.com/IECC-io/SHRAM-verification-data.git data
-          cd data && git sparse-checkout set shram_stations_history
-          cd ..
-          # Mirror the relevant subtree into the dashboard's expected path
           rsync -a data/shram_stations_history/ shram_stations_history/
-          rm -rf data
 
       - name: Compute SHRAM daily peak
         run: python scripts/compute_shram_daily_peak.py
 
-      - name: Commit refreshed data
+      - name: Append historical comparison row (per-station + summary)
+        run: python scripts/compute_imd_vs_shram_comparison.py --data-repo ./data
+
+      - name: Commit refreshed dashboard data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -67,5 +65,19 @@ jobs:
             git commit -m "chore: refresh IMD heatwave + SHRAM daily peak ($stamp)"
             git push
           else
-            echo "No changes to commit."
+            echo "Dashboard repo: no changes to commit."
+          fi
+
+      - name: Commit historical comparison rows to data repo
+        working-directory: ./data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparisons/imd_vs_shram_daily.csv comparisons/imd_vs_shram_summary.csv
+          if ! git diff --cached --quiet; then
+            stamp="$(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "data: append IMD-vs-SHRAM comparison ($stamp)"
+            git push
+          else
+            echo "Data repo: no comparison changes to commit."
           fi
