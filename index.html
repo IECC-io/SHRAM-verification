@@ -417,9 +417,22 @@
       </table>
     </div>
 
+    <h4 style="text-align:left; margin-top:20px; font-size:14px;">Agreement map</h4>
+    <div style="display:flex; gap:8px; flex-wrap:wrap; font-size:12px; color:var(--muted); margin:6px 0;">
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#1a7f37;margin-right:4px;"></span>match — both call dangerous</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#0969da;margin-right:4px;"></span>match — both call safe</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#cf222e;margin-right:4px;"></span>diverge — IMD HW, SHRAM safe</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#9a6700;margin-right:4px;"></span>diverge — IMD safe, SHRAM HW</span>
+      <span><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:#aab1b8;margin-right:4px;"></span>no SHRAM data within 25 km</span>
+    </div>
+    <div id="hw-map" style="width:100%; height:60vh; min-height:420px; border-radius:8px; background:var(--panel); border:1px solid var(--border);"></div>
+
     <p class="muted" style="margin-top:12px; font-size:12px;">
       Heatwave threshold for "agreement": IMD flag ≥ 1 (heatwave or severe) ↔ SHRAM zone ≥ 5.
-      Source: IMD heatwave declarations (<a href="https://dss.imd.gov.in/dwr_img/GIS/heatwave.html" target="_blank">official feed</a>),
+      The "SHRAM daily peak" source is the maximum hard-labor zone (zone_hard) reached at
+      each station across the day — the methodologically correct comparison against IMD's
+      daily heatwave declaration. Source: IMD heatwave declarations
+      (<a href="https://dss.imd.gov.in/dwr_img/GIS/heatwave.html" target="_blank">official feed</a>),
       © India Meteorological Department, Ministry of Earth Sciences.
     </p>
   </div>
@@ -1416,6 +1429,40 @@ async function fetchDiffSources() {
     }
   } catch (_) {}
 
+  // 9. SHRAM daily peak zone — pre-computed by
+  //    scripts/compute_shram_daily_peak.py. This is the apples-to-apples
+  //    temporal granularity for comparing against IMD's daily heatwave flag:
+  //    both are statements about the day, not a moment.
+  try {
+    const r = await fetch("reference_history/shram_daily_peak.json", { cache: "no-store" });
+    if (r.ok) {
+      const payload = await r.json();
+      sources.shram_daily_peak = {
+        label: `SHRAM daily peak (${payload.target_date_ist || "?"})`,
+        points: (payload.points || []).map(p => ({
+          lat: p.lat, lon: p.lon,
+          // Use Ta = max_ta so this source is comparable in the diff/R² tabs too
+          Ta: p.max_ta, RH: p.max_rh,
+          zone_met4_sun: p.max_zone_hard,
+          zone_met4_shade: p.max_zone_hard,
+          max_zone_hard: p.max_zone_hard,
+          max_zone_light: p.max_zone_light,
+          max_ta: p.max_ta, max_rh: p.max_rh,
+          n_obs: p.n_obs,
+          name: p.station ? `${p.station} (${p.district || "?"})` : p.slug,
+          station: p.station, district: p.district, state: p.state,
+        })),
+        meta: {
+          target_date_ist: payload.target_date_ist,
+          computed_at_utc: payload.computed_at_utc,
+          n_stations: payload.n_stations,
+          n_zone_hard_5plus: payload.n_zone_hard_5plus,
+          n_zone_hard_6: payload.n_zone_hard_6,
+        },
+      };
+    }
+  } catch (_) {}
+
   diffState.sources = sources;
 }
 
@@ -1844,7 +1891,7 @@ async function initR2Once() {
 // (within DIFF_MAX_KM) and compare IMD's heatwave flag (0/1/2) to SHRAM's
 // EHI-N* zone classification (1–6). Renders a confusion matrix plus a
 // per-station drill-down table and headline agreement metrics.
-const hwState = { initialized: false, lastRefresh: 0 };
+const hwState = { initialized: false, lastRefresh: 0, map: null, layer: null };
 
 function _hwBinary(hwStatus) {
   // IMD: 0 = none, 1 = heatwave, 2 = severe heatwave
@@ -1992,12 +2039,53 @@ function renderHwComparison() {
       </tr>
     `);
   }
+
+  // Map view: one dot per IMD station, colored by agreement state.
+  if (!hwState.map) {
+    hwState.map = L.map("hw-map", { preferCanvas: true }).setView([22.5, 80.0], 4);
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", {
+      attribution: "© OpenStreetMap contributors, © CARTO", maxZoom: 10, minZoom: 4,
+    }).addTo(hwState.map);
+  }
+  if (hwState.layer) {
+    hwState.layer.remove();
+    hwState.layer = null;
+  }
+  const group = L.layerGroup();
+  for (const r of cmp.rows) {
+    // Look up the IMD point for coords
+    const ip = hwSrc.points.find(p => p.name === r.station);
+    if (!ip) continue;
+    const imdHW = _hwBinary(ip.hw_status);
+    const shramHW = _shramBinary(r.shram_zone);
+    let color, kind;
+    if (r.shram_zone == null && !ip.hw_status) { color = "#aab1b8"; kind = "no SHRAM data"; }
+    else if (r.shram_zone == null) { color = "#aab1b8"; kind = "no SHRAM data"; }
+    else if (imdHW && shramHW) { color = "#1a7f37"; kind = "match — both dangerous"; }
+    else if (!imdHW && !shramHW) { color = "#0969da"; kind = "match — both safe"; }
+    else if (imdHW && !shramHW) { color = "#cf222e"; kind = "diverge — IMD HW only"; }
+    else { color = "#9a6700"; kind = "diverge — SHRAM HW only"; }
+    const m = L.circleMarker([ip.lat, ip.lon], {
+      radius: 5, color: "#fff", fillColor: color, fillOpacity: 0.85, weight: 0.8,
+    });
+    m.bindPopup(`
+      <strong>${escapeHtml(r.station)}</strong><br/>
+      <em>${escapeHtml(kind)}</em><br/>
+      IMD: ${escapeHtml(r.hw_label)}${ip.Ta != null ? ` (Tmax ${ip.Ta.toFixed(1)}°C)` : ""}<br/>
+      SHRAM: ${typeof r.shram_zone === "number" ? "Zone " + r.shram_zone : "—"}
+      ${r.km != null ? ` (${r.km.toFixed(0)} km away)` : ""}
+    `);
+    group.addLayer(m);
+  }
+  hwState.layer = group.addTo(hwState.map);
 }
 
 function populateHwSources() {
   const sel = document.getElementById("hw-shram-source");
-  // Only sources that carry per-point zones make sense here
-  const candidates = ["shram_map"]
+  // Only sources that carry per-point zones make sense here.
+  // shram_daily_peak is the methodologically correct comparison (daily peak
+  // ↔ IMD daily heatwave flag); shram_map is a "current hour" snapshot.
+  const candidates = ["shram_daily_peak", "shram_map"]
     .filter(id => diffState.sources[id]);
   sel.innerHTML = candidates
     .map(id => `<option value="${id}">${diffState.sources[id].label}</option>`)
