@@ -300,20 +300,25 @@ def main() -> int:
     raw = resp.json()
     payload = normalize(raw)
 
+    # latest.json keeps the full geojson — the dashboard needs the polygons.
+    with LATEST_FULL.open("w") as f:
+        json.dump(payload, f, indent=2)
+    logger.info("wrote dashboard-facing full copy → %s", LATEST_FULL)
+
+    # Archived snapshots strip the geojson (polygons don't change day-to-day;
+    # only the warning codes and timestamps do). ~10× smaller, won't blow up
+    # the repo over time.
     ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
     stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     archive_path = ARCHIVE_DIR / f"imd_districtwarning_{stamp}.json"
+    archive_payload = {k: v for k, v in payload.items() if k != "geojson"}
     with archive_path.open("w") as f:
-        json.dump(payload, f, indent=2)
+        json.dump(archive_payload, f, indent=2)
     logger.info(
         "archived %d districts (today: %d heatwave / %d any-heat; 5d: %d) → %s",
         payload["n_total"], payload["n_heatwave_today"],
         payload["n_any_heat_today"], payload["n_heat_any_5d"], archive_path,
     )
-
-    with LATEST_FULL.open("w") as f:
-        json.dump(payload, f, indent=2)
-    logger.info("wrote dashboard-facing full copy → %s", LATEST_FULL)
 
     compat = points_compat(payload)
     with LATEST_POINTS_COMPAT.open("w") as f:
