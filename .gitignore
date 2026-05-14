@@ -3,6 +3,12 @@
 *.swp
 .DS_Store
 
+# Secrets — never commit
+.env
+.env.local
+*.env
+.imd_jwt_cache.json
+
 # Python
 __pycache__/
 *.pyc

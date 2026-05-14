@@ -35,8 +35,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Fetch IMD heatwave forecast
-        run: python scripts/fetch_imd_heatwave.py
+      - name: Fetch IMD district warnings (heat subset)
+        run: python scripts/fetch_imd_districtwarning.py
 
       # Clone the data repo with write access. Needs SHRAM_DATA_TOKEN secret:
       # a fine-grained PAT with contents:write scoped to SHRAM-verification-data.
@@ -58,6 +58,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reference_history/imd_heatwave_latest.json \
+                  reference_history/imd_districtwarning_latest.json \
+                  reference_history/imd_districtwarning/ \
                   reference_history/shram_daily_peak.json \
                   reference_history/imd_heatwave/
           if ! git diff --cached --quiet; then

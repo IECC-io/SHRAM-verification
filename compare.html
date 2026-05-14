@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SHRAM vs IMD vs Open-Meteo — India heat alert comparison</title>
+<link rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="" />
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1f2328;
+    padding: 16px;
+    background: #ffffff;
+  }
+  h1 { margin: 0 0 4px; font-size: 20px; }
+  .muted { color: #57606a; font-size: 13px; margin-bottom: 12px; }
+  .top-row { display: none; }   /* not used in single-row layout */
+  .bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+  }
+  .met-picker {
+    display: flex; align-items: center; gap: 8px;
+    margin: 4px 0 12px;
+    font-size: 13px;
+    color: #1f2328;
+  }
+  .met-picker label { color: #57606a; }
+  .met-picker select {
+    padding: 4px 8px;
+    border-radius: 5px;
+    border: 1px solid #d8dee5;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .map-card {
+    border: 1px solid #d8dee5;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f7f9fb;
+  }
+  .map-card h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    padding: 10px 12px 6px;
+    background: #fff;
+    border-bottom: 1px solid #d8dee5;
+  }
+  .map-card .sub { font-size: 11px; color: #57606a; font-weight: normal; }
+  .map-card .updated {
+    font-size: 11px;
+    color: #57606a;
+    font-weight: normal;
+    padding: 0 12px 8px;
+    background: #fff;
+    border-bottom: 1px solid #d8dee5;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .map-card .updated .stale {
+    color: #9a6700;
+    font-weight: 600;
+  }
+  .map-card .updated button {
+    margin-left: auto;
+    font-size: 11px;
+    padding: 2px 8px;
+    background: #f7f9fb;
+    border: 1px solid #d8dee5;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #1f2328;
+  }
+  .map-card .updated button:hover { background: #ebeef2; }
+  .map-card .updated button:disabled { opacity: 0.5; cursor: progress; }
+  .map { height: 600px; }
+  .legend {
+    padding: 10px 12px;
+    background: #fff;
+    border-top: 1px solid #d8dee5;
+    font-size: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .legend .swatch {
+    display: inline-block;
+    width: 12px; height: 12px;
+    margin-right: 4px;
+    vertical-align: middle;
+    border: 1px solid #00000022;
+  }
+  .stats {
+    display: flex;
+    gap: 16px;
+    padding: 8px 12px;
+    background: #fff;
+    border-top: 1px solid #d8dee5;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .stats .k { color: #57606a; }
+  .stats .v { font-weight: 600; }
+  .toggles {
+    display: flex; gap: 16px; flex-wrap: wrap;
+    margin: 8px 0 14px;
+  }
+  .toggles fieldset {
+    border: 1px solid #d8dee5; border-radius: 6px;
+    padding: 6px 12px 8px;
+    background: #f7f9fb;
+  }
+  .toggles legend { font-size: 12px; color: #57606a; padding: 0 4px; }
+  .toggles label {
+    margin-right: 12px; font-size: 13px; cursor: pointer;
+    user-select: none;
+  }
+  .toggles input[type=checkbox] { vertical-align: middle; margin-right: 4px; }
+  .imd-group {
+    display: flex; align-items: center; gap: 12px;
+    padding: 2px 0;
+  }
+  .imd-group .parent {
+    min-width: 100px; font-weight: 600;
+  }
+  .imd-group .tier-group label {
+    font-size: 12px; color: #57606a; margin-right: 8px;
+  }
+  .imd-group input.imd-code:not(:checked) ~ .tier-group label {
+    opacity: 0.4; pointer-events: none;
+  }
+  @media (max-width: 1000px) {
+    .bottom-row { grid-template-columns: 1fr; }
+    .map { height: 460px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>India heat alert comparison — IMD vs SHRAM</h1>
+<p class="muted" id="header-meta">Loading live data...</p>
+
+<div class="toggles">
+  <fieldset class="imd-block">
+    <legend>IMD codes + severity tiers (for Panel C)</legend>
+    <div class="imd-group">
+      <label class="parent"><input type="checkbox" class="imd-code" value="9" checked> Heat Wave</label>
+      <span class="tier-group">
+        <label><input type="checkbox" class="imd-tier" data-code="9" value="2"> Watch</label>
+        <label><input type="checkbox" class="imd-tier" data-code="9" value="3" checked> Alert</label>
+        <label><input type="checkbox" class="imd-tier" data-code="9" value="4" checked> Warning</label>
+      </span>
+    </div>
+    <div class="imd-group">
+      <label class="parent"><input type="checkbox" class="imd-code" value="10" checked> Hot Day</label>
+      <span class="tier-group">
+        <label><input type="checkbox" class="imd-tier" data-code="10" value="2"> Watch</label>
+        <label><input type="checkbox" class="imd-tier" data-code="10" value="3" checked> Alert</label>
+        <label><input type="checkbox" class="imd-tier" data-code="10" value="4" checked> Warning</label>
+      </span>
+    </div>
+    <div class="imd-group">
+      <label class="parent"><input type="checkbox" class="imd-code" value="11"> Warm Night</label>
+      <span class="tier-group">
+        <label><input type="checkbox" class="imd-tier" data-code="11" value="2"> Watch</label>
+        <label><input type="checkbox" class="imd-tier" data-code="11" value="3"> Alert</label>
+        <label><input type="checkbox" class="imd-tier" data-code="11" value="4"> Warning</label>
+      </span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>SHRAM zones (for Panel C)</legend>
+    <label><input type="checkbox" class="shram-toggle" value="5"> Zone 5</label>
+    <label><input type="checkbox" class="shram-toggle" value="6" checked> Zone 6</label>
+  </fieldset>
+</div>
+
+<div class="met-picker">
+  <label for="met-select">SHRAM work intensity (drives panels B & C):</label>
+  <select id="met-select">
+    <option value="3">MET 3* — light</option>
+    <option value="4">MET 4* — moderate</option>
+    <option value="5">MET 5* — heavy</option>
+    <option value="6" selected>MET 6* — very heavy</option>
+  </select>
+</div>
+
+<div class="bottom-row">
+  <div class="map-card">
+    <h2>(A) IMD district warnings <span class="sub" id="imd-date"></span></h2>
+    <div class="updated">
+      Updated: <span id="imd-updated">—</span>
+      <button id="imd-refresh">Re-load file</button>
+    </div>
+    <div id="map-imd" class="map"></div>
+    <div class="legend">
+      <span><span class="swatch" style="background:#cf222e"></span>Heatwave</span>
+      <span><span class="swatch" style="background:#ff8800"></span>Hot Day</span>
+      <span><span class="swatch" style="background:#ffd60a"></span>Warm Night</span>
+      <span><span class="swatch" style="background:#e5e7eb"></span>No heat warning</span>
+    </div>
+    <div class="stats" id="stats-imd"></div>
+  </div>
+
+  <div class="map-card">
+    <h2>(B) SHRAM zone alerts — live (<span id="shram-met-label">MET 6*</span>, sun)</h2>
+    <div class="updated">
+      Updated: <span id="shram-updated">—</span>
+      <button id="shram-refresh">Refresh</button>
+    </div>
+    <div id="map-shram" class="map"></div>
+    <div class="legend">
+      <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+      <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+      <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 4 / no data</span>
+    </div>
+    <div class="stats" id="stats-shram"></div>
+  </div>
+
+  <div class="map-card">
+    <h2>(C) Agreement <span class="sub">IMD vs SHRAM (<span id="diff-met-label">MET 6*</span>, toggle-driven)</span></h2>
+    <div class="updated">
+      Updated: <span id="diff-updated">—</span>
+    </div>
+    <div id="map-diff" class="map"></div>
+    <div class="legend">
+      <span><span class="swatch" style="background:#1a7f37"></span>Both alert</span>
+      <span><span class="swatch" style="background:#9a6700"></span>IMD only</span>
+      <span><span class="swatch" style="background:#0969da"></span>SHRAM only</span>
+      <span><span class="swatch" style="background:#e5e7eb"></span>Both safe</span>
+      <span><span class="swatch" style="background:#f0f0f0;border:1px dashed #999"></span>No SHRAM data</span>
+    </div>
+    <div class="stats" id="stats-diff"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script>
+const IMD_FILE  = 'reference_history/imd_districtwarning_latest.json';
+const SHRAM_LIVE_URL = 'https://shram.info/grid_data.json';
+const SHRAM_MET_DEFAULT = 6;       // which MET level to read
+const SHRAM_SUN_DEFAULT = 'sun';   // 'sun' or 'shade'
+
+const HEAT_CODE_COLOR = {
+  9: '#cf222e',   // Heat Wave (red)
+  10: '#ff8800',  // Hot Day (orange)
+  11: '#ffd60a',  // Warm Night (yellow)
+};
+const ZONE_COLOR = { 6: '#9c27b0', 5: '#f44336' };
+const DIFF_COLOR = {
+  both:      '#1a7f37',   // green — both flagged
+  imdOnly:   '#9a6700',   // mustard — IMD says alert, SHRAM doesn't
+  shramOnly: '#0969da',   // blue   — SHRAM says alert, IMD doesn't
+  neither:   '#e5e7eb',   // light  — both safe
+  noData:    '#f0f0f0',   // no SHRAM data
+};
+const NO_DATA = '#e5e7eb';
+const NO_HEAT = '#e5e7eb';
+
+const indiaCenter = [22.0, 80.0];
+const indiaZoom = 5;
+
+function makeMap(id) {
+  const m = L.map(id, {
+    center: indiaCenter,
+    zoom: indiaZoom,
+    zoomControl: true,
+    attributionControl: false,
+  });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    maxZoom: 12,
+    subdomains: 'abcd',
+  }).addTo(m);
+  return m;
+}
+
+const MET_LEVELS = [3, 4, 5, 6];
+let selectedMet = 6;   // driven by dropdown
+
+const mapImd   = makeMap('map-imd');
+const mapShram = makeMap('map-shram');
+const mapDiff  = makeMap('map-diff');
+
+function sync(maps) {
+  let busy = false;
+  maps.forEach(m => {
+    m.on('move zoom', () => {
+      if (busy) return;
+      busy = true;
+      const c = m.getCenter(), z = m.getZoom();
+      maps.forEach(other => { if (other !== m) other.setView(c, z, {animate:false}); });
+      busy = false;
+    });
+  });
+}
+sync([mapImd, mapShram, mapDiff]);
+
+let imdLayer = null;
+let shramLayer = null;
+let diffLayer = null;
+let cachedDistricts = null;
+let cachedImd = null;
+// zone per district, per MET: { 3: Map<idx,zone>, 4: Map, 5: Map, 6: Map }
+let cachedShramZonesByMet = null;
+
+// ---- Helpers to format and label timestamps with age ----
+function ageString(isoStr) {
+  if (!isoStr) return '—';
+  const t = new Date(isoStr);
+  if (Number.isNaN(t.getTime())) return isoStr;
+  const ageMin = Math.round((Date.now() - t.getTime()) / 60000);
+  let ageLabel;
+  if (ageMin < 1) ageLabel = 'just now';
+  else if (ageMin < 60) ageLabel = `${ageMin} min ago`;
+  else if (ageMin < 24 * 60) ageLabel = `${Math.round(ageMin/60)} h ago`;
+  else ageLabel = `${Math.round(ageMin/(60*24))} d ago`;
+  return ageLabel;
+}
+function formatIST(isoStr) {
+  if (!isoStr) return '—';
+  const t = new Date(isoStr);
+  if (Number.isNaN(t.getTime())) return isoStr;
+  return t.toLocaleString('en-IN', {
+    timeZone: 'Asia/Kolkata',
+    year: 'numeric', month: 'short', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hour12: false,
+  }) + ' IST';
+}
+function setUpdated(elId, isoStr, staleHours) {
+  const span = document.getElementById(elId);
+  if (!span) return;
+  const t = new Date(isoStr);
+  const ageH = (Date.now() - t.getTime()) / 3600000;
+  const stale = isFinite(ageH) && ageH > staleHours;
+  span.innerHTML = `${formatIST(isoStr)} <span class="${stale ? 'stale' : ''}">` +
+    `(${ageString(isoStr)}${stale ? ' — STALE' : ''})</span>`;
+}
+
+// ---- Load everything ----
+function loadImd() {
+  return fetch(IMD_FILE + '?t=' + Date.now()).then(r => r.json());
+}
+function loadShram() {
+  return fetch(SHRAM_LIVE_URL + '?t=' + Date.now()).then(r => r.json());
+}
+
+Promise.all([loadImd(), loadShram()]).then(([imd, shram]) => {
+  const shramMet = shram.metadata || {};
+  document.getElementById('header-meta').textContent =
+    `IMD fetched ${formatIST(imd.fetched_at_utc)} · ` +
+    `SHRAM live ${formatIST(shramMet.generated_at)} ` +
+    `(${SHRAM_SUN_DEFAULT}` +
+    `${shramMet.is_nighttime ? ' — night, sun=shade' : ''})`;
+  setUpdated('imd-updated', imd.fetched_at_utc, 24);
+  setUpdated('shram-updated', shramMet.generated_at, 2);
+  document.getElementById('diff-updated').textContent =
+    `IMD ${ageString(imd.fetched_at_utc)} · SHRAM ${ageString(shramMet.generated_at)}`;
+
+  const districtsGeojson = imd.geojson;
+  districtsGeojson.features.forEach((f, i) => { f.__idx = i; });
+  const districtIndex = districtsGeojson.features.map((f, i) => {
+    const p = f.properties;
+    return {
+      idx: i,
+      name: (p.District || '').toUpperCase(),
+      state: (p.state || '').toUpperCase(),
+      bbox: getBbox(f.geometry),
+      geom: f.geometry,
+    };
+  });
+
+  // Cache before first render
+  cachedDistricts = districtsGeojson;
+  cachedImd = imd;
+  // Build SHRAM zone-per-district aggregation, once per MET level
+  cachedShramZonesByMet = aggregateShramByMet(shram, districtIndex);
+
+  // Initial render of all three panels + wire toggles to re-render
+  renderAll();
+  document.querySelectorAll('.imd-code, .imd-tier, .shram-toggle')
+    .forEach(el => el.addEventListener('change', renderAll));
+  document.getElementById('met-select').addEventListener('change', (ev) => {
+    selectedMet = parseInt(ev.target.value, 10);
+    renderAll();
+  });
+
+  // Refresh buttons
+  document.getElementById('shram-refresh').addEventListener('click', async (ev) => {
+    const btn = ev.currentTarget;
+    btn.disabled = true; btn.textContent = 'Loading…';
+    try {
+      const fresh = await loadShram();
+      const m = fresh.metadata || {};
+      cachedShramZonesByMet = aggregateShramByMet(fresh, districtIndex);
+      setUpdated('shram-updated', m.generated_at, 2);
+      document.getElementById('diff-updated').textContent =
+        `IMD ${ageString(cachedImd.fetched_at_utc)} · SHRAM ${ageString(m.generated_at)}`;
+      renderAll();
+    } catch (e) {
+      console.error('SHRAM refresh failed', e);
+    } finally {
+      btn.disabled = false; btn.textContent = 'Refresh';
+    }
+  });
+
+  document.getElementById('imd-refresh').addEventListener('click', async (ev) => {
+    const btn = ev.currentTarget;
+    btn.disabled = true; btn.textContent = 'Loading…';
+    try {
+      const fresh = await loadImd();
+      cachedImd = fresh;
+      // Re-stamp __idx on the new geojson
+      fresh.geojson.features.forEach((f, i) => { f.__idx = i; });
+      cachedDistricts = fresh.geojson;
+      setUpdated('imd-updated', fresh.fetched_at_utc, 24);
+      renderAll();
+    } catch (e) {
+      console.error('IMD reload failed', e);
+    } finally {
+      btn.disabled = false; btn.textContent = 'Re-load file';
+    }
+  });
+}).catch(err => {
+  document.getElementById('header-meta').textContent = 'Error loading data: ' + err.message;
+  console.error(err);
+});
+
+// Returns a Set of "code:tier" strings (e.g. "9:3") that count as an IMD alert.
+// A district triggers if ANY of its (Day_1 code, Day1_Color tier) pairs is in this set.
+function getActiveImdCodeTiers() {
+  const out = new Set();
+  document.querySelectorAll('.imd-code:checked').forEach(codeEl => {
+    const code = parseInt(codeEl.value, 10);
+    document.querySelectorAll(`.imd-tier[data-code="${code}"]:checked`).forEach(tierEl => {
+      out.add(`${code}:${parseInt(tierEl.value, 10)}`);
+    });
+  });
+  return out;
+}
+function getActiveShramZones() {
+  return new Set(
+    Array.from(document.querySelectorAll('.shram-toggle:checked'))
+      .map(el => parseInt(el.value, 10))
+  );
+}
+
+function renderDiff() {
+  if (!cachedDistricts || !cachedImd || !cachedShramZonesByMet) return;
+  if (diffLayer) { mapDiff.removeLayer(diffLayer); diffLayer = null; }
+  const imdCodeTiers = getActiveImdCodeTiers();
+  const shramZones = getActiveShramZones();
+  const zoneByDist = cachedShramZonesByMet[selectedMet];
+
+  let nBoth = 0, nImdOnly = 0, nShramOnly = 0, nNeither = 0, nNoData = 0;
+  diffLayer = L.geoJSON(cachedDistricts, {
+    style: (feature) => {
+      const idx = feature.__idx;
+      const p = feature.properties;
+      const tier = parseInt(p.Day1_Color, 10) || 1;
+      const codesToday = String(p.Day_1 || '')
+          .split(',').map(s => parseInt(s, 10)).filter(Number.isFinite);
+      const imdAlert = codesToday.some(c => imdCodeTiers.has(`${c}:${tier}`));
+      const shramHasData = zoneByDist.has(idx);
+      const shramZone = zoneByDist.get(idx);
+      const shramAlert = shramHasData && shramZones.has(shramZone);
+
+      let fillColor, op;
+      if (!shramHasData) { fillColor = DIFF_COLOR.noData; op = 0.20; nNoData++; }
+      else if (imdAlert && shramAlert) { fillColor = DIFF_COLOR.both; op = 0.85; nBoth++; }
+      else if (imdAlert && !shramAlert) { fillColor = DIFF_COLOR.imdOnly; op = 0.85; nImdOnly++; }
+      else if (!imdAlert && shramAlert) { fillColor = DIFF_COLOR.shramOnly; op = 0.85; nShramOnly++; }
+      else { fillColor = DIFF_COLOR.neither; op = 0.30; nNeither++; }
+
+      return { fillColor, weight: 0.4, color: '#666', fillOpacity: op };
+    },
+    onEachFeature: (feature, layer) => {
+      const idx = feature.__idx;
+      const p = feature.properties;
+      const codesToday = String(p.Day_1 || '').split(',').filter(Boolean);
+      const tier = parseInt(p.Day1_Color, 10) || 1;
+      const tierLabel = ({1: 'No Warning', 2: 'Watch', 3: 'Alert', 4: 'Warning'})[tier] || '?';
+      const shramZone = zoneByDist.get(idx);
+      layer.bindTooltip(
+        `<b>${p.District}</b>, ${p.state || ''}<br>` +
+        `IMD Day-1: ${codesToday.join(', ') || '—'} (tier ${tier}: ${tierLabel})<br>` +
+        `SHRAM MET ${selectedMet}* zone: ${shramZone ?? 'no data'}`,
+        { sticky: true }
+      );
+    },
+  }).addTo(mapDiff);
+
+  document.getElementById('stats-diff').innerHTML =
+    `<span class="k">Both alert:</span> <span class="v">${nBoth}</span>` +
+    `<span class="k">IMD only:</span> <span class="v">${nImdOnly}</span>` +
+    `<span class="k">SHRAM only:</span> <span class="v">${nShramOnly}</span>` +
+    `<span class="k">Both safe:</span> <span class="v">${nNeither}</span>` +
+    `<span class="k">No SHRAM:</span> <span class="v">${nNoData}</span>`;
+  document.getElementById('diff-met-label').textContent = `MET ${selectedMet}*`;
+}
+
+// ---- Re-render everything when toggles change ----
+function renderAll() {
+  renderImd();
+  renderShram();
+  renderDiff();
+}
+
+// ---- IMD panel (re-renders on toggle change; faded for unchecked) ----
+function renderImd() {
+  if (!cachedImd) return;
+  if (imdLayer) { mapImd.removeLayer(imdLayer); imdLayer = null; }
+  const imdCodeTiers = getActiveImdCodeTiers();
+
+  let nHW = 0, nHot = 0, nWarm = 0, nNone = 0;
+
+  imdLayer = L.geoJSON(cachedImd.geojson, {
+    style: (feature) => {
+      const props = feature.properties || {};
+      const day1 = String(props.Day_1 || '').split(',').map(s => parseInt(s, 10)).filter(Number.isFinite);
+      const tier = parseInt(props.Day1_Color, 10) || 1;
+      // pick the most severe heat code present (9 > 10 > 11)
+      let color = NO_HEAT;
+      let active = false;
+      if (day1.includes(9))        { color = HEAT_CODE_COLOR[9];  active = imdCodeTiers.has(`9:${tier}`); }
+      else if (day1.includes(10))  { color = HEAT_CODE_COLOR[10]; active = imdCodeTiers.has(`10:${tier}`); }
+      else if (day1.includes(11))  { color = HEAT_CODE_COLOR[11]; active = imdCodeTiers.has(`11:${tier}`); }
+      // Opacity: full when active under current toggles, faded when alert but
+      // not in active toggle set, very low for no-heat baseline.
+      let op;
+      if (color === NO_HEAT) op = 0.20;
+      else if (active) op = 0.85;
+      else op = 0.18;
+      return { fillColor: color, weight: 0.4, color: '#666', fillOpacity: op };
+    },
+    onEachFeature: (feature, layer) => {
+      const p = feature.properties;
+      const day1 = String(p.Day_1 || '').split(',').filter(Boolean);
+      const tier = parseInt(p.Day1_Color, 10) || 1;
+      const tierLabel = ({1: 'No Warning', 2: 'Watch', 3: 'Alert', 4: 'Warning'})[tier] || '?';
+      layer.bindTooltip(
+        `<b>${p.District}</b>, ${p.state || ''}<br>` +
+        `Day-1 codes: ${day1.join(', ') || '—'} (tier ${tier}: ${tierLabel})<br>` +
+        `Date: ${p.Date || ''}`,
+        { sticky: true }
+      );
+    },
+  }).addTo(mapImd);
+
+  cachedImd.districts.forEach(d => {
+    const codes = (d.days?.[0]?.codes) || [];
+    if (codes.includes(9))      nHW++;
+    else if (codes.includes(10)) nHot++;
+    else if (codes.includes(11)) nWarm++;
+    else nNone++;
+  });
+  document.getElementById('stats-imd').innerHTML =
+    `<span class="k">Heatwave:</span> <span class="v">${nHW}</span>` +
+    `<span class="k">Hot Day:</span> <span class="v">${nHot}</span>` +
+    `<span class="k">Warm Night:</span> <span class="v">${nWarm}</span>` +
+    `<span class="k">Other/none:</span> <span class="v">${nNone}</span>`;
+}
+
+// ---- Helpers: point-in-district lookup + aggregation ----
+function getBbox(geom) {
+  let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;
+  const eat = (coords) => {
+    for (const c of coords) {
+      if (Array.isArray(c[0])) eat(c);
+      else {
+        if (c[0]<minX) minX=c[0]; if (c[0]>maxX) maxX=c[0];
+        if (c[1]<minY) minY=c[1]; if (c[1]>maxY) maxY=c[1];
+      }
+    }
+  };
+  eat(geom.coordinates);
+  return [minX,minY,maxX,maxY];
+}
+function pointInRing(x, y, ring) {
+  let inside = false;
+  for (let i=0, j=ring.length-1; i<ring.length; j=i++) {
+    const xi=ring[i][0], yi=ring[i][1], xj=ring[j][0], yj=ring[j][1];
+    if (((yi>y) !== (yj>y)) && (x < (xj-xi)*(y-yi)/(yj-yi) + xi)) inside = !inside;
+  }
+  return inside;
+}
+function pointInPolygon(x, y, geom) {
+  // polygon or multipolygon
+  const polys = geom.type === 'Polygon' ? [geom.coordinates] : geom.coordinates;
+  for (const poly of polys) {
+    if (!poly.length) continue;
+    if (pointInRing(x, y, poly[0])) {
+      // not inside any holes
+      let inHole = false;
+      for (let h=1; h<poly.length; h++) {
+        if (pointInRing(x, y, poly[h])) { inHole = true; break; }
+      }
+      if (!inHole) return true;
+    }
+  }
+  return false;
+}
+function findDistrict(lat, lon, idx) {
+  // bbox prefilter, polygon test
+  for (const d of idx) {
+    const [minX,minY,maxX,maxY] = d.bbox;
+    if (lon < minX || lon > maxX || lat < minY || lat > maxY) continue;
+    if (pointInPolygon(lon, lat, d.geom)) return d.idx;
+  }
+  return -1;
+}
+
+function aggregateStationsToDistricts(points, idx, metricFn, reduceFn) {
+  const out = new Map();
+  for (const pt of points) {
+    if (pt.lat == null || pt.lon == null) continue;
+    const di = findDistrict(pt.lat, pt.lon, idx);
+    if (di < 0) continue;
+    const v = metricFn(pt);
+    if (v == null || Number.isNaN(v)) continue;
+    out.set(di, reduceFn(out.get(di), v));
+  }
+  return out;   // Map<districtIndex, zone>
+}
+
+// ---- SHRAM aggregation, all 4 MET levels at once ----
+function aggregateShramByMet(shram, districtIndex) {
+  const out = {};
+  for (const met of MET_LEVELS) {
+    out[met] = aggregateStationsToDistricts(
+      shram.points, districtIndex,
+      (pt) => pt?.data?.[`met${met}`]?.[SHRAM_SUN_DEFAULT]?.zone,
+      (acc, val) => Math.max(acc || 0, val || 0)
+    );
+  }
+  return out;
+}
+
+// ---- SHRAM panel (single map; uses selectedMet) ----
+function renderShram() {
+  if (!cachedDistricts || !cachedShramZonesByMet) return;
+  if (shramLayer) { mapShram.removeLayer(shramLayer); shramLayer = null; }
+  const shramZones = getActiveShramZones();
+  const zoneByDist = cachedShramZonesByMet[selectedMet];
+
+  let n5 = 0, n6 = 0, nLow = 0;
+  shramLayer = L.geoJSON(cachedDistricts, {
+    style: (feature) => {
+      const zone = zoneByDist.get(feature.__idx);
+      let fillColor, active = false;
+      if (zone === 6) { fillColor = ZONE_COLOR[6]; active = shramZones.has(6); }
+      else if (zone === 5) { fillColor = ZONE_COLOR[5]; active = shramZones.has(5); }
+      else { fillColor = NO_DATA; }
+      let op;
+      if (fillColor === NO_DATA) op = 0.20;
+      else if (active) op = 0.85;
+      else op = 0.18;
+      return { fillColor, weight: 0.4, color: '#666', fillOpacity: op };
+    },
+    onEachFeature: (feature, layer) => {
+      const p = feature.properties;
+      const zone = zoneByDist.get(feature.__idx);
+      layer.bindTooltip(
+        `<b>${p.District}</b>, ${p.state || ''}<br>` +
+        `MET ${selectedMet}* zone: ${zone ?? '—'}`,
+        { sticky: true }
+      );
+    },
+  }).addTo(mapShram);
+
+  for (const z of zoneByDist.values()) {
+    if (z === 6) n6++;
+    else if (z === 5) n5++;
+    else nLow++;
+  }
+  const nMissing = cachedDistricts.features.length - (n5 + n6 + nLow);
+  document.getElementById('stats-shram').innerHTML =
+    `<span class="k">Z6:</span> <span class="v">${n6}</span>` +
+    `<span class="k">Z5:</span> <span class="v">${n5}</span>` +
+    `<span class="k">≤Z4:</span> <span class="v">${nLow}</span>` +
+    `<span class="k">no data:</span> <span class="v">${nMissing}</span>`;
+  document.getElementById('shram-met-label').textContent = `MET ${selectedMet}*`;
+}
+
+</script>
+</body>
+</html>
