@@ -10,11 +10,19 @@ for k in ("IMD_API_KEY", "IMD_EMAIL", "IMD_PASSWORD"):
         env[k] = os.environ[k]
 
 # Get JWT
-jwt = requests.post(
+token_resp = requests.post(
     "https://api.imd.gov.in/api/oauth/token.php",
     json={"email": env["IMD_EMAIL"], "password": env["IMD_PASSWORD"]},
     verify=False,
-).json()["access_token"]
+)
+print(f"TOKEN HTTP {token_resp.status_code} | type={type(token_resp.json()).__name__}")
+print(json.dumps(token_resp.json(), indent=2)[:1000])
+
+token_body = token_resp.json()
+if "access_token" not in token_body:
+    raise SystemExit("No access_token in token response — auth failed.")
+jwt = token_body["access_token"]
+print(f"Got JWT (length {len(jwt)}, prefix {jwt[:20]}...)")
 
 # Call API
 headers = {"X-API-KEY": env["IMD_API_KEY"], "Authorization": f"Bearer {jwt}"}
