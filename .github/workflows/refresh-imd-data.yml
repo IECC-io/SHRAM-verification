@@ -82,7 +82,6 @@ jobs:
                   reference_history/shram_forecast_latest.json \
                   reference_history/shram_forecast/ \
                   reference_history/shram_daily_peak.json \
-                  reference_history/imd_heatwave/ \
                   comparisons/kappa_history.csv
           if ! git diff --cached --quiet; then
             stamp="$(date -u +%Y-%m-%dT%H:%MZ)"
