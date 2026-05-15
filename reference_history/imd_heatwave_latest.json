@@ -1,7 +1,7 @@
 {
   "label": "IMD district warnings (heat subset, derived from districtwarning feed)",
   "source_url": "https://reactjs.imd.gov.in/geoserver/wfs?service=WFS,version=1.1.0,request=GetFeature,typename=imd:district_warnings_india,srsname=EPSG:4326,outputFormat=application/json",
-  "fetched_at_utc": "2026-05-14T22:28:38.986876+00:00",
+  "fetched_at_utc": "2026-05-15T00:53:53.261877+00:00",
   "n_total": 764,
   "n_heatwave": 9,
   "n_severe": 67,

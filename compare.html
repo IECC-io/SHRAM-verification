@@ -102,14 +102,16 @@
   }
   .stats {
     display: flex;
-    gap: 16px;
-    padding: 8px 12px;
+    gap: 14px;
+    padding: 6px 10px;
     background: #fff;
     border-top: 1px solid #d8dee5;
     font-size: 12px;
     flex-wrap: wrap;
+    line-height: 1.4;
   }
-  .stats .k { color: #57606a; }
+  .stats .pair { white-space: nowrap; }   /* keep label+value together */
+  .stats .k { color: #57606a; margin-right: 4px; }
   .stats .v { font-weight: 600; }
   .toggles {
     display: flex; gap: 16px; flex-wrap: wrap;
@@ -136,12 +138,256 @@
   .imd-group .tier-group label {
     font-size: 12px; color: #57606a; margin-right: 8px;
   }
-  .imd-group input.imd-code:not(:checked) ~ .tier-group label {
-    opacity: 0.4; pointer-events: none;
+  /* Tab bar */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    border-bottom: 1px solid #d8dee5;
+    margin: 10px 0 14px;
+  }
+  .tabs button {
+    background: transparent;
+    border: 1px solid transparent;
+    border-bottom: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #57606a;
+    border-radius: 6px 6px 0 0;
+  }
+  .tabs button:hover { color: #1f2328; background: #f7f9fb; }
+  .tabs button.active {
+    background: #fff;
+    border-color: #d8dee5;
+    color: #1f2328;
+    font-weight: 600;
+    position: relative;
+    top: 1px;
+  }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* κ history tab */
+  .khist-controls {
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+    padding: 10px 12px; background: #f7f9fb;
+    border: 1px solid #d8dee5; border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  .khist-controls label { font-size: 13px; color: #1f2328; }
+  .khist-controls select {
+    padding: 4px 8px; margin-left: 4px;
+    border: 1px solid #d8dee5; border-radius: 5px;
+    background: #fff; font-size: 13px;
+  }
+  #khist-chart-wrap {
+    background: #fff; border: 1px solid #d8dee5; border-radius: 6px;
+    padding: 8px 12px; margin-bottom: 12px;
+  }
+  #khist-chart {
+    display: block; width: 100%; height: 380px;
+    background: #fff;
+  }
+  #khist-legend {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    padding-top: 6px; font-size: 11px; color: #1f2328;
+  }
+  #khist-legend .lg {
+    display: inline-flex; align-items: center; gap: 4px;
+  }
+  #khist-legend .lg .sw {
+    display: inline-block; width: 10px; height: 10px;
+    border-radius: 50%;
+  }
+  .khist-tablewrap {
+    max-height: 320px; overflow: auto;
+    border: 1px solid #d8dee5; border-radius: 6px;
+  }
+  #khist-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 12px; background: #fff;
+  }
+  #khist-table th {
+    position: sticky; top: 0;
+    background: #f7f9fb; padding: 6px 10px;
+    border-bottom: 1px solid #d8dee5;
+    text-align: left; font-weight: 600;
+  }
+  #khist-table th.num { text-align: right; }
+  #khist-table td { padding: 5px 10px; border-bottom: 1px solid #ebeef2; }
+  #khist-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Cohen's κ matrix tab */
+  .kappa-intro {
+    padding: 10px 12px;
+    background: #f7f9fb;
+    border: 1px solid #d8dee5;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #1f2328;
+  }
+  .kappa-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .kappa-panel {
+    background: #fff;
+    border: 1px solid #d8dee5;
+    border-radius: 6px;
+    padding: 10px 12px;
+  }
+  .kappa-panel h3 {
+    margin: 0 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1f2328;
+  }
+  .kappa-table-wrap { overflow-x: auto; }
+  .kappa-table {
+    width: 100%; border-collapse: collapse; font-size: 12px;
+  }
+  .kappa-table th, .kappa-table td {
+    padding: 6px 8px; text-align: center;
+    border: 1px solid #d8dee5;
+  }
+  .kappa-table th {
+    background: #f7f9fb; font-weight: 600;
+    white-space: nowrap;
+  }
+  .kappa-table th.row-label { text-align: left; }
+  .kappa-table td.row-label { text-align: left; font-weight: 500; }
+  .kappa-table td.kappa-cell {
+    font-variant-numeric: tabular-nums;
+    cursor: help;
+  }
+  @media (max-width: 1000px) {
+    .kappa-grid { grid-template-columns: 1fr; }
+  }
+
+  /* Disagreement table */
+  .dis-controls {
+    display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+    padding: 10px 12px; background: #f7f9fb;
+    border: 1px solid #d8dee5; border-radius: 6px;
+    margin-bottom: 12px;
+  }
+  .dis-controls label { font-size: 13px; color: #1f2328; }
+  .dis-controls select, .dis-controls input {
+    padding: 4px 8px; border: 1px solid #d8dee5;
+    border-radius: 5px; font-size: 13px;
+    background: #fff; margin-left: 4px;
+  }
+  .dis-controls input { min-width: 200px; }
+  .dis-tablewrap {
+    max-height: 70vh; overflow: auto;
+    border: 1px solid #d8dee5; border-radius: 6px;
+  }
+  #dis-table {
+    width: 100%; border-collapse: collapse;
+    font-size: 12px; background: #fff;
+  }
+  #dis-table th {
+    position: sticky; top: 0;
+    background: #f7f9fb; z-index: 1;
+    text-align: left; font-weight: 600;
+    padding: 8px 10px; border-bottom: 1px solid #d8dee5;
+    cursor: pointer; user-select: none;
+    white-space: nowrap;
+  }
+  #dis-table th.num { text-align: right; }
+  #dis-table th .arrow { color: #57606a; font-size: 10px; margin-left: 4px; }
+  #dis-table td { padding: 6px 10px; border-bottom: 1px solid #ebeef2; }
+  #dis-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  #dis-table tr.imd-only { background: rgba(154,103,0,0.06); }
+  #dis-table tr.shram-only { background: rgba(9,105,218,0.06); }
+  #dis-table .badge {
+    display: inline-block;
+    padding: 1px 6px; border-radius: 3px; font-size: 10px;
+    font-weight: 600; text-transform: uppercase;
+  }
+  #dis-table .badge.imd-only { background: #9a6700; color: #fff; }
+  #dis-table .badge.shram-only { background: #0969da; color: #fff; }
+
+  /* Forecast comparison: 3 rows × 5 day-columns */
+  .fc-section { margin-top: 4px; }
+  .fc-legends {
+    margin: 6px 0 12px;
+    padding: 8px 12px;
+    background: #f7f9fb;
+    border: 1px solid #d8dee5;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #1f2328;
+  }
+  .fc-legend-row {
+    display: flex; flex-wrap: wrap; align-items: center;
+    gap: 12px;
+    padding: 2px 0;
+  }
+  .fc-legend-row strong { min-width: 170px; }
+  .fc-legend-row .legend-note,
+  .legend .legend-note { color: #57606a; font-style: italic; }
+  .fc-legend-row .swatch {
+    display: inline-block; width: 12px; height: 12px;
+    margin-right: 4px; vertical-align: middle;
+    border: 1px solid #00000022;
+  }
+  .fc-section h2 {
+    font-size: 16px; font-weight: 600; margin: 4px 0 10px;
+    color: #1f2328;
+  }
+  .fc-section h2 .sub { font-size: 12px; color: #57606a; font-weight: 400; }
+  .fc-grid {
+    display: grid;
+    grid-template-columns: 70px repeat(5, 1fr);
+    grid-template-rows: auto repeat(3, auto);
+    gap: 4px 6px;
+    align-items: stretch;
+  }
+  .fc-row-label {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 600; font-size: 13px;
+    color: #1f2328;
+    background: #f7f9fb;
+    border: 1px solid #d8dee5;
+    border-radius: 6px;
+    padding: 8px 4px;
+  }
+  .fc-col-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: #1f2328;
+    padding: 4px;
+    background: #fff;
+  }
+  .fc-cell {
+    background: #f7f9fb;
+    border: 1px solid #d8dee5;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .fc-cell .map { height: 340px; }   /* taller than wide for India's portrait outline */
+  .fc-cell .stats {
+    padding: 4px 8px; font-size: 10px; gap: 6px;
+    background: #fff; border-top: 1px solid #d8dee5;
   }
   @media (max-width: 1000px) {
     .bottom-row { grid-template-columns: 1fr; }
     .map { height: 460px; }
+    .fc-grid {
+      grid-template-columns: 1fr;
+    }
+    .fc-row-label {
+      writing-mode: initial; transform: none;
+      padding: 4px 8px;
+    }
   }
 </style>
 </head>
@@ -151,42 +397,27 @@
 <p class="muted" id="header-meta">Loading live data...</p>
 
 <div class="toggles">
-  <fieldset class="imd-block">
-    <legend>IMD codes + severity tiers (for Panel C)</legend>
-    <div class="imd-group">
-      <label class="parent"><input type="checkbox" class="imd-code" value="9" checked> Heat Wave</label>
-      <span class="tier-group">
-        <label><input type="checkbox" class="imd-tier" data-code="9" value="2"> Watch</label>
-        <label><input type="checkbox" class="imd-tier" data-code="9" value="3" checked> Alert</label>
-        <label><input type="checkbox" class="imd-tier" data-code="9" value="4" checked> Warning</label>
-      </span>
-    </div>
-    <div class="imd-group">
-      <label class="parent"><input type="checkbox" class="imd-code" value="10" checked> Hot Day</label>
-      <span class="tier-group">
-        <label><input type="checkbox" class="imd-tier" data-code="10" value="2"> Watch</label>
-        <label><input type="checkbox" class="imd-tier" data-code="10" value="3" checked> Alert</label>
-        <label><input type="checkbox" class="imd-tier" data-code="10" value="4" checked> Warning</label>
-      </span>
-    </div>
-    <div class="imd-group">
-      <label class="parent"><input type="checkbox" class="imd-code" value="11"> Warm Night</label>
-      <span class="tier-group">
-        <label><input type="checkbox" class="imd-tier" data-code="11" value="2"> Watch</label>
-        <label><input type="checkbox" class="imd-tier" data-code="11" value="3"> Alert</label>
-        <label><input type="checkbox" class="imd-tier" data-code="11" value="4"> Warning</label>
-      </span>
-    </div>
+  <fieldset>
+    <legend>IMD station heatwave status (Today · κ · Disagreement)</legend>
+    <label><input type="checkbox" class="imd-station-toggle" value="1" checked> Heatwave</label>
+    <label><input type="checkbox" class="imd-station-toggle" value="2" checked> Severe Heatwave</label>
   </fieldset>
   <fieldset>
-    <legend>SHRAM zones (for Panel C)</legend>
+    <legend>Station-type filter (κ · Disagreement)</legend>
+    <label><input type="checkbox" class="station-type-toggle" value="Plain" checked> Plain</label>
+    <label><input type="checkbox" class="station-type-toggle" value="Coastal" checked> Coastal</label>
+    <label><input type="checkbox" class="station-type-toggle" value="Hilly" checked> Hilly</label>
+  </fieldset>
+  <fieldset>
+    <legend>SHRAM zones (for Panel C / κ / Disagreement)</legend>
+    <label><input type="checkbox" class="shram-toggle" value="4"> Zone 4</label>
     <label><input type="checkbox" class="shram-toggle" value="5"> Zone 5</label>
     <label><input type="checkbox" class="shram-toggle" value="6" checked> Zone 6</label>
   </fieldset>
 </div>
 
 <div class="met-picker">
-  <label for="met-select">SHRAM work intensity (drives panels B & C):</label>
+  <label for="met-select">SHRAM work intensity (applies to both tabs):</label>
   <select id="met-select">
     <option value="3">MET 3* — light</option>
     <option value="4">MET 4* — moderate</option>
@@ -195,19 +426,33 @@
   </select>
 </div>
 
+<div class="tabs">
+  <button id="tab-btn-today" class="active" data-tab="today">Today — live</button>
+  <button id="tab-btn-forecast" data-tab="forecast">5-day forecast</button>
+  <button id="tab-btn-disagree" data-tab="disagree">Disagreement table</button>
+  <button id="tab-btn-kappa" data-tab="kappa">Cohen's κ — today</button>
+  <button id="tab-btn-fckappa" data-tab="fckappa">Cohen's κ — forecast</button>
+  <button id="tab-btn-khist" data-tab="khist">κ history</button>
+</div>
+
+<div id="tab-today" class="tab-panel active">
+
 <div class="bottom-row">
   <div class="map-card">
-    <h2>(A) IMD district warnings <span class="sub" id="imd-date"></span></h2>
+    <h2>(A) IMD station status today <span class="sub" id="imd-date"></span></h2>
     <div class="updated">
       Updated: <span id="imd-updated">—</span>
       <button id="imd-refresh">Re-load file</button>
     </div>
     <div id="map-imd" class="map"></div>
     <div class="legend">
-      <span><span class="swatch" style="background:#cf222e"></span>Heatwave</span>
-      <span><span class="swatch" style="background:#ff8800"></span>Hot Day</span>
-      <span><span class="swatch" style="background:#ffd60a"></span>Warm Night</span>
-      <span><span class="swatch" style="background:#e5e7eb"></span>No heat warning</span>
+      <span><span class="swatch" style="background:#cf222e"></span>Severe Heatwave</span>
+      <span><span class="swatch" style="background:#ff8800"></span>Heatwave</span>
+      <span><span class="swatch" style="background:#e5e7eb"></span>Normal</span>
+      <span class="legend-note">
+        district fill = worst IMD station in/near polygon ·
+        dots = individual stations (filled if HW, dimmed if Normal)
+      </span>
     </div>
     <div class="stats" id="stats-imd"></div>
   </div>
@@ -222,7 +467,8 @@
     <div class="legend">
       <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
       <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
-      <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 4 / no data</span>
+      <span><span class="swatch" style="background:#ff9800"></span>Zone 4 — moderate</span>
+      <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 3 / no data</span>
     </div>
     <div class="stats" id="stats-shram"></div>
   </div>
@@ -244,21 +490,263 @@
   </div>
 </div>
 
+</div> <!-- /tab-today -->
+
+<div id="tab-forecast" class="tab-panel">
+
+<div class="fc-section">
+  <div class="met-picker">
+    <label for="fc-day-select">Forecast day:</label>
+    <select id="fc-day-select">
+      <option value="1" selected>Day 1</option>
+      <option value="2">Day 2</option>
+      <option value="3">Day 3</option>
+      <option value="4">Day 4</option>
+      <option value="5">Day 5</option>
+    </select>
+    <span class="muted" id="fc-day-date" style="margin-left:8px;color:#57606a;font-size:13px;"></span>
+  </div>
+
+  <div class="toggles">
+    <fieldset>
+      <legend>IMD codes × severity tiers (for Forecast Panel C only)</legend>
+      <div class="imd-group">
+        <span class="parent">Heat Wave:</span>
+        <span class="tier-group">
+          <label><input type="checkbox" class="imd-tier" data-code="9" value="2"> Watch</label>
+          <label><input type="checkbox" class="imd-tier" data-code="9" value="3" checked> Alert</label>
+          <label><input type="checkbox" class="imd-tier" data-code="9" value="4" checked> Warning</label>
+        </span>
+      </div>
+      <div class="imd-group">
+        <span class="parent">Hot Day:</span>
+        <span class="tier-group">
+          <label><input type="checkbox" class="imd-tier" data-code="10" value="2"> Watch</label>
+          <label><input type="checkbox" class="imd-tier" data-code="10" value="3"> Alert</label>
+          <label><input type="checkbox" class="imd-tier" data-code="10" value="4"> Warning</label>
+        </span>
+      </div>
+      <div class="imd-group">
+        <span class="parent">Warm Night:</span>
+        <span class="tier-group">
+          <label><input type="checkbox" class="imd-tier" data-code="11" value="2"> Watch</label>
+          <label><input type="checkbox" class="imd-tier" data-code="11" value="3"> Alert</label>
+          <label><input type="checkbox" class="imd-tier" data-code="11" value="4"> Warning</label>
+        </span>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="bottom-row">
+    <div class="map-card">
+      <h2>(A) IMD forecast — Day <span id="fc-day-label-imd">1</span> warnings</h2>
+      <div id="fc-map-imd" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#cf222e"></span>Heatwave</span>
+        <span><span class="swatch" style="background:#ff8800"></span>Hot Day</span>
+        <span><span class="swatch" style="background:#ffd60a"></span>Warm Night</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>No heat warning</span>
+      </div>
+      <div class="stats" id="fc-stats-imd"></div>
+    </div>
+
+    <div class="map-card">
+      <h2>(B) SHRAM forecast — Day <span id="fc-day-label-shram">1</span> peak (<span id="fc-met-label">MET 6*</span>, sun)</h2>
+      <div id="fc-map-shram" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+        <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 4 / no data</span>
+      </div>
+      <div class="stats" id="fc-stats-shram"></div>
+    </div>
+
+    <div class="map-card">
+      <h2>(C) Agreement — Day <span id="fc-day-label-diff">1</span>
+        <span class="sub">(toggle-driven)</span>
+      </h2>
+      <div id="fc-map-diff" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#1a7f37"></span>Both alert</span>
+        <span><span class="swatch" style="background:#9a6700"></span>IMD only</span>
+        <span><span class="swatch" style="background:#0969da"></span>SHRAM only</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>Both safe</span>
+        <span><span class="swatch" style="background:#f0f0f0;border:1px dashed #999"></span>No SHRAM data</span>
+      </div>
+      <div class="stats" id="fc-stats-diff"></div>
+    </div>
+  </div>
+</div>
+
+</div> <!-- /tab-forecast -->
+
+<div id="tab-disagree" class="tab-panel">
+  <div class="dis-controls">
+    <label>Filter type:
+      <select id="dis-filter-type">
+        <option value="all" selected>All disagreements</option>
+        <option value="imd_only">IMD only (SHRAM under-warning)</option>
+        <option value="shram_only">SHRAM only (SHRAM over-warning vs IMD)</option>
+      </select>
+    </label>
+    <label>State:
+      <select id="dis-filter-state"><option value="">All states</option></select>
+    </label>
+    <label>Search:
+      <input type="text" id="dis-filter-search" placeholder="District or state name...">
+    </label>
+    <span class="muted" id="dis-summary" style="margin-left:auto;font-size:13px;color:#57606a;"></span>
+  </div>
+  <div class="dis-tablewrap">
+    <table id="dis-table">
+      <thead>
+        <tr>
+          <th data-sort="state">State</th>
+          <th data-sort="district">District</th>
+          <th data-sort="type">Type</th>
+          <th data-sort="imd_codes">IMD codes</th>
+          <th data-sort="imd_tier">IMD tier</th>
+          <th data-sort="shram_zone" class="num">SHRAM zone</th>
+          <th data-sort="ta" class="num">Max Ta (°C)</th>
+          <th data-sort="rh" class="num">Max RH (%)</th>
+          <th data-sort="ssrd" class="num">Max SSRD (W/m²)</th>
+          <th data-sort="n_stations" class="num"># pts</th>
+        </tr>
+      </thead>
+      <tbody id="dis-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<div id="tab-kappa" class="tab-panel">
+  <div class="kappa-intro">
+    <strong>Cohen's κ — station-level categorical-agreement matrix.</strong>
+    Built on ~285 IMD weather stations, each matched to the nearest SHRAM grid
+    point (≤30 km). Both sides reflect today's status: IMD station today's
+    observed heatwave flag (HW=1 or Severe-HW=2), SHRAM the live zone at the
+    paired grid point. κ=1 perfect, κ=0 chance, κ&lt;0 worse than chance.
+    Buckets: &lt;0.2 poor · 0.2–0.4 fair · 0.4–0.6 moderate ·
+    0.6–0.8 substantial · 0.8+ near-perfect.
+    Hover any cell for the underlying 2×2 confusion counts.
+    <br><br>
+    <em>Slice by region</em>: use the <b>Station-type filter</b> at the top of
+    the page (Plain · Coastal · Hilly) to restrict the κ calculation to one or
+    more region types. The active filter is reflected in the n-counts on each
+    cell tooltip.
+    Note: the IMD station feed only carries a Heat-Wave flag (no Hot Day /
+    Warm Night codes), so the lower rows are blank.
+    <div id="kappa-active-filter" style="margin-top:6px;color:#0969da;font-weight:600;"></div>
+  </div>
+  <div class="kappa-grid" id="kappa-grid">
+    <div class="kappa-panel"><h3>MET 3*</h3><div id="kappa-met-3" class="kappa-table-wrap"></div></div>
+    <div class="kappa-panel"><h3>MET 4*</h3><div id="kappa-met-4" class="kappa-table-wrap"></div></div>
+    <div class="kappa-panel"><h3>MET 5*</h3><div id="kappa-met-5" class="kappa-table-wrap"></div></div>
+    <div class="kappa-panel"><h3>MET 6*</h3><div id="kappa-met-6" class="kappa-table-wrap"></div></div>
+  </div>
+</div>
+
+<div id="tab-fckappa" class="tab-panel">
+  <div class="kappa-intro">
+    <strong>Cohen's κ — district-level forecast agreement.</strong>
+    Built on ~764 IMD districts × matching SHRAM district forecasts.
+    For the selected forecast day, rows are IMD warning codes (Heat Wave /
+    Hot Day / Warm Night) at cumulative severity tiers (Watch+ / Alert+ /
+    Warning) from the WFS feed, columns are SHRAM day-peak zones at
+    progressively higher thresholds. Same κ interpretation as the today
+    matrix; this one has signal because IMD typically flags many districts
+    for the day ahead even on quiet days.
+  </div>
+  <div class="met-picker">
+    <label for="fckappa-day-select">Forecast day:</label>
+    <select id="fckappa-day-select">
+      <option value="1" selected>Day 1</option>
+      <option value="2">Day 2</option>
+      <option value="3">Day 3</option>
+      <option value="4">Day 4</option>
+      <option value="5">Day 5</option>
+    </select>
+    <span class="muted" id="fckappa-day-date" style="margin-left:8px;color:#57606a;font-size:13px;"></span>
+  </div>
+  <div class="kappa-grid" id="fckappa-grid">
+    <div class="kappa-panel"><h3>MET 3*</h3><div id="fckappa-met-3" class="kappa-table-wrap"></div></div>
+    <div class="kappa-panel"><h3>MET 4*</h3><div id="fckappa-met-4" class="kappa-table-wrap"></div></div>
+    <div class="kappa-panel"><h3>MET 5*</h3><div id="fckappa-met-5" class="kappa-table-wrap"></div></div>
+    <div class="kappa-panel"><h3>MET 6*</h3><div id="fckappa-met-6" class="kappa-table-wrap"></div></div>
+  </div>
+</div>
+
+<div id="tab-khist" class="tab-panel">
+  <div class="kappa-intro">
+    <strong>Historical κ time-series.</strong>
+    Each dot is the daily forecast κ between an IMD warning definition and a
+    SHRAM zone threshold for a chosen MET level and forecast lead day, computed
+    nightly from the archived bulletins. As the archive accumulates (twice
+    daily from <code>refresh-imd-data.yml</code>), lines will fill in and
+    trends become visible.
+  </div>
+  <div class="khist-controls">
+    <label>MET:
+      <select id="khist-met">
+        <option value="3">MET 3*</option>
+        <option value="4">MET 4*</option>
+        <option value="5">MET 5*</option>
+        <option value="6" selected>MET 6*</option>
+      </select>
+    </label>
+    <label>Forecast day:
+      <select id="khist-day">
+        <option value="1" selected>Day 1</option>
+        <option value="2">Day 2</option>
+        <option value="3">Day 3</option>
+        <option value="4">Day 4</option>
+        <option value="5">Day 5</option>
+      </select>
+    </label>
+    <label>IMD definition:
+      <select id="khist-def">
+        <option value="all" selected>All 9 definitions</option>
+      </select>
+    </label>
+    <span class="muted" id="khist-summary" style="margin-left:auto; font-size:13px; color:#57606a;"></span>
+  </div>
+  <div id="khist-chart-wrap">
+    <svg id="khist-chart" width="100%" height="380" preserveAspectRatio="none"></svg>
+    <div id="khist-legend"></div>
+  </div>
+  <div class="khist-tablewrap">
+    <p class="muted" style="margin:8px 0 4px;font-size:12px;color:#57606a">
+      Raw rows for the current selection (most recent first):
+    </p>
+    <table id="khist-table">
+      <thead><tr>
+        <th>Bulletin date</th><th>Target date</th><th>MET</th><th>Day</th>
+        <th>IMD def</th><th>SHRAM thr</th>
+        <th class="num">a</th><th class="num">b</th><th class="num">c</th>
+        <th class="num">d</th><th class="num">n</th><th class="num">κ</th>
+      </tr></thead>
+      <tbody id="khist-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
 <script>
 const IMD_FILE  = 'reference_history/imd_districtwarning_latest.json';
+const IMD_STATION_FILE = 'reference_history/imd_station_heatwave_latest.json';
 const SHRAM_LIVE_URL = 'https://shram.info/grid_data.json';
-const SHRAM_MET_DEFAULT = 6;       // which MET level to read
-const SHRAM_SUN_DEFAULT = 'sun';   // 'sun' or 'shade'
+const SHRAM_FORECAST_URL = 'https://shram.info/weather_logs/forecast_7day.json';
+const SHRAM_MET_DEFAULT = 6;
+const SHRAM_SUN_DEFAULT = 'sun';
+const FC_DAYS = [1, 2, 3, 4, 5];   // forecast day indices we compare
 
 const HEAT_CODE_COLOR = {
   9: '#cf222e',   // Heat Wave (red)
   10: '#ff8800',  // Hot Day (orange)
   11: '#ffd60a',  // Warm Night (yellow)
 };
-const ZONE_COLOR = { 6: '#9c27b0', 5: '#f44336' };
+const ZONE_COLOR = { 6: '#9c27b0', 5: '#f44336', 4: '#ff9800' };
 const DIFF_COLOR = {
   both:      '#1a7f37',   // green — both flagged
   imdOnly:   '#9a6700',   // mustard — IMD says alert, SHRAM doesn't
@@ -269,51 +757,131 @@ const DIFF_COLOR = {
 const NO_DATA = '#e5e7eb';
 const NO_HEAT = '#e5e7eb';
 
-const indiaCenter = [22.0, 80.0];
-const indiaZoom = 5;
+// Tighter than the full data bbox so the mainland fills more of the cell.
+// Tweak these values to zoom in/out without losing the map's responsive sizing.
+const INDIA_BOUNDS = L.latLngBounds([8, 70], [36, 96]);
 
 function makeMap(id) {
   const m = L.map(id, {
-    center: indiaCenter,
-    zoom: indiaZoom,
     zoomControl: true,
     attributionControl: false,
+    // Canvas renderer is ~10x faster than SVG for 700+ polygons,
+    // because it draws pixels instead of creating a DOM node per shape.
+    preferCanvas: true,
   });
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     maxZoom: 12,
     subdomains: 'abcd',
   }).addTo(m);
+  m.fitBounds(INDIA_BOUNDS, { padding: [0, 0] });
   return m;
 }
 
 const MET_LEVELS = [3, 4, 5, 6];
 let selectedMet = 6;   // driven by dropdown
 
+// Build a small square polygon centered on (lat, lon). Used to replace
+// IMD's giant bounding-box rectangles for tiny island districts.
+function makePointBuffer(lat, lon, halfDeg) {
+  return {
+    type: 'Polygon',
+    coordinates: [[
+      [lon - halfDeg, lat - halfDeg],
+      [lon + halfDeg, lat - halfDeg],
+      [lon + halfDeg, lat + halfDeg],
+      [lon - halfDeg, lat + halfDeg],
+      [lon - halfDeg, lat - halfDeg],
+    ]],
+  };
+}
+
+// Build a stat-line: each [label, value] becomes one inline-block pair that
+// won't break across lines. Returns innerHTML string.
+function statPairs(pairs) {
+  return pairs.map(([k, v]) =>
+    `<span class="pair"><span class="k">${k}</span><span class="v">${v}</span></span>`
+  ).join('');
+}
+
+
+// ---- Tabs ----
+document.querySelectorAll('.tabs button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.tabs button').forEach(b => b.classList.toggle('active', b === btn));
+    document.querySelectorAll('.tab-panel').forEach(p => {
+      p.classList.toggle('active', p.id === `tab-${tab}`);
+    });
+    // Leaflet maps that were hidden need to recompute their size after reveal,
+    // or they show as a grey/blank block. Defer to next tick so layout settles.
+    setTimeout(() => {
+      const refit = (m) => { m.invalidateSize(); m.fitBounds(INDIA_BOUNDS, { padding: [0, 0] }); };
+      if (tab === 'forecast') {
+        refit(fcMapImd); refit(fcMapShram); refit(fcMapDiff);
+      } else {
+        refit(mapImd); refit(mapShram); refit(mapDiff);
+      }
+    }, 50);
+  });
+});
+
 const mapImd   = makeMap('map-imd');
 const mapShram = makeMap('map-shram');
 const mapDiff  = makeMap('map-diff');
 
+// Forecast tab: 1 row × 3 maps for one selected day at a time
+let selectedFcDay = 1;
+const fcMapImd   = makeMap('fc-map-imd');
+const fcMapShram = makeMap('fc-map-shram');
+const fcMapDiff  = makeMap('fc-map-diff');
+
 function sync(maps) {
+  // Only update followers after the user stops moving/zooming (moveend/zoomend
+  // fire once, ~when the gesture lands). Avoids 60-times-a-second cascade
+  // across 17 followers, which is the actual lag source.
   let busy = false;
   maps.forEach(m => {
-    m.on('move zoom', () => {
+    m.on('moveend zoomend', () => {
       if (busy) return;
       busy = true;
       const c = m.getCenter(), z = m.getZoom();
-      maps.forEach(other => { if (other !== m) other.setView(c, z, {animate:false}); });
-      busy = false;
+      requestAnimationFrame(() => {
+        maps.forEach(other => {
+          if (other !== m) other.setView(c, z, { animate: false });
+        });
+        busy = false;
+      });
     });
   });
 }
-sync([mapImd, mapShram, mapDiff]);
+sync([mapImd, mapShram, mapDiff, fcMapImd, fcMapShram, fcMapDiff]);
 
 let imdLayer = null;
 let shramLayer = null;
 let diffLayer = null;
+let fcImdLayer = null;
+let fcShramLayer = null;
+let fcDiffLayer = null;
+
 let cachedDistricts = null;
 let cachedImd = null;
-// zone per district, per MET: { 3: Map<idx,zone>, 4: Map, 5: Map, 6: Map }
+// zone per district, per MET (today live): { 3: Map<idx,zone>, ... }
 let cachedShramZonesByMet = null;
+// per-district environmental stats from live SHRAM: Map<idx, {nPts,maxTa,maxRh,maxSsrd}>
+let cachedShramStats = null;
+let cachedDistrictIndex = null;   // for use by SHRAM refresh handler
+// Station-level pairing: each IMD station matched to its nearest SHRAM grid pt
+// Output: [{ imd: <station>, shram: <pt>, dist_km: <number> }, ...]
+let cachedStationPairs = null;
+let cachedImdStations = null;   // raw station feed payload
+// For each IMD district (by __idx), its nearest IMD station's data — used by
+// the Today tab to color district polygons by station-observed HW status.
+let cachedDistrictNearestStation = null;   // Map<districtIdx, stationPoint>
+// forecast: per MET, per forecast-day-index, Map<districtIdx, zone>:
+//   { 3: { 1: Map, 2: Map, ..., 5: Map }, 4: {...}, ... }
+let cachedFcShramZonesByMet = null;
+// IMD per-day codes & color tier per district: { 1: Map<idx,{codes,tier}>, ... }
+let cachedFcImdByDay = null;
 
 // ---- Helpers to format and label timestamps with age ----
 function ageString(isoStr) {
@@ -355,8 +923,15 @@ function loadImd() {
 function loadShram() {
   return fetch(SHRAM_LIVE_URL + '?t=' + Date.now()).then(r => r.json());
 }
+function loadShramForecast() {
+  return fetch(SHRAM_FORECAST_URL + '?t=' + Date.now()).then(r => r.json());
+}
+function loadImdStation() {
+  return fetch(IMD_STATION_FILE + '?t=' + Date.now()).then(r => r.json());
+}
 
-Promise.all([loadImd(), loadShram()]).then(([imd, shram]) => {
+Promise.all([loadImd(), loadShram(), loadShramForecast(), loadImdStation()])
+  .then(([imd, shram, fc, imdStations]) => {
   const shramMet = shram.metadata || {};
   document.getElementById('header-meta').textContent =
     `IMD fetched ${formatIST(imd.fetched_at_utc)} · ` +
@@ -369,6 +944,14 @@ Promise.all([loadImd(), loadShram()]).then(([imd, shram]) => {
     `IMD ${ageString(imd.fetched_at_utc)} · SHRAM ${ageString(shramMet.generated_at)}`;
 
   const districtsGeojson = imd.geojson;
+  // IMD encodes Lakshadweep as huge ocean-spanning rectangles (not real island
+  // geometry). Replace with a tiny point-buffer at the centroid so it stays
+  // visible but doesn't dominate the map.
+  for (const f of districtsGeojson.features) {
+    if (String(f.properties.District || '').toUpperCase() === 'LAKSHADWEEP') {
+      f.geometry = makePointBuffer(10.57, 72.64, 0.25);   // ~25 km wide square
+    }
+  }
   districtsGeojson.features.forEach((f, i) => { f.__idx = i; });
   const districtIndex = districtsGeojson.features.map((f, i) => {
     const p = f.properties;
@@ -386,14 +969,51 @@ Promise.all([loadImd(), loadShram()]).then(([imd, shram]) => {
   cachedImd = imd;
   // Build SHRAM zone-per-district aggregation, once per MET level
   cachedShramZonesByMet = aggregateShramByMet(shram, districtIndex);
+  cachedShramStats = aggregateShramStats(shram, districtIndex);
+  cachedDistrictIndex = districtIndex;
+
+  // Pair each IMD station to its nearest SHRAM grid point for analytics tabs
+  cachedImdStations = imdStations;
+  cachedStationPairs = pairImdStationsToShram(imdStations, shram);
+  // For each district polygon, find its nearest IMD station (so the Today
+  // tab can render district polygons colored by station-observed HW status).
+  cachedDistrictNearestStation = assignNearestStationToDistricts(
+    districtsGeojson, imdStations
+  );
+
+  // ---- Forecast aggregation: per-day per-MET zone, and IMD per-day codes ----
+  cachedFcShramZonesByMet = aggregateForecast(fc, districtIndex);
+  cachedFcImdByDay = aggregateImdByDay(imd);
+
+  // Cache "Day N → date" so the dropdowns can show the actual date
+  window._fcDateByDay = {};
+  for (const day of FC_DAYS) {
+    const dateStr = fcDateForDay(fc, day);
+    if (dateStr) {
+      window._fcDateByDay[day] = dateStr;
+      document.querySelectorAll(`#fc-day-select option[value="${day}"], #fckappa-day-select option[value="${day}"]`)
+        .forEach(opt => { opt.textContent = `Day ${day} — ${dateStr}`; });
+    }
+  }
 
   // Initial render of all three panels + wire toggles to re-render
   renderAll();
-  document.querySelectorAll('.imd-code, .imd-tier, .shram-toggle')
+
+  // Lazy-load κ history CSV (independent of map data)
+  loadKHist().then(renderKHist);
+  document.querySelectorAll('.imd-tier, .shram-toggle, .imd-station-toggle, .station-type-toggle')
     .forEach(el => el.addEventListener('change', renderAll));
   document.getElementById('met-select').addEventListener('change', (ev) => {
     selectedMet = parseInt(ev.target.value, 10);
     renderAll();
+  });
+  document.getElementById('fc-day-select').addEventListener('change', (ev) => {
+    selectedFcDay = parseInt(ev.target.value, 10);
+    renderForecast();
+  });
+  document.getElementById('fckappa-day-select').addEventListener('change', (ev) => {
+    selectedFcKappaDay = parseInt(ev.target.value, 10);
+    renderForecastKappa();
   });
 
   // Refresh buttons
@@ -404,6 +1024,8 @@ Promise.all([loadImd(), loadShram()]).then(([imd, shram]) => {
       const fresh = await loadShram();
       const m = fresh.metadata || {};
       cachedShramZonesByMet = aggregateShramByMet(fresh, districtIndex);
+      cachedShramStats = aggregateShramStats(fresh, districtIndex);
+      if (cachedImdStations) cachedStationPairs = pairImdStationsToShram(cachedImdStations, fresh);
       setUpdated('shram-updated', m.generated_at, 2);
       document.getElementById('diff-updated').textContent =
         `IMD ${ageString(cachedImd.fetched_at_utc)} · SHRAM ${ageString(m.generated_at)}`;
@@ -438,16 +1060,33 @@ Promise.all([loadImd(), loadShram()]).then(([imd, shram]) => {
 });
 
 // Returns a Set of "code:tier" strings (e.g. "9:3") that count as an IMD alert.
-// A district triggers if ANY of its (Day_1 code, Day1_Color tier) pairs is in this set.
+// (Forecast tab only — used by renderForecast.)
 function getActiveImdCodeTiers() {
   const out = new Set();
-  document.querySelectorAll('.imd-code:checked').forEach(codeEl => {
-    const code = parseInt(codeEl.value, 10);
-    document.querySelectorAll(`.imd-tier[data-code="${code}"]:checked`).forEach(tierEl => {
-      out.add(`${code}:${parseInt(tierEl.value, 10)}`);
-    });
+  document.querySelectorAll('.imd-tier:checked').forEach(tierEl => {
+    const code = parseInt(tierEl.dataset.code, 10);
+    const tier = parseInt(tierEl.value, 10);
+    out.add(`${code}:${tier}`);
   });
   return out;
+}
+
+// Returns a Set of station HW statuses (1 = Heatwave, 2 = Severe Heatwave)
+// that count as IMD alert on the Today / κ / Disagreement views.
+function getActiveImdStationStatuses() {
+  return new Set(
+    Array.from(document.querySelectorAll('.imd-station-toggle:checked'))
+      .map(el => parseInt(el.value, 10))
+  );
+}
+
+// Returns a Set of station types (Plain / Coastal / Hilly) currently included
+// in the κ matrix and Disagreement table.
+function getActiveStationTypes() {
+  return new Set(
+    Array.from(document.querySelectorAll('.station-type-toggle:checked'))
+      .map(el => el.value)
+  );
 }
 function getActiveShramZones() {
   return new Set(
@@ -457,9 +1096,9 @@ function getActiveShramZones() {
 }
 
 function renderDiff() {
-  if (!cachedDistricts || !cachedImd || !cachedShramZonesByMet) return;
+  if (!cachedDistricts || !cachedShramZonesByMet || !cachedDistrictNearestStation) return;
   if (diffLayer) { mapDiff.removeLayer(diffLayer); diffLayer = null; }
-  const imdCodeTiers = getActiveImdCodeTiers();
+  const activeStatuses = getActiveImdStationStatuses();
   const shramZones = getActiveShramZones();
   const zoneByDist = cachedShramZonesByMet[selectedMet];
 
@@ -467,11 +1106,9 @@ function renderDiff() {
   diffLayer = L.geoJSON(cachedDistricts, {
     style: (feature) => {
       const idx = feature.__idx;
-      const p = feature.properties;
-      const tier = parseInt(p.Day1_Color, 10) || 1;
-      const codesToday = String(p.Day_1 || '')
-          .split(',').map(s => parseInt(s, 10)).filter(Number.isFinite);
-      const imdAlert = codesToday.some(c => imdCodeTiers.has(`${c}:${tier}`));
+      const st = cachedDistrictNearestStation.get(idx);
+      const status = st?.today_hw_status || 0;
+      const imdAlert = status > 0 && activeStatuses.has(status);
       const shramHasData = zoneByDist.has(idx);
       const shramZone = zoneByDist.get(idx);
       const shramAlert = shramHasData && shramZones.has(shramZone);
@@ -488,13 +1125,11 @@ function renderDiff() {
     onEachFeature: (feature, layer) => {
       const idx = feature.__idx;
       const p = feature.properties;
-      const codesToday = String(p.Day_1 || '').split(',').filter(Boolean);
-      const tier = parseInt(p.Day1_Color, 10) || 1;
-      const tierLabel = ({1: 'No Warning', 2: 'Watch', 3: 'Alert', 4: 'Warning'})[tier] || '?';
+      const st = cachedDistrictNearestStation.get(idx);
       const shramZone = zoneByDist.get(idx);
       layer.bindTooltip(
         `<b>${p.District}</b>, ${p.state || ''}<br>` +
-        `IMD Day-1: ${codesToday.join(', ') || '—'} (tier ${tier}: ${tierLabel})<br>` +
+        `IMD station status: <b>${st?.today_hw_label || '—'}</b> (${st?.station_code ?? '—'}, ${st?.dist_km?.toFixed(0) ?? '?'} km)<br>` +
         `SHRAM MET ${selectedMet}* zone: ${shramZone ?? 'no data'}`,
         { sticky: true }
       );
@@ -502,42 +1137,702 @@ function renderDiff() {
   }).addTo(mapDiff);
 
   document.getElementById('stats-diff').innerHTML =
-    `<span class="k">Both alert:</span> <span class="v">${nBoth}</span>` +
-    `<span class="k">IMD only:</span> <span class="v">${nImdOnly}</span>` +
-    `<span class="k">SHRAM only:</span> <span class="v">${nShramOnly}</span>` +
-    `<span class="k">Both safe:</span> <span class="v">${nNeither}</span>` +
-    `<span class="k">No SHRAM:</span> <span class="v">${nNoData}</span>`;
+    statPairs([
+      ['Both alert:', nBoth],
+      ['IMD only:', nImdOnly],
+      ['SHRAM only:', nShramOnly],
+      ['Both safe:', nNeither],
+      ['No SHRAM:', nNoData],
+    ]);
   document.getElementById('diff-met-label').textContent = `MET ${selectedMet}*`;
 }
+
+// ---- Forecast tab: render IMD/SHRAM/Diff for selectedFcDay only ----
+function renderForecast() {
+  if (!cachedDistricts || !cachedFcShramZonesByMet || !cachedFcImdByDay) return;
+  const day = selectedFcDay;
+  const imdCodeTiers = getActiveImdCodeTiers();
+  const shramZones = getActiveShramZones();
+  const imdByDist = cachedFcImdByDay[day];
+  const shramByDist = cachedFcShramZonesByMet[selectedMet][day] || new Map();
+
+  // Update day labels and date
+  document.getElementById('fc-day-label-imd').textContent = day;
+  document.getElementById('fc-day-label-shram').textContent = day;
+  document.getElementById('fc-day-label-diff').textContent = day;
+  document.getElementById('fc-met-label').textContent = `MET ${selectedMet}*`;
+  const dateStr = window._fcDateByDay?.[day];
+  document.getElementById('fc-day-date').textContent = dateStr ? `(${dateStr})` : '';
+
+  // IMD panel
+  if (fcImdLayer) { fcMapImd.removeLayer(fcImdLayer); fcImdLayer = null; }
+  let nHW = 0, nHot = 0, nWarm = 0, nNone = 0;
+  fcImdLayer = L.geoJSON(cachedDistricts, {
+    style: (feature) => {
+      const imd = imdByDist.get(feature.__idx);
+      const codes = imd?.codes || [];
+      const tier = imd?.tier || 1;
+      let color = NO_HEAT, active = false;
+      if (codes.includes(9))       { color = HEAT_CODE_COLOR[9];  active = imdCodeTiers.has(`9:${tier}`);  nHW++; }
+      else if (codes.includes(10)) { color = HEAT_CODE_COLOR[10]; active = imdCodeTiers.has(`10:${tier}`); nHot++; }
+      else if (codes.includes(11)) { color = HEAT_CODE_COLOR[11]; active = imdCodeTiers.has(`11:${tier}`); nWarm++; }
+      else { nNone++; }
+      let op;
+      if (color === NO_HEAT) op = 0.20;
+      else if (active) op = 0.85;
+      else op = 0.18;
+      return { fillColor: color, weight: 0.4, color: '#666', fillOpacity: op };
+    },
+    onEachFeature: (feature, layer) => {
+      const imd = imdByDist.get(feature.__idx);
+      const codes = imd?.codes || [];
+      const tier = imd?.tier || 1;
+      const tierLabel = ({1:'No Warning',2:'Watch',3:'Alert',4:'Warning'})[tier] || '?';
+      layer.bindTooltip(
+        `<b>${feature.properties.District}</b>, ${feature.properties.state || ''}<br>` +
+        `Day ${day}: codes ${codes.join(', ') || '—'} (${tierLabel})`,
+        { sticky: true }
+      );
+    },
+  }).addTo(fcMapImd);
+  document.getElementById('fc-stats-imd').innerHTML =
+    statPairs([['Heatwave:', nHW], ['Hot Day:', nHot], ['Warm Night:', nWarm], ['None:', nNone]]);
+
+  // SHRAM panel
+  if (fcShramLayer) { fcMapShram.removeLayer(fcShramLayer); fcShramLayer = null; }
+  let n5 = 0, n6 = 0, nLow = 0;
+  let n4 = 0;
+  fcShramLayer = L.geoJSON(cachedDistricts, {
+    style: (feature) => {
+      const zone = shramByDist.get(feature.__idx);
+      let fillColor, active = false;
+      if (zone === 6) { fillColor = ZONE_COLOR[6]; active = shramZones.has(6); n6++; }
+      else if (zone === 5) { fillColor = ZONE_COLOR[5]; active = shramZones.has(5); n5++; }
+      else if (zone === 4) { fillColor = ZONE_COLOR[4]; active = shramZones.has(4); n4++; }
+      else { fillColor = NO_DATA; nLow++; }
+      let op;
+      if (fillColor === NO_DATA) op = 0.20;
+      else if (active) op = 0.85;
+      else op = 0.18;
+      return { fillColor, weight: 0.4, color: '#666', fillOpacity: op };
+    },
+    onEachFeature: (feature, layer) => {
+      const zone = shramByDist.get(feature.__idx);
+      layer.bindTooltip(
+        `<b>${feature.properties.District}</b>, ${feature.properties.state || ''}<br>` +
+        `MET ${selectedMet}* day-${day} peak zone: ${zone ?? '—'}`,
+        { sticky: true }
+      );
+    },
+  }).addTo(fcMapShram);
+  const nMissing = cachedDistricts.features.length - (n4 + n5 + n6 + nLow);
+  document.getElementById('fc-stats-shram').innerHTML =
+    statPairs([['Z6:', n6], ['Z5:', n5], ['Z4:', n4], ['≤Z3:', nLow], ['no data:', nMissing]]);
+
+  // Agreement panel
+  if (fcDiffLayer) { fcMapDiff.removeLayer(fcDiffLayer); fcDiffLayer = null; }
+  let nBoth = 0, nImdOnly = 0, nShramOnly = 0, nNeither = 0, nNoData = 0;
+  fcDiffLayer = L.geoJSON(cachedDistricts, {
+    style: (feature) => {
+      const idx = feature.__idx;
+      const imd = imdByDist.get(idx);
+      const codes = imd?.codes || [];
+      const tier = imd?.tier || 1;
+      const imdAlert = codes.some(c => imdCodeTiers.has(`${c}:${tier}`));
+      const shramHasData = shramByDist.has(idx);
+      const shramZone = shramByDist.get(idx);
+      const shramAlert = shramHasData && shramZones.has(shramZone);
+
+      let fillColor, op;
+      if (!shramHasData) { fillColor = DIFF_COLOR.noData; op = 0.20; nNoData++; }
+      else if (imdAlert && shramAlert) { fillColor = DIFF_COLOR.both; op = 0.85; nBoth++; }
+      else if (imdAlert && !shramAlert) { fillColor = DIFF_COLOR.imdOnly; op = 0.85; nImdOnly++; }
+      else if (!imdAlert && shramAlert) { fillColor = DIFF_COLOR.shramOnly; op = 0.85; nShramOnly++; }
+      else { fillColor = DIFF_COLOR.neither; op = 0.30; nNeither++; }
+      return { fillColor, weight: 0.4, color: '#666', fillOpacity: op };
+    },
+    onEachFeature: (feature, layer) => {
+      const idx = feature.__idx;
+      const imd = imdByDist.get(idx);
+      const codes = imd?.codes || [];
+      const tier = imd?.tier || 1;
+      const tierLabel = ({1:'No Warning',2:'Watch',3:'Alert',4:'Warning'})[tier] || '?';
+      const shramZone = shramByDist.get(idx);
+      layer.bindTooltip(
+        `<b>${feature.properties.District}</b>, ${feature.properties.state || ''}<br>` +
+        `IMD Day-${day}: ${codes.join(', ') || '—'} (${tierLabel})<br>` +
+        `SHRAM MET ${selectedMet}* day-${day}: ${shramZone ?? 'no data'}`,
+        { sticky: true }
+      );
+    },
+  }).addTo(fcMapDiff);
+  document.getElementById('fc-stats-diff').innerHTML =
+    statPairs([
+      ['Both alert:', nBoth],
+      ['IMD only:', nImdOnly],
+      ['SHRAM only:', nShramOnly],
+      ['Both safe:', nNeither],
+      ['No SHRAM:', nNoData],
+    ]);
+}
+
+// ---- Disagreement table ----
+let disRows = [];                      // raw rows for current toggle state
+let disSort = { key: 'state', dir: 1 };  // current sort
+
+function buildDisagreementRows() {
+  if (!cachedStationPairs) return [];
+  const shramZones = getActiveShramZones();
+  const activeStatuses = getActiveImdStationStatuses();
+  const activeTypes = getActiveStationTypes();
+
+  const rows = [];
+  for (const pair of cachedStationPairs) {
+    if (!activeTypes.has(pair.imd.station_type)) continue;
+    const status = pair.imd.today_hw_status || 0;
+    const imdAlert = status > 0 && activeStatuses.has(status);
+    const z = pair.shram?.data?.[`met${selectedMet}`]?.[SHRAM_SUN_DEFAULT]?.zone ?? null;
+    const shramAlert = z != null && shramZones.has(z);
+    if (imdAlert === shramAlert) continue;
+
+    rows.push({
+      state: pair.imd.station_type || '',   // station type as the "region" column
+      district: `${pair.imd.station_code || '—'} (${pair.imd.station_type || '?'})`,
+      type: imdAlert ? 'imd_only' : 'shram_only',
+      imd_codes: pair.imd.today_hw_label || '—',
+      imd_tier: status === 2 ? 4 : status === 1 ? 3 : 1,
+      shram_zone: z,
+      ta: pair.imd.today_tmax ?? null,
+      rh: pair.imd.today_rh_1730 ?? pair.imd.today_rh_0830 ?? null,
+      ssrd: pair.shram?.sw ?? null,
+      n_stations: 1,
+    });
+  }
+  return rows;
+}
+
+function renderDisagreement() {
+  disRows = buildDisagreementRows();
+  // populate state filter dropdown if not yet
+  const stateSel = document.getElementById('dis-filter-state');
+  if (stateSel.options.length <= 1) {
+    const states = [...new Set(disRows.map(r => r.state).filter(Boolean))].sort();
+    for (const s of states) {
+      const o = document.createElement('option');
+      o.value = s; o.textContent = s;
+      stateSel.appendChild(o);
+    }
+  }
+  applyDisagreementFiltersAndRender();
+}
+
+function applyDisagreementFiltersAndRender() {
+  const typeFilter = document.getElementById('dis-filter-type').value;
+  const stateFilter = document.getElementById('dis-filter-state').value;
+  const searchFilter = document.getElementById('dis-filter-search').value.trim().toLowerCase();
+
+  let rows = disRows.slice();
+  if (typeFilter !== 'all') rows = rows.filter(r => r.type === typeFilter);
+  if (stateFilter) rows = rows.filter(r => r.state === stateFilter);
+  if (searchFilter) rows = rows.filter(r =>
+    r.district.toLowerCase().includes(searchFilter) ||
+    r.state.toLowerCase().includes(searchFilter)
+  );
+
+  // Sort
+  const k = disSort.key, dir = disSort.dir;
+  rows.sort((a, b) => {
+    const va = a[k], vb = b[k];
+    if (va == null && vb == null) return 0;
+    if (va == null) return 1;     // nulls last
+    if (vb == null) return -1;
+    if (typeof va === 'number' && typeof vb === 'number') return (va - vb) * dir;
+    return String(va).localeCompare(String(vb)) * dir;
+  });
+
+  // Render
+  const TIER_LABEL = {1:'No Warning', 2:'Watch', 3:'Alert', 4:'Warning'};
+  const tbody = document.getElementById('dis-tbody');
+  tbody.innerHTML = rows.map(r => {
+    const cls = r.type === 'imd_only' ? 'imd-only' : 'shram-only';
+    const badge = r.type === 'imd_only'
+      ? '<span class="badge imd-only">IMD only</span>'
+      : '<span class="badge shram-only">SHRAM only</span>';
+    return `<tr class="${cls}">
+      <td>${esc(r.state)}</td>
+      <td>${esc(r.district)}</td>
+      <td>${badge}</td>
+      <td>${esc(r.imd_codes) || '—'}</td>
+      <td>${TIER_LABEL[r.imd_tier] || '—'}</td>
+      <td class="num">${r.shram_zone ?? '—'}</td>
+      <td class="num">${r.ta != null ? r.ta.toFixed(1) : '—'}</td>
+      <td class="num">${r.rh != null ? r.rh.toFixed(0) : '—'}</td>
+      <td class="num">${r.ssrd != null ? r.ssrd.toFixed(0) : '—'}</td>
+      <td class="num">${r.n_stations}</td>
+    </tr>`;
+  }).join('');
+
+  // Update sort arrow indicators
+  document.querySelectorAll('#dis-table th').forEach(th => {
+    const a = th.querySelector('.arrow');
+    if (a) a.remove();
+    if (th.dataset.sort === k) {
+      const arrow = document.createElement('span');
+      arrow.className = 'arrow';
+      arrow.textContent = dir === 1 ? '▲' : '▼';
+      th.appendChild(arrow);
+    }
+  });
+
+  // Summary
+  const nImdOnly = disRows.filter(r => r.type === 'imd_only').length;
+  const nShramOnly = disRows.filter(r => r.type === 'shram_only').length;
+  document.getElementById('dis-summary').textContent =
+    `${rows.length} shown · ${disRows.length} total disagreements ` +
+    `(${nImdOnly} IMD-only, ${nShramOnly} SHRAM-only) · MET ${selectedMet}*`;
+}
+
+function esc(s) {
+  return String(s ?? '').replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[ch]);
+}
+
+// Wire up filter + sort handlers (once)
+document.addEventListener('DOMContentLoaded', () => {
+  ['dis-filter-type', 'dis-filter-state'].forEach(id =>
+    document.getElementById(id).addEventListener('change', applyDisagreementFiltersAndRender)
+  );
+  document.getElementById('dis-filter-search').addEventListener('input', applyDisagreementFiltersAndRender);
+  document.querySelectorAll('#dis-table th').forEach(th => {
+    th.addEventListener('click', () => {
+      const k = th.dataset.sort;
+      if (!k) return;
+      if (disSort.key === k) disSort.dir = -disSort.dir;
+      else { disSort.key = k; disSort.dir = 1; }
+      applyDisagreementFiltersAndRender();
+    });
+  });
+});
+
+// ---- Cohen's κ matrix ----
+// Today matrix uses station feed (only Heatwave / Severe Heatwave available).
+const IMD_DEFS = [
+  { label: 'Heatwave (HW≥1)',          code: 9, minTier: 1 },
+  { label: 'Severe Heatwave (HW=2)',   code: 9, minTier: 2 },
+];
+// Forecast matrix uses WFS district feed, which has the full 9-row grid:
+// 3 codes × 3 cumulative severity tiers.
+const IMD_DEFS_FORECAST = [];
+[['Heat Wave', 9], ['Hot Day', 10], ['Warm Night', 11]].forEach(([name, code]) => {
+  [['Watch+', 2], ['Alert+', 3], ['Warning', 4]].forEach(([tname, minTier]) => {
+    IMD_DEFS_FORECAST.push({ label: `${name} ${tname}`, code, minTier });
+  });
+});
+let selectedFcKappaDay = 1;
+// Cols: 3 SHRAM thresholds
+const SHRAM_THRESHOLDS = [
+  { label: 'Z≥4', minZone: 4 },
+  { label: 'Z≥5', minZone: 5 },
+  { label: 'Z≥6', minZone: 6 },
+];
+
+// Whether an IMD station's today HW status counts as "alert" given the
+// definition. The station feed has both `today_hw_status` (0/1/2) and
+// `fc_hw_tomorrow`. We use today's observed status, since the dashboard's
+// Today tab is about right-now agreement.
+//
+// We can't fully express (code × tier) on the station feed — IMD station
+// HW status doesn't have a Watch/Alert/Warning ladder. Stations get:
+//   0 = normal
+//   1 = heatwave
+//   2 = severe heatwave  (equivalent to "Heatwave Warning" tier)
+//
+// So we collapse the IMD definition: for Heat Wave row,
+//   "Watch+" → status >= 1
+//   "Alert+" → status >= 1 (same — IMD station feed lacks Watch tier)
+//   "Warning" → status >= 2 (severe heatwave only)
+// Hot Day / Warm Night rows aren't represented in the station feed; we mark
+// them n/a.
+function isStationImdAlert(station, def) {
+  const status = station.today_hw_status || 0;
+  // def.minTier: 1 → "Heatwave HW≥1", 2 → "Severe Heatwave HW=2"
+  return status >= def.minTier;
+}
+
+function cohenKappa(a, b, c, d) {
+  const n = a + b + c + d;
+  if (n === 0) return null;
+  const pObs = (a + d) / n;
+  const pExp = (((a + b) * (a + c)) + ((c + d) * (b + d))) / (n * n);
+  if (pExp === 1) return null;
+  return (pObs - pExp) / (1 - pExp);
+}
+
+function kappaColor(k) {
+  if (k == null) return '#f0f0f0';
+  // diverging white→blue (positive) / white→red (negative)
+  if (k >= 0) {
+    const t = Math.min(k, 1);
+    // white → green-ish: hsl(140, 50%, lightness)
+    const light = 100 - 50 * t;
+    return `hsl(140, 55%, ${light}%)`;
+  } else {
+    const t = Math.min(-k, 1);
+    const light = 100 - 50 * t;
+    return `hsl(0, 60%, ${light}%)`;
+  }
+}
+
+function renderKappa() {
+  if (!cachedStationPairs) return;
+  // Station-level comparison: each IMD station paired with its nearest SHRAM
+  // grid point. Both reflect today's conditions (IMD: observed Tmax/HW flag;
+  // SHRAM: live nowcast zone). The pair is the unit of analysis.
+  const activeTypes = getActiveStationTypes();
+  const allTypes = ['Plain', 'Coastal', 'Hilly'];
+  const filterEl = document.getElementById('kappa-active-filter');
+  if (filterEl) {
+    if (activeTypes.size === allTypes.length) {
+      filterEl.textContent = 'Region filter: all station types (Plain + Coastal + Hilly)';
+    } else {
+      filterEl.textContent = `Region filter: only ${[...activeTypes].join(', ')} stations`;
+    }
+  }
+  for (const met of MET_LEVELS) {
+    const cells = [];
+
+    for (const def of IMD_DEFS) {
+      for (const thr of SHRAM_THRESHOLDS) {
+        let a = 0, b = 0, c = 0, d = 0, nApplicable = 0;
+        for (const pair of cachedStationPairs) {
+          if (!activeTypes.has(pair.imd.station_type)) continue;
+          const imdAlert = isStationImdAlert(pair.imd, def);
+          if (imdAlert === null) continue;   // not applicable (Hot Day / Warm Night)
+          const z = (pair.shram?.data?.[`met${met}`]?.[SHRAM_SUN_DEFAULT]?.zone) ?? null;
+          if (z == null) continue;
+          const shramAlert = z >= thr.minZone;
+          if (imdAlert && shramAlert) a++;
+          else if (imdAlert && !shramAlert) b++;
+          else if (!imdAlert && shramAlert) c++;
+          else d++;
+          nApplicable++;
+        }
+        cells.push({ def, thr, a, b, c, d, kappa: nApplicable ? cohenKappa(a, b, c, d) : null });
+      }
+    }
+
+    // Build the HTML table
+    const wrap = document.getElementById(`kappa-met-${met}`);
+    const cols = SHRAM_THRESHOLDS;
+    let html = '<table class="kappa-table"><thead><tr>';
+    html += '<th class="row-label">IMD definition</th>';
+    for (const col of cols) html += `<th>${col.label}</th>`;
+    html += '</tr></thead><tbody>';
+
+    for (const def of IMD_DEFS) {
+      html += `<tr><td class="row-label">${esc(def.label)}</td>`;
+      for (const thr of cols) {
+        const cell = cells.find(c => c.def === def && c.thr === thr);
+        const k = cell.kappa;
+        const bg = kappaColor(k);
+        const tip = `IMD=${def.label} × SHRAM=${thr.label} (MET ${met}*)
+  Both alert (a)  : ${cell.a}
+  IMD only  (b)   : ${cell.b}
+  SHRAM only (c)  : ${cell.c}
+  Both none (d)   : ${cell.d}
+  N total         : ${cell.a + cell.b + cell.c + cell.d}
+  κ               : ${k == null ? 'n/a' : k.toFixed(3)}`;
+        html += `<td class="kappa-cell" style="background:${bg}" title="${esc(tip)}">${k == null ? '—' : k.toFixed(2)}</td>`;
+      }
+      html += '</tr>';
+    }
+    html += '</tbody></table>';
+    wrap.innerHTML = html;
+  }
+}
+
+// ---- Forecast κ matrix (district-level, IMD WFS × SHRAM forecast) ----
+function renderForecastKappa() {
+  if (!cachedDistricts || !cachedFcImdByDay || !cachedFcShramZonesByMet) return;
+  const day = selectedFcKappaDay;
+  const imdByDist = cachedFcImdByDay[day];
+
+  // Update date label
+  const dateStr = window._fcDateByDay?.[day];
+  const dateEl = document.getElementById('fckappa-day-date');
+  if (dateEl) dateEl.textContent = dateStr ? `(${dateStr})` : '';
+
+  for (const met of MET_LEVELS) {
+    const zoneByDist = (cachedFcShramZonesByMet[met] || {})[day] || new Map();
+    const cells = [];
+
+    for (const def of IMD_DEFS_FORECAST) {
+      for (const thr of SHRAM_THRESHOLDS) {
+        let a = 0, b = 0, c = 0, d = 0;
+        cachedDistricts.features.forEach((f, idx) => {
+          const imd = imdByDist.get(idx);
+          const codes = imd?.codes || [];
+          const tier = imd?.tier || 1;
+          const imdAlert = codes.includes(def.code) && tier >= def.minTier;
+          const z = zoneByDist.get(idx);
+          // Districts with no SHRAM forecast → skip (avoid inflating "both no")
+          if (z == null) return;
+          const shramAlert = z >= thr.minZone;
+          if (imdAlert && shramAlert) a++;
+          else if (imdAlert && !shramAlert) b++;
+          else if (!imdAlert && shramAlert) c++;
+          else d++;
+        });
+        cells.push({ def, thr, a, b, c, d, kappa: cohenKappa(a, b, c, d) });
+      }
+    }
+
+    const wrap = document.getElementById(`fckappa-met-${met}`);
+    let html = '<table class="kappa-table"><thead><tr>';
+    html += '<th class="row-label">IMD Day-' + day + ' definition</th>';
+    for (const col of SHRAM_THRESHOLDS) html += `<th>${col.label}</th>`;
+    html += '</tr></thead><tbody>';
+
+    for (const def of IMD_DEFS_FORECAST) {
+      html += `<tr><td class="row-label">${esc(def.label)}</td>`;
+      for (const thr of SHRAM_THRESHOLDS) {
+        const cell = cells.find(c => c.def === def && c.thr === thr);
+        const k = cell.kappa;
+        const bg = kappaColor(k);
+        const tip = `IMD Day-${day}=${def.label} × SHRAM=${thr.label} (MET ${met}*)
+  Both alert (a)  : ${cell.a}
+  IMD only  (b)   : ${cell.b}
+  SHRAM only (c)  : ${cell.c}
+  Both none (d)   : ${cell.d}
+  N total         : ${cell.a + cell.b + cell.c + cell.d}
+  κ               : ${k == null ? 'n/a' : k.toFixed(3)}`;
+        html += `<td class="kappa-cell" style="background:${bg}" title="${esc(tip)}">${k == null ? '—' : k.toFixed(2)}</td>`;
+      }
+      html += '</tr>';
+    }
+    html += '</tbody></table>';
+    wrap.innerHTML = html;
+  }
+}
+
+// ---- Historical κ tab ----
+const KHIST_CSV = 'comparisons/kappa_history.csv';
+let kHistRows = null;   // [{bulletin_date, target_date, fc_day, met, imd_def, shram_def, kappa, n, ...}, ...]
+let kHistDefs = [];     // unique imd_def values, sorted
+
+function parseCsv(text) {
+  const lines = text.trim().split('\n');
+  if (lines.length < 2) return [];
+  const header = lines[0].split(',');
+  return lines.slice(1).map(line => {
+    const cells = line.split(',');
+    const row = {};
+    header.forEach((h, i) => { row[h] = cells[i]; });
+    return row;
+  });
+}
+
+async function loadKHist() {
+  try {
+    const resp = await fetch(KHIST_CSV + '?t=' + Date.now());
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const text = await resp.text();
+    kHistRows = parseCsv(text);
+    kHistDefs = [...new Set(kHistRows.map(r => r.imd_def).filter(Boolean))].sort();
+    // Populate IMD def dropdown
+    const sel = document.getElementById('khist-def');
+    while (sel.options.length > 1) sel.remove(1);
+    for (const d of kHistDefs) {
+      const o = document.createElement('option');
+      o.value = d; o.textContent = d;
+      sel.appendChild(o);
+    }
+  } catch (e) {
+    console.warn('κ history CSV not available yet:', e);
+    kHistRows = [];
+  }
+}
+
+// Distinct color per SHRAM threshold × IMD-def combo (when 'all 9' is selected)
+const KHIST_COLORS = [
+  '#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd',
+  '#8c564b', '#e377c2', '#7f7f7f', '#bcbd22', '#17becf',
+  '#aec7e8', '#ffbb78', '#98df8a', '#ff9896', '#c5b0d5',
+  '#c49c94', '#f7b6d2', '#c7c7c7', '#dbdb8d', '#9edae5',
+  '#393b79', '#637939', '#8c6d31', '#843c39', '#7b4173',
+  '#5254a3', '#8ca252', '#bd9e39', '#ad494a',
+];
+
+function renderKHist() {
+  if (!kHistRows) return;
+  const met = document.getElementById('khist-met').value;
+  const day = document.getElementById('khist-day').value;
+  const defFilter = document.getElementById('khist-def').value;
+
+  // Filter rows
+  let rows = kHistRows.filter(r =>
+    r.met === met && r.fc_day === day && r.kappa !== ''
+  );
+  if (defFilter !== 'all') rows = rows.filter(r => r.imd_def === defFilter);
+
+  // Group rows into series by (imd_def, shram_def)
+  const seriesMap = new Map();
+  for (const r of rows) {
+    const k = `${r.imd_def}  vs  ${r.shram_def}`;
+    if (!seriesMap.has(k)) seriesMap.set(k, []);
+    seriesMap.get(k).push({
+      date: r.bulletin_date,
+      kappa: parseFloat(r.kappa),
+      n: parseInt(r.n, 10),
+    });
+  }
+  // Sort points within each series by date
+  for (const arr of seriesMap.values()) arr.sort((a, b) => a.date.localeCompare(b.date));
+
+  drawKHistChart(seriesMap);
+  renderKHistTable(rows);
+
+  document.getElementById('khist-summary').textContent =
+    `${rows.length} κ values · ${seriesMap.size} series · ` +
+    `${new Set(rows.map(r => r.bulletin_date)).size} bulletin dates`;
+}
+
+function drawKHistChart(seriesMap) {
+  const svg = document.getElementById('khist-chart');
+  svg.innerHTML = '';
+  const w = svg.clientWidth || 800;
+  const h = 380;
+  const margin = { top: 14, right: 16, bottom: 28, left: 36 };
+  const plotW = w - margin.left - margin.right;
+  const plotH = h - margin.top - margin.bottom;
+
+  // Collect all dates and κ values for axis scaling
+  let allDates = new Set();
+  let minK = -1, maxK = 1;
+  for (const arr of seriesMap.values()) {
+    for (const p of arr) allDates.add(p.date);
+  }
+  const dates = [...allDates].sort();
+  if (dates.length === 0) {
+    // Nothing to draw
+    svg.innerHTML = `<text x="50%" y="50%" text-anchor="middle" fill="#57606a" font-size="13">
+      No archived κ pairs yet for this selection. The workflow archives twice daily; check back tomorrow.
+    </text>`;
+    document.getElementById('khist-legend').innerHTML = '';
+    return;
+  }
+
+  // X: date → px; treat dates as ordinal (evenly spaced)
+  const xOf = (d) => margin.left + (dates.indexOf(d) / Math.max(dates.length - 1, 1)) * plotW;
+  const yOf = (k) => margin.top + (1 - (k - minK) / (maxK - minK)) * plotH;
+
+  // Axes
+  // Zero line
+  const zeroY = yOf(0);
+  svg.insertAdjacentHTML('beforeend',
+    `<line x1="${margin.left}" y1="${zeroY}" x2="${w - margin.right}" y2="${zeroY}"
+      stroke="#999" stroke-dasharray="3,3" stroke-width="1"/>`);
+  // y-ticks
+  for (const tk of [-1, -0.5, 0, 0.5, 1]) {
+    const y = yOf(tk);
+    svg.insertAdjacentHTML('beforeend',
+      `<line x1="${margin.left}" y1="${y}" x2="${w - margin.right}" y2="${y}"
+        stroke="#eee" stroke-width="1"/>` +
+      `<text x="${margin.left - 4}" y="${y + 3}" text-anchor="end" font-size="10" fill="#57606a">${tk}</text>`);
+  }
+  // x-ticks: every N-th date
+  const xLabelEvery = Math.max(1, Math.floor(dates.length / 8));
+  dates.forEach((d, i) => {
+    if (i % xLabelEvery !== 0 && i !== dates.length - 1) return;
+    const x = xOf(d);
+    svg.insertAdjacentHTML('beforeend',
+      `<text x="${x}" y="${h - 8}" text-anchor="middle" font-size="10" fill="#57606a">${d.slice(5)}</text>`);
+  });
+
+  // Series
+  let idx = 0;
+  const legendItems = [];
+  for (const [name, points] of seriesMap) {
+    if (points.length === 0) continue;
+    const color = KHIST_COLORS[idx % KHIST_COLORS.length];
+    idx++;
+    // Path
+    const path = points
+      .map((p, i) => `${i === 0 ? 'M' : 'L'} ${xOf(p.date)} ${yOf(p.kappa)}`)
+      .join(' ');
+    svg.insertAdjacentHTML('beforeend',
+      `<path d="${path}" stroke="${color}" stroke-width="1.5" fill="none"/>`);
+    for (const p of points) {
+      svg.insertAdjacentHTML('beforeend',
+        `<circle cx="${xOf(p.date)}" cy="${yOf(p.kappa)}" r="2.5"
+          fill="${color}"><title>${name}
+${p.date}  κ=${p.kappa.toFixed(3)}  n=${p.n}</title></circle>`);
+    }
+    legendItems.push(`<span class="lg"><span class="sw" style="background:${color}"></span>${name}</span>`);
+  }
+
+  document.getElementById('khist-legend').innerHTML = legendItems.join('');
+}
+
+function renderKHistTable(rows) {
+  // Most recent first
+  rows = rows.slice().sort((a, b) =>
+    (b.bulletin_date || '').localeCompare(a.bulletin_date || '') ||
+    (b.shram_def || '').localeCompare(a.shram_def || '')
+  );
+  const tbody = document.getElementById('khist-tbody');
+  tbody.innerHTML = rows.slice(0, 200).map(r => `<tr>
+    <td>${esc(r.bulletin_date)}</td>
+    <td>${esc(r.target_date)}</td>
+    <td class="num">${esc(r.met)}</td>
+    <td class="num">${esc(r.fc_day)}</td>
+    <td>${esc(r.imd_def)}</td>
+    <td>${esc(r.shram_def)}</td>
+    <td class="num">${esc(r.a_both_alert)}</td>
+    <td class="num">${esc(r.b_imd_only)}</td>
+    <td class="num">${esc(r.c_shram_only)}</td>
+    <td class="num">${esc(r.d_both_none)}</td>
+    <td class="num">${esc(r.n)}</td>
+    <td class="num">${r.kappa ? parseFloat(r.kappa).toFixed(3) : '—'}</td>
+  </tr>`).join('');
+}
+
+// Wire dropdowns after DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  ['khist-met', 'khist-day', 'khist-def'].forEach(id =>
+    document.getElementById(id).addEventListener('change', renderKHist)
+  );
+});
 
 // ---- Re-render everything when toggles change ----
 function renderAll() {
   renderImd();
   renderShram();
   renderDiff();
+  renderForecast();
+  renderDisagreement();
+  renderKappa();
+  renderForecastKappa();
 }
 
-// ---- IMD panel (re-renders on toggle change; faded for unchecked) ----
-function renderImd() {
-  if (!cachedImd) return;
-  if (imdLayer) { mapImd.removeLayer(imdLayer); imdLayer = null; }
-  const imdCodeTiers = getActiveImdCodeTiers();
+// ---- Today Panel A: districts colored by NEAREST IMD STATION's today HW status ----
+let imdStationDotLayer = null;
 
-  let nHW = 0, nHot = 0, nWarm = 0, nNone = 0;
+function renderImd() {
+  if (!cachedImd || !cachedDistrictNearestStation) return;
+  if (imdLayer) { mapImd.removeLayer(imdLayer); imdLayer = null; }
+  if (imdStationDotLayer) { mapImd.removeLayer(imdStationDotLayer); imdStationDotLayer = null; }
+  const activeStatuses = getActiveImdStationStatuses();
+
+  let nSevere = 0, nHW = 0, nNone = 0;
 
   imdLayer = L.geoJSON(cachedImd.geojson, {
     style: (feature) => {
-      const props = feature.properties || {};
-      const day1 = String(props.Day_1 || '').split(',').map(s => parseInt(s, 10)).filter(Number.isFinite);
-      const tier = parseInt(props.Day1_Color, 10) || 1;
-      // pick the most severe heat code present (9 > 10 > 11)
-      let color = NO_HEAT;
-      let active = false;
-      if (day1.includes(9))        { color = HEAT_CODE_COLOR[9];  active = imdCodeTiers.has(`9:${tier}`); }
-      else if (day1.includes(10))  { color = HEAT_CODE_COLOR[10]; active = imdCodeTiers.has(`10:${tier}`); }
-      else if (day1.includes(11))  { color = HEAT_CODE_COLOR[11]; active = imdCodeTiers.has(`11:${tier}`); }
-      // Opacity: full when active under current toggles, faded when alert but
-      // not in active toggle set, very low for no-heat baseline.
+      const st = cachedDistrictNearestStation.get(feature.__idx);
+      const status = st?.today_hw_status || 0;
+      let color, active = false;
+      if (status === 2) { color = '#cf222e'; active = activeStatuses.has(2); nSevere++; }
+      else if (status === 1) { color = '#ff8800'; active = activeStatuses.has(1); nHW++; }
+      else { color = NO_HEAT; nNone++; }
       let op;
       if (color === NO_HEAT) op = 0.20;
       else if (active) op = 0.85;
@@ -546,30 +1841,64 @@ function renderImd() {
     },
     onEachFeature: (feature, layer) => {
       const p = feature.properties;
-      const day1 = String(p.Day_1 || '').split(',').filter(Boolean);
-      const tier = parseInt(p.Day1_Color, 10) || 1;
-      const tierLabel = ({1: 'No Warning', 2: 'Watch', 3: 'Alert', 4: 'Warning'})[tier] || '?';
+      const st = cachedDistrictNearestStation.get(feature.__idx);
+      const tmaxStr = st?.today_tmax != null ? `${st.today_tmax.toFixed(1)}°C` : '—';
+      const tmaxDepStr = st?.today_tmax_dep != null
+          ? ` (${st.today_tmax_dep >= 0 ? '+' : ''}${st.today_tmax_dep.toFixed(1)}°C vs normal)` : '';
+      const rh0830 = st?.today_rh_0830 != null ? `${st.today_rh_0830.toFixed(0)}%` : '—';
+      const rh1730 = st?.today_rh_1730 != null ? `${st.today_rh_1730.toFixed(0)}%` : '—';
+      const inside = st?.inside_polygon
+        ? `Worst-HW station inside polygon (${st.n_stations_in_polygon} station${st.n_stations_in_polygon === 1 ? '' : 's'} total)`
+        : `Nearest station: ${st?.station_code ?? '—'} (${st?.dist_km?.toFixed(0) ?? '?'} km outside polygon)`;
       layer.bindTooltip(
         `<b>${p.District}</b>, ${p.state || ''}<br>` +
-        `Day-1 codes: ${day1.join(', ') || '—'} (tier ${tier}: ${tierLabel})<br>` +
-        `Date: ${p.Date || ''}`,
+        `${inside}<br>` +
+        `IMD station ${st?.station_code ?? '—'} (${st?.station_type ?? '?'})<br>` +
+        `Today's status: <b>${st?.today_hw_label || '—'}</b><br>` +
+        `Observed Tmax: ${tmaxStr}${tmaxDepStr}<br>` +
+        `RH at 08:30 / 17:30: ${rh0830} / ${rh1730}`,
         { sticky: true }
       );
     },
   }).addTo(mapImd);
 
-  cachedImd.districts.forEach(d => {
-    const codes = (d.days?.[0]?.codes) || [];
-    if (codes.includes(9))      nHW++;
-    else if (codes.includes(10)) nHot++;
-    else if (codes.includes(11)) nWarm++;
-    else nNone++;
-  });
+  // ---- Station-dot overlay: 285 IMD stations colored by computed HW status ----
+  if (cachedImdStations && cachedImdStations.points) {
+    imdStationDotLayer = L.layerGroup();
+    for (const s of cachedImdStations.points) {
+      if (s.lat == null || s.lon == null) continue;
+      const status = s.today_hw_status || 0;
+      const fill = status === 2 ? '#cf222e' : status === 1 ? '#ff8800' : '#9fb4c9';
+      const radius = status > 0 ? 5 : 3;
+      const stroke = status > 0 ? '#000' : '#1f2328';
+      const opacity = status > 0 ? 0.95 : 0.7;
+      const tmaxStr = s.today_tmax != null ? `${s.today_tmax.toFixed(1)}°C` : '—';
+      const depStr = s.today_tmax_dep != null
+        ? ` (${s.today_tmax_dep >= 0 ? '+' : ''}${s.today_tmax_dep.toFixed(1)}°C vs normal)` : '';
+      const rh0830 = s.today_rh_0830 != null ? `${s.today_rh_0830.toFixed(0)}%` : '—';
+      const rh1730 = s.today_rh_1730 != null ? `${s.today_rh_1730.toFixed(0)}%` : '—';
+      const marker = L.circleMarker([s.lat, s.lon], {
+        radius, fillColor: fill, color: stroke, weight: 0.7,
+        fillOpacity: opacity, opacity: 1.0,
+      });
+      marker.bindTooltip(
+        `<b>IMD station ${s.station_code}</b> (${s.station_type ?? '?'})<br>` +
+        `Today's status: <b>${s.today_hw_label || 'Normal'}</b><br>` +
+        `Observed Tmax: ${tmaxStr}${depStr}<br>` +
+        `RH at 08:30 / 17:30: ${rh0830} / ${rh1730}`,
+        { sticky: true }
+      );
+      imdStationDotLayer.addLayer(marker);
+    }
+    imdStationDotLayer.addTo(mapImd);
+  }
+
   document.getElementById('stats-imd').innerHTML =
-    `<span class="k">Heatwave:</span> <span class="v">${nHW}</span>` +
-    `<span class="k">Hot Day:</span> <span class="v">${nHot}</span>` +
-    `<span class="k">Warm Night:</span> <span class="v">${nWarm}</span>` +
-    `<span class="k">Other/none:</span> <span class="v">${nNone}</span>`;
+    statPairs([
+      ['Severe HW:', nSevere],
+      ['Heatwave:', nHW],
+      ['Normal:', nNone],
+    ]);
 }
 
 // ---- Helpers: point-in-district lookup + aggregation ----
@@ -647,6 +1976,301 @@ function aggregateShramByMet(shram, districtIndex) {
   return out;
 }
 
+// ---- Station-level pairing: IMD station → nearest SHRAM grid point ----
+// SHRAM grid resolution is 0.25°. Each IMD station gets the SHRAM cell whose
+// centre is closest. Returns [{ imd, shram, dist_km }, ...] for every IMD
+// station that has any SHRAM grid point within ~30 km (otherwise drop it).
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const toRad = (d) => d * Math.PI / 180;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat/2)**2 +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) * Math.sin(dLon/2)**2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+// For each district polygon, find the nearest IMD weather station so we can
+// color the Today-tab polygons by station-observed HW status. District
+// centroid = simple mean of polygon vertices (good enough for nearest-station
+// queries at India scale).
+function polygonCentroid(geom) {
+  const pts = [];
+  const eat = (rings) => { for (const ring of rings) for (const p of ring) pts.push(p); };
+  if (geom.type === 'Polygon') eat(geom.coordinates);
+  else if (geom.type === 'MultiPolygon') for (const poly of geom.coordinates) eat(poly);
+  if (!pts.length) return null;
+  let sx = 0, sy = 0;
+  for (const p of pts) { sx += p[0]; sy += p[1]; }
+  return { lat: sy / pts.length, lon: sx / pts.length };
+}
+// For each district, collect all stations either INSIDE the polygon or, for
+// COASTAL stations only, within COASTAL_BUFFER_KM of the polygon edge. Coastal
+// stations often sit just offshore (e.g., Kandla port is ~600 m past Kachchh's
+// shoreline). A small buffer for coastal-only avoids over-attributing inland
+// stations to neighbouring districts. Pick worst HW (then highest Tmax).
+const COASTAL_BUFFER_KM = 5;
+
+function assignNearestStationToDistricts(districtsGeojson, imdStations) {
+  const stations = (imdStations.points || []).filter(s => s.lat != null && s.lon != null);
+  const buckets = new Map();
+  for (const s of stations) {
+    const k = `${Math.floor(s.lat)}_${Math.floor(s.lon)}`;
+    if (!buckets.has(k)) buckets.set(k, []);
+    buckets.get(k).push(s);
+  }
+  const out = new Map();
+
+  for (const f of districtsGeojson.features) {
+    const bboxPts = [];
+    if (f.geometry.type === 'Polygon') for (const r of f.geometry.coordinates) bboxPts.push(...r);
+    else if (f.geometry.type === 'MultiPolygon') for (const p of f.geometry.coordinates) for (const r of p) bboxPts.push(...r);
+    if (!bboxPts.length) continue;
+    let minLon = Infinity, maxLon = -Infinity, minLat = Infinity, maxLat = -Infinity;
+    for (const p of bboxPts) {
+      if (p[0] < minLon) minLon = p[0]; if (p[0] > maxLon) maxLon = p[0];
+      if (p[1] < minLat) minLat = p[1]; if (p[1] > maxLat) maxLat = p[1];
+    }
+    // Expand bbox by ~COASTAL_BUFFER_KM (1° lat ≈ 111 km). Used only to find
+    // candidate Coastal stations that sit just offshore of the polygon.
+    const padLat = COASTAL_BUFFER_KM / 111;
+    const padLon = COASTAL_BUFFER_KM / (111 * Math.cos((minLat + maxLat) / 2 * Math.PI / 180));
+    const ebLatMin = minLat - padLat, ebLatMax = maxLat + padLat;
+    const ebLonMin = minLon - padLon, ebLonMax = maxLon + padLon;
+
+    // Pass 1: collect all stations INSIDE the polygon (strict)
+    const insideCands = [];
+    for (let blat = Math.floor(minLat); blat <= Math.floor(maxLat); blat++) {
+      for (let blon = Math.floor(minLon); blon <= Math.floor(maxLon); blon++) {
+        const bucket = buckets.get(`${blat}_${blon}`);
+        if (!bucket) continue;
+        for (const s of bucket) {
+          if (s.lon < minLon || s.lon > maxLon) continue;
+          if (s.lat < minLat || s.lat > maxLat) continue;
+          if (pointInPolygon(s.lon, s.lat, f.geometry)) {
+            insideCands.push({ s, inside: true, dist_km: 0 });
+          }
+        }
+      }
+    }
+
+    // Pass 2: COASTAL stations only — pick up stations within COASTAL_BUFFER_KM
+    // of the polygon edge. Coastal stations may sit just offshore (e.g. Kandla
+    // port is ~600 m past Kachchh's shoreline). Plain/Hilly stations are NOT
+    // considered here, so an inland district can't be falsely flagged by a
+    // remote coastal heatwave station.
+    const candidates = [...insideCands];
+    for (let blat = Math.floor(ebLatMin); blat <= Math.floor(ebLatMax); blat++) {
+      for (let blon = Math.floor(ebLonMin); blon <= Math.floor(ebLonMax); blon++) {
+        const bucket = buckets.get(`${blat}_${blon}`);
+        if (!bucket) continue;
+        for (const s of bucket) {
+          if (s.station_type !== 'Coastal') continue;
+          if (s.lon < ebLonMin || s.lon > ebLonMax) continue;
+          if (s.lat < ebLatMin || s.lat > ebLatMax) continue;
+          // Skip if already in the inside list
+          if (insideCands.some(c => c.s === s)) continue;
+          const dLat = Math.max(minLat - s.lat, s.lat - maxLat, 0);
+          const dLon = Math.max(minLon - s.lon, s.lon - maxLon, 0);
+          const d = haversineKm(s.lat, s.lon,
+            s.lat + (s.lat < minLat ? dLat : s.lat > maxLat ? -dLat : 0),
+            s.lon + (s.lon < minLon ? dLon : s.lon > maxLon ? -dLon : 0));
+          if (d <= COASTAL_BUFFER_KM) {
+            candidates.push({ s, inside: false, dist_km: d });
+          }
+        }
+      }
+    }
+
+    if (candidates.length === 0) {
+      // Sparse / remote district: fall back to absolute-nearest-by-centroid
+      const c = polygonCentroid(f.geometry);
+      if (!c) continue;
+      let best = null, bestD = Infinity;
+      const blat = Math.floor(c.lat), blon = Math.floor(c.lon);
+      for (let dlat = -2; dlat <= 2; dlat++) {
+        for (let dlon = -2; dlon <= 2; dlon++) {
+          const bucket = buckets.get(`${blat+dlat}_${blon+dlon}`);
+          if (!bucket) continue;
+          for (const s of bucket) {
+            const d = haversineKm(c.lat, c.lon, s.lat, s.lon);
+            if (d < bestD) { bestD = d; best = s; }
+          }
+        }
+      }
+      if (best) out.set(f.__idx, {
+        ...best, dist_km: bestD, inside_polygon: false, n_stations_in_polygon: 0,
+      });
+      continue;
+    }
+
+    // Pick worst HW (then highest Tmax) across inside-OR-nearby stations
+    candidates.sort((a, b) => {
+      const ha = a.s.today_hw_status || 0, hb = b.s.today_hw_status || 0;
+      if (hb !== ha) return hb - ha;
+      return (b.s.today_tmax ?? -Infinity) - (a.s.today_tmax ?? -Infinity);
+    });
+    const top = candidates[0];
+    const nInside = candidates.filter(c => c.inside).length;
+    out.set(f.__idx, {
+      ...top.s,
+      dist_km: top.dist_km,
+      inside_polygon: top.inside,
+      n_stations_in_polygon: nInside,
+    });
+  }
+  return out;
+}
+
+function pairImdStationsToShram(imdStations, shram) {
+  // Build a spatial hash on a 0.5° grid (looser than SHRAM's 0.25°) so each
+  // bucket has a small number of candidates.
+  const BUCKET_DEG = 0.5;
+  const buckets = new Map();
+  const keyOf = (lat, lon) =>
+    `${Math.floor(lat / BUCKET_DEG)}_${Math.floor(lon / BUCKET_DEG)}`;
+  for (const pt of shram.points) {
+    if (pt.lat == null || pt.lon == null) continue;
+    const k = keyOf(pt.lat, pt.lon);
+    if (!buckets.has(k)) buckets.set(k, []);
+    buckets.get(k).push(pt);
+  }
+  const pairs = [];
+  for (const st of (imdStations.points || [])) {
+    if (st.lat == null || st.lon == null) continue;
+    // Search the 3×3 bucket neighbourhood
+    let best = null, bestD = Infinity;
+    const blat = Math.floor(st.lat / BUCKET_DEG);
+    const blon = Math.floor(st.lon / BUCKET_DEG);
+    for (let dlat = -1; dlat <= 1; dlat++) {
+      for (let dlon = -1; dlon <= 1; dlon++) {
+        const bucket = buckets.get(`${blat+dlat}_${blon+dlon}`);
+        if (!bucket) continue;
+        for (const pt of bucket) {
+          const d = haversineKm(st.lat, st.lon, pt.lat, pt.lon);
+          if (d < bestD) { bestD = d; best = pt; }
+        }
+      }
+    }
+    if (best && bestD <= 30) {
+      pairs.push({ imd: st, shram: best, dist_km: bestD });
+    }
+  }
+  return pairs;
+}
+
+// Per-district SHRAM environmental stats (separate from zone — these don't
+// change with MET level, so computed once).
+function aggregateShramStats(shram, districtIndex) {
+  const stats = new Map();   // districtIdx -> {nPts, maxTa, maxRh, maxSsrd}
+  for (const pt of shram.points) {
+    if (pt.lat == null || pt.lon == null) continue;
+    const di = findDistrict(pt.lat, pt.lon, districtIndex);
+    if (di < 0) continue;
+    let s = stats.get(di);
+    if (!s) { s = { nPts: 0, maxTa: -Infinity, maxRh: -Infinity, maxSsrd: -Infinity }; stats.set(di, s); }
+    s.nPts++;
+    if (pt.temp != null && pt.temp > s.maxTa) s.maxTa = pt.temp;
+    if (pt.rh != null && pt.rh > s.maxRh) s.maxRh = pt.rh;
+    if (pt.sw != null && pt.sw > s.maxSsrd) s.maxSsrd = pt.sw;
+  }
+  // Clean up sentinels
+  for (const s of stats.values()) {
+    if (!isFinite(s.maxTa)) s.maxTa = null;
+    if (!isFinite(s.maxRh)) s.maxRh = null;
+    if (!isFinite(s.maxSsrd)) s.maxSsrd = null;
+  }
+  return stats;
+}
+
+// ---- SHRAM 7-day forecast aggregation -----------------------------------
+// shram forecast schema:
+//   fc.states[state].districts[district].forecast[dayIdx].hours[h].data.metN.{shade,sun}.zone
+//   fc.states[state].capital.forecast[...]   (fallback when district missing)
+// Output: { met: { dayNum (1..5): Map<imdDistrictIdx, maxZone> } }
+function aggregateForecast(fc, districtIndex) {
+  // 1) For each SHRAM forecast point, compute per-day max zone for each MET
+  //    SHRAM point = (lat, lon, name) with 7 days of hourly data
+  //    Build a flat list of "synthetic stations" with lat/lon and a precomputed
+  //    per-day max zone per MET. Then run point-in-polygon.
+  const synth = [];   // each: {lat, lon, perDayByMet: {met: [day1Max..day5Max]}}
+  for (const stateKey of Object.keys(fc.states || {})) {
+    const stateBlock = fc.states[stateKey];
+    // include capital + all districts
+    const sources = [];
+    if (stateBlock.capital) sources.push(stateBlock.capital);
+    if (stateBlock.districts) {
+      for (const dk of Object.keys(stateBlock.districts)) {
+        sources.push(stateBlock.districts[dk]);
+      }
+    }
+    for (const src of sources) {
+      if (src.lat == null || src.lon == null || !Array.isArray(src.forecast)) continue;
+      const perDayByMet = {};
+      for (const met of MET_LEVELS) perDayByMet[met] = [];
+      for (let di = 0; di < Math.min(FC_DAYS.length, src.forecast.length); di++) {
+        const dayBlock = src.forecast[di];
+        const maxByMet = {};
+        for (const met of MET_LEVELS) maxByMet[met] = 0;
+        for (const h of (dayBlock.hours || [])) {
+          for (const met of MET_LEVELS) {
+            const z = h?.data?.[`met${met}`]?.[SHRAM_SUN_DEFAULT]?.zone;
+            if (z != null && z > maxByMet[met]) maxByMet[met] = z;
+          }
+        }
+        for (const met of MET_LEVELS) perDayByMet[met].push(maxByMet[met]);
+      }
+      synth.push({ lat: src.lat, lon: src.lon, perDayByMet });
+    }
+  }
+
+  // 2) For each MET, for each day, aggregate via point-in-district (max zone)
+  const out = {};
+  for (const met of MET_LEVELS) {
+    out[met] = {};
+    for (let i = 0; i < FC_DAYS.length; i++) {
+      const dayNum = FC_DAYS[i];
+      const m = new Map();
+      for (const s of synth) {
+        const z = s.perDayByMet[met][i];
+        if (z == null || z === 0) continue;
+        const di = findDistrict(s.lat, s.lon, districtIndex);
+        if (di < 0) continue;
+        const cur = m.get(di);
+        if (cur == null || z > cur) m.set(di, z);
+      }
+      out[met][dayNum] = m;
+    }
+  }
+  return out;
+}
+
+// IMD per-day per-district codes + color tier
+function aggregateImdByDay(imd) {
+  const out = {};
+  for (const day of FC_DAYS) out[day] = new Map();
+  imd.geojson.features.forEach((f, idx) => {
+    const p = f.properties;
+    for (const day of FC_DAYS) {
+      const codes = String(p[`Day_${day}`] || '')
+          .split(',').map(s => parseInt(s, 10)).filter(Number.isFinite);
+      const tier = parseInt(p[`Day${day}_Color`], 10) || 1;
+      out[day].set(idx, { codes, tier });
+    }
+  });
+  return out;
+}
+
+// What date is "Day N" of the forecast? Read from the first state's capital block.
+function fcDateForDay(fc, day) {
+  try {
+    const states = fc.states || {};
+    const firstState = states[Object.keys(states)[0]];
+    const firstCap = firstState?.capital || firstState?.districts?.[Object.keys(firstState.districts || {})[0]];
+    return firstCap?.forecast?.[day - 1]?.date || null;
+  } catch (e) { return null; }
+}
+
 // ---- SHRAM panel (single map; uses selectedMet) ----
 function renderShram() {
   if (!cachedDistricts || !cachedShramZonesByMet) return;
@@ -654,13 +2278,14 @@ function renderShram() {
   const shramZones = getActiveShramZones();
   const zoneByDist = cachedShramZonesByMet[selectedMet];
 
-  let n5 = 0, n6 = 0, nLow = 0;
+  let n4 = 0, n5 = 0, n6 = 0, nLow = 0;
   shramLayer = L.geoJSON(cachedDistricts, {
     style: (feature) => {
       const zone = zoneByDist.get(feature.__idx);
       let fillColor, active = false;
       if (zone === 6) { fillColor = ZONE_COLOR[6]; active = shramZones.has(6); }
       else if (zone === 5) { fillColor = ZONE_COLOR[5]; active = shramZones.has(5); }
+      else if (zone === 4) { fillColor = ZONE_COLOR[4]; active = shramZones.has(4); }
       else { fillColor = NO_DATA; }
       let op;
       if (fillColor === NO_DATA) op = 0.20;
@@ -682,14 +2307,18 @@ function renderShram() {
   for (const z of zoneByDist.values()) {
     if (z === 6) n6++;
     else if (z === 5) n5++;
+    else if (z === 4) n4++;
     else nLow++;
   }
-  const nMissing = cachedDistricts.features.length - (n5 + n6 + nLow);
+  const nMissing = cachedDistricts.features.length - (n4 + n5 + n6 + nLow);
   document.getElementById('stats-shram').innerHTML =
-    `<span class="k">Z6:</span> <span class="v">${n6}</span>` +
-    `<span class="k">Z5:</span> <span class="v">${n5}</span>` +
-    `<span class="k">≤Z4:</span> <span class="v">${nLow}</span>` +
-    `<span class="k">no data:</span> <span class="v">${nMissing}</span>`;
+    statPairs([
+      ['Z6:', n6],
+      ['Z5:', n5],
+      ['Z4:', n4],
+      ['≤Z3:', nLow],
+      ['no data:', nMissing],
+    ]);
   document.getElementById('shram-met-label').textContent = `MET ${selectedMet}*`;
 }
 
