@@ -18,10 +18,14 @@ jwt = requests.post(
 
 # Call API
 headers = {"X-API-KEY": env["IMD_API_KEY"], "Authorization": f"Bearer {jwt}"}
-data = requests.get(
+resp = requests.get(
     "https://api.imd.gov.in/api/v1/districtwarning",
     headers=headers, verify=False,
-).json()
+)
+data = resp.json()
 
-print(f"{len(data)} districts")
-print(json.dumps(data[0], indent=2))
+print(f"HTTP {resp.status_code} | type={type(data).__name__} | len={len(data)}")
+if isinstance(data, list) and data:
+    print(json.dumps(data[0], indent=2))
+else:
+    print(json.dumps(data, indent=2)[:2000])
