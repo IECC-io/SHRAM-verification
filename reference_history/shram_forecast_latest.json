@@ -1,7 +1,7 @@
 {
   "label": "SHRAM 7-day forecast (slimmed: per-day MET zone peaks)",
   "source_url": "https://shram.info/weather_logs/forecast_7day.json",
-  "fetched_at_utc": "2026-05-15T04:35:01.672215+00:00",
+  "fetched_at_utc": "2026-05-15T04:42:34.085871+00:00",
   "metadata": {
     "generated_at": "2026-05-14T18:48:59.058183+05:30",
     "generated_at_ist": "14 May 2026, 06:48 PM IST",

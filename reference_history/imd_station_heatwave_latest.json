@@ -1,7 +1,7 @@
 {
   "label": "IMD station heatwave bulletin (observed today + forecast tomorrow)",
   "source_url": "https://dss.imd.gov.in/dwr_img/GIS/HW_Status_Forecast.json",
-  "fetched_at_utc": "2026-05-15T04:34:58.391973+00:00",
+  "fetched_at_utc": "2026-05-15T04:42:30.548489+00:00",
   "n_total": 278,
   "n_today_heatwave": 0,
   "n_today_severe": 0,
