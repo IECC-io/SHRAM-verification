@@ -33,3 +33,5 @@ forecast_error_history/
 !reference_history/imd_heatwave_latest.json
 !reference_history/openmeteo_at_imd_stations.json
 !shram_stations_history/imd_stations.json
+
+terminalcontext.txt

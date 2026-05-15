@@ -389,9 +389,29 @@
       padding: 4px 8px;
     }
   }
+  /* Shared top nav across verification pages */
+  .top-nav {
+    display: flex; gap: 4px; padding: 8px 16px; border-bottom: 1px solid #d8dee5;
+    background: #f6f8fa; font-size: 13px;
+  }
+  .top-nav a {
+    padding: 6px 12px; border-radius: 6px 6px 0 0; color: #57606a;
+    text-decoration: none; border: 1px solid transparent; border-bottom: none;
+  }
+  .top-nav a:hover { background: #eaeef2; color: #24292f; }
+  .top-nav a.active {
+    background: #fff; color: #24292f; border-color: #d8dee5;
+    margin-bottom: -1px; font-weight: 600;
+  }
 </style>
 </head>
 <body>
+
+<nav class="top-nav">
+  <a href="compare.html" class="active">IMD vs SHRAM</a>
+  <a href="aws_compare.html">AWS vs SHRAM</a>
+  <a href="index.html">Stations</a>
+</nav>
 
 <h1>India heat alert comparison — IMD vs SHRAM</h1>
 <p class="muted" id="header-meta">Loading live data...</p>
@@ -734,6 +754,7 @@
         crossorigin=""></script>
 <script>
 const IMD_FILE  = 'reference_history/imd_districtwarning_latest.json';
+const IMD_GEOJSON_FILE = 'reference_history/imd_districtwarning_geojson.json';
 const IMD_STATION_FILE = 'reference_history/imd_station_heatwave_latest.json';
 const SHRAM_LIVE_URL = 'https://shram.info/grid_data.json';
 const SHRAM_FORECAST_URL = 'https://shram.info/weather_logs/forecast_7day.json';
@@ -918,7 +939,14 @@ function setUpdated(elId, isoStr, staleHours) {
 
 // ---- Load everything ----
 function loadImd() {
-  return fetch(IMD_FILE + '?t=' + Date.now()).then(r => r.json());
+  // The dashboard payload is split into a slim metadata file (~3 MB) and a
+  // separate geojson file (~57 MB) so the small file can stream and parse
+  // first. We fetch both in parallel, then merge them back so downstream
+  // code sees the same shape as before (imd.geojson available).
+  return Promise.all([
+    fetch(IMD_FILE + '?t=' + Date.now()).then(r => r.json()),
+    fetch(IMD_GEOJSON_FILE + '?t=' + Date.now()).then(r => r.json()),
+  ]).then(([slim, geo]) => ({ ...slim, geojson: geo.geojson }));
 }
 function loadShram() {
   return fetch(SHRAM_LIVE_URL + '?t=' + Date.now()).then(r => r.json());
@@ -1620,13 +1648,15 @@ let kHistRows = null;   // [{bulletin_date, target_date, fc_day, met, imd_def, s
 let kHistDefs = [];     // unique imd_def values, sorted
 
 function parseCsv(text) {
-  const lines = text.trim().split('\n');
+  // Normalize \r\n / \r line endings so trailing CRs don't sneak into the
+  // last column's value (which broke the empty-kappa filter downstream).
+  const lines = text.replace(/\r\n?/g, '\n').trim().split('\n');
   if (lines.length < 2) return [];
   const header = lines[0].split(',');
   return lines.slice(1).map(line => {
     const cells = line.split(',');
     const row = {};
-    header.forEach((h, i) => { row[h] = cells[i]; });
+    header.forEach((h, i) => { row[h] = (cells[i] ?? '').trim(); });
     return row;
   });
 }
@@ -1670,7 +1700,8 @@ function renderKHist() {
 
   // Filter rows
   let rows = kHistRows.filter(r =>
-    r.met === met && r.fc_day === day && r.kappa !== ''
+    r.met === met && r.fc_day === day && r.kappa !== '' &&
+    Number.isFinite(parseFloat(r.kappa))
   );
   if (defFilter !== 'all') rows = rows.filter(r => r.imd_def === defFilter);
 

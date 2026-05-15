@@ -64,6 +64,7 @@ DASHBOARD_ROOT = Path(__file__).resolve().parent.parent
 REF_DIR = DASHBOARD_ROOT / "reference_history"
 ARCHIVE_DIR = REF_DIR / "imd_districtwarning"
 LATEST_FULL = REF_DIR / "imd_districtwarning_latest.json"
+LATEST_GEOJSON = REF_DIR / "imd_districtwarning_geojson.json"
 LATEST_POINTS_COMPAT = REF_DIR / "imd_heatwave_latest.json"
 
 FEED_URL = "https://reactjs.imd.gov.in/geoserver/wfs"
@@ -300,10 +301,21 @@ def main() -> int:
     raw = resp.json()
     payload = normalize(raw)
 
-    # latest.json keeps the full geojson — the dashboard needs the polygons.
+    # Split the dashboard-facing copy: the slim file (~3 MB) ships per-fetch
+    # metadata + district list; the geojson file (~57 MB) ships the polygons
+    # the dashboard caches. The dashboard fetches both in parallel and merges.
+    slim_payload = {k: v for k, v in payload.items() if k != "geojson"}
     with LATEST_FULL.open("w") as f:
-        json.dump(payload, f, indent=2)
-    logger.info("wrote dashboard-facing full copy → %s", LATEST_FULL)
+        json.dump(slim_payload, f, indent=2)
+    logger.info("wrote dashboard-facing slim copy → %s", LATEST_FULL)
+
+    geojson_payload = {
+        "fetched_at_utc": payload["fetched_at_utc"],
+        "geojson": payload["geojson"],
+    }
+    with LATEST_GEOJSON.open("w") as f:
+        json.dump(geojson_payload, f, indent=2)
+    logger.info("wrote dashboard-facing geojson copy → %s", LATEST_GEOJSON)
 
     # Archived snapshots strip the geojson (polygons don't change day-to-day;
     # only the warning codes and timestamps do). ~10× smaller, won't blow up
