@@ -1,10 +1,10 @@
 {
   "label": "IMD district warnings (heat subset, derived from districtwarning feed)",
   "source_url": "https://reactjs.imd.gov.in/geoserver/wfs?service=WFS,version=1.1.0,request=GetFeature,typename=imd:district_warnings_india,srsname=EPSG:4326,outputFormat=application/json",
-  "fetched_at_utc": "2026-05-15T00:53:53.261877+00:00",
+  "fetched_at_utc": "2026-05-15T04:34:52.864642+00:00",
   "n_total": 764,
-  "n_heatwave": 9,
-  "n_severe": 67,
+  "n_heatwave": 11,
+  "n_severe": 61,
   "n_with_ta": 0,
   "points": [
     {
@@ -4914,8 +4914,8 @@
       "lon": 77.39049362809047,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1947,
       "station_type": "District",
       "name": "IMD district: BHOPAL ()",
@@ -4923,7 +4923,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -4990,8 +4990,8 @@
       "lon": 80.38380476073367,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1643,
       "station_type": "District",
       "name": "IMD district: BALAGHAT ()",
@@ -4999,7 +4999,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
@@ -5916,12 +5916,12 @@
         "D2": {
           "max": null,
           "min": null,
-          "hw": 1
+          "hw": 2
         },
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D4": {
           "max": null,
@@ -6206,8 +6206,8 @@
       "lon": 77.76104701002595,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1665,
       "station_type": "District",
       "name": "IMD district: BETUL ()",
@@ -6215,7 +6215,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
@@ -6662,8 +6662,8 @@
       "lon": 83.25376014717392,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1501,
       "station_type": "District",
       "name": "IMD district: CHANDAULI ()",
@@ -6671,7 +6671,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -6928,8 +6928,8 @@
       "lon": 78.85750172916673,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1645,
       "station_type": "District",
       "name": "IMD district: CHHINDWARA ()",
@@ -6937,7 +6937,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
@@ -7897,7 +7897,7 @@
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D4": {
           "max": null,
@@ -7978,7 +7978,7 @@
         "D4": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D5": {
           "max": null,
@@ -9322,8 +9322,8 @@
       "lon": 77.21506946673534,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 1,
+      "hw_label": "Heatwave",
       "station_code": 1671,
       "station_type": "District",
       "name": "IMD district: GUNA ()",
@@ -9331,7 +9331,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D2": {
           "max": null,
@@ -9754,12 +9754,12 @@
         "D2": {
           "max": null,
           "min": null,
-          "hw": 1
+          "hw": 2
         },
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D4": {
           "max": null,
@@ -9916,7 +9916,7 @@
         "D4": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D5": {
           "max": null,
@@ -9968,8 +9968,8 @@
       "lon": 80.06505465684029,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1648,
       "station_type": "District",
       "name": "IMD district: JABALPUR ()",
@@ -9977,12 +9977,12 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D3": {
           "max": null,
@@ -10348,8 +10348,8 @@
       "lon": 82.61761938583055,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1509,
       "station_type": "District",
       "name": "IMD district: JAUNPUR ()",
@@ -10357,7 +10357,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -10400,12 +10400,12 @@
         "D2": {
           "max": null,
           "min": null,
-          "hw": 1
+          "hw": 2
         },
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D4": {
           "max": null,
@@ -11013,7 +11013,7 @@
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D4": {
           "max": null,
@@ -12628,8 +12628,8 @@
       "lon": 80.52904381265624,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1650,
       "station_type": "District",
       "name": "IMD district: MANDLA ()",
@@ -12637,7 +12637,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
@@ -12666,8 +12666,8 @@
       "lon": 75.43725718530824,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1679,
       "station_type": "District",
       "name": "IMD district: MANDSAUR ()",
@@ -12675,7 +12675,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -13350,8 +13350,8 @@
       "lon": 79.0524678488629,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1853,
       "station_type": "District",
       "name": "IMD district: NARSINGHPUR ()",
@@ -13359,22 +13359,22 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D3": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D4": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D5": {
           "max": null,
@@ -13464,8 +13464,8 @@
       "lon": 75.1012681118619,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1954,
       "station_type": "District",
       "name": "IMD district: NEEMUCH ()",
@@ -13473,7 +13473,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -14072,8 +14072,8 @@
       "lon": 81.86404259535313,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1870,
       "station_type": "District",
       "name": "IMD district: PRATAPGARH-UP ()",
@@ -14081,7 +14081,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -14390,12 +14390,12 @@
         "D2": {
           "max": null,
           "min": null,
-          "hw": 1
+          "hw": 2
         },
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D4": {
           "max": null,
@@ -14704,7 +14704,7 @@
         "D4": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D5": {
           "max": null,
@@ -15022,8 +15022,8 @@
       "lon": 76.53587926610165,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 1,
+      "hw_label": "Heatwave",
       "station_code": 1686,
       "station_type": "District",
       "name": "IMD district: SHAJAPUR ()",
@@ -15031,7 +15031,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D2": {
           "max": null,
@@ -15212,8 +15212,8 @@
       "lon": 77.18469288842749,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1685,
       "station_type": "District",
       "name": "IMD district: SEHORE ()",
@@ -15221,17 +15221,17 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
           "min": null,
-          "hw": 1
+          "hw": 2
         },
         "D3": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D4": {
           "max": null,
@@ -15288,8 +15288,8 @@
       "lon": 79.67209829475279,
       "Ta": null,
       "RH": null,
-      "hw_status": 0,
-      "hw_label": "Normal",
+      "hw_status": 2,
+      "hw_label": "Severe heatwave",
       "station_code": 1655,
       "station_type": "District",
       "name": "IMD district: SEONI ()",
@@ -15297,7 +15297,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 0
+          "hw": 2
         },
         "D2": {
           "max": null,
@@ -15820,8 +15820,8 @@
       "lon": 81.90592447562501,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1657,
       "station_type": "District",
       "name": "IMD district: SIDHI ()",
@@ -15829,7 +15829,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -15934,8 +15934,8 @@
       "lon": 82.42648498114583,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1658,
       "station_type": "District",
       "name": "IMD district: SINGRAULI ()",
@@ -15943,7 +15943,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -16870,7 +16870,7 @@
         "D4": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 1
         },
         "D5": {
           "max": null,
@@ -17150,8 +17150,8 @@
       "lon": 82.90692406102039,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1523,
       "station_type": "District",
       "name": "IMD district: VARANASI ()",
@@ -17159,7 +17159,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
@@ -17188,8 +17188,8 @@
       "lon": 77.83015097011759,
       "Ta": null,
       "RH": null,
-      "hw_status": 2,
-      "hw_label": "Severe heatwave",
+      "hw_status": 0,
+      "hw_label": "Normal",
       "station_code": 1535,
       "station_type": "District",
       "name": "IMD district: VIDISHA ()",
@@ -17197,7 +17197,7 @@
         "D1": {
           "max": null,
           "min": null,
-          "hw": 2
+          "hw": 0
         },
         "D2": {
           "max": null,
