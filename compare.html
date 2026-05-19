@@ -457,6 +457,7 @@
   <button id="tab-btn-kappa" data-tab="kappa">Cohen's κ — today</button>
   <button id="tab-btn-fckappa" data-tab="fckappa">Cohen's κ — forecast</button>
   <button id="tab-btn-khist" data-tab="khist">κ history</button>
+  <button id="tab-btn-timeseries" data-tab="timeseries">Daily time series</button>
 </div>
 
 <div id="tab-2pm" class="tab-panel active">
@@ -855,6 +856,21 @@
   </div>
 </div>
 
+<div id="tab-timeseries" class="tab-panel">
+  <div class="kappa-intro">
+    <strong>Daily district counts — IMD vs SHRAM, district-to-district.</strong>
+    One data point per 14:30 IST snapshot. Every series counts <em>districts</em>,
+    so the IMD and SHRAM lines are directly comparable. IMD lines count districts
+    whose worst nearby AWS station was classified Heatwave / Severe Heatwave;
+    SHRAM lines count districts reaching Zone 5 or Zone 6 at MET 5 and MET 6
+    (sun). The series fill in daily as the workflow runs.
+  </div>
+  <div id="timeseries-chart-wrap" style="background:#fff; border:1px solid #d8dee5; border-radius:6px; padding:8px 12px;">
+    <svg id="timeseries-chart" width="100%" height="420" preserveAspectRatio="none"></svg>
+    <div id="timeseries-legend" style="display:flex; flex-wrap:wrap; gap:12px; padding-top:6px; font-size:11px; color:#1f2328;"></div>
+  </div>
+</div>
+
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
@@ -864,6 +880,7 @@ const IMD_GEOJSON_FILE = 'reference_history/imd_districtwarning_geojson.json';
 const IMD_STATION_FILE = 'reference_history/imd_station_heatwave_latest.json';
 const AWS_2PM_FILE     = 'reference_history/aws_2pm_snapshot_latest.json';
 const SHRAM_2PM_FILE   = 'reference_history/shram_2pm_snapshot_latest.json';
+const TIMESERIES_FILE  = 'reference_history/timeseries_daily.json';
 const SHRAM_LIVE_URL = 'https://shram.info/grid_data.json';
 const SHRAM_FORECAST_URL = 'https://shram.info/weather_logs/forecast_7day.json';
 const SHRAM_MET_DEFAULT = 6;
@@ -955,8 +972,102 @@ document.querySelectorAll('.tabs button').forEach(btn => {
         refit(mapImd); refit(mapShram); refit(mapDiff);
       }
     }, 50);
+    // Lazy-load the daily time-series chart the first time its tab is opened
+    if (tab === 'timeseries') loadAndDrawTimeseries();
   });
 });
+
+// ---- Daily time-series tab ----
+let _timeseriesLoaded = false;
+// All series count DISTRICTS, so they're directly comparable.
+const TIMESERIES_SERIES = [
+  { key: 'imd_heatwave',     label: 'IMD Heatwave districts',        color: '#ff8800' },
+  { key: 'imd_severe',       label: 'IMD Severe Heatwave districts', color: '#cf222e' },
+  { key: 'shram_met5_zone5', label: 'SHRAM MET5 Zone 5 districts',   color: '#f4a3a0' },
+  { key: 'shram_met5_zone6', label: 'SHRAM MET5 Zone 6 districts',   color: '#ce93d8' },
+  { key: 'shram_met6_zone5', label: 'SHRAM MET6 Zone 5 districts',   color: '#f44336' },
+  { key: 'shram_met6_zone6', label: 'SHRAM MET6 Zone 6 districts',   color: '#9c27b0' },
+];
+
+function loadAndDrawTimeseries() {
+  if (_timeseriesLoaded) return;
+  _timeseriesLoaded = true;
+  fetch(TIMESERIES_FILE + '?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .then(payload => drawTimeseriesChart(payload))
+    .catch(() => drawTimeseriesChart(null));
+}
+
+function drawTimeseriesChart(payload) {
+  const svg = document.getElementById('timeseries-chart');
+  const legendEl = document.getElementById('timeseries-legend');
+  svg.innerHTML = '';
+  legendEl.innerHTML = '';
+
+  const series = payload?.series || [];
+  if (series.length === 0) {
+    svg.innerHTML = `<text x="50%" y="50%" text-anchor="middle" fill="#57606a" font-size="13">
+      No daily snapshots archived yet — fills in as the 14:30 IST workflow runs.
+    </text>`;
+    return;
+  }
+
+  const w = svg.clientWidth || 900;
+  const h = 420;
+  const margin = { top: 14, right: 16, bottom: 30, left: 48 };
+  const plotW = w - margin.left - margin.right;
+  const plotH = h - margin.top - margin.bottom;
+
+  const dates = series.map(d => d.date);
+  // y-max across all series
+  let maxY = 0;
+  for (const d of series) {
+    for (const s of TIMESERIES_SERIES) {
+      const v = d[s.key];
+      if (typeof v === 'number' && v > maxY) maxY = v;
+    }
+  }
+  maxY = Math.max(maxY, 1);
+
+  const xOf = (i) => margin.left + (i / Math.max(dates.length - 1, 1)) * plotW;
+  const yOf = (v) => margin.top + (1 - v / maxY) * plotH;
+
+  // y gridlines + labels (5 ticks)
+  for (let t = 0; t <= 5; t++) {
+    const val = Math.round(maxY * t / 5);
+    const y = yOf(val);
+    svg.insertAdjacentHTML('beforeend',
+      `<line x1="${margin.left}" y1="${y}" x2="${w - margin.right}" y2="${y}" stroke="#eee" stroke-width="1"/>` +
+      `<text x="${margin.left - 5}" y="${y + 3}" text-anchor="end" font-size="10" fill="#57606a">${val}</text>`);
+  }
+  // x labels (~8)
+  const every = Math.max(1, Math.floor(dates.length / 8));
+  dates.forEach((d, i) => {
+    if (i % every !== 0 && i !== dates.length - 1) return;
+    svg.insertAdjacentHTML('beforeend',
+      `<text x="${xOf(i)}" y="${h - 10}" text-anchor="middle" font-size="10" fill="#57606a">${d.slice(5)}</text>`);
+  });
+
+  // Series lines
+  for (const s of TIMESERIES_SERIES) {
+    const pts = series
+      .map((d, i) => ({ i, v: d[s.key] }))
+      .filter(p => typeof p.v === 'number');
+    if (pts.length === 0) continue;
+    const path = pts.map((p, k) => `${k === 0 ? 'M' : 'L'} ${xOf(p.i)} ${yOf(p.v)}`).join(' ');
+    svg.insertAdjacentHTML('beforeend',
+      `<path d="${path}" stroke="${s.color}" stroke-width="1.8" fill="none"/>`);
+    for (const p of pts) {
+      svg.insertAdjacentHTML('beforeend',
+        `<circle cx="${xOf(p.i)}" cy="${yOf(p.v)}" r="2.5" fill="${s.color}">` +
+        `<title>${s.label}\n${series[p.i].date}: ${p.v}</title></circle>`);
+    }
+    legendEl.insertAdjacentHTML('beforeend',
+      `<span style="display:inline-flex; align-items:center; gap:4px;">` +
+      `<span style="display:inline-block; width:10px; height:10px; border-radius:50%; background:${s.color}"></span>` +
+      `${s.label}</span>`);
+  }
+}
 
 // 2 PM IST snapshot tab maps
 const mapAws2pm        = makeMap('map-aws2pm');

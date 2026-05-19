@@ -51,6 +51,9 @@ jobs:
       - name: District-level join (AWS alerts × SHRAM zones) → CSV
         run: python3 scripts/snapshot_district_join.py --data-repo ./data
 
+      - name: Rebuild daily time-series JSON for the dashboard
+        run: python3 scripts/build_timeseries_json.py --data-repo ./data
+
       - name: Commit snapshot JSONs back to dashboard repo
         run: |
           git config user.name "github-actions[bot]"
@@ -59,7 +62,8 @@ jobs:
                   reference_history/shram_2pm_snapshot_latest.json \
                   reference_history/shram_2pm_snapshot/ \
                   reference_history/imd_station_heatwave_latest.json \
-                  reference_history/imd_station_heatwave/
+                  reference_history/imd_station_heatwave/ \
+                  reference_history/timeseries_daily.json
           if ! git diff --cached --quiet; then
             stamp="$(date -u +%Y-%m-%dT%H:%MZ)"
             git commit -m "data: AWS 14:30 IST snapshot ($stamp)"

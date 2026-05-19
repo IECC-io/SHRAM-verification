@@ -1,0 +1,17 @@
+{
+ "label": "SHRAM dashboard daily district counts",
+ "note": "Each entry is one 14:30 IST snapshot. District-to-district: imd_* count districts whose worst nearby AWS station was HW/severe; shram_* count districts at MET 5/6 (sun) zone 5/6.",
+ "n_days": 1,
+ "series": [
+  {
+   "date": "2026-05-19",
+   "n_districts": 753,
+   "imd_heatwave": 12,
+   "imd_severe": 0,
+   "shram_met5_zone5": 423,
+   "shram_met5_zone6": 0,
+   "shram_met6_zone5": 596,
+   "shram_met6_zone6": 0
+  }
+ ]
+}
