@@ -67,6 +67,12 @@ def normalize(raw: dict) -> dict:
         tmax = _fnum(props.get("D1_Mx_Temp"))
         dep = _fnum(props.get("D1_Mx_Dep"))
         hw_today_obs = compute_hw_status(tmax, dep, station_type)
+        # Yesterday's verified observation — uses the PD_* (previous day) fields
+        # which are finalized once IMD publishes the next bulletin. This is the
+        # cleanest "ground truth" the feed provides.
+        prev_tmax = _fnum(props.get("PD_Mx_Temp"))
+        prev_dep = _fnum(props.get("PD_Mx_Dep"))
+        hw_yesterday_obs = compute_hw_status(prev_tmax, prev_dep, station_type)
         hw_tomorrow_fc = _safe_int(props.get("D1F_HW"))
 
         points.append({
@@ -87,10 +93,12 @@ def normalize(raw: dict) -> dict:
             "today_hw_status": hw_today_obs,
             "today_hw_label": _hw_label(hw_today_obs),
 
-            # Yesterday (observed)
+            # Yesterday (observed, verified)
             "prev_tmax": _fnum(props.get("PD_Mx_Temp")),
             "prev_tmax_dep": _fnum(props.get("PD_Mx_Dep")),
             "prev_rh_1730": _fnum(props.get("PD_RH_1730")),
+            "yesterday_hw_status": hw_yesterday_obs,
+            "yesterday_hw_label": _hw_label(hw_yesterday_obs),
 
             # Tomorrow (forecast — Day 1 in IMD parlance is tomorrow when issued
             # by the morning bulletin)
@@ -113,15 +121,19 @@ def normalize(raw: dict) -> dict:
 
     n_today_hw = sum(1 for p in points if p["today_hw_status"] == 1)
     n_today_severe = sum(1 for p in points if p["today_hw_status"] == 2)
+    n_yesterday_hw = sum(1 for p in points if p["yesterday_hw_status"] == 1)
+    n_yesterday_severe = sum(1 for p in points if p["yesterday_hw_status"] == 2)
     n_fc_hw = sum(1 for p in points if p["fc_hw_tomorrow"] == 1)
 
     return {
-        "label": "IMD station heatwave bulletin (observed today + forecast tomorrow)",
+        "label": "IMD station heatwave bulletin (today + yesterday observed, forecast tomorrow)",
         "source_url": FEED_URL,
         "fetched_at_utc": datetime.now(timezone.utc).isoformat(),
         "n_total": len(points),
         "n_today_heatwave": n_today_hw,
         "n_today_severe": n_today_severe,
+        "n_yesterday_heatwave": n_yesterday_hw,
+        "n_yesterday_severe": n_yesterday_severe,
         "n_fc_heatwave_tomorrow": n_fc_hw,
         "points": points,
     }

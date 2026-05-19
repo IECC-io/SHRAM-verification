@@ -156,7 +156,9 @@
     color: #57606a;
     border-radius: 6px 6px 0 0;
   }
-  .tabs button:hover { color: #1f2328; background: #f7f9fb; }
+  /* Non-active tabs are muted so the active tab clearly stands out */
+  .tabs button:not(.active) { opacity: 0.45; }
+  .tabs button:hover { color: #1f2328; background: #f7f9fb; opacity: 1; }
   .tabs button.active {
     background: #fff;
     border-color: #d8dee5;
@@ -430,8 +432,8 @@
   </fieldset>
   <fieldset>
     <legend>SHRAM zones (for Panel C / κ / Disagreement)</legend>
-    <label><input type="checkbox" class="shram-toggle" value="4"> Zone 4</label>
-    <label><input type="checkbox" class="shram-toggle" value="5"> Zone 5</label>
+    <label><input type="checkbox" class="shram-toggle" value="4" checked> Zone 4</label>
+    <label><input type="checkbox" class="shram-toggle" value="5" checked> Zone 5</label>
     <label><input type="checkbox" class="shram-toggle" value="6" checked> Zone 6</label>
   </fieldset>
 </div>
@@ -447,7 +449,9 @@
 </div>
 
 <div class="tabs">
-  <button id="tab-btn-today" class="active" data-tab="today">Today — live</button>
+  <button id="tab-btn-2pm" class="active" data-tab="2pm">2 PM IST snapshot</button>
+  <button id="tab-btn-yesterday" data-tab="yesterday">Yesterday — verified</button>
+  <button id="tab-btn-today" data-tab="today">Today — evening verdict</button>
   <button id="tab-btn-forecast" data-tab="forecast">5-day forecast</button>
   <button id="tab-btn-disagree" data-tab="disagree">Disagreement table</button>
   <button id="tab-btn-kappa" data-tab="kappa">Cohen's κ — today</button>
@@ -455,11 +459,104 @@
   <button id="tab-btn-khist" data-tab="khist">κ history</button>
 </div>
 
-<div id="tab-today" class="tab-panel active">
+<div id="tab-2pm" class="tab-panel active">
+  <div class="bottom-row">
+    <div class="map-card">
+      <h2>(A) IMD AWS stations — 14:30 IST snapshot</h2>
+      <div class="updated">Snapshot: <span id="aws2pm-updated">—</span></div>
+      <div id="map-aws2pm" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#cf222e"></span>Severe Heatwave (≥45°C)</span>
+        <span><span class="swatch" style="background:#ff8800"></span>Heatwave (Plain ≥40 / Coastal ≥37 / Hilly ≥30°C)</span>
+        <span><span class="swatch" style="background:#9aa1aa"></span>Normal</span>
+      </div>
+      <div class="stats" id="stats-aws2pm"></div>
+    </div>
+
+    <div class="map-card">
+      <h2>(B) SHRAM zone alerts — 14:30 IST (MET 5*, sun)</h2>
+      <div class="updated">Snapshot: <span id="shram2pm-updated">—</span></div>
+      <div id="map-shram2pm-met5" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+        <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+        <span><span class="swatch" style="background:#ff9800"></span>Zone 4 — moderate</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 3 / no data</span>
+      </div>
+      <div class="stats" id="stats-shram2pm-met5"></div>
+    </div>
+
+    <div class="map-card">
+      <h2>(C) SHRAM zone alerts — 14:30 IST (MET 6*, sun)</h2>
+      <div class="updated">Snapshot: <span id="shram2pm-met6-updated">—</span></div>
+      <div id="map-shram2pm-met6" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+        <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+        <span><span class="swatch" style="background:#ff9800"></span>Zone 4 — moderate</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 3 / no data</span>
+      </div>
+      <div class="stats" id="stats-shram2pm-met6"></div>
+    </div>
+  </div>
+</div>
+
+<div id="tab-yesterday" class="tab-panel">
+  <div class="bottom-row">
+    <div class="map-card">
+      <h2>(A) IMD station heatwave — verified for yesterday</h2>
+      <div class="updated">For: <span id="yesterday-date">—</span></div>
+      <div id="map-yesterday-imd" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#cf222e"></span>Severe Heatwave</span>
+        <span><span class="swatch" style="background:#ff8800"></span>Heatwave</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>Normal</span>
+      </div>
+      <div class="stats" id="stats-yesterday-imd"></div>
+      <div class="legend-note" style="padding:6px 12px; font-size:11px; line-height:1.5; color:#57606a; background:#fff; border-top:1px solid #d8dee5;">
+        <b>Methodology:</b> classification is computed from yesterday's
+        finalized observed values (<code>PD_Mx_Temp</code> + <code>PD_Mx_Dep</code>
+        from IMD's <code>HW_Status_Forecast.json</code>) using IMD's published
+        thresholds: Plain ≥40°C / Coastal ≥37°C / Hilly ≥30°C with departure
+        ≥4.5°C; severe at ≥6.5°C departure or absolute ≥45/47°C. These values
+        are quality-controlled and don't change retroactively — the closest
+        thing to ground truth this feed provides.
+      </div>
+    </div>
+
+    <div class="map-card">
+      <h2>(B) SHRAM zone alerts — yesterday peak (MET 5*, sun)</h2>
+      <div class="updated">For: <span id="yesterday-shram-met5-date">—</span></div>
+      <div id="map-yesterday-shram-met5" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+        <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+        <span><span class="swatch" style="background:#ff9800"></span>Zone 4 — moderate</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 3 / no data</span>
+      </div>
+      <div class="stats" id="stats-yesterday-shram-met5"></div>
+    </div>
+
+    <div class="map-card">
+      <h2>(C) SHRAM zone alerts — yesterday peak (MET 6*, sun)</h2>
+      <div class="updated">For: <span id="yesterday-shram-met6-date">—</span></div>
+      <div id="map-yesterday-shram-met6" class="map"></div>
+      <div class="legend">
+        <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+        <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+        <span><span class="swatch" style="background:#ff9800"></span>Zone 4 — moderate</span>
+        <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 3 / no data</span>
+      </div>
+      <div class="stats" id="stats-yesterday-shram-met6"></div>
+    </div>
+  </div>
+</div>
+
+<div id="tab-today" class="tab-panel">
 
 <div class="bottom-row">
   <div class="map-card">
-    <h2>(A) IMD station status today <span class="sub" id="imd-date"></span></h2>
+    <h2>(A) IMD evening-bulletin station status <span class="sub" id="imd-date"></span></h2>
     <div class="updated">
       Updated: <span id="imd-updated">—</span>
       <button id="imd-refresh">Re-load file</button>
@@ -475,12 +572,22 @@
       </span>
     </div>
     <div class="stats" id="stats-imd"></div>
+    <div class="legend-note" style="padding:6px 12px; font-size:11px; line-height:1.5; color:#57606a; background:#fff; border-top:1px solid #d8dee5;">
+      <b>Note:</b> IMD's <code>HW_Status_Forecast.json</code> feed no longer
+      includes a today-observed field (<code>HW_Status</code>), so our value here
+      is computed from observed <code>D1_Mx_Temp</code> + departure using IMD's
+      published thresholds (Plain ≥40°C / Coastal ≥37°C / Hilly ≥30°C with
+      departure ≥4.5°C; severe at ≥6.5°C or absolute ≥45/47°C).
+      IMD's <a href="https://dss.imd.gov.in/dwr_img/GIS/heatwave.html"
+              target="_blank" rel="noopener">heatwave.html</a> page reads the
+      day-1 forecast field (<code>D1F_HW</code>) instead, which can differ.
+    </div>
   </div>
 
   <div class="map-card">
-    <h2>(B) SHRAM zone alerts — live (<span id="shram-met-label">MET 6*</span>, sun)</h2>
+    <h2>(B) SHRAM zone alerts — 14:30 IST snapshot (MET 5*, sun)</h2>
     <div class="updated">
-      Updated: <span id="shram-updated">—</span>
+      Snapshot: <span id="shram-updated">—</span>
       <button id="shram-refresh">Refresh</button>
     </div>
     <div id="map-shram" class="map"></div>
@@ -494,17 +601,16 @@
   </div>
 
   <div class="map-card">
-    <h2>(C) Agreement <span class="sub">IMD vs SHRAM (<span id="diff-met-label">MET 6*</span>, toggle-driven)</span></h2>
+    <h2>(C) SHRAM zone alerts — 14:30 IST snapshot (MET 6*, sun)</h2>
     <div class="updated">
-      Updated: <span id="diff-updated">—</span>
+      Snapshot: <span id="diff-updated">—</span>
     </div>
     <div id="map-diff" class="map"></div>
     <div class="legend">
-      <span><span class="swatch" style="background:#1a7f37"></span>Both alert</span>
-      <span><span class="swatch" style="background:#9a6700"></span>IMD only</span>
-      <span><span class="swatch" style="background:#0969da"></span>SHRAM only</span>
-      <span><span class="swatch" style="background:#e5e7eb"></span>Both safe</span>
-      <span><span class="swatch" style="background:#f0f0f0;border:1px dashed #999"></span>No SHRAM data</span>
+      <span><span class="swatch" style="background:#9c27b0"></span>Zone 6 — failure</span>
+      <span><span class="swatch" style="background:#f44336"></span>Zone 5 — high</span>
+      <span><span class="swatch" style="background:#ff9800"></span>Zone 4 — moderate</span>
+      <span><span class="swatch" style="background:#e5e7eb"></span>≤ Zone 3 / no data</span>
     </div>
     <div class="stats" id="stats-diff"></div>
   </div>
@@ -756,6 +862,8 @@
 const IMD_FILE  = 'reference_history/imd_districtwarning_latest.json';
 const IMD_GEOJSON_FILE = 'reference_history/imd_districtwarning_geojson.json';
 const IMD_STATION_FILE = 'reference_history/imd_station_heatwave_latest.json';
+const AWS_2PM_FILE     = 'reference_history/aws_2pm_snapshot_latest.json';
+const SHRAM_2PM_FILE   = 'reference_history/shram_2pm_snapshot_latest.json';
 const SHRAM_LIVE_URL = 'https://shram.info/grid_data.json';
 const SHRAM_FORECAST_URL = 'https://shram.info/weather_logs/forecast_7day.json';
 const SHRAM_MET_DEFAULT = 6;
@@ -839,12 +947,25 @@ document.querySelectorAll('.tabs button').forEach(btn => {
       const refit = (m) => { m.invalidateSize(); m.fitBounds(INDIA_BOUNDS, { padding: [0, 0] }); };
       if (tab === 'forecast') {
         refit(fcMapImd); refit(fcMapShram); refit(fcMapDiff);
+      } else if (tab === '2pm') {
+        refit(mapAws2pm); refit(mapShram2pmMet5); refit(mapShram2pmMet6);
+      } else if (tab === 'yesterday') {
+        refit(mapYesterdayImd); refit(mapYesterdayShramMet5); refit(mapYesterdayShramMet6);
       } else {
         refit(mapImd); refit(mapShram); refit(mapDiff);
       }
     }, 50);
   });
 });
+
+// 2 PM IST snapshot tab maps
+const mapAws2pm        = makeMap('map-aws2pm');
+const mapShram2pmMet5  = makeMap('map-shram2pm-met5');
+const mapShram2pmMet6  = makeMap('map-shram2pm-met6');
+// Yesterday — verified tab maps
+const mapYesterdayImd       = makeMap('map-yesterday-imd');
+const mapYesterdayShramMet5 = makeMap('map-yesterday-shram-met5');
+const mapYesterdayShramMet6 = makeMap('map-yesterday-shram-met6');
 
 const mapImd   = makeMap('map-imd');
 const mapShram = makeMap('map-shram');
@@ -875,7 +996,10 @@ function sync(maps) {
     });
   });
 }
-sync([mapImd, mapShram, mapDiff, fcMapImd, fcMapShram, fcMapDiff]);
+sync([mapAws2pm, mapShram2pmMet5, mapShram2pmMet6,
+      mapYesterdayImd, mapYesterdayShramMet5, mapYesterdayShramMet6,
+      mapImd, mapShram, mapDiff,
+      fcMapImd, fcMapShram, fcMapDiff]);
 
 let imdLayer = null;
 let shramLayer = null;
@@ -895,6 +1019,11 @@ let cachedDistrictIndex = null;   // for use by SHRAM refresh handler
 // Output: [{ imd: <station>, shram: <pt>, dist_km: <number> }, ...]
 let cachedStationPairs = null;
 let cachedImdStations = null;   // raw station feed payload
+let cachedAws2pm = null;        // AWS 14:30 IST snapshot payload (or null on first run)
+let cachedShram2pm = null;      // SHRAM 14:30 IST snapshot payload (today)
+let cachedShramZonesByMetSnapshot = null;  // district-aggregated zones from today's snapshot
+let cachedShramYesterday = null;            // yesterday's archived SHRAM 14:00 snapshot
+let cachedShramZonesByMetYesterday = null;  // district-aggregated zones from yesterday
 // For each IMD district (by __idx), its nearest IMD station's data — used by
 // the Today tab to color district polygons by station-observed HW status.
 let cachedDistrictNearestStation = null;   // Map<districtIdx, stationPoint>
@@ -957,9 +1086,41 @@ function loadShramForecast() {
 function loadImdStation() {
   return fetch(IMD_STATION_FILE + '?t=' + Date.now()).then(r => r.json());
 }
+function loadAws2pm() {
+  // The 14:30 IST workflow may not have run yet on first deploy — tolerate 404
+  // and missing-field shapes. Returns null in those cases; render2pm shows
+  // an empty-state message.
+  return fetch(AWS_2PM_FILE + '?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null);
+}
+function loadShram2pm() {
+  // Same 404 tolerance: dashboard falls back to live SHRAM grid for Panel B/C
+  // if the snapshot doesn't exist yet.
+  return fetch(SHRAM_2PM_FILE + '?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null);
+}
+function loadShramSnapshotForDate(isoDate) {
+  // Load a date-stamped archive (Yesterday tab). Returns null on 404.
+  const url = `reference_history/shram_2pm_snapshot/shram_2pm_${isoDate}.json`;
+  return fetch(url + '?t=' + Date.now())
+    .then(r => r.ok ? r.json() : null)
+    .catch(() => null);
+}
 
-Promise.all([loadImd(), loadShram(), loadShramForecast(), loadImdStation()])
-  .then(([imd, shram, fc, imdStations]) => {
+function _isoOffsetIST(daysOffset) {
+  // Build YYYY-MM-DD for "today/yesterday in IST" without timezone surprises
+  const now = new Date();
+  const istNow = new Date(now.getTime() + (5.5 * 60 - now.getTimezoneOffset()) * 60_000);
+  istNow.setUTCDate(istNow.getUTCDate() + daysOffset);
+  return istNow.toISOString().slice(0, 10);
+}
+
+Promise.all([loadImd(), loadShram(), loadShramForecast(), loadImdStation(),
+             loadAws2pm(), loadShram2pm(),
+             loadShramSnapshotForDate(_isoOffsetIST(-1))])
+  .then(([imd, shram, fc, imdStations, aws2pm, shram2pm, shramYesterday]) => {
   const shramMet = shram.metadata || {};
   document.getElementById('header-meta').textContent =
     `IMD fetched ${formatIST(imd.fetched_at_utc)} · ` +
@@ -967,9 +1128,14 @@ Promise.all([loadImd(), loadShram(), loadShramForecast(), loadImdStation()])
     `(${SHRAM_SUN_DEFAULT}` +
     `${shramMet.is_nighttime ? ' — night, sun=shade' : ''})`;
   setUpdated('imd-updated', imd.fetched_at_utc, 24);
-  setUpdated('shram-updated', shramMet.generated_at, 2);
-  document.getElementById('diff-updated').textContent =
-    `IMD ${ageString(imd.fetched_at_utc)} · SHRAM ${ageString(shramMet.generated_at)}`;
+  // Today tab Panel B/C show the 14:00 IST snapshot. Display the *data* time,
+  // not when the workflow fetched it — "Snapshot 14:00 IST, 19 May 2026" is
+  // more honest than "fetched 00:44 IST 1 min ago".
+  const shram2pmLabel = shram2pm?.snapshot_date_ist
+    ? `${shram2pm.snapshot_time_ist} IST, ${shram2pm.snapshot_date_ist}`
+    : `live ${formatIST(shramMet.generated_at)}`;
+  document.getElementById('shram-updated').textContent = shram2pmLabel;
+  document.getElementById('diff-updated').textContent = shram2pmLabel;
 
   const districtsGeojson = imd.geojson;
   // IMD encodes Lakshadweep as huge ocean-spanning rectangles (not real island
@@ -1003,6 +1169,19 @@ Promise.all([loadImd(), loadShram(), loadShramForecast(), loadImdStation()])
   // Pair each IMD station to its nearest SHRAM grid point for analytics tabs
   cachedImdStations = imdStations;
   cachedStationPairs = pairImdStationsToShram(imdStations, shram);
+  cachedAws2pm = aws2pm;
+  cachedShram2pm = shram2pm;
+  // Build a second aggregation from the 14:30 IST snapshot for the Today tab.
+  // Falls back to live grid if the snapshot JSON wasn't published yet.
+  cachedShramZonesByMetSnapshot = shram2pm
+    ? aggregateShramByMet(shram2pm, districtIndex)
+    : cachedShramZonesByMet;
+  // Yesterday's archived 14:00 snapshot (null until the daily workflow has
+  // run for at least one prior day). The dashboard tolerates this gracefully.
+  cachedShramYesterday = shramYesterday;
+  cachedShramZonesByMetYesterday = shramYesterday
+    ? aggregateShramByMet(shramYesterday, districtIndex)
+    : null;
   // For each district polygon, find its nearest IMD station (so the Today
   // tab can render district polygons colored by station-observed HW status).
   cachedDistrictNearestStation = assignNearestStationToDistricts(
@@ -1049,14 +1228,22 @@ Promise.all([loadImd(), loadShram(), loadShramForecast(), loadImdStation()])
     const btn = ev.currentTarget;
     btn.disabled = true; btn.textContent = 'Loading…';
     try {
-      const fresh = await loadShram();
+      // Refresh both the live grid (for the 2 PM tab fallback / cached stats)
+      // and the 14:30 IST snapshot JSON (for the Today tab Panel B/C).
+      const [fresh, freshSnap] = await Promise.all([loadShram(), loadShram2pm()]);
       const m = fresh.metadata || {};
       cachedShramZonesByMet = aggregateShramByMet(fresh, districtIndex);
       cachedShramStats = aggregateShramStats(fresh, districtIndex);
       if (cachedImdStations) cachedStationPairs = pairImdStationsToShram(cachedImdStations, fresh);
-      setUpdated('shram-updated', m.generated_at, 2);
-      document.getElementById('diff-updated').textContent =
-        `IMD ${ageString(cachedImd.fetched_at_utc)} · SHRAM ${ageString(m.generated_at)}`;
+      cachedShram2pm = freshSnap;
+      cachedShramZonesByMetSnapshot = freshSnap
+        ? aggregateShramByMet(freshSnap, districtIndex)
+        : cachedShramZonesByMet;
+      const snapLabel = freshSnap?.snapshot_date_ist
+        ? `${freshSnap.snapshot_time_ist} IST, ${freshSnap.snapshot_date_ist}`
+        : `live ${formatIST(m.generated_at)}`;
+      document.getElementById('shram-updated').textContent = snapLabel;
+      document.getElementById('diff-updated').textContent = snapLabel;
       renderAll();
     } catch (e) {
       console.error('SHRAM refresh failed', e);
@@ -1123,56 +1310,17 @@ function getActiveShramZones() {
   );
 }
 
+// Panel C: SHRAM zones at MET 6 (no longer an IMD-vs-SHRAM agreement diff).
+// Today tab Panel C: SHRAM MET 6 zones from the 14:30 IST snapshot (falls
+// back to live grid if the snapshot JSON wasn't published yet).
 function renderDiff() {
-  if (!cachedDistricts || !cachedShramZonesByMet || !cachedDistrictNearestStation) return;
-  if (diffLayer) { mapDiff.removeLayer(diffLayer); diffLayer = null; }
-  const activeStatuses = getActiveImdStationStatuses();
-  const shramZones = getActiveShramZones();
-  const zoneByDist = cachedShramZonesByMet[selectedMet];
-
-  let nBoth = 0, nImdOnly = 0, nShramOnly = 0, nNeither = 0, nNoData = 0;
-  diffLayer = L.geoJSON(cachedDistricts, {
-    style: (feature) => {
-      const idx = feature.__idx;
-      const st = cachedDistrictNearestStation.get(idx);
-      const status = st?.today_hw_status || 0;
-      const imdAlert = status > 0 && activeStatuses.has(status);
-      const shramHasData = zoneByDist.has(idx);
-      const shramZone = zoneByDist.get(idx);
-      const shramAlert = shramHasData && shramZones.has(shramZone);
-
-      let fillColor, op;
-      if (!shramHasData) { fillColor = DIFF_COLOR.noData; op = 0.20; nNoData++; }
-      else if (imdAlert && shramAlert) { fillColor = DIFF_COLOR.both; op = 0.85; nBoth++; }
-      else if (imdAlert && !shramAlert) { fillColor = DIFF_COLOR.imdOnly; op = 0.85; nImdOnly++; }
-      else if (!imdAlert && shramAlert) { fillColor = DIFF_COLOR.shramOnly; op = 0.85; nShramOnly++; }
-      else { fillColor = DIFF_COLOR.neither; op = 0.30; nNeither++; }
-
-      return { fillColor, weight: 0.4, color: '#666', fillOpacity: op };
-    },
-    onEachFeature: (feature, layer) => {
-      const idx = feature.__idx;
-      const p = feature.properties;
-      const st = cachedDistrictNearestStation.get(idx);
-      const shramZone = zoneByDist.get(idx);
-      layer.bindTooltip(
-        `<b>${p.District}</b>, ${p.state || ''}<br>` +
-        `IMD station status: <b>${st?.today_hw_label || '—'}</b> (${st?.station_code ?? '—'}, ${st?.dist_km?.toFixed(0) ?? '?'} km)<br>` +
-        `SHRAM MET ${selectedMet}* zone: ${shramZone ?? 'no data'}`,
-        { sticky: true }
-      );
-    },
-  }).addTo(mapDiff);
-
-  document.getElementById('stats-diff').innerHTML =
-    statPairs([
-      ['Both alert:', nBoth],
-      ['IMD only:', nImdOnly],
-      ['SHRAM only:', nShramOnly],
-      ['Both safe:', nNeither],
-      ['No SHRAM:', nNoData],
-    ]);
-  document.getElementById('diff-met-label').textContent = `MET ${selectedMet}*`;
+  if (!cachedDistricts) return;
+  const src = cachedShramZonesByMetSnapshot || cachedShramZonesByMet;
+  if (!src) return;
+  renderShramPanel({
+    map: mapDiff, layerSlot: _diffSlot, met: 6,
+    zoneByDist: src[6], statsId: 'stats-diff',
+  });
 }
 
 // ---- Forecast tab: render IMD/SHRAM/Diff for selectedFcDay only ----
@@ -1836,6 +1984,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ---- Re-render everything when toggles change ----
 function renderAll() {
+  render2pm();
+  renderYesterday();
   renderImd();
   renderShram();
   renderDiff();
@@ -1843,6 +1993,341 @@ function renderAll() {
   renderDisagreement();
   renderKappa();
   renderForecastKappa();
+}
+
+// ---- Yesterday — verified tab ----
+// Panel A: IMD stations colored by yesterday_hw_status (computed from PD_*
+//   fields — yesterday's finalized observed max + departure).
+// Panels B and C: SHRAM zones from yesterday's 14:00 IST snapshot. If no
+//   yesterday snapshot has been archived yet, falls back to today's 14:00
+//   snapshot (or live) so the panel isn't empty.
+let yesterdayImdDistrictLayer = null;
+let yesterdayImdDotLayer = null;
+let yesterdayShramMet5Layer = null;
+let yesterdayShramMet6Layer = null;
+const _yesterdayMet5Slot = { get current() { return yesterdayShramMet5Layer; },
+                             set current(v) { yesterdayShramMet5Layer = v; } };
+const _yesterdayMet6Slot = { get current() { return yesterdayShramMet6Layer; },
+                             set current(v) { yesterdayShramMet6Layer = v; } };
+
+const YESTERDAY_FILL = {
+  0: '#e5e7eb',   // Normal
+  1: '#ff8800',   // Heatwave
+  2: '#cf222e',   // Severe Heatwave
+};
+
+function _isoYesterday() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+
+function renderYesterday() {
+  // Reset
+  if (yesterdayImdDistrictLayer) { mapYesterdayImd.removeLayer(yesterdayImdDistrictLayer); yesterdayImdDistrictLayer = null; }
+  if (yesterdayImdDotLayer) { mapYesterdayImd.removeLayer(yesterdayImdDotLayer); yesterdayImdDotLayer = null; }
+
+  if (!cachedImdStations || !Array.isArray(cachedImdStations.points)) return;
+  const stations = cachedImdStations.points;
+  const yesterdayIso = _isoYesterday();
+  document.getElementById('yesterday-date').textContent = yesterdayIso;
+
+  // Panel A — district fill by worst yesterday status of nearest stations
+  if (cachedDistricts) {
+    // For each district, find the nearest IMD heatwave-bulletin station and
+    // copy its yesterday status. Reuses the existing cachedDistrictNearestStation
+    // Voronoi assignment from the Today tab.
+    yesterdayImdDistrictLayer = L.geoJSON(cachedDistricts, {
+      style: (feature) => {
+        const st = cachedDistrictNearestStation?.get(feature.__idx);
+        const status = st?.yesterday_hw_status || 0;
+        const op = status > 0 ? 0.85 : 0.30;
+        return {
+          fillColor: YESTERDAY_FILL[status],
+          weight: 0.4, color: '#666', fillOpacity: op,
+        };
+      },
+      onEachFeature: (feature, layer) => {
+        const idx = feature.__idx;
+        const p = feature.properties;
+        const st = cachedDistrictNearestStation?.get(idx);
+        layer.bindTooltip(
+          `<b>${p.District}</b>, ${p.state || ''}<br>` +
+          `Nearest IMD station yesterday: <b>${st?.yesterday_hw_label || '—'}</b><br>` +
+          `Station ${st?.station_code ?? '—'} (${st?.dist_km?.toFixed(0) ?? '?'} km)<br>` +
+          `Yesterday Tmax: ${st?.prev_tmax != null ? st.prev_tmax.toFixed(1) + '°C' : '—'} · ` +
+          `Dep: ${st?.prev_tmax_dep != null ? st.prev_tmax_dep.toFixed(1) + '°C' : '—'}`,
+          { sticky: true }
+        );
+      },
+    }).addTo(mapYesterdayImd);
+  }
+
+  // Panel A — station dots colored by yesterday status
+  yesterdayImdDotLayer = L.layerGroup();
+  let nNormal = 0, nHW = 0, nSev = 0;
+  for (const st of stations) {
+    if (st.lat == null || st.lon == null) continue;
+    const status = st.yesterday_hw_status || 0;
+    if (status === 2) nSev++;
+    else if (status === 1) nHW++;
+    else nNormal++;
+    L.circleMarker([st.lat, st.lon], {
+      radius: status === 0 ? 2.5 : 5,
+      fillColor: YESTERDAY_FILL[status],
+      color: '#222',
+      weight: 0.5,
+      fillOpacity: status === 0 ? 0.4 : 0.95,
+    }).bindTooltip(
+      `<b>${st.name || st.station_code}</b><br>` +
+      `Yesterday: <b>${st.yesterday_hw_label || 'Normal'}</b><br>` +
+      `Tmax: ${st.prev_tmax != null ? st.prev_tmax.toFixed(1) + '°C' : '—'} · ` +
+      `Dep: ${st.prev_tmax_dep != null ? st.prev_tmax_dep.toFixed(1) + '°C' : '—'}`,
+      { sticky: true }
+    ).addTo(yesterdayImdDotLayer);
+  }
+  yesterdayImdDotLayer.addTo(mapYesterdayImd);
+  document.getElementById('stats-yesterday-imd').innerHTML = statPairs([
+    ['Severe HW:', nSev], ['Heatwave:', nHW], ['Normal:', nNormal],
+  ]);
+
+  // Panels B and C — SHRAM zones from yesterday's archived 14:00 snapshot.
+  // If yesterday's archive doesn't exist (e.g. first day of deployment),
+  // panels stay empty with an explanatory note rather than misleadingly
+  // showing today's data.
+  if (!cachedDistricts) return;
+  if (cachedShramZonesByMetYesterday) {
+    renderShramPanel({
+      map: mapYesterdayShramMet5, layerSlot: _yesterdayMet5Slot, met: 5,
+      zoneByDist: cachedShramZonesByMetYesterday[5],
+      statsId: 'stats-yesterday-shram-met5',
+    });
+    renderShramPanel({
+      map: mapYesterdayShramMet6, layerSlot: _yesterdayMet6Slot, met: 6,
+      zoneByDist: cachedShramZonesByMetYesterday[6],
+      statsId: 'stats-yesterday-shram-met6',
+    });
+    const lbl = cachedShramYesterday?.snapshot_date_ist
+      ? `${cachedShramYesterday.snapshot_time_ist} IST, ${cachedShramYesterday.snapshot_date_ist}`
+      : yesterdayIso;
+    document.getElementById('yesterday-shram-met5-date').textContent = lbl;
+    document.getElementById('yesterday-shram-met6-date').textContent = lbl;
+  } else {
+    // No archive yet — clear any prior layers and show the placeholder text.
+    if (yesterdayShramMet5Layer) { mapYesterdayShramMet5.removeLayer(yesterdayShramMet5Layer); yesterdayShramMet5Layer = null; }
+    if (yesterdayShramMet6Layer) { mapYesterdayShramMet6.removeLayer(yesterdayShramMet6Layer); yesterdayShramMet6Layer = null; }
+    const note = `No archive for ${yesterdayIso} yet — populates as the daily 14:30 IST workflow runs.`;
+    document.getElementById('yesterday-shram-met5-date').textContent = note;
+    document.getElementById('yesterday-shram-met6-date').textContent = note;
+    document.getElementById('stats-yesterday-shram-met5').innerHTML = '';
+    document.getElementById('stats-yesterday-shram-met6').innerHTML = '';
+  }
+}
+
+// ---- 2 PM IST snapshot tab ----
+// Panel A: districts colored by worst AWS station alert in/near the polygon,
+// with the individual AWS stations as dots on top.
+// Panels B and C: SHRAM zones at MET 5 and MET 6 from the existing live grid
+// (the 14:30 IST workflow refreshes this same payload daily).
+let aws2pmDistrictLayer = null;
+let aws2pmDotLayer = null;
+let shram2pmMet5Layer = null;
+let shram2pmMet6Layer = null;
+const _aws2pmMet5Slot = { get current() { return shram2pmMet5Layer; },
+                          set current(v) { shram2pmMet5Layer = v; } };
+const _aws2pmMet6Slot = { get current() { return shram2pmMet6Layer; },
+                          set current(v) { shram2pmMet6Layer = v; } };
+
+const AWS_2PM_COLOR = { 0: '#9aa1aa', 1: '#ff8800', 2: '#cf222e' };
+const AWS_2PM_DISTRICT_FILL = {
+  0: '#e5e7eb',  // Normal
+  1: '#ff8800',  // Heatwave
+  2: '#cf222e',  // Severe Heatwave
+};
+
+// For each district polygon, find the worst AWS alert from stations inside
+// (or within NEAR_KM of) the polygon. Cached after first build.
+let cachedDistrictWorstAws = null;   // Map<districtIdx, {status, label, n}>
+
+function buildDistrictWorstAws(districtsGeojson, awsPoints) {
+  // Use the precomputed cachedDistrictNearestStation Voronoi-style assignment
+  // structure: for each district, scan all AWS stations (small list, ~1000)
+  // and keep the worst status of stations within ~30 km of the district center.
+  // For accuracy we use bbox-contained-point as a fast filter, then haversine.
+  const NEAR_KM = 30;
+  const out = new Map();
+  for (const f of districtsGeojson.features) {
+    const idx = f.__idx;
+    const bbox = getBbox(f.geometry);
+    if (!bbox) continue;
+    const cx = (bbox[0] + bbox[2]) / 2;
+    const cy = (bbox[1] + bbox[3]) / 2;
+    let worst = 0, n = 0, label = 'Normal';
+    for (const pt of awsPoints) {
+      if (pt.lat == null || pt.lon == null) continue;
+      // Cheap bbox proximity prune before haversine
+      if (pt.lat < bbox[1] - 0.5 || pt.lat > bbox[3] + 0.5) continue;
+      if (pt.lon < bbox[0] - 0.5 || pt.lon > bbox[2] + 0.5) continue;
+      const km = haversineKm(cy, cx, pt.lat, pt.lon);
+      if (km > NEAR_KM) continue;
+      n++;
+      const s = pt.alert_status || 0;
+      if (s > worst) { worst = s; label = pt.alert_label || label; }
+    }
+    out.set(idx, { status: worst, label, n });
+  }
+  return out;
+}
+
+// Already-existing helper sibling: getBbox is defined elsewhere in this file.
+// haversine in km — small local helper, mirrors the script-side one.
+function haversineKm(la1, lo1, la2, lo2) {
+  const R = 6371, r = (x) => x * Math.PI / 180;
+  const dla = r(la2 - la1), dlo = r(lo2 - lo1);
+  const a = Math.sin(dla / 2) ** 2 +
+            Math.cos(r(la1)) * Math.cos(r(la2)) * Math.sin(dlo / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(a));
+}
+
+// Cross-panel district highlight registry — Map<districtIdx, [{layer, baseStyle}]>
+// Populated by the three panel render functions; allows hover/click in any
+// panel to apply a temporary highlight (heavier border, opened tooltip) to the
+// same __idx feature in the other two panels.
+let _aws2pmHighlightRegistry = null;
+let _aws2pmCurrentHighlight = null;
+
+function _aws2pmHighlight(idx) {
+  if (!_aws2pmHighlightRegistry) return;
+  _aws2pmClearHighlight();
+  const entries = _aws2pmHighlightRegistry.get(idx) || [];
+  for (const e of entries) {
+    e.layer.setStyle({ color: '#0969da', weight: 2.5 });
+    e.layer.bringToFront();
+    e.layer.openTooltip();
+  }
+  _aws2pmCurrentHighlight = idx;
+}
+
+function _aws2pmClearHighlight() {
+  if (_aws2pmCurrentHighlight == null || !_aws2pmHighlightRegistry) return;
+  const entries = _aws2pmHighlightRegistry.get(_aws2pmCurrentHighlight) || [];
+  for (const e of entries) {
+    e.layer.setStyle(e.baseStyle);
+    e.layer.closeTooltip();
+  }
+  _aws2pmCurrentHighlight = null;
+}
+
+function _aws2pmRegister(idx, layer, baseStyle) {
+  if (!_aws2pmHighlightRegistry) _aws2pmHighlightRegistry = new Map();
+  if (!_aws2pmHighlightRegistry.has(idx)) _aws2pmHighlightRegistry.set(idx, []);
+  _aws2pmHighlightRegistry.get(idx).push({ layer, baseStyle });
+  layer.on('mouseover', () => _aws2pmHighlight(idx));
+  layer.on('mouseout', () => _aws2pmClearHighlight());
+}
+
+function render2pm() {
+  // Drop both AWS layers first so a re-render can refresh either independently
+  if (aws2pmDistrictLayer) { mapAws2pm.removeLayer(aws2pmDistrictLayer); aws2pmDistrictLayer = null; }
+  if (aws2pmDotLayer) { mapAws2pm.removeLayer(aws2pmDotLayer); aws2pmDotLayer = null; }
+  // Reset the highlight registry — built fresh each render so layer references
+  // stay valid after a re-style.
+  _aws2pmHighlightRegistry = null;
+  _aws2pmCurrentHighlight = null;
+
+  if (cachedAws2pm && Array.isArray(cachedAws2pm.points) && cachedAws2pm.points.length > 0) {
+    const points = cachedAws2pm.points;
+
+    // District layer (built lazily once we have both districts and AWS data)
+    if (cachedDistricts && !cachedDistrictWorstAws) {
+      cachedDistrictWorstAws = buildDistrictWorstAws(cachedDistricts, points);
+    }
+    if (cachedDistricts && cachedDistrictWorstAws) {
+      aws2pmDistrictLayer = L.geoJSON(cachedDistricts, {
+        style: (feature) => {
+          const info = cachedDistrictWorstAws.get(feature.__idx);
+          const status = info?.status || 0;
+          // Normal districts get a visible grey fill so the map reads as
+          // "the whole country is colored", not "the country has holes"
+          const op = status > 0 ? 0.85 : 0.55;
+          return {
+            fillColor: AWS_2PM_DISTRICT_FILL[status],
+            weight: 0.4, color: '#666', fillOpacity: op,
+          };
+        },
+        onEachFeature: (feature, layer) => {
+          const idx = feature.__idx;
+          const p = feature.properties;
+          const info = cachedDistrictWorstAws.get(idx);
+          layer.bindTooltip(
+            `<b>${p.District}</b>, ${p.state || ''}<br>` +
+            `Worst AWS alert in/near district: <b>${info?.label || 'Normal'}</b><br>` +
+            `(${info?.n || 0} stations within 30 km)`,
+            { sticky: true }
+          );
+          _aws2pmRegister(idx, layer, { color: '#666', weight: 0.4 });
+        },
+      }).addTo(mapAws2pm);
+    }
+
+    // Dots on top of districts
+    aws2pmDotLayer = L.layerGroup();
+    let nNormal = 0, nHW = 0, nSev = 0;
+    for (const pt of points) {
+      if (pt.lat == null || pt.lon == null) continue;
+      const status = pt.alert_status || 0;
+      if (status === 2) nSev++;
+      else if (status === 1) nHW++;
+      else nNormal++;
+      L.circleMarker([pt.lat, pt.lon], {
+        radius: status === 0 ? 2.5 : 4.5,
+        fillColor: AWS_2PM_COLOR[status] || '#9aa1aa',
+        color: '#222',
+        weight: 0.5,
+        fillOpacity: status === 0 ? 0.4 : 0.95,
+      }).bindTooltip(
+        `<b>${pt.station_name || pt.station_id || 'AWS station'}</b><br>` +
+        `Type: ${pt.station_type || '—'} (inherited from ${pt.inherited_from_km || '?'} km)<br>` +
+        `Temp: ${pt.temp_c != null ? pt.temp_c.toFixed(1) + '°C' : '—'} · ` +
+        `RH: ${pt.rh_pct != null ? pt.rh_pct.toFixed(0) + '%' : '—'}<br>` +
+        `Alert: <b>${pt.alert_label || 'Normal'}</b><br>` +
+        `AWS report: ${pt.aws_update_time_utc || '—'} (${pt.aws_age_hours ?? '?'}h ago)`,
+        { sticky: true }
+      ).addTo(aws2pmDotLayer);
+    }
+    aws2pmDotLayer.addTo(mapAws2pm);
+    document.getElementById('aws2pm-updated').textContent =
+      `${cachedAws2pm.snapshot_date_ist} ${cachedAws2pm.snapshot_time_ist} IST · ${points.length} stations`;
+    document.getElementById('stats-aws2pm').innerHTML = statPairs([
+      ['Severe HW:', nSev], ['Heatwave:', nHW], ['Normal:', nNormal],
+    ]);
+  } else {
+    document.getElementById('aws2pm-updated').textContent =
+      'no AWS snapshot yet (workflow runs at 14:30 IST daily)';
+    document.getElementById('stats-aws2pm').innerHTML = '';
+  }
+
+  // Panels B and C: SHRAM zones at MET 5 and MET 6 from the 14:00 IST snapshot
+  // (falls back to live grid if the snapshot JSON hasn't been published yet).
+  if (!cachedDistricts) return;
+  const src = cachedShramZonesByMetSnapshot || cachedShramZonesByMet;
+  if (!src) return;
+  renderShramPanel({
+    map: mapShram2pmMet5, layerSlot: _aws2pmMet5Slot, met: 5,
+    zoneByDist: src[5], statsId: 'stats-shram2pm-met5',
+    registerForHighlight: _aws2pmRegister,
+  });
+  renderShramPanel({
+    map: mapShram2pmMet6, layerSlot: _aws2pmMet6Slot, met: 6,
+    zoneByDist: src[6], statsId: 'stats-shram2pm-met6',
+    registerForHighlight: _aws2pmRegister,
+  });
+  // Stamp the actual data time, not the fetch time
+  const shramTime = cachedShram2pm?.snapshot_date_ist
+    ? `${cachedShram2pm.snapshot_time_ist} IST, ${cachedShram2pm.snapshot_date_ist}`
+    : 'live (no 14:00 snapshot yet)';
+  document.getElementById('shram2pm-updated').textContent = shramTime;
+  document.getElementById('shram2pm-met6-updated').textContent = shramTime;
 }
 
 // ---- Today Panel A: districts colored by NEAREST IMD STATION's today HW status ----
@@ -2302,15 +2787,15 @@ function fcDateForDay(fc, day) {
   } catch (e) { return null; }
 }
 
-// ---- SHRAM panel (single map; uses selectedMet) ----
-function renderShram() {
-  if (!cachedDistricts || !cachedShramZonesByMet) return;
-  if (shramLayer) { mapShram.removeLayer(shramLayer); shramLayer = null; }
+// ---- SHRAM panel B (locked to MET 5) and panel C (locked to MET 6) ----
+// Both reuse the same zone-rendering logic; only the map element, MET level,
+// stats container, and tooltip differ.
+function renderShramPanel({ map, layerSlot, met, zoneByDist, statsId, registerForHighlight }) {
+  if (layerSlot.current) { map.removeLayer(layerSlot.current); layerSlot.current = null; }
   const shramZones = getActiveShramZones();
-  const zoneByDist = cachedShramZonesByMet[selectedMet];
 
   let n4 = 0, n5 = 0, n6 = 0, nLow = 0;
-  shramLayer = L.geoJSON(cachedDistricts, {
+  layerSlot.current = L.geoJSON(cachedDistricts, {
     style: (feature) => {
       const zone = zoneByDist.get(feature.__idx);
       let fillColor, active = false;
@@ -2325,15 +2810,19 @@ function renderShram() {
       return { fillColor, weight: 0.4, color: '#666', fillOpacity: op };
     },
     onEachFeature: (feature, layer) => {
+      const idx = feature.__idx;
       const p = feature.properties;
-      const zone = zoneByDist.get(feature.__idx);
+      const zone = zoneByDist.get(idx);
       layer.bindTooltip(
         `<b>${p.District}</b>, ${p.state || ''}<br>` +
-        `MET ${selectedMet}* zone: ${zone ?? '—'}`,
+        `MET ${met}* zone: ${zone ?? '—'}`,
         { sticky: true }
       );
+      if (registerForHighlight) {
+        registerForHighlight(idx, layer, { color: '#666', weight: 0.4 });
+      }
     },
-  }).addTo(mapShram);
+  }).addTo(map);
 
   for (const z of zoneByDist.values()) {
     if (z === 6) n6++;
@@ -2342,7 +2831,7 @@ function renderShram() {
     else nLow++;
   }
   const nMissing = cachedDistricts.features.length - (n4 + n5 + n6 + nLow);
-  document.getElementById('stats-shram').innerHTML =
+  document.getElementById(statsId).innerHTML =
     statPairs([
       ['Z6:', n6],
       ['Z5:', n5],
@@ -2350,7 +2839,24 @@ function renderShram() {
       ['≤Z3:', nLow],
       ['no data:', nMissing],
     ]);
-  document.getElementById('shram-met-label').textContent = `MET ${selectedMet}*`;
+}
+
+// Wrap shramLayer/diffLayer in slot objects so renderShramPanel can mutate them
+const _shramSlot = { get current() { return shramLayer; },
+                     set current(v) { shramLayer = v; } };
+const _diffSlot  = { get current() { return diffLayer; },
+                     set current(v) { diffLayer = v; } };
+
+// Today tab Panel B: SHRAM MET 5 zones from the 14:30 IST snapshot (falls
+// back to live grid if the snapshot JSON wasn't published yet).
+function renderShram() {
+  if (!cachedDistricts) return;
+  const src = cachedShramZonesByMetSnapshot || cachedShramZonesByMet;
+  if (!src) return;
+  renderShramPanel({
+    map: mapShram, layerSlot: _shramSlot, met: 5,
+    zoneByDist: src[5], statsId: 'stats-shram',
+  });
 }
 
 </script>

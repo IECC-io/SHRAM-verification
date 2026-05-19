@@ -1,0 +1,87 @@
+name: Snapshot SHRAM live grid (daily at 14:30 IST)
+
+# Pulls https://shram.info/grid_data.json once a day at 14:30 IST (09:00 UTC),
+# summarizes per-grid-point MET5 + MET6 zones, and appends two CSVs to the
+# sibling SHRAM-verification-data repo:
+#   comparisons/shram_snapshot_daily.csv
+#   comparisons/shram_snapshot_summary.csv
+#
+# Independent of the IMD pipeline — if IMD auth is broken, this still runs.
+
+on:
+  schedule:
+    - cron: '0 9 * * *'   # 14:30 IST = 09:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # need write to this repo for the aws_2pm_snapshot_latest.json commit
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dashboard repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      # Clone the sibling data repo with write access. Needs SHRAM_DATA_TOKEN
+      # secret: a fine-grained PAT with contents:write on SHRAM-verification-data.
+      - name: Clone SHRAM-verification-data
+        run: |
+          git clone https://x-access-token:${{ secrets.SHRAM_DATA_TOKEN }}@github.com/IECC-io/SHRAM-verification-data.git data
+
+      - name: Refresh IMD heatwave bulletin (public endpoint, no auth)
+        run: python3 scripts/fetch_imd_heatwave.py
+
+      - name: Snapshot SHRAM live grid → CSV
+        run: python3 scripts/snapshot_shram_live.py --data-repo ./data
+
+      - name: Snapshot IMD AWS stations at 14:30 IST → CSV + JSON
+        run: python3 scripts/snapshot_aws_2pm.py --data-repo ./data
+
+      - name: District-level join (AWS alerts × SHRAM zones) → CSV
+        run: python3 scripts/snapshot_district_join.py --data-repo ./data
+
+      - name: Commit snapshot JSONs back to dashboard repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reference_history/aws_2pm_snapshot_latest.json \
+                  reference_history/shram_2pm_snapshot_latest.json \
+                  reference_history/shram_2pm_snapshot/ \
+                  reference_history/imd_station_heatwave_latest.json \
+                  reference_history/imd_station_heatwave/
+          if ! git diff --cached --quiet; then
+            stamp="$(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "data: AWS 14:30 IST snapshot ($stamp)"
+            git push
+          else
+            echo "No AWS snapshot changes to commit (dashboard repo)."
+          fi
+
+      - name: Commit & push CSVs to data repo
+        working-directory: ./data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add comparisons/shram_snapshot_daily.csv \
+                  comparisons/shram_snapshot_summary.csv \
+                  comparisons/aws_2pm_snapshot.csv \
+                  comparisons/aws_2pm_summary.csv \
+                  comparisons/district_2pm_snapshot.csv
+          if ! git diff --cached --quiet; then
+            stamp="$(date -u +%Y-%m-%dT%H:%MZ)"
+            git commit -m "data: SHRAM + AWS 14:30 IST snapshot ($stamp)"
+            git push
+          else
+            echo "No snapshot changes to commit."
+          fi
