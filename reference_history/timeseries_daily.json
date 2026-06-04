@@ -4,13 +4,13 @@
  "n_days": 1,
  "series": [
   {
-   "date": "2026-06-03",
+   "date": "2026-06-04",
    "n_districts": 754,
-   "imd_heatwave": 33,
-   "imd_severe": 1,
-   "shram_met5_zone5": 682,
+   "imd_heatwave": 47,
+   "imd_severe": 3,
+   "shram_met5_zone5": 536,
    "shram_met5_zone6": 0,
-   "shram_met6_zone5": 707,
+   "shram_met6_zone5": 676,
    "shram_met6_zone6": 0
   }
  ]
