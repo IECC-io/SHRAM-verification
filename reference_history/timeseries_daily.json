@@ -4,14 +4,14 @@
  "n_days": 1,
  "series": [
   {
-   "date": "2026-07-26",
+   "date": "2026-07-27",
    "n_districts": 754,
-   "imd_heatwave": 34,
+   "imd_heatwave": 24,
    "imd_severe": 0,
-   "shram_met5_zone5": 716,
+   "shram_met5_zone5": 721,
    "shram_met5_zone6": 0,
-   "shram_met6_zone5": 714,
-   "shram_met6_zone6": 9
+   "shram_met6_zone5": 722,
+   "shram_met6_zone6": 1
   }
  ]
 }
