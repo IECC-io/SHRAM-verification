@@ -1,32 +1,12 @@
 {
  "label": "IMD AWS 14:30 IST snapshot",
  "source_url": "https://reactjs.imd.gov.in/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typename=imd:aws_data_layer&srsname=EPSG:4326&outputFormat=application/json",
- "fetched_at_utc": "2026-10-12T18:46:01.198599+00:00",
+ "fetched_at_utc": "2026-10-13T16:48:26.719854+00:00",
  "snapshot_date_ist": "2026-10-13",
- "snapshot_time_ist": "00:16:01",
+ "snapshot_time_ist": "22:18:26",
  "n_total": 2071,
- "n_fresh": 1,
+ "n_fresh": 0,
  "n_heatwave": 0,
  "n_severe": 0,
- "points": [
-  {
-   "snapshot_date_ist": "2026-10-13",
-   "snapshot_time_ist": "00:16:01",
-   "station_id": "",
-   "station_name": "PUROLA",
-   "call_sign": "PRL",
-   "lat": 30.86,
-   "lon": 78.0,
-   "station_type": "Hilly",
-   "inherited_from_km": 64.6,
-   "aws_update_time_utc": "2026-10-12 18:44:04",
-   "aws_age_hours": 0.03,
-   "temp_c": 15.8,
-   "rh_pct": null,
-   "tmax_today_c": 30.9,
-   "tmin_today_c": 16.3,
-   "alert_status": 0,
-   "alert_label": "Normal"
-  }
- ]
+ "points": []
 }
