@@ -1,9 +1,9 @@
 {
  "label": "IMD AWS 14:30 IST snapshot",
  "source_url": "https://reactjs.imd.gov.in/geoserver/wfs?service=WFS&version=1.1.0&request=GetFeature&typename=imd:aws_data_layer&srsname=EPSG:4326&outputFormat=application/json",
- "fetched_at_utc": "2026-10-21T14:24:07.959157+00:00",
- "snapshot_date_ist": "2026-10-21",
- "snapshot_time_ist": "19:54:07",
+ "fetched_at_utc": "2026-10-22T14:25:15.123561+00:00",
+ "snapshot_date_ist": "2026-10-22",
+ "snapshot_time_ist": "19:55:15",
  "n_total": 2071,
  "n_fresh": 0,
  "n_heatwave": 0,
