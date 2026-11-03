@@ -5,12 +5,12 @@
  "series": [
   {
    "date": "2026-11-03",
-   "n_districts": 754,
-   "imd_heatwave": 0,
+   "n_districts": 753,
+   "imd_heatwave": 1,
    "imd_severe": 0,
-   "shram_met5_zone5": 192,
+   "shram_met5_zone5": 168,
    "shram_met5_zone6": 0,
-   "shram_met6_zone5": 479,
+   "shram_met6_zone5": 430,
    "shram_met6_zone6": 0
   }
  ]
